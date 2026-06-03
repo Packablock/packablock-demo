@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, rmSync } from "node:fs";
+import { existsSync, readFileSync, rmSync, readdirSync } from "node:fs";
 import path from "node:path";
 import YAML from "yaml";
 import {
@@ -22,7 +22,6 @@ const colors = {
 
 async function run() {
 	const chainPath = path.resolve(__dirname, "packablock.yaml");
-	const backupPath = path.resolve(__dirname, "packablock.yaml.bak");
 
 	console.log(`${colors.bold}${colors.cyan}============================================================${colors.reset}`);
 	console.log(`${colors.bold}${colors.cyan}🔄 Starting Packablock Rollover Simulation Test...${colors.reset}`);
@@ -30,7 +29,12 @@ async function run() {
 
 	// 1. Cleanup
 	rmSync(chainPath, { force: true });
-	rmSync(backupPath, { force: true });
+	const files = readdirSync(__dirname);
+	for (const file of files) {
+		if (file.startsWith("packablock.yaml") && file.endsWith(".bak")) {
+			rmSync(path.join(__dirname, file), { force: true });
+		}
+	}
 
 	// 2. Load pre-rollover package history feed
 	const preRolloverFeed = JSON.parse(
@@ -133,7 +137,7 @@ async function run() {
 	// 6. Verify final modern chain and backup chain
 	let postStatus = await getChainStatus(chainPath);
 	let postVerification = await verifyChain(chainPath);
-	let backupVerification = await verifyChain(backupPath);
+	let backupVerification = await verifyChain(rolloverResult.backupPath);
 
 	if (!postVerification.valid || !backupVerification.valid) {
 		throw new Error("❌ Final chain verification failed.");
