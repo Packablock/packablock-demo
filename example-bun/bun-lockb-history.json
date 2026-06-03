@@ -1,0 +1,922 @@
+[
+  {
+    "sha": "b39632c92129ed0161d57da951445828ebcd9108",
+    "author": {
+      "name": "dave caruso",
+      "email": "me@paperdave.net",
+      "date": "2024-12-10T20:43:17Z"
+    },
+    "message": "feat: new binding generator (#15638)",
+    "url": "https://github.com/oven-sh/bun/commit/b39632c92129ed0161d57da951445828ebcd9108"
+  },
+  {
+    "sha": "274e5a202223ae8b809b556565fae2979d59fcd5",
+    "author": {
+      "name": "Zack Radisic",
+      "email": "56137411+zackradisic@users.noreply.github.com",
+      "date": "2024-09-26T20:39:26Z"
+    },
+    "message": "CSS Parser (#14122)\n\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>",
+    "url": "https://github.com/oven-sh/bun/commit/274e5a202223ae8b809b556565fae2979d59fcd5"
+  },
+  {
+    "sha": "cd6785771ea03f606d5e3875d469adf22d0a65d1",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2024-09-04T04:32:52Z"
+    },
+    "message": "run prettier and add back format action (#13722)",
+    "url": "https://github.com/oven-sh/bun/commit/cd6785771ea03f606d5e3875d469adf22d0a65d1"
+  },
+  {
+    "sha": "6b50deb7b74d07850b2f892fe60a38f89e27b1bb",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2024-07-18T08:13:36Z"
+    },
+    "message": "Move dev dependencies to `\"devDependencies\"`\n\nSpammy vulnerability scanning software can't tell we aren't using these in the \"bun\" npm package.",
+    "url": "https://github.com/oven-sh/bun/commit/6b50deb7b74d07850b2f892fe60a38f89e27b1bb"
+  },
+  {
+    "sha": "d105b048b1bcaeb19ce6b644276a343259420470",
+    "author": {
+      "name": "Ashcon Partovi",
+      "email": "ashcon@partovi.net",
+      "date": "2024-06-27T21:56:07Z"
+    },
+    "message": "Use Buildkite for CI (#11477)",
+    "url": "https://github.com/oven-sh/bun/commit/d105b048b1bcaeb19ce6b644276a343259420470"
+  },
+  {
+    "sha": "93abd9920283011edd5fc51b14440e369c9c634d",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2024-05-16T22:53:13Z"
+    },
+    "message": "Downgrade to React 18",
+    "url": "https://github.com/oven-sh/bun/commit/93abd9920283011edd5fc51b14440e369c9c634d"
+  },
+  {
+    "sha": "f58249e3619c05f1f5edbbeac01e035e248e90bb",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2024-05-16T07:46:28Z"
+    },
+    "message": "Fix loading bun-types in development (#11110)\n\nCo-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/f58249e3619c05f1f5edbbeac01e035e248e90bb"
+  },
+  {
+    "sha": "9e8bdaba93be49a5eddcde08524a2d710e1cf88a",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2024-03-17T10:42:10Z"
+    },
+    "message": "Fixes #9433 (#9471)\n\n* Fix assertion failure when package-lock.json is out of sync with package.json\r\n\r\n* Fixes #9433\r\n\r\n* Update bun.lockb\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/9e8bdaba93be49a5eddcde08524a2d710e1cf88a"
+  },
+  {
+    "sha": "57eb04f6f4e6958644220364c6da9ae2c4d1a1fd",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2024-02-26T19:13:02Z"
+    },
+    "message": "[internal] Switch back to prettier (#9109)\n\n* Switch back to prettier\r\n\r\n* wip\r\n\r\n* Update .prettierignore\r\n\r\n* Update .prettierignore\r\n\r\n* ignores\r\n\r\n* Update .prettierignore\r\n\r\n* Rest\r\n\r\n* [autofix.ci] apply automated fixes\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/57eb04f6f4e6958644220364c6da9ae2c4d1a1fd"
+  },
+  {
+    "sha": "a05ef0aeb1d256fcce041cceb63209978c581e80",
+    "author": {
+      "name": "Ashcon Partovi",
+      "email": "ashcon@partovi.net",
+      "date": "2024-02-05T20:50:09Z"
+    },
+    "message": "Remove unintentional commit\n\nThis reverts commit 23b292ac21cb9f07bdeb79eb86ebe3b0b2ce365b.",
+    "url": "https://github.com/oven-sh/bun/commit/a05ef0aeb1d256fcce041cceb63209978c581e80"
+  },
+  {
+    "sha": "23b292ac21cb9f07bdeb79eb86ebe3b0b2ce365b",
+    "author": {
+      "name": "Ashcon Partovi",
+      "email": "ashcon@partovi.net",
+      "date": "2024-02-05T19:25:52Z"
+    },
+    "message": "T",
+    "url": "https://github.com/oven-sh/bun/commit/23b292ac21cb9f07bdeb79eb86ebe3b0b2ce365b"
+  },
+  {
+    "sha": "63a9a8b01599b738978b04489cbd4fb7b64293aa",
+    "author": {
+      "name": "Ashcon Partovi",
+      "email": "ashcon@partovi.net",
+      "date": "2024-02-01T22:55:35Z"
+    },
+    "message": "Improve `.vscode` extensions, tasks, and configuration (#8511)",
+    "url": "https://github.com/oven-sh/bun/commit/63a9a8b01599b738978b04489cbd4fb7b64293aa"
+  },
+  {
+    "sha": "e3188c918a5f6e7a9052af0cd6aedf34f85201ec",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2024-01-26T03:15:26Z"
+    },
+    "message": "use Biome to format Bun's codebase instead of Prettier (#8494)\n\n* Ignore\r\n\r\n* Create biome.json\r\n\r\n* Ignore\r\n\r\n* biome\r\n\r\n* [autofix.ci] apply automated fixes\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/e3188c918a5f6e7a9052af0cd6aedf34f85201ec"
+  },
+  {
+    "sha": "83f2432da6224d0e96f31dc770c67665427c28fa",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2024-01-16T07:47:13Z"
+    },
+    "message": "Update prettier (#8198)\n\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/83f2432da6224d0e96f31dc770c67665427c28fa"
+  },
+  {
+    "sha": "31814934f309308b5d29c25c062b0a632beba233",
+    "author": {
+      "name": "Colin McDonnell",
+      "email": "colinmcd94@gmail.com",
+      "date": "2023-11-16T02:15:10Z"
+    },
+    "message": "CLI flags (#6395)\n\n* WIP\r\n\r\n* WIP\r\n\r\n* Improve helptext\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* Clean up, implement warn_on_unrecognized_flag\r\n\r\n* Fix struct\r\n\r\n* Tweaks\r\n\r\n* Fix bunx test\r\n\r\n* Address reviews\r\n\r\n* Init and create\r\n\r\n* Updates\r\n\r\n* bunx\r\n\r\n* Tweaks\r\n\r\n* Lockfile\r\n\r\n* tweak\r\n\r\n* tweak\r\n\r\n* tweak\r\n\r\n* tweak\r\n\r\n* Remove comments\r\n\r\n* Add back origin and port\r\n\r\n* Remove logging\r\n\r\n* Updates\r\n\r\n* fmt\r\n\r\n* fix rebasing mistakes\r\n\r\n* bruh\r\n\r\n* expose node builtins for -e\r\n\r\n* add tests and fix it on windows\r\n\r\n* a\r\n\r\n* lol\r\n\r\n* okay\r\n\r\n* finish things up\r\n\r\n* Update src/deps/zig-clap/clap/streaming.zig\r\n\r\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>\r\n\r\n---------\r\n\r\nCo-authored-by: dave caruso <me@paperdave.net>\r\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>",
+    "url": "https://github.com/oven-sh/bun/commit/31814934f309308b5d29c25c062b0a632beba233"
+  },
+  {
+    "sha": "7a4e0158d62564edebafd5c8b0b51ca07b54fe4c",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-11-14T06:10:09Z"
+    },
+    "message": "Lots of stuff (#7027)\n\n* Use debug mode by default\r\n\r\n* Enable build with assertions enabled\r\n\r\n* Update cli.zig\r\n\r\n* Update bun-linux-build.yml\r\n\r\n* Fixes\r\n\r\n* Fix `ASSERT_ENABLED`\r\n\r\n* try this\r\n\r\n* Update Dockerfile\r\n\r\n* mimalloc debug\r\n\r\n* Update CMakeLists.txt\r\n\r\n* `Bun.deepMatch` - fix assertion failures\r\n\r\ncc @dylan-conway, looks like we need to use `putDirectMayBeIndex` and check for `isCell` more carefully.\r\n\r\n* Object.create support in code generator and callbacks wrapper\r\n\r\n* Remove unused file\r\n\r\n* zig upgrade\r\n\r\n* zls\r\n\r\n* Fix various errors\r\n\r\n* Support `BuiltinAccessor` in create_hash_table script\r\n\r\n* Fix assertion failure in `process.mainModule`\r\n\r\n* Fix assertion failure in `onerror`\r\n\r\n* Fix assertion failure when creating a Worker\r\n\r\n* Fix asssertion failure when loading lots of files in bun test\r\n\r\n* Fix assertion failure when termating a `Worker`\r\n\r\n* Add helper for converting BunString to a WTFString\r\n\r\n* Fix assertion failure in notifyNeedTermination\r\n\r\n* Add more debug logs in `bun test`\r\n\r\n* Fix compiler warning in usockets\r\n\r\n* Fix assertion failure with `Worker` termination (another)\r\n\r\n* Fix assertion failure in `coerceToInt64`\r\n\r\n* Fix assertion failure in `BroadcastChannel`\r\n\r\n* Fix assertion failure in `Headers.prototype.getAll`\r\n\r\n* Fixes #7067\r\n\r\n* Add heap analyzer label for CommonJS modules\r\n\r\n* Fix assertion failure in module.require && module.require.resolve\r\n\r\n* Remove unused code\r\n\r\n* Fix assertion failure in debugger\r\n\r\n* Fix crash in debugger\r\n\r\n* Fix assertion failures in bun:sqlite\r\n\r\n* Bump zig\r\n\r\n* Bump WebKit\r\n\r\n* Fix assertion failure in JSPromise::reject && JSInternalPromise::reject\r\n\r\n* Fix assertion failure in ReadableStream::cancel\r\n\r\n* Fix assertion failure in AsyncContextFrame::create\r\n\r\n* Fix assertion failure in bun:sqlite\r\n\r\n* Fix assertion failure in mocks\r\n\r\n* Fix assertion failure in ServerWebSocket.close\r\n\r\n* Fix assertion failure in N-API with subclasses\r\n\r\n* [napi] Make promises cheaper\r\n\r\n* undo\r\n\r\n* Don't check for exceptions in ObjectInitializationScope\r\n\r\n* Add separate entry point for test runner that doesn't generate code\r\n\r\n* Don't deref builtin code\r\n\r\n* Fix preload test\r\n\r\n* Fix assertion failure in memoryUsage()\r\n\r\n* Fix preload test, part 2\r\n\r\n* Ensure that the env map for a Worker is empty after it is used\r\n\r\n* The pointer for the Arena allocator used in parsing should not change\r\n\r\n* Terminate thread on exit\r\n\r\n* Start to implement scriptExecutionStatus\r\n\r\n* Update worker.test.ts\r\n\r\n* Fix Dirent.name setter\r\n\r\n* Update settings.json\r\n\r\n* Fix assertion failure in node:http\r\n\r\n* Use correct value for `JSFinalObject::maxInlineCapacity`\r\n\r\n* JSFinalObject::maxInlineCapacity x2\r\n\r\n* Don't strip when assertions are enabled\r\n\r\n* Make `m_wasTerminated` atomic\r\n\r\n* Preserve directives in the transpiler\r\n\r\ncc @ctjlewis\r\n\r\n* Workaround assertion failure in ServerWebSocket.sendBinary and ServerWebSocket.sendText\r\n\r\n* windows\r\n\r\n* Buffer lockfile serialization in-memory\r\n\r\n* PR feedback\r\n\r\n* PR feedback\r\n\r\n* PR feedback\r\n\r\n* Windows\r\n\r\n* quotes\r\n\r\n* Update CMakeLists.txt\r\n\r\n* Update bun-linux-build.yml\r\n\r\n* Update bun-linux-build.yml\r\n\r\n* Move this code to BunString.cpp\r\n\r\n* Update BunString.cpp\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/7a4e0158d62564edebafd5c8b0b51ca07b54fe4c"
+  },
+  {
+    "sha": "4403c40755808cea508d92985d54b9ccf64dc086",
+    "author": {
+      "name": "dave caruso",
+      "email": "me@paperdave.net",
+      "date": "2023-11-03T05:40:00Z"
+    },
+    "message": "chore: build and publish canary windows builds (#6834)\n\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>",
+    "url": "https://github.com/oven-sh/bun/commit/4403c40755808cea508d92985d54b9ccf64dc086"
+  },
+  {
+    "sha": "7485c7c7cbbb47251f81cbcbcfb24431ad6075b1",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-10-27T08:51:56Z"
+    },
+    "message": "feat: Windows + CMake Build System (#4410)\n\n* Prepare for windows event loop\r\n\r\n* More progress\r\n\r\n* Update libuv.zig\r\n\r\n* wip\r\n\r\n* Make compiling each dependency a shell script\r\n\r\n* Bump mimalloc\r\n\r\n* Add the build scripts\r\n\r\n* Update settings.json\r\n\r\n* Fix a bunch of compiler warnings\r\n\r\n* Remove more warnings\r\n\r\n* more warnings\r\n\r\n* cmake works\r\n\r\n* Update JSSQLStatement.h\r\n\r\n* put it in the zig file\r\n\r\n* Fix usockets warnings\r\n\r\n* Fixup\r\n\r\n* Fix one of the compiler errors\r\n\r\n* chunk\r\n\r\n* draw the rest of the owl\r\n\r\n* theres more\r\n\r\n* Rename Process -> BunProcess\r\n\r\nWorks around a Windows issue\r\n\r\n* Add musl polyfill for memmem on Windows\r\n\r\n* More\r\n\r\n* 12 mb\r\n\r\n* Fix getenvZ\r\n\r\n* fix variosu issues\r\n\r\n* Add fast-ish path for bun install on Windows\r\n\r\n* Update windows.zig\r\n\r\n* Update windows.zig\r\n\r\n* Fix build issue\r\n\r\n* it works\r\n\r\n* hmmm\r\n\r\n* Rename file\r\n\r\n* Fixups\r\n\r\n* Update wtf-bindings.cpp\r\n\r\n* Update src/bun.js/bindings/headers-handwritten.h\r\n\r\nCo-authored-by: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>\r\n\r\n* further!\r\n\r\n* more\r\n\r\n* Update .gitignore\r\n\r\n* hm\r\n\r\n* quite a lot of fixes\r\n\r\n* Update CMakeLists.txt\r\n\r\n* zig fmt\r\n\r\n* Many more things are starting to work.\r\n\r\n* reb\r\n\r\n* regenaret\r\n\r\n* Update JSSink.h\r\n\r\n* fixup\r\n\r\n* fetch works\r\n\r\n* Bun.serve() and much of the event loop works now\r\n\r\n* Make require() work\r\n\r\n* bun install progress\r\n\r\n* more things work\r\n\r\n* use less std.os\r\n\r\n* Fixes\r\n\r\n* small fixes\r\n\r\n* Bump\r\n\r\n* Bummp\r\n\r\n* Undo that change\r\n\r\n* We have to bump the version of Debian because libarchive has a higher minimum requirement\r\n\r\n* ok\r\n\r\n* some clenaup\r\n\r\n* windows\r\n\r\n* Update bun.zig\r\n\r\n* fixup\r\n\r\n* avoid duplicate symbols\r\n\r\n* avoid undefined symbols\r\n\r\n* bump\r\n\r\n* Remove issue template for install\r\n\r\nIt's not used, and use the bug issue instead.\r\n\r\n* Add types for cp and cpSync\r\n\r\n* Add types for watchFile and unwatchFile\r\n\r\n* Add bun-types to 'bun fmt' script\r\n\r\n* Update nodejs compat docs cp/cpSync/watchFile/unwatchFile (#4525)\r\n\r\n* feat(fetch) rejectUnauthorized and checkServerIdentity (#4514)\r\n\r\n* enable root certs on fetch\r\n\r\n* rebase\r\n\r\n* fix lookup\r\n\r\n* some fixes and improvements\r\n\r\n* fmt\r\n\r\n* more fixes\r\n\r\n* more fixes\r\n\r\n* check detached onHandshake\r\n\r\n* fix promise case\r\n\r\n* fix cert non-Native\r\n\r\n* add fetch tls tests\r\n\r\n* more one test\r\n\r\n* churn\r\n\r\n* Update feature_flags.zig\r\n\r\n* Update response.zig\r\n\r\n* Revert \"avoid undefined symbols\"\r\n\r\nThis reverts commit ca835b726fb5165798de216b20d8e3b3a12571e0.\r\n\r\n* Revert \"avoid duplicate symbols\"\r\n\r\nThis reverts commit 4ac6ca87000a157ee4f31308dab60ef8cedb95e4.\r\n\r\n* Update feature_flags.zig\r\n\r\n* Set permissions\r\n\r\n* more\r\n\r\n* Update mimalloc\r\n\r\n* Fix sqlite test failures\r\n\r\n* Fix some test failures\r\n\r\n* Make sure we remove libusockets is removed\r\n\r\n* hm\r\n\r\n* [dave]: fix webcrypto crash\r\n\r\n* bump\r\n\r\n* Update index.ts\r\n\r\n* windows zig compiles\r\n\r\n* cmake on mac works\r\n\r\n* progress\r\n\r\n* yay\r\n\r\n* bun run build\r\n\r\n* fix\r\n\r\n* ok\r\n\r\n* oops\r\n\r\n* asdfasfdafdsafda\r\n\r\n* fghjkl\r\n\r\n* git ignore\r\n\r\n* wow\r\n\r\n* Process -> BunProcess\r\n\r\n* hmm\r\n\r\n* blah\r\n\r\n* finalize merge\r\n\r\n* now it only has linker errors on mac\r\n\r\n* sdfadsf\r\n\r\n* g\r\n\r\n* getting farther\r\n\r\n* sxdcvbnmk,\r\n\r\n* adfhjskfjdhkas\r\n\r\n* a\r\n\r\n* fgh\r\n\r\n* update build dot zig\r\n\r\n* asdfg\r\n\r\n* theoretical -DCANARY flag we can use\r\n\r\n* asdf\r\n\r\n* cool\r\n\r\n* okay\r\n\r\n* colorterm\r\n\r\n* New build workflow\r\n\r\n* Fix script\r\n\r\n* Use sudo\r\n\r\n* More sudo\r\n\r\n* Tweak dependencies\r\n\r\n* Another sudo attempt\r\n\r\n* Tweak script\r\n\r\n* 16.0 -> 16\r\n\r\n* Tweak script\r\n\r\n* Tweak script\r\n\r\n* Tweak script\r\n\r\n* Tweak script\r\n\r\n* Tweak script\r\n\r\n* bun install\r\n\r\n* ssh into github actions\r\n\r\n* add more to ssh\r\n\r\n* Fix postinstal\r\n\r\n* Skip llvm\r\n\r\n* New dockerfile\r\n\r\n* Build\r\n\r\n* More changes to Dockerfile\r\n\r\n* chaos chaos chaos\r\n\r\n* okay\r\n\r\n* a\r\n\r\n* more cmake nonsense\r\n\r\n* add unified sources code (does not work)\r\n\r\n* stuff\r\n\r\n* prepare for CI builds\r\n\r\n* ok\r\n\r\n* yay\r\n\r\n* yeah\r\n\r\n* make this more stable simply by trying again if it fails, 5 times, then lose. it fixes the stability issue i was running into L O L\r\n\r\n* messing with ci\r\n\r\n* x\r\n\r\n* a\r\n\r\n* clean dependencies before build\r\n\r\n* oops\r\n\r\n* this is not going to work but its closer\r\n\r\n* not gonna work either\r\n\r\n* a\r\n\r\n* a\r\n\r\n* did i do it\r\n\r\n* a\r\n\r\n* a\r\n\r\n* work around weird fs+Bun.build issues\r\n\r\n* properly pass debug flag correctly\r\n\r\n* idk im sorry\r\n\r\n* lose\r\n\r\n* maybe\r\n\r\n* run the tests please\r\n\r\n* a\r\n\r\n* fix zlib script\r\n\r\n* a\r\n\r\n* hi\r\n\r\n* prevent stupid ci issue\r\n\r\n* i totally didnt leave in a syntax error on cmakelists\r\n\r\n* a\r\n\r\n* lol\r\n\r\n* relax\r\n\r\n* 😭\r\n\r\n* a\r\n\r\n* SO SILLY\r\n\r\n* 😡 one line mistake\r\n\r\n* one character diff\r\n\r\n* fix linking symbols missing\r\n\r\n* work on dependency scripts\r\n\r\n* does this work now?\r\n\r\n* fix mac build\r\n\r\n* a\r\n\r\n* bump!\r\n\r\n* woops\r\n\r\n* add macos baseline build\r\n\r\n* .\r\n\r\n* fix sqlite and also enable $assert/$debug support in builtin functions\r\n\r\n* okay\r\n\r\n* oops\r\n\r\n* zig upgrade lol\r\n\r\n* Merge\r\n\r\n* Fix spawn test issue\r\n\r\n* Set a timeout\r\n\r\n* yeah\r\n\r\n* etc\r\n\r\n* mi\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\nCo-authored-by: Dylan Conway <dylan.conway567@gmail.com>\r\nCo-authored-by: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>\r\nCo-authored-by: Ashcon Partovi <ashcon@partovi.net>\r\nCo-authored-by: Birk Skyum <74932975+birkskyum@users.noreply.github.com>\r\nCo-authored-by: dave caruso <me@paperdave.net>",
+    "url": "https://github.com/oven-sh/bun/commit/7485c7c7cbbb47251f81cbcbcfb24431ad6075b1"
+  },
+  {
+    "sha": "2b8aae05d1e95b85c7869f15567a29162106110c",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-10-26T05:35:14Z"
+    },
+    "message": "Add test for custom thenables in AsyncLocalStorage and fix flaky test and make expect(fn).toThrow drain unhandled promise rejections (#6701)\n\n* Copy Node.js test for async-local-storage thenables\r\n\r\n* Fix flaky test\r\n\r\n* Make expect(fn).toThrow() more reliable\r\n\r\n* Fix setImmediate order\r\n\r\n* Support restoring mocked modules with spyOn\r\n\r\n* Fix vm test\r\n\r\n* Fix more tests\r\n\r\n* alright\r\n\r\n* Upgrade WebKit\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/2b8aae05d1e95b85c7869f15567a29162106110c"
+  },
+  {
+    "sha": "6a2768f2474a7f1c32bf47b8c44cb33f4409b11a",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-10-25T09:59:47Z"
+    },
+    "message": "Implement `mock.module` in bun:test (#6685)\n\n* Implement Module Mocks\r\n\r\n* Update javascript.zig\r\n\r\n* Add test for spyOn + ESM namespace\r\n\r\n* Bump WebKit\r\n\r\n* Bump WebKit\r\n\r\n* Drain microtasks at end of test executions\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/6a2768f2474a7f1c32bf47b8c44cb33f4409b11a"
+  },
+  {
+    "sha": "98d19fa6244384f7e17998b5420d724481ed3835",
+    "author": {
+      "name": "dave caruso",
+      "email": "me@paperdave.net",
+      "date": "2023-10-17T04:22:43Z"
+    },
+    "message": "fix(runtime): make some things more stable (partial jsc debug build) (#5881)\n\n* make our debug assertions work\r\n\r\n* install bun-webkit-debug\r\n\r\n* more progress\r\n\r\n* ok\r\n\r\n* progress...\r\n\r\n* more debug build stuff\r\n\r\n* ok\r\n\r\n* a\r\n\r\n* asdfghjkl\r\n\r\n* fix(runtime): fix bad assertion failure in JSBufferList\r\n\r\n* ok\r\n\r\n* stuff\r\n\r\n* upgrade webkit\r\n\r\n* Update src/bun.js/bindings/JSDOMWrapperCache.h\r\n\r\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>\r\n\r\n* fix message for colin's changes\r\n\r\n* okay\r\n\r\n* fix cjs prototype\r\n\r\n* implement mainModule\r\n\r\n* i think this fixes it all\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>",
+    "url": "https://github.com/oven-sh/bun/commit/98d19fa6244384f7e17998b5420d724481ed3835"
+  },
+  {
+    "sha": "b1063edf3e76a2ef68d2ba3eff686932f742c77c",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2023-10-12T03:04:15Z"
+    },
+    "message": "Bump WebKit",
+    "url": "https://github.com/oven-sh/bun/commit/b1063edf3e76a2ef68d2ba3eff686932f742c77c"
+  },
+  {
+    "sha": "1bf28e0d77a8b2261befbdb708cefd03e0126960",
+    "author": {
+      "name": "dave caruso",
+      "email": "me@paperdave.net",
+      "date": "2023-10-11T09:27:07Z"
+    },
+    "message": "feat(install): automatically migrate package-lock.json to bun.lockb (#6352)\n\n* work so far\r\n\r\n* stuff\r\n\r\n* a\r\n\r\n* basics work\r\n\r\n* stuff\r\n\r\n* yoo\r\n\r\n* build lockfile\r\n\r\n* correct\r\n\r\n* f\r\n\r\n* a\r\n\r\n* install fixture havent tested\r\n\r\n* i made it worse\r\n\r\n* lol\r\n\r\n* be more reasonable\r\n\r\n* make the test easier to pass because bun install doesn't handle obscure lockfile edge cases :/\r\n\r\n* a\r\n\r\n* works now\r\n\r\n* ok\r\n\r\n* a\r\n\r\n* a\r\n\r\n* cool\r\n\r\n* nah\r\n\r\n* fix stuff\r\n\r\n* l\r\n\r\n* a\r\n\r\n* idfk\r\n\r\n* LAME\r\n\r\n* prettier errors\r\n\r\n* does this fix tests?\r\n\r\n* Add more safety checks to Integrity\r\n\r\n* Add another check\r\n\r\n* More careful lifetime handling\r\n\r\n* Fix linux debugger issue\r\n\r\n* a\r\n\r\n* tmp dir and snapshot test\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred SUmner <jarred@jarredsumner.com>",
+    "url": "https://github.com/oven-sh/bun/commit/1bf28e0d77a8b2261befbdb708cefd03e0126960"
+  },
+  {
+    "sha": "98e9e9b11289f766e45dc0eadcaf4b21115ff190",
+    "author": {
+      "name": "Dylan Conway",
+      "email": "35280289+dylan-conway@users.noreply.github.com",
+      "date": "2023-10-04T02:56:33Z"
+    },
+    "message": "Upgrade webkit (#6277)\n\n* `reportExtraMemoryAllocated` parameters changed\r\n\r\n* bump webkit\r\n\r\n* Update Dockerfile\r\n\r\n* format",
+    "url": "https://github.com/oven-sh/bun/commit/98e9e9b11289f766e45dc0eadcaf4b21115ff190"
+  },
+  {
+    "sha": "3f463786a5f03817949581aa3904d673a3cd087e",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-09-25T00:43:59Z"
+    },
+    "message": "Correctly fix #5888 (#6000)\n\n* Update our MultiArrayList\r\n\r\n* More consistent CI\r\n\r\n* Fix serialization issue\r\n\r\n* Update bun.lockb\r\n\r\n* Update bun.lockb\r\n\r\n* fixup\r\n\r\n* Fix `Bin{}`\r\n\r\n* `bun update` should not cache the manifest\r\n\r\n* Make bun install tests more consistent\r\n\r\n* This differs by platform evidently\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/3f463786a5f03817949581aa3904d673a3cd087e"
+  },
+  {
+    "sha": "d1e9b33cac65794632921045e7a851c58ef1863d",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-09-21T14:25:18Z"
+    },
+    "message": "On Linux, respect memory limit from cgroups (#5849)\n\n* Implement `process.constrainedMemory()`\r\n\r\n* Add a comment\r\n\r\n* Handle max\r\n\r\n* Missing header\r\n\r\n* We can use WTF::ramSize now\r\n\r\n* Update WebKit\r\n\r\n* Update ZigGlobalObject.cpp\r\n\r\n* WebKit\r\n\r\n* :scissors:\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/d1e9b33cac65794632921045e7a851c58ef1863d"
+  },
+  {
+    "sha": "5defdf3e28249b34772864a50273a390d345b2df",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-09-20T01:16:51Z"
+    },
+    "message": "Fixes #5769 (#5775)\n\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/5defdf3e28249b34772864a50273a390d345b2df"
+  },
+  {
+    "sha": "eb1dc7eede31b12726ae320263850fefaaf490f3",
+    "author": {
+      "name": "dave caruso",
+      "email": "me@paperdave.net",
+      "date": "2023-09-19T00:33:58Z"
+    },
+    "message": "fix(runtime/node): Allow `new Buffer.alloc()` + Upgrade WebKit (#5699)\n\n* make bufferconstructor a static hash table\r\n\r\n* chore: Upgrade WebKit to 4d995edbc44062b251be638818edcd88d7d14dd7\r\n\r\n* make it constructable now\r\n\r\n* fix comment\r\n\r\n* yippee\r\n\r\n* update CI workflows",
+    "url": "https://github.com/oven-sh/bun/commit/eb1dc7eede31b12726ae320263850fefaaf490f3"
+  },
+  {
+    "sha": "b651b16fdd959b349c09ec5d5056229dcd12c86b",
+    "author": {
+      "name": "Dylan Conway",
+      "email": "35280289+dylan-conway@users.noreply.github.com",
+      "date": "2023-09-16T07:44:07Z"
+    },
+    "message": "webkit upgrade (#5535)\n\n* update files\r\n\r\n* Update cold-jsc-start.cpp\r\n\r\n* bump webkit",
+    "url": "https://github.com/oven-sh/bun/commit/b651b16fdd959b349c09ec5d5056229dcd12c86b"
+  },
+  {
+    "sha": "29a6ece6c688150ae51865f38ab616ab4b3a90e2",
+    "author": {
+      "name": "Dylan Conway",
+      "email": "dylan.conway567@gmail.com",
+      "date": "2023-09-15T07:03:21Z"
+    },
+    "message": "next bun.lockb",
+    "url": "https://github.com/oven-sh/bun/commit/29a6ece6c688150ae51865f38ab616ab4b3a90e2"
+  },
+  {
+    "sha": "e923e2327077060e09e8ff0a9f21bb91047632e2",
+    "author": {
+      "name": "Dylan Conway",
+      "email": "dylan.conway567@gmail.com",
+      "date": "2023-09-14T21:38:46Z"
+    },
+    "message": "oops",
+    "url": "https://github.com/oven-sh/bun/commit/e923e2327077060e09e8ff0a9f21bb91047632e2"
+  },
+  {
+    "sha": "9aabe4eea1a9dc4f05ff96c370b877f942741820",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2023-08-25T08:43:25Z"
+    },
+    "message": "Upgrade peechy",
+    "url": "https://github.com/oven-sh/bun/commit/9aabe4eea1a9dc4f05ff96c370b877f942741820"
+  },
+  {
+    "sha": "1480889205d49cf7221a36608a8896b452967cea",
+    "author": {
+      "name": "Ashcon Partovi",
+      "email": "ashcon@partovi.net",
+      "date": "2023-08-25T05:53:34Z"
+    },
+    "message": "Improved support for `debug-adapter-protocol` (#4186)\n\n* Improve support for \\`debug-adapter-protocol\\`\r\n\r\n* More improvements, fix formatting in debug console\r\n\r\n* Fix attaching\r\n\r\n* Prepare for source maps\r\n\r\n* Start of source map support, breakpoints work\r\n\r\n* Source map support\r\n\r\n* add some package.jsons\r\n\r\n* wip\r\n\r\n* Update package.json\r\n\r\n* More fixes\r\n\r\n* Make source maps safer if exception occurs\r\n\r\n* Check bun version if it fails\r\n\r\n* Fix console.log formatting\r\n\r\n* Fix source maps partly\r\n\r\n* More source map fixes\r\n\r\n* Prepare for extension\r\n\r\n* watch mode with dap\r\n\r\n* Improve preview code\r\n\r\n* Prepare for extension 2\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/1480889205d49cf7221a36608a8896b452967cea"
+  },
+  {
+    "sha": "c60385716b7a7ac9f788cdf7dfe37250321e0670",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-08-23T21:05:05Z"
+    },
+    "message": "Bunch of streams fixes (#4251)\n\n* Update WebKit\r\n\r\n* Don't do async hooks things when async hooks are not enabled\r\n\r\n* Smarter scheduling of event loop tasks with the http server\r\n\r\n* less exciting approach\r\n\r\n* Bump WebKit\r\n\r\n* Another approach\r\n\r\n* Fix body-stream tests\r\n\r\n* Fixes #1886\r\n\r\n* Fix UAF in fetch body streaming\r\n\r\n* Missing from commit\r\n\r\n* Fix leak\r\n\r\n* Fix the other leak\r\n\r\n* Fix test\r\n\r\n* Fix crash\r\n\r\n* missing duperef\r\n\r\n* Make this code clearer\r\n\r\n* Ignore empty chunks\r\n\r\n* Fixes #3969\r\n\r\n* Delete flaky test\r\n\r\n* Update bun-linux-build.yml\r\n\r\n* Fix memory issue\r\n\r\n* fix result body, and .done status before the last callback, dont touch headers after sent once\r\n\r\n* refactor HTTPClientResult\r\n\r\n* less flasky corrupted test\r\n\r\n* oops\r\n\r\n* fix mutex invalid state\r\n\r\n* fix onProgressUpdate deinit/unlock\r\n\r\n* fix onProgressUpdate deinit/unlock\r\n\r\n* oops\r\n\r\n* remove verbose\r\n\r\n* fix posible null use\r\n\r\n* avoid http null\r\n\r\n* metadata can still be used onReject after toResponse\r\n\r\n* dont leak task.http\r\n\r\n* fix flask tests\r\n\r\n* less flask close tests\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\nCo-authored-by: cirospaciari <ciro.spaciari@gmail.com>",
+    "url": "https://github.com/oven-sh/bun/commit/c60385716b7a7ac9f788cdf7dfe37250321e0670"
+  },
+  {
+    "sha": "3de9ce5f30ad3a2a5615acb62a25cecdd2ddef33",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-08-21T02:34:33Z"
+    },
+    "message": "Implement `--inspect-brk` (#4222)\n\n* Implement `--inspect-brk`\r\n\r\n* Bump WebKit\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/3de9ce5f30ad3a2a5615acb62a25cecdd2ddef33"
+  },
+  {
+    "sha": "943a6642243cbc8a180ab7108279dd7110ab1eaf",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-08-19T02:58:03Z"
+    },
+    "message": "Remove most C API usages, add debugger pretty printers for `Headers`, `URLSearchParams`, `FormData`, `Worker`, `EventTarget` (#4187)\n\n* Add pretty printers for `Headers`, `URLSearchParams`, and `FormData`\r\n\r\n* [untested] Add way to code generate getInternalProperties\r\n\r\n* bump\r\n\r\n* Bump Webkit\r\n\r\n* Ref the event loop while loaded\r\n\r\n* wip\r\n\r\n* checkpoint\r\n\r\n* another checkpoint\r\n\r\n* The code has been written\r\n\r\n* Fixup exports\r\n\r\n* Fix all the errors\r\n\r\n* Fix bug\r\n\r\n* [console.log] Fix bug when printing non-reified types missing values\r\n\r\n* Fix loading hash table\r\n\r\n* fix plugin\r\n\r\n* Fix ref & unref\r\n\r\n* auto-unref\r\n\r\n* various fixes\r\n\r\n* Update bun.zig\r\n\r\n* Set toStringTag\r\n\r\n* Delete code for macro JSX\r\n\r\n* Delete code for `bun dev` HTTP JS\r\n\r\n* Move Bun.serve to C++ API\r\n\r\n* Delete JSC C API code\r\n\r\n* :scissors: :skull: code\r\n\r\n* Use JSC C++ for `confirm`, `Crypto`, `prompt`, `alert`\r\n\r\n* more dead code\r\n\r\n* Update exports.zig\r\n\r\n* Use JSC C++ API for FFI\r\n\r\n* Remove remaining usages\r\n\r\n* Remove remaining usages\r\n\r\n* Update ffi.ts\r\n\r\n* Update InternalModuleRegistryConstants.h\r\n\r\n* draw the rest of the owl\r\n\r\n* Update webcore.zig\r\n\r\n* bind it\r\n\r\n* Fix performance regression in crypto.randomUIUD()\r\n\r\n* Update js_parser.zig\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/943a6642243cbc8a180ab7108279dd7110ab1eaf"
+  },
+  {
+    "sha": "0486cea35a80be97ba43f41a29ce55f0d3a8eb01",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-08-17T02:40:20Z"
+    },
+    "message": "`bun --inspect` (#4158)\n\n* Let the debugger to pause/resume the event loop\r\n\r\n* Add initial support for Debug Adapter Protocol\r\n\r\n* Add progress\r\n\r\n* Update Worker.cpp\r\n\r\n* Fix require(\"console\") #3820 (#4073)\r\n\r\n* Fix #3820\r\n\r\n* Add Module (#4074)\r\n\r\n* Set exports to {} in user-constructed CommonJSModuleRecords (#4076)\r\n\r\n* feat(bun/test): Implement \"toSatisfy\" & \"toIncludeRepeated\" (fwup) (#3651)\r\n\r\n* Fix merge issues\r\n\r\n* oop\r\n\r\n* make codegen\r\n\r\n* Fix build issues\r\n\r\n---------\r\n\r\nCo-authored-by: dave caruso <me@paperdave.net>\r\n\r\n* worker tests (#4058)\r\n\r\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>\r\n\r\n* feat(bun:test) add support for test.each() and describe.each() (#4047)\r\n\r\n* rename callback to func\r\n\r\n* update testscope to handle function arguments\r\n\r\n* works\r\n\r\n* big cleanup\r\n\r\n* works in debug, not release\r\n\r\n* fix memory issue & update tests\r\n\r\n* catch & str test\r\n\r\n* write types for each() & switch tests to ts\r\n\r\n* rm & typo\r\n\r\n* move some code around & support describe\r\n\r\n* review changes\r\n\r\n* Fix one of the astro segfaults, also fix bun init version (#4079)\r\n\r\n* 4->16\r\n\r\n* add assertions\r\n\r\n* fix version stuff\r\n\r\n* Remove unintentional logs from #4043\r\n\r\n* Run prettier\r\n\r\n* Update main-worker-file.js\r\n\r\n* Update SIMDUTF (#4078)\r\n\r\n* Fix constructing buffer from a UTF16 string with the Latin1 encoding. (#4086)\r\n\r\nClose: #3914\r\n\r\n* Add support for `bun --revision` (#4027)\r\n\r\nCo-authored-by: Yash Sharma <yashsharma@Yashs-MacBook-Air.local>\r\n\r\n* Updates\r\n\r\n* Update __global.zig\r\n\r\n* remove non-node node-fallbacks (#4082)\r\n\r\n* remove non-node node-fallbacks.\r\n\r\n* organize the imports\r\n\r\n* Fix test\r\n\r\n* Sync bun-polyfills branch (#4081)\r\n\r\n* bun-polyfills: initial impl. & baseline refactor\r\n\r\n* move @types/ws dep from root to /test/\r\n\r\n* bun-types: remove ReadableStream.forEach method\r\n(this does not exist, probably added by mistake)\r\n\r\n* bun-polyfills: remove extraneous stream utils\r\n\r\n* bun-polyfills: add types syncing file\r\n\r\n* bun-polyfills: re-arrange global polyfills\r\n\r\n* bun-polyfills: fix FileBlob streams types again\r\n\r\n* bun-polyfills: sync all of @types/node\r\n\r\n* bun-polyfills: typeguard all current polyfills\r\n\r\n* bun-polyfills: fix import paths\r\n\r\n* bun-polyfills: switch to wasm impl. of farmhash\r\n\r\n* bun-polyfills: support default import of bun obj\r\n\r\n* bun-polyfills: transpiler placeholder file\r\n\r\n* bun-polyfills: loaderless import.meta polyfill\r\n\r\n* bun-polyfills: refactor import.meta polyfill\r\n\r\n* bun-polyfills: repl entrypoint & todo list index\r\n\r\n* bun-types: Add null to return type of Bun.which\r\n\r\n* bun-types: match Bun.sha with Bun.hash.SHA512_256\r\n\r\n* bun-polyfills: new \"repl\" package.json script\r\n\r\n* bun-polyfills: full refactor of toplevel hashes\r\n\r\n* bun-polyfills: these are fixed\r\n\r\n* bun-types: NODE_ENV is optional\r\n\r\n* bun-polyfills: fix Bun.env types\r\n\r\n* bun-types+polyfills: fix HeapSnapshot.version type\r\n\r\n* bun-polyfills: fix some web streams type conflicts\r\n\r\n* bun-polyfills: update internal FileBlob.slice\r\n\r\n* bun-polyfills: fix subproc stdin conversions\r\n\r\n* bun-polyfills: better internal fileblob types\r\n\r\n* bun-polyfills: try to sync global performance type\r\n\r\n* bun-polyfills: working zig wasm polyfills setup\r\n\r\n* bun-polyfills: update scripts\r\n\r\n* bun-polyfills: fix wasm file location resolution\r\n\r\n* bun-polyfills: goodbye farmhash (replaced by zig)\r\n\r\n* bun-polyfills: move all Bun.hash polyfills to zig\r\n\r\n* bun-polyfills: reimpl. seeding of seeded hashes\r\n\r\n* bun-polyfills: impl. undocumented murmur32v2\r\n\r\n* bun-polyfills: switch zighash from jsdoc to .d.ts\r\n\r\n* bun-types: partial fix of Hash types\r\n\r\n* bun-polyfills: documented Hash.murmur32v2\r\n\r\n* bun-polyfills: misc updates\r\n\r\n* bun-polyfills: enable sourcemaps\r\n\r\n* bun-polyfills: handle empty inputs to hash funcs\r\n\r\n* bun-types: narrow down hash func types\r\n\r\n* bun-polyfills: remove unnecessary bigint casts\r\n\r\n* bun-polyfills: impl. Bun.isMainThread\r\n\r\n* bun-polyfills: impl. Bun.sleep and fix sleepSync\r\n\r\n* bun-polyfills: impl. indexOfLine\r\n\r\n* bun-polyfills: impl. Bun.peek.status\r\n\r\n* bun-types: fix hashing test\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>\r\n\r\n* Add remix guide\r\n\r\n* Fix title\r\n\r\n* add util.formatWithOptions (#4090)\r\n\r\n* Add formatWithOptions\r\n\r\n* tests and tweaks\r\n\r\n* adjust\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>\r\n\r\n* bun test: format description of test.each (#4092)\r\n\r\n* bun test: format description\r\n\r\n* add tests for tests\r\n\r\n* only\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>\r\n\r\n* Fixes #4062 (#4106)\r\n\r\n* Fixes #4062\r\n\r\n* Update encoding.zig\r\n\r\n* Use faster C++ impl\r\n\r\n* Update wtf-bindings.cpp\r\n\r\n* undo\r\n\r\n* Fixup\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\n\r\n* zig fmt\r\n\r\n* Update remix guide\r\n\r\n* fs.zig: create temp files with 0o700, not 0o007 (#4107)\r\n\r\n* Handle thundering herd of setInterval (#4109)\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\n\r\n* Fix memory leak in base64url (#4111)\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\n\r\n* run files without extensions (#4113)\r\n\r\n* run script without extension\r\n\r\n* process stdio write fix\r\n\r\n* don't check for trailing slash, var stream\r\n\r\n* More lazily initialize these static strings\r\n\r\n* Remove assertion\r\n\r\n* wip\r\n\r\n* Add --inspect flag\r\n\r\n* Deprecate loading `node_modules.bun`\r\n\r\n* realpath\r\n\r\n* regenerate schema\r\n\r\n* More\r\n\r\n* more\r\n\r\n* Update cli.zig\r\n\r\n* Debugger JS loads\r\n\r\n* have fun\r\n\r\n* Most of the code\r\n\r\n* Its starting to work.\r\n\r\n* more progress\r\n\r\n* win some, lose some\r\n\r\n* Update dap.ts\r\n\r\n* Async Context Tracking\r\n\r\n* untested websocket\r\n\r\n* Emit Console messages\r\n\r\n* Error handling\r\n\r\n* errors\r\n\r\n* Make profiling work better\r\n\r\n* [clap] CLI arguments with optional values ignore positional params\r\n\r\nIn `bun --inspect foo.js`, `foo.js` should not be the value of `--inspect`. It is a positional parameter. `--inspect=foo`\r\n\r\n* Support multiple simultaneous clients, automatically unpause on disconnect\r\n\r\n* regenerate\r\n\r\n* Update Makefile\r\n\r\n* Update WebKit\r\n\r\n* Update cli.zig\r\n\r\n* Update InternalModuleRegistry+createInternalModuleById.h\r\n\r\n* BaseURL\r\n\r\n* Update WebKit\r\n\r\n* Add web-inspector-bun\r\n\r\n* Update build.ts\r\n\r\n* formatting, mostly\r\n\r\n* Update debugger.ts\r\n\r\n* Update InternalModuleRegistryConstants.h\r\n\r\n* wrap\r\n\r\n* Update test\r\n\r\n* Update test\r\n\r\n---------\r\n\r\nCo-authored-by: Ashcon Partovi <ashcon@partovi.net>\r\nCo-authored-by: Dylan Conway <dylan.conway567@gmail.com>\r\nCo-authored-by: dave caruso <me@paperdave.net>\r\nCo-authored-by: Tiramify (A.K. Daniel) <94789999+TiranexDev@users.noreply.github.com>\r\nCo-authored-by: Jacques <25390037+jecquas@users.noreply.github.com>\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\nCo-authored-by: Ai Hoshino <ambiguous404@gmail.com>\r\nCo-authored-by: Yash Sharma <yashosharma@gmail.com>\r\nCo-authored-by: Yash Sharma <yashsharma@Yashs-MacBook-Air.local>\r\nCo-authored-by: Colin McDonnell <colinmcd94@gmail.com>\r\nCo-authored-by: jhmaster <32803471+jhmaster2000@users.noreply.github.com>\r\nCo-authored-by: Adhityaa Chandrasekar <github@adtac.in>\r\nCo-authored-by: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/0486cea35a80be97ba43f41a29ce55f0d3a8eb01"
+  },
+  {
+    "sha": "e25833d00946fdd400abd3c25e8aa1c3e3d2e355",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-08-10T20:32:04Z"
+    },
+    "message": "Fixes #4062 (#4106)\n\n* Fixes #4062\r\n\r\n* Update encoding.zig\r\n\r\n* Use faster C++ impl\r\n\r\n* Update wtf-bindings.cpp\r\n\r\n* undo\r\n\r\n* Fixup\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/e25833d00946fdd400abd3c25e8aa1c3e3d2e355"
+  },
+  {
+    "sha": "40befd8770e90ef2cb74d65bb1e2ff9911e2a2f7",
+    "author": {
+      "name": "jhmaster",
+      "email": "32803471+jhmaster2000@users.noreply.github.com",
+      "date": "2023-08-10T19:17:39Z"
+    },
+    "message": "Sync bun-polyfills branch (#4081)\n\n* bun-polyfills: initial impl. & baseline refactor\r\n\r\n* move @types/ws dep from root to /test/\r\n\r\n* bun-types: remove ReadableStream.forEach method\r\n(this does not exist, probably added by mistake)\r\n\r\n* bun-polyfills: remove extraneous stream utils\r\n\r\n* bun-polyfills: add types syncing file\r\n\r\n* bun-polyfills: re-arrange global polyfills\r\n\r\n* bun-polyfills: fix FileBlob streams types again\r\n\r\n* bun-polyfills: sync all of @types/node\r\n\r\n* bun-polyfills: typeguard all current polyfills\r\n\r\n* bun-polyfills: fix import paths\r\n\r\n* bun-polyfills: switch to wasm impl. of farmhash\r\n\r\n* bun-polyfills: support default import of bun obj\r\n\r\n* bun-polyfills: transpiler placeholder file\r\n\r\n* bun-polyfills: loaderless import.meta polyfill\r\n\r\n* bun-polyfills: refactor import.meta polyfill\r\n\r\n* bun-polyfills: repl entrypoint & todo list index\r\n\r\n* bun-types: Add null to return type of Bun.which\r\n\r\n* bun-types: match Bun.sha with Bun.hash.SHA512_256\r\n\r\n* bun-polyfills: new \"repl\" package.json script\r\n\r\n* bun-polyfills: full refactor of toplevel hashes\r\n\r\n* bun-polyfills: these are fixed\r\n\r\n* bun-types: NODE_ENV is optional\r\n\r\n* bun-polyfills: fix Bun.env types\r\n\r\n* bun-types+polyfills: fix HeapSnapshot.version type\r\n\r\n* bun-polyfills: fix some web streams type conflicts\r\n\r\n* bun-polyfills: update internal FileBlob.slice\r\n\r\n* bun-polyfills: fix subproc stdin conversions\r\n\r\n* bun-polyfills: better internal fileblob types\r\n\r\n* bun-polyfills: try to sync global performance type\r\n\r\n* bun-polyfills: working zig wasm polyfills setup\r\n\r\n* bun-polyfills: update scripts\r\n\r\n* bun-polyfills: fix wasm file location resolution\r\n\r\n* bun-polyfills: goodbye farmhash (replaced by zig)\r\n\r\n* bun-polyfills: move all Bun.hash polyfills to zig\r\n\r\n* bun-polyfills: reimpl. seeding of seeded hashes\r\n\r\n* bun-polyfills: impl. undocumented murmur32v2\r\n\r\n* bun-polyfills: switch zighash from jsdoc to .d.ts\r\n\r\n* bun-types: partial fix of Hash types\r\n\r\n* bun-polyfills: documented Hash.murmur32v2\r\n\r\n* bun-polyfills: misc updates\r\n\r\n* bun-polyfills: enable sourcemaps\r\n\r\n* bun-polyfills: handle empty inputs to hash funcs\r\n\r\n* bun-types: narrow down hash func types\r\n\r\n* bun-polyfills: remove unnecessary bigint casts\r\n\r\n* bun-polyfills: impl. Bun.isMainThread\r\n\r\n* bun-polyfills: impl. Bun.sleep and fix sleepSync\r\n\r\n* bun-polyfills: impl. indexOfLine\r\n\r\n* bun-polyfills: impl. Bun.peek.status\r\n\r\n* bun-types: fix hashing test\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>",
+    "url": "https://github.com/oven-sh/bun/commit/40befd8770e90ef2cb74d65bb1e2ff9911e2a2f7"
+  },
+  {
+    "sha": "14624454196370e08309d4f0b0463b494e4df9ca",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-08-06T13:30:23Z"
+    },
+    "message": "Code coverage for `bun test` (#3975)\n\n* WIP code coverage initial commit\r\n\r\n* almost works\r\n\r\n* one approach\r\n\r\n* Code Coverage\r\n\r\n* Update WebKit\r\n\r\n* it works but is not yet accurate\r\n\r\n* skip double ascii check\r\n\r\n* wrapper\r\n\r\n* it works but i'm not sure what to do about blocks\r\n\r\n* hide blocks for now\r\n\r\n* Update ZigSourceProvider.cpp\r\n\r\n* Create coverage.md\r\n\r\n* Update nav.ts\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/14624454196370e08309d4f0b0463b494e4df9ca"
+  },
+  {
+    "sha": "63d265780f122f8390a71b3a15cea4c71b540b8f",
+    "author": {
+      "name": "Colin McDonnell",
+      "email": "colinmcd94@gmail.com",
+      "date": "2023-08-04T19:56:34Z"
+    },
+    "message": "Fix types (#3963)\n\n* Fix types\r\n\r\n* Add ws module\r\n\r\n* Add *.toml module declaration\r\n\r\n* Clean up",
+    "url": "https://github.com/oven-sh/bun/commit/63d265780f122f8390a71b3a15cea4c71b540b8f"
+  },
+  {
+    "sha": "08cf0d562ae81b4fb30aa5e599ca76056582ac5f",
+    "author": {
+      "name": "Ashcon Partovi",
+      "email": "ashcon@partovi.net",
+      "date": "2023-08-03T22:31:55Z"
+    },
+    "message": "Bunch of fixes (#3516)\n\n* Fix #3497\r\n\r\n* Fix #3497\r\n\r\n* Run prettier\r\n\r\n* Fix package.json\r\n\r\n* remove this too\r\n\r\n* yeah\r\n\r\n* Fix missing tests\r\n\r\n* Use native for utf-8-validate\r\n\r\n* Add module ID names to builtins\r\n\r\n* Defer evaluation of ESM & CJS modules until link time\r\n\r\n* Use builtin name for exports in plugins\r\n\r\n* Add module IDs to builtins\r\n\r\n* Update JSC build with new flag\r\n\r\n* WebKit upgrade fixes\r\n\r\n* Update WebKit\r\n\r\n* prettier\r\n\r\n* Upgrade WebKit\r\n\r\n* bump\r\n\r\n* Update once again\r\n\r\n* Add visitAdditionalChildren, remove .fill() usage\r\n\r\n* Update process.test.js\r\n\r\n* Update fs.test.ts\r\n\r\n---------\r\n\r\nCo-authored-by: dave caruso <me@paperdave.net>\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/08cf0d562ae81b4fb30aa5e599ca76056582ac5f"
+  },
+  {
+    "sha": "90991da908b0725802db63d9fd8d5b4de1eb21a5",
+    "author": {
+      "name": "Colin McDonnell",
+      "email": "colinmcd94@gmail.com",
+      "date": "2023-07-31T20:57:17Z"
+    },
+    "message": "Update titles, add Workspaces guide",
+    "url": "https://github.com/oven-sh/bun/commit/90991da908b0725802db63d9fd8d5b4de1eb21a5"
+  },
+  {
+    "sha": "967ccb5d50b3ce163bb98fd125c56b039743de90",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-07-24T05:37:48Z"
+    },
+    "message": "Upgrade WebKit (#3777)\n\n* Upgrade to latest WebKit\r\n\r\n* Upgrade WebKit\r\n\r\n* hm\r\n\r\n* Fix failing tests\r\n\r\n* Delete utf8-encoding-fixture.bin.cmp\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/967ccb5d50b3ce163bb98fd125c56b039743de90"
+  },
+  {
+    "sha": "c6a3467625fede0fe9901ab53b0aabd651866b64",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-07-22T11:31:58Z"
+    },
+    "message": "Unified event loop (#3741)\n\n* Unified event loop\r\n\r\n* Update WebKit, add test for es-module-lexer\r\n\r\n* Update README.md\r\n\r\n* Use async wasm\r\n\r\n* Explicitly set whether concurrenttask should be deinit'd\r\n\r\n* Update package.json\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/c6a3467625fede0fe9901ab53b0aabd651866b64"
+  },
+  {
+    "sha": "9b6dc49575df5fb953918c284505f24741138130",
+    "author": {
+      "name": "dave caruso",
+      "email": "me@paperdave.net",
+      "date": "2023-07-20T00:20:00Z"
+    },
+    "message": "Implement `AsyncLocalStorage` (#3089)\n\n* work to get async local storage working.\r\n\r\n* a\r\n\r\n* a\r\n\r\n* everything but queueMicrotask\r\n\r\n* sdfghj\r\n\r\n* .\r\n\r\n* finish\r\n\r\n* tests\r\n\r\n* test\r\n\r\n* ok\r\n\r\n* done\r\n\r\n* im so stupid\r\n\r\n* Upgrade WebKit\r\n\r\n* refactor\r\n\r\n* refactor\r\n\r\n* changes requested\r\n\r\n* oops\r\n\r\n* cool\r\n\r\n* fix runInAsyncScope",
+    "url": "https://github.com/oven-sh/bun/commit/9b6dc49575df5fb953918c284505f24741138130"
+  },
+  {
+    "sha": "9eb8eea2a81be6a20abb62544dc54a35ff4173a5",
+    "author": {
+      "name": "Ashcon Partovi",
+      "email": "ashcon@partovi.net",
+      "date": "2023-07-13T16:39:43Z"
+    },
+    "message": "Implement `ping()`, `pong()`, `terminate()` for WebSocket client and server (#3257)",
+    "url": "https://github.com/oven-sh/bun/commit/9eb8eea2a81be6a20abb62544dc54a35ff4173a5"
+  },
+  {
+    "sha": "a02a79e26c49358e8bde3988709f8b79464711aa",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2023-07-13T03:48:52Z"
+    },
+    "message": "Bump WebKit",
+    "url": "https://github.com/oven-sh/bun/commit/a02a79e26c49358e8bde3988709f8b79464711aa"
+  },
+  {
+    "sha": "aa38e51afb73dab3071addc07f82fd96153ff450",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-07-03T05:09:50Z"
+    },
+    "message": "Support mocking `new Date()` & `Date.now()` in bun:test (#3501)\n\n* Support changing the time\r\n\r\n* Bump WebKit\r\n\r\n* Update bun.lockb\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/aa38e51afb73dab3071addc07f82fd96153ff450"
+  },
+  {
+    "sha": "3d5573921e732c4a63794e5d25f5953d0a40ff0e",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-06-28T20:53:09Z"
+    },
+    "message": "Error.prototype.stack gets sourcemapped stacktraces and introduce Error.appendStackTrace (#3441)\n\n* Fix potential crash when reading sourcemapped stack traces\r\n\r\n* Format & sourcemap Error.prototype.stack\r\n\r\n* prevent double sourcemapping\r\n\r\n* Introduce Error.appendStackTrace\r\n\r\n* Fix source url\r\n\r\n* hide private stack traces in non-debug builds\r\n\r\n* fixes #3443\r\n\r\n* Bump WebKit\r\n\r\n* Fix test failure in vm.test\r\n\r\n* Support new() & add test\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/3d5573921e732c4a63794e5d25f5953d0a40ff0e"
+  },
+  {
+    "sha": "ff635551436123022ba3980b39580d53973c80a2",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-06-24T13:02:16Z"
+    },
+    "message": "Rewrite Bun's runtime CommonJS loader (#3379)\n\n* wip changes for CommonJS\r\n\r\n* this rewrite is almost complete\r\n\r\n* even more code\r\n\r\n* wip\r\n\r\n* Remove usages of `import.meta.require` from builtins\r\n\r\n* Remove usages of require\r\n\r\n* Regenerate\r\n\r\n* :scissors: builtin rewrite commonjs in printer\r\n\r\n* Use lazy custom getters for import.meta\r\n\r\n* fixups\r\n\r\n* Remove depd\r\n\r\n* ugh\r\n\r\n* still crashing\r\n\r\n* fixup undici\r\n\r\n* comment out import.meta.require.resolve temporarily\r\n\r\nnot a real solution but it stops the crashes\r\n\r\n* Redo import.meta.primordials\r\n\r\n* Builtins now have a `builtin://` protocol in source origin\r\n\r\n* Seems to work?\r\n\r\n* Finsih getting rid of primordials\r\n\r\n* switcharoo\r\n\r\n* No more function\r\n\r\n* just one more bug\r\n\r\n* Update launch.json\r\n\r\n* Implement `require.main`\r\n\r\n* :scissors:\r\n\r\n* Bump WebKit\r\n\r\n* Fixup import cycles\r\n\r\n* Fixup improt cycles\r\n\r\n* export more things\r\n\r\n* Implement `createCommonJSModule` builtin\r\n\r\n* More exports\r\n\r\n* regenerate\r\n\r\n* i broke some stuff\r\n\r\n* some of these tests work now\r\n\r\n* We lost the encoding\r\n\r\n* Sort of fix zlib\r\n\r\n* Sort of fix util\r\n\r\n* Update events.js\r\n\r\n* bump\r\n\r\n* bump\r\n\r\n* bump\r\n\r\n* Fix missing export in fs\r\n\r\n* fix some bugs with builtin esm modules (stream, worker_threads, events). its not perfect yet.\r\n\r\n* fix some other internal module bugs\r\n\r\n* oops\r\n\r\n* fix some extra require default stuff\r\n\r\n* uncomment this file but it crsahes on my machine\r\n\r\n* tidy code here\r\n\r\n* fixup tls exports\r\n\r\n* make simdutf happier\r\n\r\n* Add hasPrefix binding\r\n\r\n* Add test for `require.main`\r\n\r\n* Fix CommonJS evaluation order race condition\r\n\r\n* Make node:http load faster\r\n\r\n* Add missing exports to tls.js\r\n\r\n* Use the getter\r\n\r\n* Regenerate builtins\r\n\r\n* Fix assertion failure in Bun.write()\r\n\r\n* revamp dotEnv parser (#3347)\r\n\r\n- fixes `strings.indexOfAny()`\r\n- fixes OOB array access\r\n\r\nfixes #411\r\nfixes #2823\r\nfixes #3042\r\n\r\n* fix tests for `expect()` (#3384)\r\n\r\n- extend test job time-out for `darwin-aarch64`\r\n\r\n* `expect().resolves` and `expect().rejects` (#3318)\r\n\r\n* Move expect and snapshots to their own files\r\n\r\n* expect().resolves and expect().rejects\r\n\r\n* Fix promise being added to unhandled rejection list\r\n\r\n* Handle timeouts in expect(<promise>)\r\n\r\n* wip merge\r\n\r\n* Fix merge issue\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\n\r\n* fixup min/memcopy (#3388)\r\n\r\n* Fix crash in builtins\r\n\r\n* Don't attempt to evaluate modules with no source code\r\n\r\n* Update WebCoreJSBuiltins.cpp\r\n\r\n* Update WebCoreJSBuiltins.cpp\r\n\r\n* Update WebCoreJSBuiltins.cpp\r\n\r\n* Fix crash\r\n\r\n* cleanup\r\n\r\n* Fix test\r\n\r\ncc @paperdave\r\n\r\n* Fixup Undici\r\n\r\n* Fix issue in node:http\r\n\r\n* Create util-deprecate.mjs\r\n\r\n* Fix several bugs\r\n\r\n* Use the identifier\r\n\r\n* Support error.code in `util.deprecate`\r\n\r\n* make the CJs loader slightly more resilient\r\n\r\n* Update WebCoreJSBuiltins.cpp\r\n\r\n* Fix macros\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\nCo-authored-by: dave caruso <me@paperdave.net>\r\nCo-authored-by: Alex Lam S.L <alexlamsl@gmail.com>\r\nCo-authored-by: Ashcon Partovi <ashcon@partovi.net>\r\nCo-authored-by: Ciro Spaciari <ciro.spaciari@gmail.com>",
+    "url": "https://github.com/oven-sh/bun/commit/ff635551436123022ba3980b39580d53973c80a2"
+  },
+  {
+    "sha": "43865a3e29db8ebd7c753bc692f6f8ce83620d74",
+    "author": {
+      "name": "dave caruso",
+      "email": "me@paperdave.net",
+      "date": "2023-06-21T19:59:56Z"
+    },
+    "message": "finish implementing JSMockFunction prototype + lots of expect test organizing (#3304)\n\n* mock tests\r\n\r\n* fix mistake\r\n\r\n* stuff\r\n\r\n* partially implement mock return promises\r\n\r\n* lot of housecleaning on jest tests\r\n\r\n* document / rename internalFields in jsmockfunction\r\n\r\n* finish implementing JSMockFunction prototype\r\n\r\n* cleanup\r\n\r\n* more progress\r\n\r\n* everything is done\r\n\r\n* remove demo.test.js\r\n\r\n* finish rebase\r\n\r\n* requested changes\r\n\r\n* fix compile error",
+    "url": "https://github.com/oven-sh/bun/commit/43865a3e29db8ebd7c753bc692f6f8ce83620d74"
+  },
+  {
+    "sha": "def8824bc283ecea4932fb173ba4cd8f191345bc",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-05-21T07:20:04Z"
+    },
+    "message": "Upgrade WebKit (#2980)\n\n* [internal] Show the file path to the calling function from JS\r\n\r\n* [internal] Make `JSC.NewFunction` more type safe\r\n\r\n* Upgrade WebKit\r\n\r\n* Finish\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/def8824bc283ecea4932fb173ba4cd8f191345bc"
+  },
+  {
+    "sha": "bff465a2a2d10e30c695398884514abed3532bc8",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2023-05-17T18:34:37Z"
+    },
+    "message": "Finish bumping",
+    "url": "https://github.com/oven-sh/bun/commit/bff465a2a2d10e30c695398884514abed3532bc8"
+  },
+  {
+    "sha": "aeb3bb949b0052d0573bef507f1b66bbcf4f3dc0",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2023-04-13T11:11:12Z"
+    },
+    "message": "Upgrade WebKit (#2643)\n\n* Missing export\r\n\r\n* Regenerate builtins\r\n\r\n* Fix crash in require()\r\n\r\n* Various breaking JSC changes\r\n\r\n* hopefully speed up C++ compilation a little\r\n\r\n* Skip failing test fo rnow\r\n\r\n* Update WebKit\r\n\r\n* Add a comment\r\n\r\n* Fix error in postinstall\r\n\r\n* Update WebKit\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/aeb3bb949b0052d0573bef507f1b66bbcf4f3dc0"
+  },
+  {
+    "sha": "461ae27d314561038a41982c77cb804ef7faffd7",
+    "author": {
+      "name": "dave caruso",
+      "email": "me@paperdave.net",
+      "date": "2023-04-08T09:23:11Z"
+    },
+    "message": "Rewrite Developer Docs, Improve DX for new users, moving away from Devcontainer (#2588)\n\n* new docs starting point. missing alot of information\r\n\r\n* very experimental idea: make setup\r\n\r\n* run on ubuntu 20\r\n\r\n* builds on ubuntu 20 (wsl) now\r\n\r\n* add release instructions\r\n\r\n* add valgrind note from jarred/new-bundler branch, just in case it gets lost when rebasing\r\n\r\n* changes requested",
+    "url": "https://github.com/oven-sh/bun/commit/461ae27d314561038a41982c77cb804ef7faffd7"
+  },
+  {
+    "sha": "a5f92224b586289fc72f0abdb68b08eef9f017db",
+    "author": {
+      "name": "Colin McDonnell",
+      "email": "colinmcd94@gmail.com",
+      "date": "2023-03-22T22:01:01Z"
+    },
+    "message": "Fix types (#2453)\n\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* Improve typechecking in type files\r\n\r\n* Fix typechecking\r\n\r\n* Update\r\n\r\n* Update submodule\r\n\r\n* CI for typechecking\r\n\r\n* Add ci\r\n\r\n* Update commands\r\n\r\n* Format after build\r\n\r\n* Dont use bunx\r\n\r\n* Rename job\r\n\r\n* Use nodemodules prettier\r\n\r\n* Update workflow\r\n\r\n* Use symlink\r\n\r\n* Debug\r\n\r\n* Debug\r\n\r\n* Clean up and rename jobs",
+    "url": "https://github.com/oven-sh/bun/commit/a5f92224b586289fc72f0abdb68b08eef9f017db"
+  },
+  {
+    "sha": "8f67cf75ee7a4c4c916e9c91c192194caeec53bd",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2023-02-25T12:28:04Z"
+    },
+    "message": "Bump WebKit",
+    "url": "https://github.com/oven-sh/bun/commit/8f67cf75ee7a4c4c916e9c91c192194caeec53bd"
+  },
+  {
+    "sha": "7285b9cf75bc3c243db858371505ece141b6ae3d",
+    "author": {
+      "name": "Alex Lam S.L",
+      "email": "alexlamsl@gmail.com",
+      "date": "2023-02-18T06:07:02Z"
+    },
+    "message": "update `bun.lockb`s (#2101)",
+    "url": "https://github.com/oven-sh/bun/commit/7285b9cf75bc3c243db858371505ece141b6ae3d"
+  },
+  {
+    "sha": "941c6ed8146bbcaba882918ad3265a366296dab5",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2023-02-10T05:28:50Z"
+    },
+    "message": "Upgrade WebKit",
+    "url": "https://github.com/oven-sh/bun/commit/941c6ed8146bbcaba882918ad3265a366296dab5"
+  },
+  {
+    "sha": "348e72356b1d2116ef1527f364495a41ed571d74",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2023-01-29T09:26:16Z"
+    },
+    "message": "Bump WebKit",
+    "url": "https://github.com/oven-sh/bun/commit/348e72356b1d2116ef1527f364495a41ed571d74"
+  },
+  {
+    "sha": "efc024cfc4e6e6216325ea796063329ea5892067",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2023-01-24T00:51:48Z"
+    },
+    "message": "clean up deps",
+    "url": "https://github.com/oven-sh/bun/commit/efc024cfc4e6e6216325ea796063329ea5892067"
+  },
+  {
+    "sha": "b3533fb3a88b33da50e58ad9594a0559af575035",
+    "author": {
+      "name": "Ciro Spaciari",
+      "email": "ciro.spaciari@gmail.com",
+      "date": "2023-01-24T00:48:52Z"
+    },
+    "message": "fix(Buffer) Fix arguments in buffer.write, fix size returned from buffer.write for utf16, fix size calc for base64, fix calc for hex byte size (#1881)\n\n* fix buffer write when more than 2 args are passed\r\n\r\n* fix encoding parameter\r\n\r\n* better buffer write tests\r\n\r\n* fix ucs2/utf8 len return\r\n\r\n* fix base64 size in Buffer write\r\n\r\n* fix hex encoding size\r\n\r\n* actual fix base64\r\n\r\n* actual fix base64\r\n\r\n* fix segfault\r\n\r\n* add fill parameter in Buffer.alloc\r\n\r\n* use createUnitialized when alloc have fill parameter, use RETURN_IF_EXCEPTION when static casting\r\n\r\n* fix utf16le, ucs2 copying in Buffer write",
+    "url": "https://github.com/oven-sh/bun/commit/b3533fb3a88b33da50e58ad9594a0559af575035"
+  },
+  {
+    "sha": "58cbd6b211410593a2c3e4ac98fada50789433cd",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2023-01-19T00:51:06Z"
+    },
+    "message": "Regenerate lockb",
+    "url": "https://github.com/oven-sh/bun/commit/58cbd6b211410593a2c3e4ac98fada50789433cd"
+  },
+  {
+    "sha": "9fd3b5587b9c7f045eaf8828ed5358206a1802ee",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2023-01-02T19:29:22Z"
+    },
+    "message": "Auto-install and link webkit",
+    "url": "https://github.com/oven-sh/bun/commit/9fd3b5587b9c7f045eaf8828ed5358206a1802ee"
+  },
+  {
+    "sha": "c0dd2841362b67fdb5ede262b19688004a4eb9a4",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-12-28T08:51:22Z"
+    },
+    "message": "Upgrade to latest Zig (#1610)\n\n* @min and @max\r\n\r\n* builtins and some trivial ones\r\n\r\n* Most of them\r\n\r\n* more\r\n\r\n* more!\r\n\r\n* More Progress\r\n\r\n* wip\r\n\r\n* Update tagged_pointer.zig\r\n\r\n* Update http_client_async.zig\r\n\r\n* Most of the iterable dir changes\r\n\r\n* alright\r\n\r\n* Remove usages of deprecated formatters\r\n\r\n* :camera:\r\n\r\n* fmt\r\n\r\n* Update shimmer.zig\r\n\r\n* wip\r\n\r\n* wip\r\n\r\n* wip\r\n\r\n* progress\r\n\r\n* more\r\n\r\n* Latest\r\n\r\n* stuck on error\r\n\r\n* latest\r\n\r\n* workaround stage2\r\n\r\n* wip\r\n\r\n* Update string_immutable.zig\r\n\r\n* wip\r\n\r\n* Migrate `Dirent` and `require(\"fs')` to use JSC<>Zig bindings\r\n\r\n* Fix build errors\r\n\r\n* Fixup most of the test failures\r\n\r\n* Fix `make headers`\r\n\r\n* Fix \"outside package path\" error\r\n\r\n* Fixup aligned alloc\r\n\r\n* Add missing file\r\n\r\n* linux\r\n\r\n* More linux fixes\r\n\r\n* use latest peechy\r\n\r\n* Fix transpiler test failure\r\n\r\n* Forgot about these\r\n\r\n* Fixup test failure\r\n\r\n* Update node-timers.test.ts\r\n\r\n* [node:htt] Fix `undefined is not an object` error\r\n\r\nFixes https://github.com/oven-sh/bun/issues/1618\r\n\r\n* Update http.exports.js\r\n\r\n* Make this test less flaky\r\n\r\n* fix hashes\r\n\r\n* Fix hex formatting and zls issues\r\n\r\n* Download zig version\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update uws\r\n\r\n* Update Dockerfile\r\n\r\n* Set llvm version\r\n\r\n* Update README.md\r\n\r\n* Update uws\r\n\r\n* Update Dockerfile\r\n\r\n* Update io_linux.zig\r\n\r\n* Update bun.zig\r\n\r\n* Log output\r\n\r\n* workaround strange @cInclude error\r\n\r\n* Make ffi tests better\r\n\r\n* Don't use cImport\r\n\r\n* Update c.zig\r\n\r\n* Update c-bindings.cpp\r\n\r\n* call setOutputDir\r\n\r\n* Update Dockerfile\r\n\r\n* Use a longer name\r\n\r\n* latest\r\n\r\n* Update serve.test.ts\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\nCo-authored-by: Veikka Tuominen <git@vexu.eu>",
+    "url": "https://github.com/oven-sh/bun/commit/c0dd2841362b67fdb5ede262b19688004a4eb9a4"
+  },
+  {
+    "sha": "f7f1b604443c030afe29d1059b90f72c69afe081",
+    "author": {
+      "name": "Colin McDonnell",
+      "email": "colinmcd94@gmail.com",
+      "date": "2022-11-09T23:40:40Z"
+    },
+    "message": "Add bun-types, add typechecking, add `child_process` types (#1475)\n\n* Add bun-types to packages\r\n\r\n* Improve typing\r\n\r\n* Fix types in tests\r\n\r\n* Fix dts tests\r\n\r\n* Run formatter\r\n\r\n* Fix all type errors\r\n\r\n* Add strict mode, fix type errors\r\n\r\n* Add ffi changes\r\n\r\n* Move workflows to root\r\n\r\n* Add workflows\r\n\r\n* Remove labeler\r\n\r\n* Add child_process types\r\n\r\n* Fix synthetic defaults issue\r\n\r\n* Remove docs\r\n\r\n* Move scripts\r\n\r\n* Run prettier\r\n\r\n* Include examples in typechecking\r\n\r\n* captureStackTrace types\r\n\r\n* moved captureStackTrace types to globals\r\n\r\n* Address reviews\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>\r\nCo-authored-by: Dylan Conway <dylan.conway567@gmail.com>",
+    "url": "https://github.com/oven-sh/bun/commit/f7f1b604443c030afe29d1059b90f72c69afe081"
+  },
+  {
+    "sha": "3a60764f32bf7aaf3d2ec6cb84d81e8384bd2417",
+    "author": {
+      "name": "Colin McDonnell",
+      "email": "colinmcd94@gmail.com",
+      "date": "2022-11-01T05:10:28Z"
+    },
+    "message": "Update React fizz server (#1432)\n\n* Update fizz server\r\n\r\n* Use production build\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>",
+    "url": "https://github.com/oven-sh/bun/commit/3a60764f32bf7aaf3d2ec6cb84d81e8384bd2417"
+  },
+  {
+    "sha": "02c920f4fd09ddc1a32cb2e92c6f391875415949",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-10-25T07:44:25Z"
+    },
+    "message": "TCP & TLS Socket API (#1374)\n\n* TCP Socket API\r\n\r\n* Wip\r\n\r\n* Add snippet for StringDecoder\r\n\r\n* Rename `close` to `stop`, replace `close` with `end`\r\n\r\n* Add a tcp echo server test\r\n\r\n* Some docs\r\n\r\n* Update README.md\r\n\r\n* Fix build\r\n\r\n* Update README.md\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/02c920f4fd09ddc1a32cb2e92c6f391875415949"
+  },
+  {
+    "sha": "0ca42e81f31d31270c44f81d88fff33361817720",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-09-03T10:57:43Z"
+    },
+    "message": "Plugin API (#1199)\n\n* Plugin API\r\n\r\n* Fix the bugs\r\n\r\n* Implement `\"object\"` loader\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/0ca42e81f31d31270c44f81d88fff33361817720"
+  },
+  {
+    "sha": "af5c4dedca550a856486ec8bbc9f6da76396496e",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-08-28T06:46:05Z"
+    },
+    "message": "Update WebKit (#1165)\n\n* Update WebKit\r\n\r\n* Fix `DataView` and non-8 bit sized typed arrays with TextDecoder\r\n\r\n* New WebKit\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "url": "https://github.com/oven-sh/bun/commit/af5c4dedca550a856486ec8bbc9f6da76396496e"
+  },
+  {
+    "sha": "52865750da82eb91b71a66fa126ab55ee055f9a1",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2022-08-06T18:08:33Z"
+    },
+    "message": "Update bun.lockb",
+    "url": "https://github.com/oven-sh/bun/commit/52865750da82eb91b71a66fa126ab55ee055f9a1"
+  },
+  {
+    "sha": "c94091d8b10a8fc979fbc62d06aa9526df5f7d8b",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2022-08-06T06:28:19Z"
+    },
+    "message": "Refresh all the bun.lockb",
+    "url": "https://github.com/oven-sh/bun/commit/c94091d8b10a8fc979fbc62d06aa9526df5f7d8b"
+  },
+  {
+    "sha": "7d1c9fa1a471d180c078a860c4885478f334bdf5",
+    "author": {
+      "name": "Alexander",
+      "email": "alexkuz@gmail.com",
+      "date": "2022-07-09T11:45:38Z"
+    },
+    "message": "Migrate to Zig v0.10.0",
+    "url": "https://github.com/oven-sh/bun/commit/7d1c9fa1a471d180c078a860c4885478f334bdf5"
+  },
+  {
+    "sha": "cf4c9912c3c1800efdc0427221b654de6f41265f",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2022-07-04T23:46:17Z"
+    },
+    "message": "Fix npm peer dep issue",
+    "url": "https://github.com/oven-sh/bun/commit/cf4c9912c3c1800efdc0427221b654de6f41265f"
+  },
+  {
+    "sha": "9c960fcafd52d6206c958d3e7791f72c6a059632",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2022-07-04T23:39:55Z"
+    },
+    "message": "Update bun.lockb",
+    "url": "https://github.com/oven-sh/bun/commit/9c960fcafd52d6206c958d3e7791f72c6a059632"
+  },
+  {
+    "sha": "729d445b6885f69dd2c6355f38707bd42851c791",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "709451+Jarred-Sumner@users.noreply.github.com",
+      "date": "2022-06-23T06:21:48Z"
+    },
+    "message": "change the directory structure",
+    "url": "https://github.com/oven-sh/bun/commit/729d445b6885f69dd2c6355f38707bd42851c791"
+  },
+  {
+    "sha": "91e96a8da8aeb28ab39ab6a2642533956f58b648",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-05-03T09:11:59Z"
+    },
+    "message": "ffi overhead bench",
+    "url": "https://github.com/oven-sh/bun/commit/91e96a8da8aeb28ab39ab6a2642533956f58b648"
+  },
+  {
+    "sha": "612fad706f66d8f830ef9a6efbc33f49a1343ea5",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-04-19T03:51:10Z"
+    },
+    "message": "fix wasm build take 2 (one more thing is broken)",
+    "url": "https://github.com/oven-sh/bun/commit/612fad706f66d8f830ef9a6efbc33f49a1343ea5"
+  },
+  {
+    "sha": "27ad502119c15f41d3248733b9d778d5a72a55d6",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-04-03T23:35:09Z"
+    },
+    "message": "cleanup a few things",
+    "url": "https://github.com/oven-sh/bun/commit/27ad502119c15f41d3248733b9d778d5a72a55d6"
+  },
+  {
+    "sha": "1a7b546055e820b787a16801c2f379f350caff6e",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-03-16T12:06:42Z"
+    },
+    "message": "bun.lockb",
+    "url": "https://github.com/oven-sh/bun/commit/1a7b546055e820b787a16801c2f379f350caff6e"
+  },
+  {
+    "sha": "fe5ef864f1de46e77772fb05a9980d7b6d8db3a6",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-02-25T08:54:59Z"
+    },
+    "message": "hopefully no more unnecessary git status",
+    "url": "https://github.com/oven-sh/bun/commit/fe5ef864f1de46e77772fb05a9980d7b6d8db3a6"
+  },
+  {
+    "sha": "3881b7a69c6c700cea11d28484039d53cc59506e",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-02-12T11:26:40Z"
+    },
+    "message": "hm",
+    "url": "https://github.com/oven-sh/bun/commit/3881b7a69c6c700cea11d28484039d53cc59506e"
+  },
+  {
+    "sha": "90c573cd42be1abab86db5820d1f6d1666eade8e",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-02-12T05:15:20Z"
+    },
+    "message": "[bun install] Implement global installs",
+    "url": "https://github.com/oven-sh/bun/commit/90c573cd42be1abab86db5820d1f6d1666eade8e"
+  },
+  {
+    "sha": "d67c95d8ebb366d14976ce74e9448a23c3d6886a",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-02-12T03:01:00Z"
+    },
+    "message": "[bun install] Implement bunfig.toml config",
+    "url": "https://github.com/oven-sh/bun/commit/d67c95d8ebb366d14976ce74e9448a23c3d6886a"
+  },
+  {
+    "sha": "a09b99565138bb4bc73a5328397428fb5025817b",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-01-20T07:07:03Z"
+    },
+    "message": "Bun.Transpiler – API for scanning imports/exports of JSX/TSX/TS/JS files",
+    "url": "https://github.com/oven-sh/bun/commit/a09b99565138bb4bc73a5328397428fb5025817b"
+  },
+  {
+    "sha": "6480193c65644efc943b0c8790da15b6b59b147c",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-01-04T06:39:08Z"
+    },
+    "message": ":confused:",
+    "url": "https://github.com/oven-sh/bun/commit/6480193c65644efc943b0c8790da15b6b59b147c"
+  },
+  {
+    "sha": "6966d94d906ba6e482717aa2b02f8d9f2d0cf6ce",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2022-01-04T06:26:37Z"
+    },
+    "message": ":lock:",
+    "url": "https://github.com/oven-sh/bun/commit/6966d94d906ba6e482717aa2b02f8d9f2d0cf6ce"
+  },
+  {
+    "sha": "3083bbadc1437d947824c56ca9c0e03bace73480",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2021-12-31T08:01:17Z"
+    },
+    "message": "Bump peechy again",
+    "url": "https://github.com/oven-sh/bun/commit/3083bbadc1437d947824c56ca9c0e03bace73480"
+  },
+  {
+    "sha": "31cd05191dc32069e5ced56091ed26773a8ae770",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2021-12-31T06:04:41Z"
+    },
+    "message": "Update bun.lockb",
+    "url": "https://github.com/oven-sh/bun/commit/31cd05191dc32069e5ced56091ed26773a8ae770"
+  },
+  {
+    "sha": "e75c711c68896f5952793601f156c921c814caab",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2021-12-31T05:12:32Z"
+    },
+    "message": "Upgrade to latest Zig, remove dependency on patched version of Zig (#96)\n\n* Prepare to upgrade zig\r\n\r\n* zig fmt\r\n\r\n* AllocGate\r\n\r\n* Update data_url.zig\r\n\r\n* wip\r\n\r\n* few files\r\n\r\n* just headers now?\r\n\r\n* I think everything works?\r\n\r\n* Update mimalloc\r\n\r\n* Update hash_map.zig\r\n\r\n* Perf improvements to compensate for Allocgate\r\n\r\n* Bump\r\n\r\n* :camera:\r\n\r\n* Update bun.lockb\r\n\r\n* Less branching\r\n\r\n* [js parser] Slightly reduce memory usage\r\n\r\n* Update js_parser.zig\r\n\r\n* WIP remove unused\r\n\r\n* [JS parser] WIP support for `with` keyword\r\n\r\n* Remove more dead code\r\n\r\n* Fix all the build errors!\r\n\r\n* cleanup\r\n\r\n* Move `network_thread` up\r\n\r\n* Bump peechy\r\n\r\n* Update README.md",
+    "url": "https://github.com/oven-sh/bun/commit/e75c711c68896f5952793601f156c921c814caab"
+  },
+  {
+    "sha": "536d6ab302d537af2627f4837ec9ad0b5337dbf2",
+    "author": {
+      "name": "Jarred Sumner",
+      "email": "jarred@jarredsumner.com",
+      "date": "2021-12-26T09:40:37Z"
+    },
+    "message": "github actions (#91)\n\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* switch\r\n\r\n* :hushed:\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* wip\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* cache is broken\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update bun.yml\r\n\r\n* bust it\r\n\r\n* Update Dockerfile\r\n\r\n* jm\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* wip\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Makefile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* pass executablePath\r\n\r\n* alright\r\n\r\n* Update Makefile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Makefile\r\n\r\n* Update Makefile\r\n\r\n* Update Dockerfile\r\n\r\n* lets try that\r\n\r\n* Update Dockerfile\r\n\r\n* Update bun.yml\r\n\r\n* hm\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* not interactive\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* simplify this\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* missing\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* wrong dir\r\n\r\n* Update Dockerfile\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update bun.yml\r\n\r\n* ordering\r\n\r\n* Update Dockerfile\r\n\r\n* Update bun.yml\r\n\r\n* run-test file\r\n\r\n* pass github workspace\r\n\r\n* hm\r\n\r\n* Update bun.yml\r\n\r\n* copy the file\r\n\r\n* Update run-test.sh\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* try this way\r\n\r\n* Update bun.yml\r\n\r\n* maybe?\r\n\r\n* Update bun.yml\r\n\r\n* maybe taht's it?\r\n\r\n* maybe this\r\n\r\n* cache\r\n\r\n* up\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* try this one i guess\r\n\r\n* okay that might do it\r\n\r\n* Update Dockerfile\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update chrome.json\r\n\r\n* Update chrome.json\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* hm\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* fix caching I think\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* maybe\r\n\r\n* Update bun.yml\r\n\r\n* fixup\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* maybe this time\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* random name\r\n\r\n* ok\r\n\r\n* explicit runner\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* try deleting the files so the layer caching doesn't happen\r\n\r\n* :runner:\r\n\r\n* Update bun.yml\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile\r\n\r\n* Dockerfile.base\r\n\r\n* node.js\r\n\r\n* Update bun.yml\r\n\r\n* Update Dockerfile\r\n\r\n* Update Dockerfile.base\r\n\r\n* cleanup",
+    "url": "https://github.com/oven-sh/bun/commit/536d6ab302d537af2627f4837ec9ad0b5337dbf2"
+  }
+]

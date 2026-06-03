@@ -1,0 +1,413 @@
+commit 3eba9cb62fb236dca9969b58d772b02ac1c1a668
+Author: Alistair Smith <hi@alistair.sh>
+Date:   2026-03-25T16:39:54Z
+
+    Support TypeScript 6
+
+--------------------------------------------------------------------------------
+
+commit 1d50af7fe86065fbdd72667fed7b80b070ba24bb
+Author: Alistair Smith <hi@alistair.sh>
+Date:   2025-12-11T02:15:55Z
+
+    @types/bun: Update to @types/node@25, fallback to PropertyKey in test expect matchers when `keyof unknown` is used (#25460)
+    
+    more accurately, developers cannot pass a value when expect values
+    resolve to never. this is easy to fall into when using the
+    `toContainKey*` matchers. falling back to PropertyKey when this happens
+    is a sensible/reasonable default
+    
+    ### What does this PR do?
+    
+    fixes #25456, cc @MonsterDeveloper
+    fixes #25461
+    
+    ### How did you verify your code works?
+    
+    bun types integration test
+
+--------------------------------------------------------------------------------
+
+commit 48617563b5d2dd0a0d8c9e283d1b5c46dee5f401
+Author: Marko Vejnovic <marko@bun.com>
+Date:   2025-11-25T04:16:03Z
+
+    ENG-21534: Satisfy aikido (#24880)
+    
+    ### What does this PR do?
+    
+    - Bumps some packages
+    - Does some _best practices_ in certain areas to minimize Aikido noise.
+    
+    ### How did you verify your code works?
+    
+    CI.
+    
+    ---------
+    
+    Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit d7bf4fb443b657d07efe54ad8c3e20e5b2875770
+Author: Meghan Denny <meghan@bun.com>
+Date:   2025-11-13T23:00:40Z
+
+    ci/format: update bun version (#24693)
+
+--------------------------------------------------------------------------------
+
+commit d87a928b94eb274a60d5e90122e6a69b17bc3bfa
+Author: Alistair Smith <hi@alistair.sh>
+Date:   2025-11-10T23:50:45Z
+
+    Remove dependency on React's types in @types/bun
+
+--------------------------------------------------------------------------------
+
+commit f14f3b03bb97703d2c81e0a377fe84d990aaf14e
+Author: taylor.fish <contact@taylor.fish>
+Date:   2025-10-04T00:10:28Z
+
+    Add new bindings generator; port `SSLConfig` (#23169)
+    
+    Add a new generator for JS → Zig bindings. The bulk of the conversion is
+    done in C++, after which the data is transformed into an FFI-safe
+    representation, passed to Zig, and then finally transformed into
+    idiomatic Zig types.
+    
+    In its current form, the new bindings generator supports:
+    
+    * Signed and unsigned integers
+    * Floats (plus a “finite” variant that disallows NaN and infinities)
+    * Strings
+    * ArrayBuffer (accepts ArrayBuffer, TypedArray, or DataView)
+    * Blob
+    * Optional types
+    * Nullable types (allows null, whereas Optional only allows undefined)
+    * Arrays
+    * User-defined string enumerations
+    * User-defined unions (fields can optionally be named to provide a
+    better experience in Zig)
+    * Null and undefined, for use in unions (can more efficiently represent
+    optional/nullable unions than wrapping a union in an optional)
+    * User-defined dictionaries (arbitrary key-value pairs; expects a JS
+    object and parses it into a struct)
+    * Default values for dictionary members
+    * Alternative names for dictionary members (e.g., to support both
+    `serverName` and `servername` without taking up twice the space)
+    * Descriptive error messages
+    * Automatic `fromJS` functions in Zig for dictionaries
+    * Automatic `deinit` functions for the generated Zig types
+    
+    Although this bindings generator has many features not present in
+    `bindgen.ts`, it does not yet implement all of `bindgen.ts`'s
+    functionality, so for the time being, it has been named `bindgenv2`, and
+    its configuration is specified in `.bindv2.ts` files. Once all
+    `bindgen.ts`'s functionality has been incorporated, it will be renamed.
+    
+    This PR ports `SSLConfig` to use the new bindings generator; see
+    `SSLConfig.bindv2.ts`.
+    
+    (For internal tracking: fixes STAB-1319, STAB-1322, STAB-1323,
+    STAB-1324)
+    
+    ---------
+    
+    Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
+    Co-authored-by: Alistair Smith <hi@alistair.sh>
+
+--------------------------------------------------------------------------------
+
+commit d0b5f9b587a15c7b4293f506db12065ca0076cd7
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2025-08-31T20:51:39Z
+
+    Gate async hooks warning behind an env var (#22280)
+    
+    ### What does this PR do?
+    
+    The async_hooks warning is mostly just noise. There's no action you can
+    take. And React is now using this to track the error.stack of every
+    single promise with a no-op if it's not in use, so let's be silent about
+    this by default instead of noisy.
+    
+    ### How did you verify your code works?
+    
+    ---------
+    
+    Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 784271f85e016688707812b86b6f2977c36f779d
+Author: Alistair Smith <hi@alistair.sh>
+Date:   2025-08-20T06:15:53Z
+
+    SQLite in Bun.sql (#21640)
+    
+    ### What does this PR do?
+    
+    Support sqlite in the Bun.sql API
+    
+    Fixes #18951
+    Fixes #19701
+    
+    ### How did you verify your code works?
+    
+    tests
+    
+    ---------
+    
+    Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+
+--------------------------------------------------------------------------------
+
+commit 4fa69773a313af96d18553e9e940d1f39e4dd64a
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2025-08-15T05:42:05Z
+
+    Introduce `Bun.stripANSI` (#21801)
+    
+    ### What does this PR do?
+    
+    Introduce `Bun.stripANSI`, a SIMD-accelerated drop-in replacement for
+    the popular `"strip-ansi"` package.
+    
+    `Bun.stripANSI` performs >10x faster and fixes several bugs in
+    `strip-ansi`, like [this long-standing
+    one](https://github.com/chalk/strip-ansi/issues/43).
+    
+    ### How did you verify your code works?
+    
+    There are tests that check the output of `strip-ansi` matches
+    `Bun.stripANSI`. For cases where `strip-ansi`'s behavior is incorrect,
+    the expected value is manually provided.
+    
+    ---------
+    
+    Co-authored-by: Jarred-Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
+    Co-authored-by: Claude Bot <claude-bot@bun.sh>
+    Co-authored-by: Claude <noreply@anthropic.com>
+    Co-authored-by: taylor.fish <contact@taylor.fish>
+
+--------------------------------------------------------------------------------
+
+commit d0edcc69aeb82adfd97a6aeed087a9a98d7bad06
+Author: Alistair Smith <hi@alistair.sh>
+Date:   2025-08-01T23:09:44Z
+
+    Support TypeScript 5.9 (#21539)
+    
+    ### What does this PR do?
+    
+    Fixes #21535
+    
+    ### How did you verify your code works?
+
+--------------------------------------------------------------------------------
+
+commit 97a530d83218ff3ba11b48137adbf6f415e77cc5
+Author: 190n <ben@bun.sh>
+Date:   2025-07-25T06:32:54Z
+
+    [publish images] [BAPI-2103] use gdb and bun.report code to print stack traces upon crash in CI (#21143)
+    
+    ### What does this PR do?
+    
+    Closes #13012
+    
+    On Linux, when any Bun process spawned by `runner.node.mjs` crashes, we
+    run GDB in batch mode to print a backtrace from the core file.
+    
+    And on all platforms, we run a mini `bun.report` server which collects
+    crashes reported by any Bun process executed during the tests, and after
+    each test `runner.node.mjs` fetches and prints any new crashes from the
+    server.
+    
+    <details>
+    <summary>example 1</summary>
+    
+    ```
+    #0  crash_handler.crash () at crash_handler.zig:1513
+    #1  0x0000000002cf4020 in crash_handler.crashHandler (reason=..., error_return_trace=0x0, begin_addr=...) at crash_handler.zig:479
+    #2  0x0000000002cefe25 in crash_handler.handleSegfaultPosix (sig=<optimized out>, info=<optimized out>) at crash_handler.zig:800
+    #3  0x00000000045a1124 in WTF::jscSignalHandler (sig=11, info=0x7ffe044e30b0, ucontext=0x0) at vendor/WebKit/Source/WTF/wtf/threads/Signals.cpp:548
+    #4  <signal handler called>
+    #5  JSC::JSCell::type (this=0x0) at vendor/WebKit/Source/JavaScriptCore/runtime/JSCellInlines.h:137
+    #6  JSC::JSObject::getOwnNonIndexPropertySlot (this=0x150bc914fe18, vm=..., structure=0x150a0102de50, propertyName=..., slot=...) at vendor/WebKit/Source/JavaScriptCore/runtime/JSObject.h:1348
+    #7  JSC::JSObject::getPropertySlot<false> (this=0x150bc914fe18, globalObject=0x150b864e0088, propertyName=..., slot=...) at vendor/WebKit/Source/JavaScriptCore/runtime/JSObject.h:1433
+    #8  JSC::JSValue::getPropertySlot (this=0x7ffe044e4880, globalObject=0x150b864e0088, propertyName=..., slot=...) at vendor/WebKit/Source/JavaScriptCore/runtime/JSCJSValueInlines.h:1108
+    #9  JSC::JSValue::get (this=0x7ffe044e4880, globalObject=0x150b864e0088, propertyName=..., slot=...) at vendor/WebKit/Source/JavaScriptCore/runtime/JSCJSValueInlines.h:1065
+    #10 JSC::LLInt::performLLIntGetByID (bytecodeIndex=..., codeBlock=0x150b861e7740, globalObject=0x150b864e0088, baseValue=..., ident=..., metadata=...) at vendor/WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp:878
+    #11 0x0000000004d7b055 in llint_slow_path_get_by_id (callFrame=0x7ffe044e4ab0, pc=0x150bc92ea0e7) at vendor/WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp:946
+    #12 0x0000000003dd6042 in llint_op_get_by_id ()
+    #13 0x0000000000000000 in ?? ()
+    ```
+    
+    </details>
+    
+    <details>
+    <summary>example 2</summary>
+    
+    ```
+      #0  crash_handler.crash () at crash_handler.zig:1513
+      #1  0x0000000002c5db80 in crash_handler.crashHandler (reason=..., error_return_trace=0x0, begin_addr=...) at crash_handler.zig:479
+      #2  0x0000000002c59f60 in crash_handler.handleSegfaultPosix (sig=<optimized out>, info=<optimized out>) at crash_handler.zig:800
+      #3  0x00000000042ecc88 in WTF::jscSignalHandler (sig=11, info=0xfffff60141b0, ucontext=0xfffff6014230) at vendor/WebKit/Source/WTF/wtf/threads/Signals.cpp:548
+      #4  <signal handler called>
+      #5  bun.js.api.FFIObject.Reader.u8 (globalObject=0x4000554e0088) at /var/lib/buildkite-agent/builds/ip-172-31-75-92/bun/bun/src/bun.js/api/FFIObject.zig:65
+      #6  bun.js.jsc.host_fn.toJSHostCall__anon_1711576 (globalThis=0x4000554e0088, args=...) at /var/lib/buildkite-agent/builds/ip-172-31-75-92/bun/bun/src/bun.js/jsc/host_fn.zig:97
+      #7  bun.js.jsc.host_fn.DOMCall("Reader"[0..6],bun.js.api.FFIObject.Reader,"u8"[0..2],.{ .reads = .{ ... }, .writes = .{ ... } }).slowpath (globalObject=0x4000554e0088, thisValue=70370172175040, arguments_ptr=0xfffff6015460, arguments_len=1) at /var/lib/buildkite-agent/builds/ip-172-31-75-92/bun/bun/src/bun.js/jsc/host_fn.zig:490
+      #8  0x000040003419003c in ?? ()
+      #9  0x0000400055173440 in ?? ()
+    ```
+    
+    </details>
+    
+    I used GDB instead of LLDB (as the branch name suggests) because it
+    seems to produce more useful stack traces with musl libc.
+    
+    - [x] on linux, use gdb to print from core dump of main bun process
+    crashed
+    - [x] on linux, use gdb to print from all new core dumps (so including
+    bun subprocesses spawned by the test that crashed)
+    - [x] on all platforms, use a mini bun.report server to print a
+    self-reported trace (depends on oven-sh/bun.report#15; for now our
+    package.json points to a commit on the branch of that repo)
+    - [x] fix trying to fetch stack traces too early on windows
+    - [x] use output groups so the traces show up alongside the log for the
+    specific test instead of having to find it in the logs from the entire
+    run
+    - [x] get oven-sh/bun.report#15 merged, and point to a bun.report commit
+    on the main branch instead of the PR branch in package.json
+    
+    ### How did you verify your code works?
+    
+    Manually, and in CI with a crashing test.
+    
+    ---------
+    
+    Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 60faa8696fda76336c1f9792ddfdf0d242ecdc38
+Author: pfg <pfg@pfg.pw>
+Date:   2025-07-21T23:26:07Z
+
+    Auto cpp->zig bindings (#20881)
+    
+    Co-authored-by: pfgithub <6010774+pfgithub@users.noreply.github.com>
+    Co-authored-by: Ben Grant <ben@bun.sh>
+    Co-authored-by: Claude <noreply@anthropic.com>
+
+--------------------------------------------------------------------------------
+
+commit 0b9bab34d89cb746b376e0286b528b0f8d831d75
+Author: Zack Radisic <56137411+zackradisic@users.noreply.github.com>
+Date:   2025-07-03T03:06:43Z
+
+    SSG (#20745)
+    
+    Co-authored-by: Alistair Smith <hi@alistair.sh>
+
+--------------------------------------------------------------------------------
+
+commit 11ed29068f25f63217c218f8385e23986a0e2676
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2025-05-17T12:21:28Z
+
+    Simplify the root package.json (#19718)
+
+--------------------------------------------------------------------------------
+
+commit 14b439a1155d00012a5e991fc9ba134651b34bd6
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2025-05-09T06:22:16Z
+
+    Fix formatters not running in CI + delete unnecessary files (#19433)
+
+--------------------------------------------------------------------------------
+
+commit 6b53301375df3ad32f6e0c67b8f3e4e235a3484c
+Author: Alistair Smith <hi@alistair.sh>
+Date:   2025-04-15T02:10:52Z
+
+    @types/bun: Reimplement `WebSocket` type in default environment (#19017)
+
+--------------------------------------------------------------------------------
+
+commit 57381d43ed3150df8df87d250c2d5127af021b6a
+Author: Alistair Smith <hi@alistair.sh>
+Date:   2025-03-25T21:33:30Z
+
+    types: Rewrite to avoid conflicts and allow for doc generation (#18024)
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+
+--------------------------------------------------------------------------------
+
+commit 9141337c7d917bdbb173887f6fef0dc3c834ede3
+Author: Alistair Smith <hi@alistair.sh>
+Date:   2025-03-04T00:04:12Z
+
+    Fix some issues in Bun types (#17424)
+    
+    Co-authored-by: Michael H <git@riskymh.dev>
+
+--------------------------------------------------------------------------------
+
+commit 04973a1520e653362c5e3bfa45420e62362b748a
+Author: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
+Date:   2025-02-25T10:33:47Z
+
+    fix: `bun.lock` with `bundledDependencies` regression (#17665)
+
+--------------------------------------------------------------------------------
+
+commit f912e0abc402391703f45afffb3f770ca74dc165
+Author: chloe caruso <git@paperclover.net>
+Date:   2025-02-08T08:31:30Z
+
+    hot module reloading for HTML import development mode (#16955)
+
+--------------------------------------------------------------------------------
+
+commit f6ec0da125bae0fe217851cc1a25ba0cd71680ad
+Author: Zack Radisic <56137411+zackradisic@users.noreply.github.com>
+Date:   2025-01-31T11:47:49Z
+
+    Various CSS fixing and stability stuff (#16889)
+
+--------------------------------------------------------------------------------
+
+commit 93a89e5866fa85fea4026b084ec3b6efd1b6bdc0
+Author: Meghan Denny <meghan@bun.sh>
+Date:   2025-01-29T09:47:43Z
+
+    meta: update bun.locks with bun 1.2 (#16867)
+    
+    Co-authored-by: nektro <5464072+nektro@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 27d9cfaf797f9b19fd608420a369957745c95908
+Author: Meghan Denny <meghan@bun.sh>
+Date:   2025-01-21T07:12:54Z
+
+    bun-types: depend on @types/node@* (#16556)
+
+--------------------------------------------------------------------------------
+
+commit 5971406183315e93564ae6b95419d3f66bbeb6a1
+Author: Meghan Denny <meghan@bun.sh>
+Date:   2025-01-17T22:37:26Z
+
+    meta: migrate bun to the text lockfile (#16462)
+    
+    Co-authored-by: nektro <5464072+nektro@users.noreply.github.com>
+
+--------------------------------------------------------------------------------

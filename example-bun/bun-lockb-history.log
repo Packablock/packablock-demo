@@ -1,0 +1,3571 @@
+commit b39632c92129ed0161d57da951445828ebcd9108
+Author: dave caruso <me@paperdave.net>
+Date:   2024-12-10T20:43:17Z
+
+    feat: new binding generator (#15638)
+
+--------------------------------------------------------------------------------
+
+commit 274e5a202223ae8b809b556565fae2979d59fcd5
+Author: Zack Radisic <56137411+zackradisic@users.noreply.github.com>
+Date:   2024-09-26T20:39:26Z
+
+    CSS Parser (#14122)
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+
+--------------------------------------------------------------------------------
+
+commit cd6785771ea03f606d5e3875d469adf22d0a65d1
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-09-04T04:32:52Z
+
+    run prettier and add back format action (#13722)
+
+--------------------------------------------------------------------------------
+
+commit 6b50deb7b74d07850b2f892fe60a38f89e27b1bb
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-07-18T08:13:36Z
+
+    Move dev dependencies to `"devDependencies"`
+    
+    Spammy vulnerability scanning software can't tell we aren't using these in the "bun" npm package.
+
+--------------------------------------------------------------------------------
+
+commit d105b048b1bcaeb19ce6b644276a343259420470
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2024-06-27T21:56:07Z
+
+    Use Buildkite for CI (#11477)
+
+--------------------------------------------------------------------------------
+
+commit 93abd9920283011edd5fc51b14440e369c9c634d
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-05-16T22:53:13Z
+
+    Downgrade to React 18
+
+--------------------------------------------------------------------------------
+
+commit f58249e3619c05f1f5edbbeac01e035e248e90bb
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-05-16T07:46:28Z
+
+    Fix loading bun-types in development (#11110)
+    
+    Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 9e8bdaba93be49a5eddcde08524a2d710e1cf88a
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-03-17T10:42:10Z
+
+    Fixes #9433 (#9471)
+    
+    * Fix assertion failure when package-lock.json is out of sync with package.json
+    
+    * Fixes #9433
+    
+    * Update bun.lockb
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 57eb04f6f4e6958644220364c6da9ae2c4d1a1fd
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-02-26T19:13:02Z
+
+    [internal] Switch back to prettier (#9109)
+    
+    * Switch back to prettier
+    
+    * wip
+    
+    * Update .prettierignore
+    
+    * Update .prettierignore
+    
+    * ignores
+    
+    * Update .prettierignore
+    
+    * Rest
+    
+    * [autofix.ci] apply automated fixes
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit a05ef0aeb1d256fcce041cceb63209978c581e80
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2024-02-05T20:50:09Z
+
+    Remove unintentional commit
+    
+    This reverts commit 23b292ac21cb9f07bdeb79eb86ebe3b0b2ce365b.
+
+--------------------------------------------------------------------------------
+
+commit 23b292ac21cb9f07bdeb79eb86ebe3b0b2ce365b
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2024-02-05T19:25:52Z
+
+    T
+
+--------------------------------------------------------------------------------
+
+commit 63a9a8b01599b738978b04489cbd4fb7b64293aa
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2024-02-01T22:55:35Z
+
+    Improve `.vscode` extensions, tasks, and configuration (#8511)
+
+--------------------------------------------------------------------------------
+
+commit e3188c918a5f6e7a9052af0cd6aedf34f85201ec
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-01-26T03:15:26Z
+
+    use Biome to format Bun's codebase instead of Prettier (#8494)
+    
+    * Ignore
+    
+    * Create biome.json
+    
+    * Ignore
+    
+    * biome
+    
+    * [autofix.ci] apply automated fixes
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 83f2432da6224d0e96f31dc770c67665427c28fa
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-01-16T07:47:13Z
+
+    Update prettier (#8198)
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 31814934f309308b5d29c25c062b0a632beba233
+Author: Colin McDonnell <colinmcd94@gmail.com>
+Date:   2023-11-16T02:15:10Z
+
+    CLI flags (#6395)
+    
+    * WIP
+    
+    * WIP
+    
+    * Improve helptext
+    
+    * WIP
+    
+    * WIP
+    
+    * WIP
+    
+    * WIP
+    
+    * Clean up, implement warn_on_unrecognized_flag
+    
+    * Fix struct
+    
+    * Tweaks
+    
+    * Fix bunx test
+    
+    * Address reviews
+    
+    * Init and create
+    
+    * Updates
+    
+    * bunx
+    
+    * Tweaks
+    
+    * Lockfile
+    
+    * tweak
+    
+    * tweak
+    
+    * tweak
+    
+    * tweak
+    
+    * Remove comments
+    
+    * Add back origin and port
+    
+    * Remove logging
+    
+    * Updates
+    
+    * fmt
+    
+    * fix rebasing mistakes
+    
+    * bruh
+    
+    * expose node builtins for -e
+    
+    * add tests and fix it on windows
+    
+    * a
+    
+    * lol
+    
+    * okay
+    
+    * finish things up
+    
+    * Update src/deps/zig-clap/clap/streaming.zig
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+    
+    ---------
+    
+    Co-authored-by: dave caruso <me@paperdave.net>
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+
+--------------------------------------------------------------------------------
+
+commit 7a4e0158d62564edebafd5c8b0b51ca07b54fe4c
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-11-14T06:10:09Z
+
+    Lots of stuff (#7027)
+    
+    * Use debug mode by default
+    
+    * Enable build with assertions enabled
+    
+    * Update cli.zig
+    
+    * Update bun-linux-build.yml
+    
+    * Fixes
+    
+    * Fix `ASSERT_ENABLED`
+    
+    * try this
+    
+    * Update Dockerfile
+    
+    * mimalloc debug
+    
+    * Update CMakeLists.txt
+    
+    * `Bun.deepMatch` - fix assertion failures
+    
+    cc @dylan-conway, looks like we need to use `putDirectMayBeIndex` and check for `isCell` more carefully.
+    
+    * Object.create support in code generator and callbacks wrapper
+    
+    * Remove unused file
+    
+    * zig upgrade
+    
+    * zls
+    
+    * Fix various errors
+    
+    * Support `BuiltinAccessor` in create_hash_table script
+    
+    * Fix assertion failure in `process.mainModule`
+    
+    * Fix assertion failure in `onerror`
+    
+    * Fix assertion failure when creating a Worker
+    
+    * Fix asssertion failure when loading lots of files in bun test
+    
+    * Fix assertion failure when termating a `Worker`
+    
+    * Add helper for converting BunString to a WTFString
+    
+    * Fix assertion failure in notifyNeedTermination
+    
+    * Add more debug logs in `bun test`
+    
+    * Fix compiler warning in usockets
+    
+    * Fix assertion failure with `Worker` termination (another)
+    
+    * Fix assertion failure in `coerceToInt64`
+    
+    * Fix assertion failure in `BroadcastChannel`
+    
+    * Fix assertion failure in `Headers.prototype.getAll`
+    
+    * Fixes #7067
+    
+    * Add heap analyzer label for CommonJS modules
+    
+    * Fix assertion failure in module.require && module.require.resolve
+    
+    * Remove unused code
+    
+    * Fix assertion failure in debugger
+    
+    * Fix crash in debugger
+    
+    * Fix assertion failures in bun:sqlite
+    
+    * Bump zig
+    
+    * Bump WebKit
+    
+    * Fix assertion failure in JSPromise::reject && JSInternalPromise::reject
+    
+    * Fix assertion failure in ReadableStream::cancel
+    
+    * Fix assertion failure in AsyncContextFrame::create
+    
+    * Fix assertion failure in bun:sqlite
+    
+    * Fix assertion failure in mocks
+    
+    * Fix assertion failure in ServerWebSocket.close
+    
+    * Fix assertion failure in N-API with subclasses
+    
+    * [napi] Make promises cheaper
+    
+    * undo
+    
+    * Don't check for exceptions in ObjectInitializationScope
+    
+    * Add separate entry point for test runner that doesn't generate code
+    
+    * Don't deref builtin code
+    
+    * Fix preload test
+    
+    * Fix assertion failure in memoryUsage()
+    
+    * Fix preload test, part 2
+    
+    * Ensure that the env map for a Worker is empty after it is used
+    
+    * The pointer for the Arena allocator used in parsing should not change
+    
+    * Terminate thread on exit
+    
+    * Start to implement scriptExecutionStatus
+    
+    * Update worker.test.ts
+    
+    * Fix Dirent.name setter
+    
+    * Update settings.json
+    
+    * Fix assertion failure in node:http
+    
+    * Use correct value for `JSFinalObject::maxInlineCapacity`
+    
+    * JSFinalObject::maxInlineCapacity x2
+    
+    * Don't strip when assertions are enabled
+    
+    * Make `m_wasTerminated` atomic
+    
+    * Preserve directives in the transpiler
+    
+    cc @ctjlewis
+    
+    * Workaround assertion failure in ServerWebSocket.sendBinary and ServerWebSocket.sendText
+    
+    * windows
+    
+    * Buffer lockfile serialization in-memory
+    
+    * PR feedback
+    
+    * PR feedback
+    
+    * PR feedback
+    
+    * Windows
+    
+    * quotes
+    
+    * Update CMakeLists.txt
+    
+    * Update bun-linux-build.yml
+    
+    * Update bun-linux-build.yml
+    
+    * Move this code to BunString.cpp
+    
+    * Update BunString.cpp
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 4403c40755808cea508d92985d54b9ccf64dc086
+Author: dave caruso <me@paperdave.net>
+Date:   2023-11-03T05:40:00Z
+
+    chore: build and publish canary windows builds (#6834)
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+
+--------------------------------------------------------------------------------
+
+commit 7485c7c7cbbb47251f81cbcbcfb24431ad6075b1
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-10-27T08:51:56Z
+
+    feat: Windows + CMake Build System (#4410)
+    
+    * Prepare for windows event loop
+    
+    * More progress
+    
+    * Update libuv.zig
+    
+    * wip
+    
+    * Make compiling each dependency a shell script
+    
+    * Bump mimalloc
+    
+    * Add the build scripts
+    
+    * Update settings.json
+    
+    * Fix a bunch of compiler warnings
+    
+    * Remove more warnings
+    
+    * more warnings
+    
+    * cmake works
+    
+    * Update JSSQLStatement.h
+    
+    * put it in the zig file
+    
+    * Fix usockets warnings
+    
+    * Fixup
+    
+    * Fix one of the compiler errors
+    
+    * chunk
+    
+    * draw the rest of the owl
+    
+    * theres more
+    
+    * Rename Process -> BunProcess
+    
+    Works around a Windows issue
+    
+    * Add musl polyfill for memmem on Windows
+    
+    * More
+    
+    * 12 mb
+    
+    * Fix getenvZ
+    
+    * fix variosu issues
+    
+    * Add fast-ish path for bun install on Windows
+    
+    * Update windows.zig
+    
+    * Update windows.zig
+    
+    * Fix build issue
+    
+    * it works
+    
+    * hmmm
+    
+    * Rename file
+    
+    * Fixups
+    
+    * Update wtf-bindings.cpp
+    
+    * Update src/bun.js/bindings/headers-handwritten.h
+    
+    Co-authored-by: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
+    
+    * further!
+    
+    * more
+    
+    * Update .gitignore
+    
+    * hm
+    
+    * quite a lot of fixes
+    
+    * Update CMakeLists.txt
+    
+    * zig fmt
+    
+    * Many more things are starting to work.
+    
+    * reb
+    
+    * regenaret
+    
+    * Update JSSink.h
+    
+    * fixup
+    
+    * fetch works
+    
+    * Bun.serve() and much of the event loop works now
+    
+    * Make require() work
+    
+    * bun install progress
+    
+    * more things work
+    
+    * use less std.os
+    
+    * Fixes
+    
+    * small fixes
+    
+    * Bump
+    
+    * Bummp
+    
+    * Undo that change
+    
+    * We have to bump the version of Debian because libarchive has a higher minimum requirement
+    
+    * ok
+    
+    * some clenaup
+    
+    * windows
+    
+    * Update bun.zig
+    
+    * fixup
+    
+    * avoid duplicate symbols
+    
+    * avoid undefined symbols
+    
+    * bump
+    
+    * Remove issue template for install
+    
+    It's not used, and use the bug issue instead.
+    
+    * Add types for cp and cpSync
+    
+    * Add types for watchFile and unwatchFile
+    
+    * Add bun-types to 'bun fmt' script
+    
+    * Update nodejs compat docs cp/cpSync/watchFile/unwatchFile (#4525)
+    
+    * feat(fetch) rejectUnauthorized and checkServerIdentity (#4514)
+    
+    * enable root certs on fetch
+    
+    * rebase
+    
+    * fix lookup
+    
+    * some fixes and improvements
+    
+    * fmt
+    
+    * more fixes
+    
+    * more fixes
+    
+    * check detached onHandshake
+    
+    * fix promise case
+    
+    * fix cert non-Native
+    
+    * add fetch tls tests
+    
+    * more one test
+    
+    * churn
+    
+    * Update feature_flags.zig
+    
+    * Update response.zig
+    
+    * Revert "avoid undefined symbols"
+    
+    This reverts commit ca835b726fb5165798de216b20d8e3b3a12571e0.
+    
+    * Revert "avoid duplicate symbols"
+    
+    This reverts commit 4ac6ca87000a157ee4f31308dab60ef8cedb95e4.
+    
+    * Update feature_flags.zig
+    
+    * Set permissions
+    
+    * more
+    
+    * Update mimalloc
+    
+    * Fix sqlite test failures
+    
+    * Fix some test failures
+    
+    * Make sure we remove libusockets is removed
+    
+    * hm
+    
+    * [dave]: fix webcrypto crash
+    
+    * bump
+    
+    * Update index.ts
+    
+    * windows zig compiles
+    
+    * cmake on mac works
+    
+    * progress
+    
+    * yay
+    
+    * bun run build
+    
+    * fix
+    
+    * ok
+    
+    * oops
+    
+    * asdfasfdafdsafda
+    
+    * fghjkl
+    
+    * git ignore
+    
+    * wow
+    
+    * Process -> BunProcess
+    
+    * hmm
+    
+    * blah
+    
+    * finalize merge
+    
+    * now it only has linker errors on mac
+    
+    * sdfadsf
+    
+    * g
+    
+    * getting farther
+    
+    * sxdcvbnmk,
+    
+    * adfhjskfjdhkas
+    
+    * a
+    
+    * fgh
+    
+    * update build dot zig
+    
+    * asdfg
+    
+    * theoretical -DCANARY flag we can use
+    
+    * asdf
+    
+    * cool
+    
+    * okay
+    
+    * colorterm
+    
+    * New build workflow
+    
+    * Fix script
+    
+    * Use sudo
+    
+    * More sudo
+    
+    * Tweak dependencies
+    
+    * Another sudo attempt
+    
+    * Tweak script
+    
+    * 16.0 -> 16
+    
+    * Tweak script
+    
+    * Tweak script
+    
+    * Tweak script
+    
+    * Tweak script
+    
+    * Tweak script
+    
+    * bun install
+    
+    * ssh into github actions
+    
+    * add more to ssh
+    
+    * Fix postinstal
+    
+    * Skip llvm
+    
+    * New dockerfile
+    
+    * Build
+    
+    * More changes to Dockerfile
+    
+    * chaos chaos chaos
+    
+    * okay
+    
+    * a
+    
+    * more cmake nonsense
+    
+    * add unified sources code (does not work)
+    
+    * stuff
+    
+    * prepare for CI builds
+    
+    * ok
+    
+    * yay
+    
+    * yeah
+    
+    * make this more stable simply by trying again if it fails, 5 times, then lose. it fixes the stability issue i was running into L O L
+    
+    * messing with ci
+    
+    * x
+    
+    * a
+    
+    * clean dependencies before build
+    
+    * oops
+    
+    * this is not going to work but its closer
+    
+    * not gonna work either
+    
+    * a
+    
+    * a
+    
+    * did i do it
+    
+    * a
+    
+    * a
+    
+    * work around weird fs+Bun.build issues
+    
+    * properly pass debug flag correctly
+    
+    * idk im sorry
+    
+    * lose
+    
+    * maybe
+    
+    * run the tests please
+    
+    * a
+    
+    * fix zlib script
+    
+    * a
+    
+    * hi
+    
+    * prevent stupid ci issue
+    
+    * i totally didnt leave in a syntax error on cmakelists
+    
+    * a
+    
+    * lol
+    
+    * relax
+    
+    * 😭
+    
+    * a
+    
+    * SO SILLY
+    
+    * 😡 one line mistake
+    
+    * one character diff
+    
+    * fix linking symbols missing
+    
+    * work on dependency scripts
+    
+    * does this work now?
+    
+    * fix mac build
+    
+    * a
+    
+    * bump!
+    
+    * woops
+    
+    * add macos baseline build
+    
+    * .
+    
+    * fix sqlite and also enable $assert/$debug support in builtin functions
+    
+    * okay
+    
+    * oops
+    
+    * zig upgrade lol
+    
+    * Merge
+    
+    * Fix spawn test issue
+    
+    * Set a timeout
+    
+    * yeah
+    
+    * etc
+    
+    * mi
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    Co-authored-by: Dylan Conway <dylan.conway567@gmail.com>
+    Co-authored-by: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
+    Co-authored-by: Ashcon Partovi <ashcon@partovi.net>
+    Co-authored-by: Birk Skyum <74932975+birkskyum@users.noreply.github.com>
+    Co-authored-by: dave caruso <me@paperdave.net>
+
+--------------------------------------------------------------------------------
+
+commit 2b8aae05d1e95b85c7869f15567a29162106110c
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-10-26T05:35:14Z
+
+    Add test for custom thenables in AsyncLocalStorage and fix flaky test and make expect(fn).toThrow drain unhandled promise rejections (#6701)
+    
+    * Copy Node.js test for async-local-storage thenables
+    
+    * Fix flaky test
+    
+    * Make expect(fn).toThrow() more reliable
+    
+    * Fix setImmediate order
+    
+    * Support restoring mocked modules with spyOn
+    
+    * Fix vm test
+    
+    * Fix more tests
+    
+    * alright
+    
+    * Upgrade WebKit
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 6a2768f2474a7f1c32bf47b8c44cb33f4409b11a
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-10-25T09:59:47Z
+
+    Implement `mock.module` in bun:test (#6685)
+    
+    * Implement Module Mocks
+    
+    * Update javascript.zig
+    
+    * Add test for spyOn + ESM namespace
+    
+    * Bump WebKit
+    
+    * Bump WebKit
+    
+    * Drain microtasks at end of test executions
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 98d19fa6244384f7e17998b5420d724481ed3835
+Author: dave caruso <me@paperdave.net>
+Date:   2023-10-17T04:22:43Z
+
+    fix(runtime): make some things more stable (partial jsc debug build) (#5881)
+    
+    * make our debug assertions work
+    
+    * install bun-webkit-debug
+    
+    * more progress
+    
+    * ok
+    
+    * progress...
+    
+    * more debug build stuff
+    
+    * ok
+    
+    * a
+    
+    * asdfghjkl
+    
+    * fix(runtime): fix bad assertion failure in JSBufferList
+    
+    * ok
+    
+    * stuff
+    
+    * upgrade webkit
+    
+    * Update src/bun.js/bindings/JSDOMWrapperCache.h
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+    
+    * fix message for colin's changes
+    
+    * okay
+    
+    * fix cjs prototype
+    
+    * implement mainModule
+    
+    * i think this fixes it all
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+
+--------------------------------------------------------------------------------
+
+commit b1063edf3e76a2ef68d2ba3eff686932f742c77c
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-10-12T03:04:15Z
+
+    Bump WebKit
+
+--------------------------------------------------------------------------------
+
+commit 1bf28e0d77a8b2261befbdb708cefd03e0126960
+Author: dave caruso <me@paperdave.net>
+Date:   2023-10-11T09:27:07Z
+
+    feat(install): automatically migrate package-lock.json to bun.lockb (#6352)
+    
+    * work so far
+    
+    * stuff
+    
+    * a
+    
+    * basics work
+    
+    * stuff
+    
+    * yoo
+    
+    * build lockfile
+    
+    * correct
+    
+    * f
+    
+    * a
+    
+    * install fixture havent tested
+    
+    * i made it worse
+    
+    * lol
+    
+    * be more reasonable
+    
+    * make the test easier to pass because bun install doesn't handle obscure lockfile edge cases :/
+    
+    * a
+    
+    * works now
+    
+    * ok
+    
+    * a
+    
+    * a
+    
+    * cool
+    
+    * nah
+    
+    * fix stuff
+    
+    * l
+    
+    * a
+    
+    * idfk
+    
+    * LAME
+    
+    * prettier errors
+    
+    * does this fix tests?
+    
+    * Add more safety checks to Integrity
+    
+    * Add another check
+    
+    * More careful lifetime handling
+    
+    * Fix linux debugger issue
+    
+    * a
+    
+    * tmp dir and snapshot test
+    
+    ---------
+    
+    Co-authored-by: Jarred SUmner <jarred@jarredsumner.com>
+
+--------------------------------------------------------------------------------
+
+commit 98e9e9b11289f766e45dc0eadcaf4b21115ff190
+Author: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
+Date:   2023-10-04T02:56:33Z
+
+    Upgrade webkit (#6277)
+    
+    * `reportExtraMemoryAllocated` parameters changed
+    
+    * bump webkit
+    
+    * Update Dockerfile
+    
+    * format
+
+--------------------------------------------------------------------------------
+
+commit 3f463786a5f03817949581aa3904d673a3cd087e
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-09-25T00:43:59Z
+
+    Correctly fix #5888 (#6000)
+    
+    * Update our MultiArrayList
+    
+    * More consistent CI
+    
+    * Fix serialization issue
+    
+    * Update bun.lockb
+    
+    * Update bun.lockb
+    
+    * fixup
+    
+    * Fix `Bin{}`
+    
+    * `bun update` should not cache the manifest
+    
+    * Make bun install tests more consistent
+    
+    * This differs by platform evidently
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit d1e9b33cac65794632921045e7a851c58ef1863d
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-09-21T14:25:18Z
+
+    On Linux, respect memory limit from cgroups (#5849)
+    
+    * Implement `process.constrainedMemory()`
+    
+    * Add a comment
+    
+    * Handle max
+    
+    * Missing header
+    
+    * We can use WTF::ramSize now
+    
+    * Update WebKit
+    
+    * Update ZigGlobalObject.cpp
+    
+    * WebKit
+    
+    * :scissors:
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 5defdf3e28249b34772864a50273a390d345b2df
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-09-20T01:16:51Z
+
+    Fixes #5769 (#5775)
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit eb1dc7eede31b12726ae320263850fefaaf490f3
+Author: dave caruso <me@paperdave.net>
+Date:   2023-09-19T00:33:58Z
+
+    fix(runtime/node): Allow `new Buffer.alloc()` + Upgrade WebKit (#5699)
+    
+    * make bufferconstructor a static hash table
+    
+    * chore: Upgrade WebKit to 4d995edbc44062b251be638818edcd88d7d14dd7
+    
+    * make it constructable now
+    
+    * fix comment
+    
+    * yippee
+    
+    * update CI workflows
+
+--------------------------------------------------------------------------------
+
+commit b651b16fdd959b349c09ec5d5056229dcd12c86b
+Author: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
+Date:   2023-09-16T07:44:07Z
+
+    webkit upgrade (#5535)
+    
+    * update files
+    
+    * Update cold-jsc-start.cpp
+    
+    * bump webkit
+
+--------------------------------------------------------------------------------
+
+commit 29a6ece6c688150ae51865f38ab616ab4b3a90e2
+Author: Dylan Conway <dylan.conway567@gmail.com>
+Date:   2023-09-15T07:03:21Z
+
+    next bun.lockb
+
+--------------------------------------------------------------------------------
+
+commit e923e2327077060e09e8ff0a9f21bb91047632e2
+Author: Dylan Conway <dylan.conway567@gmail.com>
+Date:   2023-09-14T21:38:46Z
+
+    oops
+
+--------------------------------------------------------------------------------
+
+commit 9aabe4eea1a9dc4f05ff96c370b877f942741820
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-08-25T08:43:25Z
+
+    Upgrade peechy
+
+--------------------------------------------------------------------------------
+
+commit 1480889205d49cf7221a36608a8896b452967cea
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2023-08-25T05:53:34Z
+
+    Improved support for `debug-adapter-protocol` (#4186)
+    
+    * Improve support for \`debug-adapter-protocol\`
+    
+    * More improvements, fix formatting in debug console
+    
+    * Fix attaching
+    
+    * Prepare for source maps
+    
+    * Start of source map support, breakpoints work
+    
+    * Source map support
+    
+    * add some package.jsons
+    
+    * wip
+    
+    * Update package.json
+    
+    * More fixes
+    
+    * Make source maps safer if exception occurs
+    
+    * Check bun version if it fails
+    
+    * Fix console.log formatting
+    
+    * Fix source maps partly
+    
+    * More source map fixes
+    
+    * Prepare for extension
+    
+    * watch mode with dap
+    
+    * Improve preview code
+    
+    * Prepare for extension 2
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit c60385716b7a7ac9f788cdf7dfe37250321e0670
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-23T21:05:05Z
+
+    Bunch of streams fixes (#4251)
+    
+    * Update WebKit
+    
+    * Don't do async hooks things when async hooks are not enabled
+    
+    * Smarter scheduling of event loop tasks with the http server
+    
+    * less exciting approach
+    
+    * Bump WebKit
+    
+    * Another approach
+    
+    * Fix body-stream tests
+    
+    * Fixes #1886
+    
+    * Fix UAF in fetch body streaming
+    
+    * Missing from commit
+    
+    * Fix leak
+    
+    * Fix the other leak
+    
+    * Fix test
+    
+    * Fix crash
+    
+    * missing duperef
+    
+    * Make this code clearer
+    
+    * Ignore empty chunks
+    
+    * Fixes #3969
+    
+    * Delete flaky test
+    
+    * Update bun-linux-build.yml
+    
+    * Fix memory issue
+    
+    * fix result body, and .done status before the last callback, dont touch headers after sent once
+    
+    * refactor HTTPClientResult
+    
+    * less flasky corrupted test
+    
+    * oops
+    
+    * fix mutex invalid state
+    
+    * fix onProgressUpdate deinit/unlock
+    
+    * fix onProgressUpdate deinit/unlock
+    
+    * oops
+    
+    * remove verbose
+    
+    * fix posible null use
+    
+    * avoid http null
+    
+    * metadata can still be used onReject after toResponse
+    
+    * dont leak task.http
+    
+    * fix flask tests
+    
+    * less flask close tests
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    Co-authored-by: cirospaciari <ciro.spaciari@gmail.com>
+
+--------------------------------------------------------------------------------
+
+commit 3de9ce5f30ad3a2a5615acb62a25cecdd2ddef33
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-21T02:34:33Z
+
+    Implement `--inspect-brk` (#4222)
+    
+    * Implement `--inspect-brk`
+    
+    * Bump WebKit
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 943a6642243cbc8a180ab7108279dd7110ab1eaf
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-19T02:58:03Z
+
+    Remove most C API usages, add debugger pretty printers for `Headers`, `URLSearchParams`, `FormData`, `Worker`, `EventTarget` (#4187)
+    
+    * Add pretty printers for `Headers`, `URLSearchParams`, and `FormData`
+    
+    * [untested] Add way to code generate getInternalProperties
+    
+    * bump
+    
+    * Bump Webkit
+    
+    * Ref the event loop while loaded
+    
+    * wip
+    
+    * checkpoint
+    
+    * another checkpoint
+    
+    * The code has been written
+    
+    * Fixup exports
+    
+    * Fix all the errors
+    
+    * Fix bug
+    
+    * [console.log] Fix bug when printing non-reified types missing values
+    
+    * Fix loading hash table
+    
+    * fix plugin
+    
+    * Fix ref & unref
+    
+    * auto-unref
+    
+    * various fixes
+    
+    * Update bun.zig
+    
+    * Set toStringTag
+    
+    * Delete code for macro JSX
+    
+    * Delete code for `bun dev` HTTP JS
+    
+    * Move Bun.serve to C++ API
+    
+    * Delete JSC C API code
+    
+    * :scissors: :skull: code
+    
+    * Use JSC C++ for `confirm`, `Crypto`, `prompt`, `alert`
+    
+    * more dead code
+    
+    * Update exports.zig
+    
+    * Use JSC C++ API for FFI
+    
+    * Remove remaining usages
+    
+    * Remove remaining usages
+    
+    * Update ffi.ts
+    
+    * Update InternalModuleRegistryConstants.h
+    
+    * draw the rest of the owl
+    
+    * Update webcore.zig
+    
+    * bind it
+    
+    * Fix performance regression in crypto.randomUIUD()
+    
+    * Update js_parser.zig
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 0486cea35a80be97ba43f41a29ce55f0d3a8eb01
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-17T02:40:20Z
+
+    `bun --inspect` (#4158)
+    
+    * Let the debugger to pause/resume the event loop
+    
+    * Add initial support for Debug Adapter Protocol
+    
+    * Add progress
+    
+    * Update Worker.cpp
+    
+    * Fix require("console") #3820 (#4073)
+    
+    * Fix #3820
+    
+    * Add Module (#4074)
+    
+    * Set exports to {} in user-constructed CommonJSModuleRecords (#4076)
+    
+    * feat(bun/test): Implement "toSatisfy" & "toIncludeRepeated" (fwup) (#3651)
+    
+    * Fix merge issues
+    
+    * oop
+    
+    * make codegen
+    
+    * Fix build issues
+    
+    ---------
+    
+    Co-authored-by: dave caruso <me@paperdave.net>
+    
+    * worker tests (#4058)
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+    
+    * feat(bun:test) add support for test.each() and describe.each() (#4047)
+    
+    * rename callback to func
+    
+    * update testscope to handle function arguments
+    
+    * works
+    
+    * big cleanup
+    
+    * works in debug, not release
+    
+    * fix memory issue & update tests
+    
+    * catch & str test
+    
+    * write types for each() & switch tests to ts
+    
+    * rm & typo
+    
+    * move some code around & support describe
+    
+    * review changes
+    
+    * Fix one of the astro segfaults, also fix bun init version (#4079)
+    
+    * 4->16
+    
+    * add assertions
+    
+    * fix version stuff
+    
+    * Remove unintentional logs from #4043
+    
+    * Run prettier
+    
+    * Update main-worker-file.js
+    
+    * Update SIMDUTF (#4078)
+    
+    * Fix constructing buffer from a UTF16 string with the Latin1 encoding. (#4086)
+    
+    Close: #3914
+    
+    * Add support for `bun --revision` (#4027)
+    
+    Co-authored-by: Yash Sharma <yashsharma@Yashs-MacBook-Air.local>
+    
+    * Updates
+    
+    * Update __global.zig
+    
+    * remove non-node node-fallbacks (#4082)
+    
+    * remove non-node node-fallbacks.
+    
+    * organize the imports
+    
+    * Fix test
+    
+    * Sync bun-polyfills branch (#4081)
+    
+    * bun-polyfills: initial impl. & baseline refactor
+    
+    * move @types/ws dep from root to /test/
+    
+    * bun-types: remove ReadableStream.forEach method
+    (this does not exist, probably added by mistake)
+    
+    * bun-polyfills: remove extraneous stream utils
+    
+    * bun-polyfills: add types syncing file
+    
+    * bun-polyfills: re-arrange global polyfills
+    
+    * bun-polyfills: fix FileBlob streams types again
+    
+    * bun-polyfills: sync all of @types/node
+    
+    * bun-polyfills: typeguard all current polyfills
+    
+    * bun-polyfills: fix import paths
+    
+    * bun-polyfills: switch to wasm impl. of farmhash
+    
+    * bun-polyfills: support default import of bun obj
+    
+    * bun-polyfills: transpiler placeholder file
+    
+    * bun-polyfills: loaderless import.meta polyfill
+    
+    * bun-polyfills: refactor import.meta polyfill
+    
+    * bun-polyfills: repl entrypoint & todo list index
+    
+    * bun-types: Add null to return type of Bun.which
+    
+    * bun-types: match Bun.sha with Bun.hash.SHA512_256
+    
+    * bun-polyfills: new "repl" package.json script
+    
+    * bun-polyfills: full refactor of toplevel hashes
+    
+    * bun-polyfills: these are fixed
+    
+    * bun-types: NODE_ENV is optional
+    
+    * bun-polyfills: fix Bun.env types
+    
+    * bun-types+polyfills: fix HeapSnapshot.version type
+    
+    * bun-polyfills: fix some web streams type conflicts
+    
+    * bun-polyfills: update internal FileBlob.slice
+    
+    * bun-polyfills: fix subproc stdin conversions
+    
+    * bun-polyfills: better internal fileblob types
+    
+    * bun-polyfills: try to sync global performance type
+    
+    * bun-polyfills: working zig wasm polyfills setup
+    
+    * bun-polyfills: update scripts
+    
+    * bun-polyfills: fix wasm file location resolution
+    
+    * bun-polyfills: goodbye farmhash (replaced by zig)
+    
+    * bun-polyfills: move all Bun.hash polyfills to zig
+    
+    * bun-polyfills: reimpl. seeding of seeded hashes
+    
+    * bun-polyfills: impl. undocumented murmur32v2
+    
+    * bun-polyfills: switch zighash from jsdoc to .d.ts
+    
+    * bun-types: partial fix of Hash types
+    
+    * bun-polyfills: documented Hash.murmur32v2
+    
+    * bun-polyfills: misc updates
+    
+    * bun-polyfills: enable sourcemaps
+    
+    * bun-polyfills: handle empty inputs to hash funcs
+    
+    * bun-types: narrow down hash func types
+    
+    * bun-polyfills: remove unnecessary bigint casts
+    
+    * bun-polyfills: impl. Bun.isMainThread
+    
+    * bun-polyfills: impl. Bun.sleep and fix sleepSync
+    
+    * bun-polyfills: impl. indexOfLine
+    
+    * bun-polyfills: impl. Bun.peek.status
+    
+    * bun-types: fix hashing test
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+    
+    * Add remix guide
+    
+    * Fix title
+    
+    * add util.formatWithOptions (#4090)
+    
+    * Add formatWithOptions
+    
+    * tests and tweaks
+    
+    * adjust
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+    
+    * bun test: format description of test.each (#4092)
+    
+    * bun test: format description
+    
+    * add tests for tests
+    
+    * only
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+    
+    * Fixes #4062 (#4106)
+    
+    * Fixes #4062
+    
+    * Update encoding.zig
+    
+    * Use faster C++ impl
+    
+    * Update wtf-bindings.cpp
+    
+    * undo
+    
+    * Fixup
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    
+    * zig fmt
+    
+    * Update remix guide
+    
+    * fs.zig: create temp files with 0o700, not 0o007 (#4107)
+    
+    * Handle thundering herd of setInterval (#4109)
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    
+    * Fix memory leak in base64url (#4111)
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    
+    * run files without extensions (#4113)
+    
+    * run script without extension
+    
+    * process stdio write fix
+    
+    * don't check for trailing slash, var stream
+    
+    * More lazily initialize these static strings
+    
+    * Remove assertion
+    
+    * wip
+    
+    * Add --inspect flag
+    
+    * Deprecate loading `node_modules.bun`
+    
+    * realpath
+    
+    * regenerate schema
+    
+    * More
+    
+    * more
+    
+    * Update cli.zig
+    
+    * Debugger JS loads
+    
+    * have fun
+    
+    * Most of the code
+    
+    * Its starting to work.
+    
+    * more progress
+    
+    * win some, lose some
+    
+    * Update dap.ts
+    
+    * Async Context Tracking
+    
+    * untested websocket
+    
+    * Emit Console messages
+    
+    * Error handling
+    
+    * errors
+    
+    * Make profiling work better
+    
+    * [clap] CLI arguments with optional values ignore positional params
+    
+    In `bun --inspect foo.js`, `foo.js` should not be the value of `--inspect`. It is a positional parameter. `--inspect=foo`
+    
+    * Support multiple simultaneous clients, automatically unpause on disconnect
+    
+    * regenerate
+    
+    * Update Makefile
+    
+    * Update WebKit
+    
+    * Update cli.zig
+    
+    * Update InternalModuleRegistry+createInternalModuleById.h
+    
+    * BaseURL
+    
+    * Update WebKit
+    
+    * Add web-inspector-bun
+    
+    * Update build.ts
+    
+    * formatting, mostly
+    
+    * Update debugger.ts
+    
+    * Update InternalModuleRegistryConstants.h
+    
+    * wrap
+    
+    * Update test
+    
+    * Update test
+    
+    ---------
+    
+    Co-authored-by: Ashcon Partovi <ashcon@partovi.net>
+    Co-authored-by: Dylan Conway <dylan.conway567@gmail.com>
+    Co-authored-by: dave caruso <me@paperdave.net>
+    Co-authored-by: Tiramify (A.K. Daniel) <94789999+TiranexDev@users.noreply.github.com>
+    Co-authored-by: Jacques <25390037+jecquas@users.noreply.github.com>
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    Co-authored-by: Ai Hoshino <ambiguous404@gmail.com>
+    Co-authored-by: Yash Sharma <yashosharma@gmail.com>
+    Co-authored-by: Yash Sharma <yashsharma@Yashs-MacBook-Air.local>
+    Co-authored-by: Colin McDonnell <colinmcd94@gmail.com>
+    Co-authored-by: jhmaster <32803471+jhmaster2000@users.noreply.github.com>
+    Co-authored-by: Adhityaa Chandrasekar <github@adtac.in>
+    Co-authored-by: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit e25833d00946fdd400abd3c25e8aa1c3e3d2e355
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-10T20:32:04Z
+
+    Fixes #4062 (#4106)
+    
+    * Fixes #4062
+    
+    * Update encoding.zig
+    
+    * Use faster C++ impl
+    
+    * Update wtf-bindings.cpp
+    
+    * undo
+    
+    * Fixup
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 40befd8770e90ef2cb74d65bb1e2ff9911e2a2f7
+Author: jhmaster <32803471+jhmaster2000@users.noreply.github.com>
+Date:   2023-08-10T19:17:39Z
+
+    Sync bun-polyfills branch (#4081)
+    
+    * bun-polyfills: initial impl. & baseline refactor
+    
+    * move @types/ws dep from root to /test/
+    
+    * bun-types: remove ReadableStream.forEach method
+    (this does not exist, probably added by mistake)
+    
+    * bun-polyfills: remove extraneous stream utils
+    
+    * bun-polyfills: add types syncing file
+    
+    * bun-polyfills: re-arrange global polyfills
+    
+    * bun-polyfills: fix FileBlob streams types again
+    
+    * bun-polyfills: sync all of @types/node
+    
+    * bun-polyfills: typeguard all current polyfills
+    
+    * bun-polyfills: fix import paths
+    
+    * bun-polyfills: switch to wasm impl. of farmhash
+    
+    * bun-polyfills: support default import of bun obj
+    
+    * bun-polyfills: transpiler placeholder file
+    
+    * bun-polyfills: loaderless import.meta polyfill
+    
+    * bun-polyfills: refactor import.meta polyfill
+    
+    * bun-polyfills: repl entrypoint & todo list index
+    
+    * bun-types: Add null to return type of Bun.which
+    
+    * bun-types: match Bun.sha with Bun.hash.SHA512_256
+    
+    * bun-polyfills: new "repl" package.json script
+    
+    * bun-polyfills: full refactor of toplevel hashes
+    
+    * bun-polyfills: these are fixed
+    
+    * bun-types: NODE_ENV is optional
+    
+    * bun-polyfills: fix Bun.env types
+    
+    * bun-types+polyfills: fix HeapSnapshot.version type
+    
+    * bun-polyfills: fix some web streams type conflicts
+    
+    * bun-polyfills: update internal FileBlob.slice
+    
+    * bun-polyfills: fix subproc stdin conversions
+    
+    * bun-polyfills: better internal fileblob types
+    
+    * bun-polyfills: try to sync global performance type
+    
+    * bun-polyfills: working zig wasm polyfills setup
+    
+    * bun-polyfills: update scripts
+    
+    * bun-polyfills: fix wasm file location resolution
+    
+    * bun-polyfills: goodbye farmhash (replaced by zig)
+    
+    * bun-polyfills: move all Bun.hash polyfills to zig
+    
+    * bun-polyfills: reimpl. seeding of seeded hashes
+    
+    * bun-polyfills: impl. undocumented murmur32v2
+    
+    * bun-polyfills: switch zighash from jsdoc to .d.ts
+    
+    * bun-types: partial fix of Hash types
+    
+    * bun-polyfills: documented Hash.murmur32v2
+    
+    * bun-polyfills: misc updates
+    
+    * bun-polyfills: enable sourcemaps
+    
+    * bun-polyfills: handle empty inputs to hash funcs
+    
+    * bun-types: narrow down hash func types
+    
+    * bun-polyfills: remove unnecessary bigint casts
+    
+    * bun-polyfills: impl. Bun.isMainThread
+    
+    * bun-polyfills: impl. Bun.sleep and fix sleepSync
+    
+    * bun-polyfills: impl. indexOfLine
+    
+    * bun-polyfills: impl. Bun.peek.status
+    
+    * bun-types: fix hashing test
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+
+--------------------------------------------------------------------------------
+
+commit 14624454196370e08309d4f0b0463b494e4df9ca
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-06T13:30:23Z
+
+    Code coverage for `bun test` (#3975)
+    
+    * WIP code coverage initial commit
+    
+    * almost works
+    
+    * one approach
+    
+    * Code Coverage
+    
+    * Update WebKit
+    
+    * it works but is not yet accurate
+    
+    * skip double ascii check
+    
+    * wrapper
+    
+    * it works but i'm not sure what to do about blocks
+    
+    * hide blocks for now
+    
+    * Update ZigSourceProvider.cpp
+    
+    * Create coverage.md
+    
+    * Update nav.ts
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 63d265780f122f8390a71b3a15cea4c71b540b8f
+Author: Colin McDonnell <colinmcd94@gmail.com>
+Date:   2023-08-04T19:56:34Z
+
+    Fix types (#3963)
+    
+    * Fix types
+    
+    * Add ws module
+    
+    * Add *.toml module declaration
+    
+    * Clean up
+
+--------------------------------------------------------------------------------
+
+commit 08cf0d562ae81b4fb30aa5e599ca76056582ac5f
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2023-08-03T22:31:55Z
+
+    Bunch of fixes (#3516)
+    
+    * Fix #3497
+    
+    * Fix #3497
+    
+    * Run prettier
+    
+    * Fix package.json
+    
+    * remove this too
+    
+    * yeah
+    
+    * Fix missing tests
+    
+    * Use native for utf-8-validate
+    
+    * Add module ID names to builtins
+    
+    * Defer evaluation of ESM & CJS modules until link time
+    
+    * Use builtin name for exports in plugins
+    
+    * Add module IDs to builtins
+    
+    * Update JSC build with new flag
+    
+    * WebKit upgrade fixes
+    
+    * Update WebKit
+    
+    * prettier
+    
+    * Upgrade WebKit
+    
+    * bump
+    
+    * Update once again
+    
+    * Add visitAdditionalChildren, remove .fill() usage
+    
+    * Update process.test.js
+    
+    * Update fs.test.ts
+    
+    ---------
+    
+    Co-authored-by: dave caruso <me@paperdave.net>
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 90991da908b0725802db63d9fd8d5b4de1eb21a5
+Author: Colin McDonnell <colinmcd94@gmail.com>
+Date:   2023-07-31T20:57:17Z
+
+    Update titles, add Workspaces guide
+
+--------------------------------------------------------------------------------
+
+commit 967ccb5d50b3ce163bb98fd125c56b039743de90
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-07-24T05:37:48Z
+
+    Upgrade WebKit (#3777)
+    
+    * Upgrade to latest WebKit
+    
+    * Upgrade WebKit
+    
+    * hm
+    
+    * Fix failing tests
+    
+    * Delete utf8-encoding-fixture.bin.cmp
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit c6a3467625fede0fe9901ab53b0aabd651866b64
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-07-22T11:31:58Z
+
+    Unified event loop (#3741)
+    
+    * Unified event loop
+    
+    * Update WebKit, add test for es-module-lexer
+    
+    * Update README.md
+    
+    * Use async wasm
+    
+    * Explicitly set whether concurrenttask should be deinit'd
+    
+    * Update package.json
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 9b6dc49575df5fb953918c284505f24741138130
+Author: dave caruso <me@paperdave.net>
+Date:   2023-07-20T00:20:00Z
+
+    Implement `AsyncLocalStorage` (#3089)
+    
+    * work to get async local storage working.
+    
+    * a
+    
+    * a
+    
+    * everything but queueMicrotask
+    
+    * sdfghj
+    
+    * .
+    
+    * finish
+    
+    * tests
+    
+    * test
+    
+    * ok
+    
+    * done
+    
+    * im so stupid
+    
+    * Upgrade WebKit
+    
+    * refactor
+    
+    * refactor
+    
+    * changes requested
+    
+    * oops
+    
+    * cool
+    
+    * fix runInAsyncScope
+
+--------------------------------------------------------------------------------
+
+commit 9eb8eea2a81be6a20abb62544dc54a35ff4173a5
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2023-07-13T16:39:43Z
+
+    Implement `ping()`, `pong()`, `terminate()` for WebSocket client and server (#3257)
+
+--------------------------------------------------------------------------------
+
+commit a02a79e26c49358e8bde3988709f8b79464711aa
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-07-13T03:48:52Z
+
+    Bump WebKit
+
+--------------------------------------------------------------------------------
+
+commit aa38e51afb73dab3071addc07f82fd96153ff450
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-07-03T05:09:50Z
+
+    Support mocking `new Date()` & `Date.now()` in bun:test (#3501)
+    
+    * Support changing the time
+    
+    * Bump WebKit
+    
+    * Update bun.lockb
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 3d5573921e732c4a63794e5d25f5953d0a40ff0e
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-06-28T20:53:09Z
+
+    Error.prototype.stack gets sourcemapped stacktraces and introduce Error.appendStackTrace (#3441)
+    
+    * Fix potential crash when reading sourcemapped stack traces
+    
+    * Format & sourcemap Error.prototype.stack
+    
+    * prevent double sourcemapping
+    
+    * Introduce Error.appendStackTrace
+    
+    * Fix source url
+    
+    * hide private stack traces in non-debug builds
+    
+    * fixes #3443
+    
+    * Bump WebKit
+    
+    * Fix test failure in vm.test
+    
+    * Support new() & add test
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit ff635551436123022ba3980b39580d53973c80a2
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-06-24T13:02:16Z
+
+    Rewrite Bun's runtime CommonJS loader (#3379)
+    
+    * wip changes for CommonJS
+    
+    * this rewrite is almost complete
+    
+    * even more code
+    
+    * wip
+    
+    * Remove usages of `import.meta.require` from builtins
+    
+    * Remove usages of require
+    
+    * Regenerate
+    
+    * :scissors: builtin rewrite commonjs in printer
+    
+    * Use lazy custom getters for import.meta
+    
+    * fixups
+    
+    * Remove depd
+    
+    * ugh
+    
+    * still crashing
+    
+    * fixup undici
+    
+    * comment out import.meta.require.resolve temporarily
+    
+    not a real solution but it stops the crashes
+    
+    * Redo import.meta.primordials
+    
+    * Builtins now have a `builtin://` protocol in source origin
+    
+    * Seems to work?
+    
+    * Finsih getting rid of primordials
+    
+    * switcharoo
+    
+    * No more function
+    
+    * just one more bug
+    
+    * Update launch.json
+    
+    * Implement `require.main`
+    
+    * :scissors:
+    
+    * Bump WebKit
+    
+    * Fixup import cycles
+    
+    * Fixup improt cycles
+    
+    * export more things
+    
+    * Implement `createCommonJSModule` builtin
+    
+    * More exports
+    
+    * regenerate
+    
+    * i broke some stuff
+    
+    * some of these tests work now
+    
+    * We lost the encoding
+    
+    * Sort of fix zlib
+    
+    * Sort of fix util
+    
+    * Update events.js
+    
+    * bump
+    
+    * bump
+    
+    * bump
+    
+    * Fix missing export in fs
+    
+    * fix some bugs with builtin esm modules (stream, worker_threads, events). its not perfect yet.
+    
+    * fix some other internal module bugs
+    
+    * oops
+    
+    * fix some extra require default stuff
+    
+    * uncomment this file but it crsahes on my machine
+    
+    * tidy code here
+    
+    * fixup tls exports
+    
+    * make simdutf happier
+    
+    * Add hasPrefix binding
+    
+    * Add test for `require.main`
+    
+    * Fix CommonJS evaluation order race condition
+    
+    * Make node:http load faster
+    
+    * Add missing exports to tls.js
+    
+    * Use the getter
+    
+    * Regenerate builtins
+    
+    * Fix assertion failure in Bun.write()
+    
+    * revamp dotEnv parser (#3347)
+    
+    - fixes `strings.indexOfAny()`
+    - fixes OOB array access
+    
+    fixes #411
+    fixes #2823
+    fixes #3042
+    
+    * fix tests for `expect()` (#3384)
+    
+    - extend test job time-out for `darwin-aarch64`
+    
+    * `expect().resolves` and `expect().rejects` (#3318)
+    
+    * Move expect and snapshots to their own files
+    
+    * expect().resolves and expect().rejects
+    
+    * Fix promise being added to unhandled rejection list
+    
+    * Handle timeouts in expect(<promise>)
+    
+    * wip merge
+    
+    * Fix merge issue
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    
+    * fixup min/memcopy (#3388)
+    
+    * Fix crash in builtins
+    
+    * Don't attempt to evaluate modules with no source code
+    
+    * Update WebCoreJSBuiltins.cpp
+    
+    * Update WebCoreJSBuiltins.cpp
+    
+    * Update WebCoreJSBuiltins.cpp
+    
+    * Fix crash
+    
+    * cleanup
+    
+    * Fix test
+    
+    cc @paperdave
+    
+    * Fixup Undici
+    
+    * Fix issue in node:http
+    
+    * Create util-deprecate.mjs
+    
+    * Fix several bugs
+    
+    * Use the identifier
+    
+    * Support error.code in `util.deprecate`
+    
+    * make the CJs loader slightly more resilient
+    
+    * Update WebCoreJSBuiltins.cpp
+    
+    * Fix macros
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    Co-authored-by: dave caruso <me@paperdave.net>
+    Co-authored-by: Alex Lam S.L <alexlamsl@gmail.com>
+    Co-authored-by: Ashcon Partovi <ashcon@partovi.net>
+    Co-authored-by: Ciro Spaciari <ciro.spaciari@gmail.com>
+
+--------------------------------------------------------------------------------
+
+commit 43865a3e29db8ebd7c753bc692f6f8ce83620d74
+Author: dave caruso <me@paperdave.net>
+Date:   2023-06-21T19:59:56Z
+
+    finish implementing JSMockFunction prototype + lots of expect test organizing (#3304)
+    
+    * mock tests
+    
+    * fix mistake
+    
+    * stuff
+    
+    * partially implement mock return promises
+    
+    * lot of housecleaning on jest tests
+    
+    * document / rename internalFields in jsmockfunction
+    
+    * finish implementing JSMockFunction prototype
+    
+    * cleanup
+    
+    * more progress
+    
+    * everything is done
+    
+    * remove demo.test.js
+    
+    * finish rebase
+    
+    * requested changes
+    
+    * fix compile error
+
+--------------------------------------------------------------------------------
+
+commit def8824bc283ecea4932fb173ba4cd8f191345bc
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-05-21T07:20:04Z
+
+    Upgrade WebKit (#2980)
+    
+    * [internal] Show the file path to the calling function from JS
+    
+    * [internal] Make `JSC.NewFunction` more type safe
+    
+    * Upgrade WebKit
+    
+    * Finish
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit bff465a2a2d10e30c695398884514abed3532bc8
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-05-17T18:34:37Z
+
+    Finish bumping
+
+--------------------------------------------------------------------------------
+
+commit aeb3bb949b0052d0573bef507f1b66bbcf4f3dc0
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-04-13T11:11:12Z
+
+    Upgrade WebKit (#2643)
+    
+    * Missing export
+    
+    * Regenerate builtins
+    
+    * Fix crash in require()
+    
+    * Various breaking JSC changes
+    
+    * hopefully speed up C++ compilation a little
+    
+    * Skip failing test fo rnow
+    
+    * Update WebKit
+    
+    * Add a comment
+    
+    * Fix error in postinstall
+    
+    * Update WebKit
+    
+    ---------
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 461ae27d314561038a41982c77cb804ef7faffd7
+Author: dave caruso <me@paperdave.net>
+Date:   2023-04-08T09:23:11Z
+
+    Rewrite Developer Docs, Improve DX for new users, moving away from Devcontainer (#2588)
+    
+    * new docs starting point. missing alot of information
+    
+    * very experimental idea: make setup
+    
+    * run on ubuntu 20
+    
+    * builds on ubuntu 20 (wsl) now
+    
+    * add release instructions
+    
+    * add valgrind note from jarred/new-bundler branch, just in case it gets lost when rebasing
+    
+    * changes requested
+
+--------------------------------------------------------------------------------
+
+commit a5f92224b586289fc72f0abdb68b08eef9f017db
+Author: Colin McDonnell <colinmcd94@gmail.com>
+Date:   2023-03-22T22:01:01Z
+
+    Fix types (#2453)
+    
+    * WIP
+    
+    * WIP
+    
+    * WIP
+    
+    * WIP
+    
+    * Improve typechecking in type files
+    
+    * Fix typechecking
+    
+    * Update
+    
+    * Update submodule
+    
+    * CI for typechecking
+    
+    * Add ci
+    
+    * Update commands
+    
+    * Format after build
+    
+    * Dont use bunx
+    
+    * Rename job
+    
+    * Use nodemodules prettier
+    
+    * Update workflow
+    
+    * Use symlink
+    
+    * Debug
+    
+    * Debug
+    
+    * Clean up and rename jobs
+
+--------------------------------------------------------------------------------
+
+commit 8f67cf75ee7a4c4c916e9c91c192194caeec53bd
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-02-25T12:28:04Z
+
+    Bump WebKit
+
+--------------------------------------------------------------------------------
+
+commit 7285b9cf75bc3c243db858371505ece141b6ae3d
+Author: Alex Lam S.L <alexlamsl@gmail.com>
+Date:   2023-02-18T06:07:02Z
+
+    update `bun.lockb`s (#2101)
+
+--------------------------------------------------------------------------------
+
+commit 941c6ed8146bbcaba882918ad3265a366296dab5
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-02-10T05:28:50Z
+
+    Upgrade WebKit
+
+--------------------------------------------------------------------------------
+
+commit 348e72356b1d2116ef1527f364495a41ed571d74
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-01-29T09:26:16Z
+
+    Bump WebKit
+
+--------------------------------------------------------------------------------
+
+commit efc024cfc4e6e6216325ea796063329ea5892067
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-01-24T00:51:48Z
+
+    clean up deps
+
+--------------------------------------------------------------------------------
+
+commit b3533fb3a88b33da50e58ad9594a0559af575035
+Author: Ciro Spaciari <ciro.spaciari@gmail.com>
+Date:   2023-01-24T00:48:52Z
+
+    fix(Buffer) Fix arguments in buffer.write, fix size returned from buffer.write for utf16, fix size calc for base64, fix calc for hex byte size (#1881)
+    
+    * fix buffer write when more than 2 args are passed
+    
+    * fix encoding parameter
+    
+    * better buffer write tests
+    
+    * fix ucs2/utf8 len return
+    
+    * fix base64 size in Buffer write
+    
+    * fix hex encoding size
+    
+    * actual fix base64
+    
+    * actual fix base64
+    
+    * fix segfault
+    
+    * add fill parameter in Buffer.alloc
+    
+    * use createUnitialized when alloc have fill parameter, use RETURN_IF_EXCEPTION when static casting
+    
+    * fix utf16le, ucs2 copying in Buffer write
+
+--------------------------------------------------------------------------------
+
+commit 58cbd6b211410593a2c3e4ac98fada50789433cd
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-01-19T00:51:06Z
+
+    Regenerate lockb
+
+--------------------------------------------------------------------------------
+
+commit 9fd3b5587b9c7f045eaf8828ed5358206a1802ee
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-01-02T19:29:22Z
+
+    Auto-install and link webkit
+
+--------------------------------------------------------------------------------
+
+commit c0dd2841362b67fdb5ede262b19688004a4eb9a4
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-12-28T08:51:22Z
+
+    Upgrade to latest Zig (#1610)
+    
+    * @min and @max
+    
+    * builtins and some trivial ones
+    
+    * Most of them
+    
+    * more
+    
+    * more!
+    
+    * More Progress
+    
+    * wip
+    
+    * Update tagged_pointer.zig
+    
+    * Update http_client_async.zig
+    
+    * Most of the iterable dir changes
+    
+    * alright
+    
+    * Remove usages of deprecated formatters
+    
+    * :camera:
+    
+    * fmt
+    
+    * Update shimmer.zig
+    
+    * wip
+    
+    * wip
+    
+    * wip
+    
+    * progress
+    
+    * more
+    
+    * Latest
+    
+    * stuck on error
+    
+    * latest
+    
+    * workaround stage2
+    
+    * wip
+    
+    * Update string_immutable.zig
+    
+    * wip
+    
+    * Migrate `Dirent` and `require("fs')` to use JSC<>Zig bindings
+    
+    * Fix build errors
+    
+    * Fixup most of the test failures
+    
+    * Fix `make headers`
+    
+    * Fix "outside package path" error
+    
+    * Fixup aligned alloc
+    
+    * Add missing file
+    
+    * linux
+    
+    * More linux fixes
+    
+    * use latest peechy
+    
+    * Fix transpiler test failure
+    
+    * Forgot about these
+    
+    * Fixup test failure
+    
+    * Update node-timers.test.ts
+    
+    * [node:htt] Fix `undefined is not an object` error
+    
+    Fixes https://github.com/oven-sh/bun/issues/1618
+    
+    * Update http.exports.js
+    
+    * Make this test less flaky
+    
+    * fix hashes
+    
+    * Fix hex formatting and zls issues
+    
+    * Download zig version
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update uws
+    
+    * Update Dockerfile
+    
+    * Set llvm version
+    
+    * Update README.md
+    
+    * Update uws
+    
+    * Update Dockerfile
+    
+    * Update io_linux.zig
+    
+    * Update bun.zig
+    
+    * Log output
+    
+    * workaround strange @cInclude error
+    
+    * Make ffi tests better
+    
+    * Don't use cImport
+    
+    * Update c.zig
+    
+    * Update c-bindings.cpp
+    
+    * call setOutputDir
+    
+    * Update Dockerfile
+    
+    * Use a longer name
+    
+    * latest
+    
+    * Update serve.test.ts
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+    Co-authored-by: Veikka Tuominen <git@vexu.eu>
+
+--------------------------------------------------------------------------------
+
+commit f7f1b604443c030afe29d1059b90f72c69afe081
+Author: Colin McDonnell <colinmcd94@gmail.com>
+Date:   2022-11-09T23:40:40Z
+
+    Add bun-types, add typechecking, add `child_process` types (#1475)
+    
+    * Add bun-types to packages
+    
+    * Improve typing
+    
+    * Fix types in tests
+    
+    * Fix dts tests
+    
+    * Run formatter
+    
+    * Fix all type errors
+    
+    * Add strict mode, fix type errors
+    
+    * Add ffi changes
+    
+    * Move workflows to root
+    
+    * Add workflows
+    
+    * Remove labeler
+    
+    * Add child_process types
+    
+    * Fix synthetic defaults issue
+    
+    * Remove docs
+    
+    * Move scripts
+    
+    * Run prettier
+    
+    * Include examples in typechecking
+    
+    * captureStackTrace types
+    
+    * moved captureStackTrace types to globals
+    
+    * Address reviews
+    
+    Co-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>
+    Co-authored-by: Dylan Conway <dylan.conway567@gmail.com>
+
+--------------------------------------------------------------------------------
+
+commit 3a60764f32bf7aaf3d2ec6cb84d81e8384bd2417
+Author: Colin McDonnell <colinmcd94@gmail.com>
+Date:   2022-11-01T05:10:28Z
+
+    Update React fizz server (#1432)
+    
+    * Update fizz server
+    
+    * Use production build
+    
+    Co-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>
+
+--------------------------------------------------------------------------------
+
+commit 02c920f4fd09ddc1a32cb2e92c6f391875415949
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-10-25T07:44:25Z
+
+    TCP & TLS Socket API (#1374)
+    
+    * TCP Socket API
+    
+    * Wip
+    
+    * Add snippet for StringDecoder
+    
+    * Rename `close` to `stop`, replace `close` with `end`
+    
+    * Add a tcp echo server test
+    
+    * Some docs
+    
+    * Update README.md
+    
+    * Fix build
+    
+    * Update README.md
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 0ca42e81f31d31270c44f81d88fff33361817720
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-09-03T10:57:43Z
+
+    Plugin API (#1199)
+    
+    * Plugin API
+    
+    * Fix the bugs
+    
+    * Implement `"object"` loader
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit af5c4dedca550a856486ec8bbc9f6da76396496e
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-08-28T06:46:05Z
+
+    Update WebKit (#1165)
+    
+    * Update WebKit
+    
+    * Fix `DataView` and non-8 bit sized typed arrays with TextDecoder
+    
+    * New WebKit
+    
+    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
+
+commit 52865750da82eb91b71a66fa126ab55ee055f9a1
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2022-08-06T18:08:33Z
+
+    Update bun.lockb
+
+--------------------------------------------------------------------------------
+
+commit c94091d8b10a8fc979fbc62d06aa9526df5f7d8b
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2022-08-06T06:28:19Z
+
+    Refresh all the bun.lockb
+
+--------------------------------------------------------------------------------
+
+commit 7d1c9fa1a471d180c078a860c4885478f334bdf5
+Author: Alexander <alexkuz@gmail.com>
+Date:   2022-07-09T11:45:38Z
+
+    Migrate to Zig v0.10.0
+
+--------------------------------------------------------------------------------
+
+commit cf4c9912c3c1800efdc0427221b654de6f41265f
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2022-07-04T23:46:17Z
+
+    Fix npm peer dep issue
+
+--------------------------------------------------------------------------------
+
+commit 9c960fcafd52d6206c958d3e7791f72c6a059632
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2022-07-04T23:39:55Z
+
+    Update bun.lockb
+
+--------------------------------------------------------------------------------
+
+commit 729d445b6885f69dd2c6355f38707bd42851c791
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2022-06-23T06:21:48Z
+
+    change the directory structure
+
+--------------------------------------------------------------------------------
+
+commit 91e96a8da8aeb28ab39ab6a2642533956f58b648
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-05-03T09:11:59Z
+
+    ffi overhead bench
+
+--------------------------------------------------------------------------------
+
+commit 612fad706f66d8f830ef9a6efbc33f49a1343ea5
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-04-19T03:51:10Z
+
+    fix wasm build take 2 (one more thing is broken)
+
+--------------------------------------------------------------------------------
+
+commit 27ad502119c15f41d3248733b9d778d5a72a55d6
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-04-03T23:35:09Z
+
+    cleanup a few things
+
+--------------------------------------------------------------------------------
+
+commit 1a7b546055e820b787a16801c2f379f350caff6e
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-03-16T12:06:42Z
+
+    bun.lockb
+
+--------------------------------------------------------------------------------
+
+commit fe5ef864f1de46e77772fb05a9980d7b6d8db3a6
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-02-25T08:54:59Z
+
+    hopefully no more unnecessary git status
+
+--------------------------------------------------------------------------------
+
+commit 3881b7a69c6c700cea11d28484039d53cc59506e
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-02-12T11:26:40Z
+
+    hm
+
+--------------------------------------------------------------------------------
+
+commit 90c573cd42be1abab86db5820d1f6d1666eade8e
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-02-12T05:15:20Z
+
+    [bun install] Implement global installs
+
+--------------------------------------------------------------------------------
+
+commit d67c95d8ebb366d14976ce74e9448a23c3d6886a
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-02-12T03:01:00Z
+
+    [bun install] Implement bunfig.toml config
+
+--------------------------------------------------------------------------------
+
+commit a09b99565138bb4bc73a5328397428fb5025817b
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-01-20T07:07:03Z
+
+    Bun.Transpiler – API for scanning imports/exports of JSX/TSX/TS/JS files
+
+--------------------------------------------------------------------------------
+
+commit 6480193c65644efc943b0c8790da15b6b59b147c
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-01-04T06:39:08Z
+
+    :confused:
+
+--------------------------------------------------------------------------------
+
+commit 6966d94d906ba6e482717aa2b02f8d9f2d0cf6ce
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-01-04T06:26:37Z
+
+    :lock:
+
+--------------------------------------------------------------------------------
+
+commit 3083bbadc1437d947824c56ca9c0e03bace73480
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2021-12-31T08:01:17Z
+
+    Bump peechy again
+
+--------------------------------------------------------------------------------
+
+commit 31cd05191dc32069e5ced56091ed26773a8ae770
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2021-12-31T06:04:41Z
+
+    Update bun.lockb
+
+--------------------------------------------------------------------------------
+
+commit e75c711c68896f5952793601f156c921c814caab
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2021-12-31T05:12:32Z
+
+    Upgrade to latest Zig, remove dependency on patched version of Zig (#96)
+    
+    * Prepare to upgrade zig
+    
+    * zig fmt
+    
+    * AllocGate
+    
+    * Update data_url.zig
+    
+    * wip
+    
+    * few files
+    
+    * just headers now?
+    
+    * I think everything works?
+    
+    * Update mimalloc
+    
+    * Update hash_map.zig
+    
+    * Perf improvements to compensate for Allocgate
+    
+    * Bump
+    
+    * :camera:
+    
+    * Update bun.lockb
+    
+    * Less branching
+    
+    * [js parser] Slightly reduce memory usage
+    
+    * Update js_parser.zig
+    
+    * WIP remove unused
+    
+    * [JS parser] WIP support for `with` keyword
+    
+    * Remove more dead code
+    
+    * Fix all the build errors!
+    
+    * cleanup
+    
+    * Move `network_thread` up
+    
+    * Bump peechy
+    
+    * Update README.md
+
+--------------------------------------------------------------------------------
+
+commit 536d6ab302d537af2627f4837ec9ad0b5337dbf2
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2021-12-26T09:40:37Z
+
+    github actions (#91)
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * switch
+    
+    * :hushed:
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * wip
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * cache is broken
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update bun.yml
+    
+    * bust it
+    
+    * Update Dockerfile
+    
+    * jm
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * wip
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Makefile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * pass executablePath
+    
+    * alright
+    
+    * Update Makefile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Makefile
+    
+    * Update Makefile
+    
+    * Update Dockerfile
+    
+    * lets try that
+    
+    * Update Dockerfile
+    
+    * Update bun.yml
+    
+    * hm
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * not interactive
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * simplify this
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * missing
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * wrong dir
+    
+    * Update Dockerfile
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update bun.yml
+    
+    * ordering
+    
+    * Update Dockerfile
+    
+    * Update bun.yml
+    
+    * run-test file
+    
+    * pass github workspace
+    
+    * hm
+    
+    * Update bun.yml
+    
+    * copy the file
+    
+    * Update run-test.sh
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * try this way
+    
+    * Update bun.yml
+    
+    * maybe?
+    
+    * Update bun.yml
+    
+    * maybe taht's it?
+    
+    * maybe this
+    
+    * cache
+    
+    * up
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * try this one i guess
+    
+    * okay that might do it
+    
+    * Update Dockerfile
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update chrome.json
+    
+    * Update chrome.json
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * hm
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * fix caching I think
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * maybe
+    
+    * Update bun.yml
+    
+    * fixup
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * maybe this time
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * random name
+    
+    * ok
+    
+    * explicit runner
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * try deleting the files so the layer caching doesn't happen
+    
+    * :runner:
+    
+    * Update bun.yml
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile
+    
+    * Dockerfile.base
+    
+    * node.js
+    
+    * Update bun.yml
+    
+    * Update Dockerfile
+    
+    * Update Dockerfile.base
+    
+    * cleanup
+
+--------------------------------------------------------------------------------
