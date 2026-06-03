@@ -31,7 +31,7 @@ async function run() {
 	rmSync(chainPath, { force: true });
 	const files = readdirSync(__dirname);
 	for (const file of files) {
-		if (file.startsWith("packablock.yaml") && file.endsWith(".bak")) {
+		if (file.startsWith("packablock-") && file.endsWith(".yaml")) {
 			rmSync(path.join(__dirname, file), { force: true });
 		}
 	}

@@ -1,6 +1,6 @@
 # Ignore generated YAML chains
 packablock.yaml
-packablock.yaml*.bak
+packablock-*.yaml
 pack.tar.gz
 temp-verify-dir/
 extract-test/
