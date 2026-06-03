@@ -1,0 +1,2097 @@
+================================================================================
+📦 ANCIENT BUN.LOCKB DEPENDENCY EVOLUTION LOG
+================================================================================
+
+commit 52865750da82eb91b71a66fa126ab55ee055f9a1
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2022-08-06T18:08:33Z
+Msg:    Update bun.lock
+  + Added (28):
+    • bun-types@0.1.5
+    • camel-case@4.1.2
+    • capital-case@1.0.4
+    • change-case@4.1.2
+    • constant-case@3.0.4
+    • dot-case@3.0.4
+    • he@1.2.0
+    • header-case@2.0.4
+    • html-entities@2.3.3
+    • js-tokens@4.0.0
+    • loose-envify@1.4.0
+    • lower-case@2.0.2
+    • mitata@0.1.6
+    • no-case@3.0.4
+    • param-case@3.0.4
+    • pascal-case@3.1.2
+    • path-case@3.0.4
+    • peechy@0.4.32
+    • prettier@2.7.1
+    • react@18.2.0
+    • react-dom@18.2.0
+    • scheduler@0.23.0
+    • sentence-case@3.0.4
+    • snake-case@3.0.4
+    • tslib@2.4.0
+    • typescript@4.6.3
+    • upper-case@2.0.2
+    • upper-case-first@2.0.2
+--------------------------------------------------------------------------------
+commit 0ca42e81f31d31270c44f81d88fff33361817720
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-09-03T10:57:43Z
+Msg:    Plugin API (#1199)
+  + Added (1):
+    • svelte@3.50.0
+--------------------------------------------------------------------------------
+commit 02c920f4fd09ddc1a32cb2e92c6f391875415949
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2022-10-25T07:44:25Z
+Msg:    TCP & TLS Socket API (#1374)
+  + Added (56):
+    • accepts@1.3.8
+    • array-flatten@1.1.1
+    • body-parser@1.20.1
+    • bytes@3.1.2
+    • call-bind@1.0.2
+    • content-disposition@0.5.4
+    • content-type@1.0.4
+    • cookie@0.5.0
+    • cookie-signature@1.0.6
+    • debug@2.6.9
+    • depd@2.0.0
+    • destroy@1.2.0
+    • ee-first@1.1.1
+    • encodeurl@1.0.2
+    • escape-html@1.0.3
+    • etag@1.8.1
+    • express@4.18.2
+    • finalhandler@1.2.0
+    • forwarded@0.2.0
+    • fresh@0.5.2
+    • function-bind@1.1.1
+    • get-intrinsic@1.1.3
+    • has@1.0.3
+    • has-symbols@1.0.3
+    • http-errors@2.0.0
+    • iconv-lite@0.4.24
+    • inherits@2.0.4
+    • ipaddr.js@1.9.1
+    • media-typer@0.3.0
+    • merge-descriptors@1.0.1
+    • methods@1.1.2
+    • mime@1.6.0
+    • mime-db@1.52.0
+    • mime-types@2.1.35
+    • ms@2.1.3
+    • negotiator@0.6.3
+    • object-inspect@1.12.2
+    • on-finished@2.4.1
+    • parseurl@1.3.3
+    • path-to-regexp@0.1.7
+    • proxy-addr@2.0.7
+    • qs@6.11.0
+    • range-parser@1.2.1
+    • raw-body@2.5.1
+    • safe-buffer@5.2.1
+    • safer-buffer@2.1.2
+    • send@0.18.0
+    • serve-static@1.15.0
+    • setprototypeof@1.2.0
+    • side-channel@1.0.4
+    • statuses@2.0.1
+    • toidentifier@1.0.1
+    • type-is@1.6.18
+    • unpipe@1.0.0
+    • utils-merge@1.0.1
+    • vary@1.1.2
+  Δ Changed (1):
+    • bun-types: 0.1.5 ➔ 0.2.1
+--------------------------------------------------------------------------------
+commit 3a60764f32bf7aaf3d2ec6cb84d81e8384bd2417
+Author: Colin McDonnell <colinmcd94@gmail.com>
+Date:   2022-11-01T05:10:28Z
+Msg:    Update React fizz server (#1432)
+  Δ Changed (3):
+    • react: 18.2.0 ➔ 18.3.0-next-2ac77aab9-20221029
+    • react-dom: 18.2.0 ➔ 18.3.0-next-2ac77aab9-20221029
+    • scheduler: 0.23.0 ➔ 0.24.0-next-2ac77aab9-20221029
+--------------------------------------------------------------------------------
+commit efc024cfc4e6e6216325ea796063329ea5892067
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-01-24T00:51:48Z
+Msg:    clean up deps
+  + Added (131):
+    • @eslint/eslintrc@1.4.1
+    • @humanwhocodes/config-array@0.11.8
+    • @humanwhocodes/module-importer@1.0.1
+    • @humanwhocodes/object-schema@1.2.1
+    • @nodelib/fs.scandir@2.1.5
+    • @nodelib/fs.stat@2.0.5
+    • @nodelib/fs.walk@1.2.8
+    • @types/json-schema@7.0.11
+    • @types/prop-types@15.7.5
+    • @types/react@18.0.27
+    • @types/scheduler@0.16.2
+    • @types/semver@7.3.13
+    • @typescript-eslint/eslint-plugin@5.48.2
+    • @typescript-eslint/parser@5.48.2
+    • @typescript-eslint/scope-manager@5.48.2
+    • @typescript-eslint/type-utils@5.48.2
+    • @typescript-eslint/types@5.48.2
+    • @typescript-eslint/typescript-estree@5.48.2
+    • @typescript-eslint/utils@5.48.2
+    • @typescript-eslint/visitor-keys@5.48.2
+    • acorn@8.8.1
+    • acorn-jsx@5.3.2
+    • ajv@6.12.6
+    • ansi-regex@5.0.1
+    • ansi-styles@4.3.0
+    • argparse@2.0.1
+    • array-union@2.1.0
+    • balanced-match@1.0.2
+    • brace-expansion@1.1.11
+    • braces@3.0.2
+    • bun-webkit@0.0.1-60d11703a533fd694cd1d6ddda04813eecb5d69f
+    • bun-webkit-linux-amd64@0.0.1-60d11703a533fd694cd1d6ddda04813eecb5d69f
+    • bun-webkit-linux-arm64@0.0.1-60d11703a533fd694cd1d6ddda04813eecb5d69f
+    • bun-webkit-macos-amd64@0.0.1-60d11703a533fd694cd1d6ddda04813eecb5d69f
+    • bun-webkit-macos-arm64@0.0.1-60d11703a533fd694cd1d6ddda04813eecb5d69f
+    • callsites@3.1.0
+    • chalk@4.1.2
+    • color-convert@2.0.1
+    • color-name@1.1.4
+    • concat-map@0.0.1
+    • cross-spawn@7.0.3
+    • csstype@3.1.1
+    • deep-is@0.1.4
+    • dir-glob@3.0.1
+    • doctrine@3.0.0
+    • escape-string-regexp@4.0.0
+    • eslint@8.32.0
+    • eslint-config-prettier@8.6.0
+    • eslint-scope@7.1.1
+    • eslint-utils@3.0.0
+    • eslint-visitor-keys@3.3.0
+    • espree@9.4.1
+    • esquery@1.4.0
+    • esrecurse@4.3.0
+    • estraverse@5.3.0
+    • esutils@2.0.3
+    • fast-deep-equal@3.1.3
+    • fast-glob@3.2.12
+    • fast-json-stable-stringify@2.1.0
+    • fast-levenshtein@2.0.6
+    • fastq@1.15.0
+    • file-entry-cache@6.0.1
+    • fill-range@7.0.1
+    • find-up@5.0.0
+    • flat-cache@3.0.4
+    • flatted@3.2.7
+    • fs.realpath@1.0.0
+    • glob@7.2.3
+    • glob-parent@6.0.2
+    • globals@13.19.0
+    • globby@11.1.0
+    • grapheme-splitter@1.0.4
+    • has-flag@4.0.0
+    • ignore@5.2.4
+    • import-fresh@3.3.0
+    • imurmurhash@0.1.4
+    • inflight@1.0.6
+    • is-extglob@2.1.1
+    • is-glob@4.0.3
+    • is-number@7.0.0
+    • is-path-inside@3.0.3
+    • isexe@2.0.0
+    • js-sdsl@4.2.0
+    • js-yaml@4.1.0
+    • json-schema-traverse@0.4.1
+    • json-stable-stringify-without-jsonify@1.0.1
+    • levn@0.4.1
+    • locate-path@6.0.0
+    • lodash.merge@4.6.2
+    • lru-cache@6.0.0
+    • merge2@1.4.1
+    • micromatch@4.0.5
+    • minimatch@3.1.2
+    • natural-compare@1.4.0
+    • natural-compare-lite@1.4.0
+    • once@1.4.0
+    • optionator@0.9.1
+    • p-limit@3.1.0
+    • p-locate@5.0.0
+    • parent-module@1.0.1
+    • path-exists@4.0.0
+    • path-is-absolute@1.0.1
+    • path-key@3.1.1
+    • path-type@4.0.0
+    • picomatch@2.3.1
+    • prelude-ls@1.2.1
+    • punycode@2.2.0
+    • queue-microtask@1.2.3
+    • regexpp@3.2.0
+    • resolve-from@4.0.0
+    • reusify@1.0.4
+    • rimraf@3.0.2
+    • run-parallel@1.2.0
+    • semver@7.3.8
+    • shebang-command@2.0.0
+    • shebang-regex@3.0.0
+    • slash@3.0.0
+    • strip-ansi@6.0.1
+    • strip-json-comments@3.1.1
+    • supports-color@7.2.0
+    • text-table@0.2.0
+    • to-regex-range@5.0.1
+    • tsutils@3.21.0
+    • type-check@0.4.0
+    • type-fest@0.20.2
+    • uri-js@4.4.1
+    • which@2.0.2
+    • word-wrap@1.2.3
+    • wrappy@1.0.2
+    • yallist@4.0.0
+    • yocto-queue@0.1.0
+  - Removed (57):
+    • accepts@1.3.8
+    • array-flatten@1.1.1
+    • body-parser@1.20.1
+    • bun-types@0.2.1
+    • bytes@3.1.2
+    • call-bind@1.0.2
+    • content-disposition@0.5.4
+    • content-type@1.0.4
+    • cookie@0.5.0
+    • cookie-signature@1.0.6
+    • depd@2.0.0
+    • destroy@1.2.0
+    • ee-first@1.1.1
+    • encodeurl@1.0.2
+    • escape-html@1.0.3
+    • etag@1.8.1
+    • express@4.18.2
+    • finalhandler@1.2.0
+    • forwarded@0.2.0
+    • fresh@0.5.2
+    • function-bind@1.1.1
+    • get-intrinsic@1.1.3
+    • has@1.0.3
+    • has-symbols@1.0.3
+    • he@1.2.0
+    • html-entities@2.3.3
+    • http-errors@2.0.0
+    • iconv-lite@0.4.24
+    • ipaddr.js@1.9.1
+    • media-typer@0.3.0
+    • merge-descriptors@1.0.1
+    • methods@1.1.2
+    • mime@1.6.0
+    • mime-db@1.52.0
+    • mime-types@2.1.35
+    • negotiator@0.6.3
+    • object-inspect@1.12.2
+    • on-finished@2.4.1
+    • parseurl@1.3.3
+    • path-to-regexp@0.1.7
+    • proxy-addr@2.0.7
+    • qs@6.11.0
+    • range-parser@1.2.1
+    • raw-body@2.5.1
+    • safe-buffer@5.2.1
+    • safer-buffer@2.1.2
+    • send@0.18.0
+    • serve-static@1.15.0
+    • setprototypeof@1.2.0
+    • side-channel@1.0.4
+    • statuses@2.0.1
+    • svelte@3.50.0
+    • toidentifier@1.0.1
+    • type-is@1.6.18
+    • unpipe@1.0.0
+    • utils-merge@1.0.1
+    • vary@1.1.2
+  Δ Changed (9):
+    • debug: 2.6.9 ➔ 4.3.4
+    • ms: 2.1.3 ➔ 2.1.2
+    • peechy: 0.4.32 ➔ 0.4.33
+    • prettier: 2.7.1 ➔ 2.8.3
+    • react: 18.3.0-next-2ac77aab9-20221029 ➔ 18.3.0-next-ee8509801-20230117
+    • react-dom: 18.3.0-next-2ac77aab9-20221029 ➔ 18.3.0-next-ee8509801-20230117
+    • scheduler: 0.24.0-next-2ac77aab9-20221029 ➔ 0.24.0-next-ee8509801-20230117
+    • tslib: 2.4.0 ➔ 2.4.1
+    • typescript: 4.6.3 ➔ 4.9.4
+--------------------------------------------------------------------------------
+commit 348e72356b1d2116ef1527f364495a41ed571d74
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-01-29T09:26:16Z
+Msg:    Bump WebKit
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-60d11703a533fd694cd1d6ddda04813eecb5d69f ➔ 0.0.1-dd868651f5c801985460c1128ae196d1edca9925
+    • bun-webkit-linux-amd64: 0.0.1-60d11703a533fd694cd1d6ddda04813eecb5d69f ➔ 0.0.1-dd868651f5c801985460c1128ae196d1edca9925
+    • bun-webkit-linux-arm64: 0.0.1-60d11703a533fd694cd1d6ddda04813eecb5d69f ➔ 0.0.1-dd868651f5c801985460c1128ae196d1edca9925
+    • bun-webkit-macos-amd64: 0.0.1-60d11703a533fd694cd1d6ddda04813eecb5d69f ➔ 0.0.1-dd868651f5c801985460c1128ae196d1edca9925
+    • bun-webkit-macos-arm64: 0.0.1-60d11703a533fd694cd1d6ddda04813eecb5d69f ➔ 0.0.1-dd868651f5c801985460c1128ae196d1edca9925
+--------------------------------------------------------------------------------
+commit 941c6ed8146bbcaba882918ad3265a366296dab5
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-02-10T05:28:50Z
+Msg:    Upgrade WebKit
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-dd868651f5c801985460c1128ae196d1edca9925 ➔ 0.0.1-61ed147fdeaa0787d77bddb332177f23ad96d6fe
+    • bun-webkit-linux-amd64: 0.0.1-dd868651f5c801985460c1128ae196d1edca9925 ➔ 0.0.1-61ed147fdeaa0787d77bddb332177f23ad96d6fe
+    • bun-webkit-linux-arm64: 0.0.1-dd868651f5c801985460c1128ae196d1edca9925 ➔ 0.0.1-61ed147fdeaa0787d77bddb332177f23ad96d6fe
+    • bun-webkit-macos-amd64: 0.0.1-dd868651f5c801985460c1128ae196d1edca9925 ➔ 0.0.1-61ed147fdeaa0787d77bddb332177f23ad96d6fe
+    • bun-webkit-macos-arm64: 0.0.1-dd868651f5c801985460c1128ae196d1edca9925 ➔ 0.0.1-61ed147fdeaa0787d77bddb332177f23ad96d6fe
+--------------------------------------------------------------------------------
+commit 7285b9cf75bc3c243db858371505ece141b6ae3d
+Author: Alex Lam S.L <alexlamsl@gmail.com>
+Date:   2023-02-18T06:07:02Z
+Msg:    update `bun.lock`s (#2101)
+  Δ Changed (21):
+    • @types/react: 18.0.27 ➔ 18.0.28
+    • @typescript-eslint/eslint-plugin: 5.48.2 ➔ 5.52.0
+    • @typescript-eslint/parser: 5.48.2 ➔ 5.52.0
+    • @typescript-eslint/scope-manager: 5.48.2 ➔ 5.52.0
+    • @typescript-eslint/type-utils: 5.48.2 ➔ 5.52.0
+    • @typescript-eslint/types: 5.48.2 ➔ 5.52.0
+    • @typescript-eslint/typescript-estree: 5.48.2 ➔ 5.52.0
+    • @typescript-eslint/utils: 5.48.2 ➔ 5.52.0
+    • @typescript-eslint/visitor-keys: 5.48.2 ➔ 5.52.0
+    • acorn: 8.8.1 ➔ 8.8.2
+    • eslint: 8.32.0 ➔ 8.34.0
+    • esquery: 1.4.0 ➔ 1.4.2
+    • globals: 13.19.0 ➔ 13.20.0
+    • js-sdsl: 4.2.0 ➔ 4.3.0
+    • prettier: 2.8.3 ➔ 2.8.4
+    • punycode: 2.2.0 ➔ 2.3.0
+    • react: 18.3.0-next-ee8509801-20230117 ➔ 18.3.0-next-4fcc9184a-20230217
+    • react-dom: 18.3.0-next-ee8509801-20230117 ➔ 18.3.0-next-4fcc9184a-20230217
+    • scheduler: 0.24.0-next-ee8509801-20230117 ➔ 0.24.0-next-4fcc9184a-20230217
+    • tslib: 2.4.1 ➔ 2.5.0
+    • typescript: 4.9.4 ➔ 4.9.5
+--------------------------------------------------------------------------------
+commit 8f67cf75ee7a4c4c916e9c91c192194caeec53bd
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-02-25T12:28:04Z
+Msg:    Bump WebKit
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-61ed147fdeaa0787d77bddb332177f23ad96d6fe ➔ 0.0.1-595dd33692e02001631f6c3ab6f2bbb199278d26
+    • bun-webkit-linux-amd64: 0.0.1-61ed147fdeaa0787d77bddb332177f23ad96d6fe ➔ 0.0.1-595dd33692e02001631f6c3ab6f2bbb199278d26
+    • bun-webkit-linux-arm64: 0.0.1-61ed147fdeaa0787d77bddb332177f23ad96d6fe ➔ 0.0.1-595dd33692e02001631f6c3ab6f2bbb199278d26
+    • bun-webkit-macos-amd64: 0.0.1-61ed147fdeaa0787d77bddb332177f23ad96d6fe ➔ 0.0.1-595dd33692e02001631f6c3ab6f2bbb199278d26
+    • bun-webkit-macos-arm64: 0.0.1-61ed147fdeaa0787d77bddb332177f23ad96d6fe ➔ 0.0.1-595dd33692e02001631f6c3ab6f2bbb199278d26
+--------------------------------------------------------------------------------
+commit a5f92224b586289fc72f0abdb68b08eef9f017db
+Author: Colin McDonnell <colinmcd94@gmail.com>
+Date:   2023-03-22T22:01:01Z
+Msg:    Fix types (#2453)
+  Δ Changed (1):
+    • typescript: 4.9.5 ➔ 5.0.2
+--------------------------------------------------------------------------------
+commit 461ae27d314561038a41982c77cb804ef7faffd7
+Author: dave caruso <me@paperdave.net>
+Date:   2023-04-08T09:23:11Z
+Msg:    Rewrite Developer Docs, Improve DX for new users, moving away from Devcontainer (#2588)
+  + Added (23):
+    • @esbuild/android-arm@0.17.15
+    • @esbuild/android-arm64@0.17.15
+    • @esbuild/android-x64@0.17.15
+    • @esbuild/darwin-arm64@0.17.15
+    • @esbuild/darwin-x64@0.17.15
+    • @esbuild/freebsd-arm64@0.17.15
+    • @esbuild/freebsd-x64@0.17.15
+    • @esbuild/linux-arm@0.17.15
+    • @esbuild/linux-arm64@0.17.15
+    • @esbuild/linux-ia32@0.17.15
+    • @esbuild/linux-loong64@0.17.15
+    • @esbuild/linux-mips64el@0.17.15
+    • @esbuild/linux-ppc64@0.17.15
+    • @esbuild/linux-riscv64@0.17.15
+    • @esbuild/linux-s390x@0.17.15
+    • @esbuild/linux-x64@0.17.15
+    • @esbuild/netbsd-x64@0.17.15
+    • @esbuild/openbsd-x64@0.17.15
+    • @esbuild/sunos-x64@0.17.15
+    • @esbuild/win32-arm64@0.17.15
+    • @esbuild/win32-ia32@0.17.15
+    • @esbuild/win32-x64@0.17.15
+    • esbuild@0.17.15
+--------------------------------------------------------------------------------
+commit aeb3bb949b0052d0573bef507f1b66bbcf4f3dc0
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-04-13T11:11:12Z
+Msg:    Upgrade WebKit (#2643)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-595dd33692e02001631f6c3ab6f2bbb199278d26 ➔ 0.0.1-6bd997e38e30f50b3114b178f4d5e2fc5da6da25
+    • bun-webkit-linux-amd64: 0.0.1-595dd33692e02001631f6c3ab6f2bbb199278d26 ➔ 0.0.1-6bd997e38e30f50b3114b178f4d5e2fc5da6da25
+    • bun-webkit-linux-arm64: 0.0.1-595dd33692e02001631f6c3ab6f2bbb199278d26 ➔ 0.0.1-6bd997e38e30f50b3114b178f4d5e2fc5da6da25
+    • bun-webkit-macos-amd64: 0.0.1-595dd33692e02001631f6c3ab6f2bbb199278d26 ➔ 0.0.1-6bd997e38e30f50b3114b178f4d5e2fc5da6da25
+    • bun-webkit-macos-arm64: 0.0.1-595dd33692e02001631f6c3ab6f2bbb199278d26 ➔ 0.0.1-6bd997e38e30f50b3114b178f4d5e2fc5da6da25
+--------------------------------------------------------------------------------
+commit bff465a2a2d10e30c695398884514abed3532bc8
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-05-17T18:34:37Z
+Msg:    Finish bumping
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-6bd997e38e30f50b3114b178f4d5e2fc5da6da25 ➔ 0.0.1-eb1570290ba3e8555feb53b2a0feb68d2df65569
+    • bun-webkit-linux-amd64: 0.0.1-6bd997e38e30f50b3114b178f4d5e2fc5da6da25 ➔ 0.0.1-eb1570290ba3e8555feb53b2a0feb68d2df65569
+    • bun-webkit-linux-arm64: 0.0.1-6bd997e38e30f50b3114b178f4d5e2fc5da6da25 ➔ 0.0.1-eb1570290ba3e8555feb53b2a0feb68d2df65569
+    • bun-webkit-macos-amd64: 0.0.1-6bd997e38e30f50b3114b178f4d5e2fc5da6da25 ➔ 0.0.1-eb1570290ba3e8555feb53b2a0feb68d2df65569
+    • bun-webkit-macos-arm64: 0.0.1-6bd997e38e30f50b3114b178f4d5e2fc5da6da25 ➔ 0.0.1-eb1570290ba3e8555feb53b2a0feb68d2df65569
+--------------------------------------------------------------------------------
+commit def8824bc283ecea4932fb173ba4cd8f191345bc
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-05-21T07:20:04Z
+Msg:    Upgrade WebKit (#2980)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-eb1570290ba3e8555feb53b2a0feb68d2df65569 ➔ 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c
+    • bun-webkit-linux-amd64: 0.0.1-eb1570290ba3e8555feb53b2a0feb68d2df65569 ➔ 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c
+    • bun-webkit-linux-arm64: 0.0.1-eb1570290ba3e8555feb53b2a0feb68d2df65569 ➔ 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c
+    • bun-webkit-macos-amd64: 0.0.1-eb1570290ba3e8555feb53b2a0feb68d2df65569 ➔ 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c
+    • bun-webkit-macos-arm64: 0.0.1-eb1570290ba3e8555feb53b2a0feb68d2df65569 ➔ 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c
+--------------------------------------------------------------------------------
+commit 43865a3e29db8ebd7c753bc692f6f8ce83620d74
+Author: dave caruso <me@paperdave.net>
+Date:   2023-06-21T19:59:56Z
+Msg:    finish implementing JSMockFunction prototype + lots of expect test organizing (#3304)
+  + Added (4):
+    • @eslint-community/eslint-utils@4.4.0
+    • @eslint-community/regexpp@4.5.1
+    • @eslint/js@8.43.0
+    • graphemer@1.4.0
+  - Removed (3):
+    • eslint-utils@3.0.0
+    • js-sdsl@4.3.0
+    • regexpp@3.2.0
+  Δ Changed (52):
+    • @esbuild/android-arm: 0.17.15 ➔ 0.17.19
+    • @esbuild/android-arm64: 0.17.15 ➔ 0.17.19
+    • @esbuild/android-x64: 0.17.15 ➔ 0.17.19
+    • @esbuild/darwin-arm64: 0.17.15 ➔ 0.17.19
+    • @esbuild/darwin-x64: 0.17.15 ➔ 0.17.19
+    • @esbuild/freebsd-arm64: 0.17.15 ➔ 0.17.19
+    • @esbuild/freebsd-x64: 0.17.15 ➔ 0.17.19
+    • @esbuild/linux-arm: 0.17.15 ➔ 0.17.19
+    • @esbuild/linux-arm64: 0.17.15 ➔ 0.17.19
+    • @esbuild/linux-ia32: 0.17.15 ➔ 0.17.19
+    • @esbuild/linux-loong64: 0.17.15 ➔ 0.17.19
+    • @esbuild/linux-mips64el: 0.17.15 ➔ 0.17.19
+    • @esbuild/linux-ppc64: 0.17.15 ➔ 0.17.19
+    • @esbuild/linux-riscv64: 0.17.15 ➔ 0.17.19
+    • @esbuild/linux-s390x: 0.17.15 ➔ 0.17.19
+    • @esbuild/linux-x64: 0.17.15 ➔ 0.17.19
+    • @esbuild/netbsd-x64: 0.17.15 ➔ 0.17.19
+    • @esbuild/openbsd-x64: 0.17.15 ➔ 0.17.19
+    • @esbuild/sunos-x64: 0.17.15 ➔ 0.17.19
+    • @esbuild/win32-arm64: 0.17.15 ➔ 0.17.19
+    • @esbuild/win32-ia32: 0.17.15 ➔ 0.17.19
+    • @esbuild/win32-x64: 0.17.15 ➔ 0.17.19
+    • @eslint/eslintrc: 1.4.1 ➔ 2.0.3
+    • @humanwhocodes/config-array: 0.11.8 ➔ 0.11.10
+    • @types/json-schema: 7.0.11 ➔ 7.0.12
+    • @types/react: 18.0.28 ➔ 18.2.13
+    • @types/scheduler: 0.16.2 ➔ 0.16.3
+    • @types/semver: 7.3.13 ➔ 7.5.0
+    • @typescript-eslint/eslint-plugin: 5.52.0 ➔ 5.60.0
+    • @typescript-eslint/parser: 5.52.0 ➔ 5.60.0
+    • @typescript-eslint/scope-manager: 5.52.0 ➔ 5.60.0
+    • @typescript-eslint/type-utils: 5.52.0 ➔ 5.60.0
+    • @typescript-eslint/types: 5.52.0 ➔ 5.60.0
+    • @typescript-eslint/typescript-estree: 5.52.0 ➔ 5.60.0
+    • @typescript-eslint/utils: 5.52.0 ➔ 5.60.0
+    • @typescript-eslint/visitor-keys: 5.52.0 ➔ 5.60.0
+    • acorn: 8.8.2 ➔ 8.9.0
+    • csstype: 3.1.1 ➔ 3.1.2
+    • esbuild: 0.17.15 ➔ 0.17.19
+    • eslint: 8.34.0 ➔ 8.43.0
+    • eslint-config-prettier: 8.6.0 ➔ 8.8.0
+    • eslint-scope: 7.1.1 ➔ 7.2.0
+    • eslint-visitor-keys: 3.3.0 ➔ 3.4.1
+    • espree: 9.4.1 ➔ 9.5.2
+    • esquery: 1.4.2 ➔ 1.5.0
+    • prettier: 2.8.4 ➔ 2.8.8
+    • react: 18.3.0-next-4fcc9184a-20230217 ➔ 18.3.0-canary-d1c8cdae3-20230619
+    • react-dom: 18.3.0-next-4fcc9184a-20230217 ➔ 18.3.0-canary-d1c8cdae3-20230619
+    • scheduler: 0.24.0-next-4fcc9184a-20230217 ➔ 0.24.0-canary-d1c8cdae3-20230619
+    • semver: 7.3.8 ➔ 7.5.2
+    • tslib: 2.5.0 ➔ 2.5.3
+    • typescript: 5.0.2 ➔ 5.1.3
+--------------------------------------------------------------------------------
+commit ff635551436123022ba3980b39580d53973c80a2
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-06-24T13:02:16Z
+Msg:    Rewrite Bun's runtime CommonJS loader (#3379)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c ➔ 0.0.1-4b3750ddfe644a5bb131d652407653fac528ad51
+    • bun-webkit-linux-amd64: 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c ➔ 0.0.1-4b3750ddfe644a5bb131d652407653fac528ad51
+    • bun-webkit-linux-arm64: 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c ➔ 0.0.1-4b3750ddfe644a5bb131d652407653fac528ad51
+    • bun-webkit-macos-amd64: 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c ➔ 0.0.1-4b3750ddfe644a5bb131d652407653fac528ad51
+    • bun-webkit-macos-arm64: 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c ➔ 0.0.1-4b3750ddfe644a5bb131d652407653fac528ad51
+--------------------------------------------------------------------------------
+commit 3d5573921e732c4a63794e5d25f5953d0a40ff0e
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-06-28T20:53:09Z
+Msg:    Error.prototype.stack gets sourcemapped stacktraces and introduce Error.appendStackTrace (#3441)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-4b3750ddfe644a5bb131d652407653fac528ad51 ➔ 0.0.1-8a03cf746abef8a48c932ab25f8821390632f2e2
+    • bun-webkit-linux-amd64: 0.0.1-4b3750ddfe644a5bb131d652407653fac528ad51 ➔ 0.0.1-8a03cf746abef8a48c932ab25f8821390632f2e2
+    • bun-webkit-linux-arm64: 0.0.1-4b3750ddfe644a5bb131d652407653fac528ad51 ➔ 0.0.1-8a03cf746abef8a48c932ab25f8821390632f2e2
+    • bun-webkit-macos-amd64: 0.0.1-4b3750ddfe644a5bb131d652407653fac528ad51 ➔ 0.0.1-8a03cf746abef8a48c932ab25f8821390632f2e2
+    • bun-webkit-macos-arm64: 0.0.1-4b3750ddfe644a5bb131d652407653fac528ad51 ➔ 0.0.1-8a03cf746abef8a48c932ab25f8821390632f2e2
+--------------------------------------------------------------------------------
+commit aa38e51afb73dab3071addc07f82fd96153ff450
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-07-03T05:09:50Z
+Msg:    Support mocking `new Date()` & `Date.now()` in bun:test (#3501)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-8a03cf746abef8a48c932ab25f8821390632f2e2 ➔ 0.0.1-26c819733315f0ab64ae8e8e65b77d77d31211e1
+    • bun-webkit-linux-amd64: 0.0.1-8a03cf746abef8a48c932ab25f8821390632f2e2 ➔ 0.0.1-26c819733315f0ab64ae8e8e65b77d77d31211e1
+    • bun-webkit-linux-arm64: 0.0.1-8a03cf746abef8a48c932ab25f8821390632f2e2 ➔ 0.0.1-26c819733315f0ab64ae8e8e65b77d77d31211e1
+    • bun-webkit-macos-amd64: 0.0.1-8a03cf746abef8a48c932ab25f8821390632f2e2 ➔ 0.0.1-26c819733315f0ab64ae8e8e65b77d77d31211e1
+    • bun-webkit-macos-arm64: 0.0.1-8a03cf746abef8a48c932ab25f8821390632f2e2 ➔ 0.0.1-26c819733315f0ab64ae8e8e65b77d77d31211e1
+--------------------------------------------------------------------------------
+commit a02a79e26c49358e8bde3988709f8b79464711aa
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-07-13T03:48:52Z
+Msg:    Bump WebKit
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-26c819733315f0ab64ae8e8e65b77d77d31211e1 ➔ 0.0.1-dcaa801946a9526c0c4a40dceb9168b81aeb7973
+    • bun-webkit-linux-amd64: 0.0.1-26c819733315f0ab64ae8e8e65b77d77d31211e1 ➔ 0.0.1-dcaa801946a9526c0c4a40dceb9168b81aeb7973
+    • bun-webkit-linux-arm64: 0.0.1-26c819733315f0ab64ae8e8e65b77d77d31211e1 ➔ 0.0.1-dcaa801946a9526c0c4a40dceb9168b81aeb7973
+    • bun-webkit-macos-amd64: 0.0.1-26c819733315f0ab64ae8e8e65b77d77d31211e1 ➔ 0.0.1-dcaa801946a9526c0c4a40dceb9168b81aeb7973
+    • bun-webkit-macos-arm64: 0.0.1-26c819733315f0ab64ae8e8e65b77d77d31211e1 ➔ 0.0.1-dcaa801946a9526c0c4a40dceb9168b81aeb7973
+--------------------------------------------------------------------------------
+commit 9eb8eea2a81be6a20abb62544dc54a35ff4173a5
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2023-07-13T16:39:43Z
+Msg:    Implement `ping()`, `pong()`, `terminate()` for WebSocket client and server (#3257)
+  + Added (2):
+    • @types/node@20.4.2
+    • @types/ws@8.5.5
+--------------------------------------------------------------------------------
+commit 9b6dc49575df5fb953918c284505f24741138130
+Author: dave caruso <me@paperdave.net>
+Date:   2023-07-20T00:20:00Z
+Msg:    Implement `AsyncLocalStorage` (#3089)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-dcaa801946a9526c0c4a40dceb9168b81aeb7973 ➔ 0.0.1-770ebc986b8ae9a0dd2e85f8f94646b410110b7f
+    • bun-webkit-linux-amd64: 0.0.1-dcaa801946a9526c0c4a40dceb9168b81aeb7973 ➔ 0.0.1-770ebc986b8ae9a0dd2e85f8f94646b410110b7f
+    • bun-webkit-linux-arm64: 0.0.1-dcaa801946a9526c0c4a40dceb9168b81aeb7973 ➔ 0.0.1-770ebc986b8ae9a0dd2e85f8f94646b410110b7f
+    • bun-webkit-macos-amd64: 0.0.1-dcaa801946a9526c0c4a40dceb9168b81aeb7973 ➔ 0.0.1-770ebc986b8ae9a0dd2e85f8f94646b410110b7f
+    • bun-webkit-macos-arm64: 0.0.1-dcaa801946a9526c0c4a40dceb9168b81aeb7973 ➔ 0.0.1-770ebc986b8ae9a0dd2e85f8f94646b410110b7f
+--------------------------------------------------------------------------------
+commit c6a3467625fede0fe9901ab53b0aabd651866b64
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-07-22T11:31:58Z
+Msg:    Unified event loop (#3741)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-770ebc986b8ae9a0dd2e85f8f94646b410110b7f ➔ 0.0.1-1e5c61ef78b14e22278dd884e163a8a95e0529ea
+    • bun-webkit-linux-amd64: 0.0.1-770ebc986b8ae9a0dd2e85f8f94646b410110b7f ➔ 0.0.1-1e5c61ef78b14e22278dd884e163a8a95e0529ea
+    • bun-webkit-linux-arm64: 0.0.1-770ebc986b8ae9a0dd2e85f8f94646b410110b7f ➔ 0.0.1-1e5c61ef78b14e22278dd884e163a8a95e0529ea
+    • bun-webkit-macos-amd64: 0.0.1-770ebc986b8ae9a0dd2e85f8f94646b410110b7f ➔ 0.0.1-1e5c61ef78b14e22278dd884e163a8a95e0529ea
+    • bun-webkit-macos-arm64: 0.0.1-770ebc986b8ae9a0dd2e85f8f94646b410110b7f ➔ 0.0.1-1e5c61ef78b14e22278dd884e163a8a95e0529ea
+--------------------------------------------------------------------------------
+commit 967ccb5d50b3ce163bb98fd125c56b039743de90
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-07-24T05:37:48Z
+Msg:    Upgrade WebKit (#3777)
+  + Added (1):
+    • @aashutoshrathi/word-wrap@1.2.6
+  - Removed (2):
+    • grapheme-splitter@1.0.4
+    • word-wrap@1.2.3
+  Δ Changed (30):
+    • @eslint-community/regexpp: 4.5.1 ➔ 4.6.0
+    • @eslint/eslintrc: 2.0.3 ➔ 2.1.0
+    • @eslint/js: 8.43.0 ➔ 8.44.0
+    • @types/node: 20.4.2 ➔ 20.4.4
+    • @types/react: 18.2.13 ➔ 18.2.15
+    • @typescript-eslint/eslint-plugin: 5.60.0 ➔ 5.62.0
+    • @typescript-eslint/parser: 5.60.0 ➔ 5.62.0
+    • @typescript-eslint/scope-manager: 5.60.0 ➔ 5.62.0
+    • @typescript-eslint/type-utils: 5.60.0 ➔ 5.62.0
+    • @typescript-eslint/types: 5.60.0 ➔ 5.62.0
+    • @typescript-eslint/typescript-estree: 5.60.0 ➔ 5.62.0
+    • @typescript-eslint/utils: 5.60.0 ➔ 5.62.0
+    • @typescript-eslint/visitor-keys: 5.60.0 ➔ 5.62.0
+    • acorn: 8.9.0 ➔ 8.10.0
+    • bun-webkit: 0.0.1-1e5c61ef78b14e22278dd884e163a8a95e0529ea ➔ 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164
+    • bun-webkit-linux-amd64: 0.0.1-1e5c61ef78b14e22278dd884e163a8a95e0529ea ➔ 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164
+    • bun-webkit-linux-arm64: 0.0.1-1e5c61ef78b14e22278dd884e163a8a95e0529ea ➔ 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164
+    • bun-webkit-macos-amd64: 0.0.1-1e5c61ef78b14e22278dd884e163a8a95e0529ea ➔ 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164
+    • bun-webkit-macos-arm64: 0.0.1-1e5c61ef78b14e22278dd884e163a8a95e0529ea ➔ 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164
+    • eslint: 8.43.0 ➔ 8.45.0
+    • eslint-scope: 7.2.0 ➔ 7.2.1
+    • espree: 9.5.2 ➔ 9.6.1
+    • fast-glob: 3.2.12 ➔ 3.3.1
+    • optionator: 0.9.1 ➔ 0.9.3
+    • react: 18.3.0-canary-d1c8cdae3-20230619 ➔ 18.3.0-canary-587ae49d7-20230720
+    • react-dom: 18.3.0-canary-d1c8cdae3-20230619 ➔ 18.3.0-canary-587ae49d7-20230720
+    • scheduler: 0.24.0-canary-d1c8cdae3-20230619 ➔ 0.24.0-canary-587ae49d7-20230720
+    • semver: 7.5.2 ➔ 7.5.4
+    • tslib: 2.5.3 ➔ 2.6.0
+    • typescript: 5.1.3 ➔ 5.1.6
+--------------------------------------------------------------------------------
+commit 08cf0d562ae81b4fb30aa5e599ca76056582ac5f
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2023-08-03T22:31:55Z
+Msg:    Bunch of fixes (#3516)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164 ➔ 0.0.1-9d9172d3242b40f16fa980ead750dc9ab248065f
+    • bun-webkit-linux-amd64: 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164 ➔ 0.0.1-9d9172d3242b40f16fa980ead750dc9ab248065f
+    • bun-webkit-linux-arm64: 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164 ➔ 0.0.1-9d9172d3242b40f16fa980ead750dc9ab248065f
+    • bun-webkit-macos-amd64: 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164 ➔ 0.0.1-9d9172d3242b40f16fa980ead750dc9ab248065f
+    • bun-webkit-macos-arm64: 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164 ➔ 0.0.1-9d9172d3242b40f16fa980ead750dc9ab248065f
+--------------------------------------------------------------------------------
+commit 63d265780f122f8390a71b3a15cea4c71b540b8f
+Author: Colin McDonnell <colinmcd94@gmail.com>
+Date:   2023-08-04T19:56:34Z
+Msg:    Fix types (#3963)
+  - Removed (2):
+    • @types/node@20.4.4
+    • @types/ws@8.5.5
+  Δ Changed (12):
+    • @eslint-community/regexpp: 4.6.0 ➔ 4.6.2
+    • @eslint/eslintrc: 2.1.0 ➔ 2.1.1
+    • @eslint/js: 8.44.0 ➔ 8.46.0
+    • @types/react: 18.2.15 ➔ 18.2.18
+    • eslint: 8.45.0 ➔ 8.46.0
+    • eslint-config-prettier: 8.8.0 ➔ 8.10.0
+    • eslint-scope: 7.2.1 ➔ 7.2.2
+    • eslint-visitor-keys: 3.4.1 ➔ 3.4.2
+    • react: 18.3.0-canary-587ae49d7-20230720 ➔ 18.3.0-canary-493f72b0a-20230727
+    • react-dom: 18.3.0-canary-587ae49d7-20230720 ➔ 18.3.0-canary-493f72b0a-20230727
+    • scheduler: 0.24.0-canary-587ae49d7-20230720 ➔ 0.24.0-canary-493f72b0a-20230727
+    • tslib: 2.6.0 ➔ 2.6.1
+--------------------------------------------------------------------------------
+commit 14624454196370e08309d4f0b0463b494e4df9ca
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-06T13:30:23Z
+Msg:    Code coverage for `bun test` (#3975)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-9d9172d3242b40f16fa980ead750dc9ab248065f ➔ 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e
+    • bun-webkit-linux-amd64: 0.0.1-9d9172d3242b40f16fa980ead750dc9ab248065f ➔ 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e
+    • bun-webkit-linux-arm64: 0.0.1-9d9172d3242b40f16fa980ead750dc9ab248065f ➔ 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e
+    • bun-webkit-macos-amd64: 0.0.1-9d9172d3242b40f16fa980ead750dc9ab248065f ➔ 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e
+    • bun-webkit-macos-arm64: 0.0.1-9d9172d3242b40f16fa980ead750dc9ab248065f ➔ 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e
+--------------------------------------------------------------------------------
+commit 40befd8770e90ef2cb74d65bb1e2ff9911e2a2f7
+Author: jhmaster <32803471+jhmaster2000@users.noreply.github.com>
+Date:   2023-08-10T19:17:39Z
+Msg:    Sync bun-polyfills branch (#4081)
+  Δ Changed (17):
+    • @eslint-community/regexpp: 4.6.2 ➔ 4.6.0
+    • @eslint/eslintrc: 2.1.1 ➔ 2.1.0
+    • @eslint/js: 8.46.0 ➔ 8.44.0
+    • @types/react: 18.2.18 ➔ 18.2.15
+    • bun-webkit: 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e ➔ 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164
+    • bun-webkit-linux-amd64: 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e ➔ 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164
+    • bun-webkit-linux-arm64: 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e ➔ 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164
+    • bun-webkit-macos-amd64: 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e ➔ 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164
+    • bun-webkit-macos-arm64: 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e ➔ 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164
+    • eslint: 8.46.0 ➔ 8.45.0
+    • eslint-config-prettier: 8.10.0 ➔ 8.8.0
+    • eslint-scope: 7.2.2 ➔ 7.2.1
+    • eslint-visitor-keys: 3.4.2 ➔ 3.4.1
+    • react: 18.3.0-canary-493f72b0a-20230727 ➔ 18.3.0-canary-587ae49d7-20230720
+    • react-dom: 18.3.0-canary-493f72b0a-20230727 ➔ 18.3.0-canary-587ae49d7-20230720
+    • scheduler: 0.24.0-canary-493f72b0a-20230727 ➔ 0.24.0-canary-587ae49d7-20230720
+    • tslib: 2.6.1 ➔ 2.6.0
+--------------------------------------------------------------------------------
+commit e25833d00946fdd400abd3c25e8aa1c3e3d2e355
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-10T20:32:04Z
+Msg:    Fixes #4062 (#4106)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164 ➔ 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e
+    • bun-webkit-linux-amd64: 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164 ➔ 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e
+    • bun-webkit-linux-arm64: 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164 ➔ 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e
+    • bun-webkit-macos-amd64: 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164 ➔ 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e
+    • bun-webkit-macos-arm64: 0.0.1-3a53c6af693c5f387de752b0c793ac1ab5f0a164 ➔ 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e
+--------------------------------------------------------------------------------
+commit 0486cea35a80be97ba43f41a29ce55f0d3a8eb01
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-17T02:40:20Z
+Msg:    `bun --inspect` (#4158)
+  + Added (2):
+    • @vscode/debugadapter@1.61.0
+    • @vscode/debugprotocol@1.61.0
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e ➔ 0.0.1-8259132d1e63749ef9942bd5beb7a2fd02dad82e
+    • bun-webkit-linux-amd64: 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e ➔ 0.0.1-8259132d1e63749ef9942bd5beb7a2fd02dad82e
+    • bun-webkit-linux-arm64: 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e ➔ 0.0.1-8259132d1e63749ef9942bd5beb7a2fd02dad82e
+    • bun-webkit-macos-amd64: 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e ➔ 0.0.1-8259132d1e63749ef9942bd5beb7a2fd02dad82e
+    • bun-webkit-macos-arm64: 0.0.1-74609640b2a7c5a1588b824f870d1b0ff91bfd8e ➔ 0.0.1-8259132d1e63749ef9942bd5beb7a2fd02dad82e
+--------------------------------------------------------------------------------
+commit 943a6642243cbc8a180ab7108279dd7110ab1eaf
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-19T02:58:03Z
+Msg:    Remove most C API usages, add debugger pretty printers for `Headers`, `URLSearchParams`, `FormData`, `Worker`, `EventTarget` (#4187)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-8259132d1e63749ef9942bd5beb7a2fd02dad82e ➔ 0.0.1-fc705595a2e10361a64f1dab56527d7b112e75c6
+    • bun-webkit-linux-amd64: 0.0.1-8259132d1e63749ef9942bd5beb7a2fd02dad82e ➔ 0.0.1-fc705595a2e10361a64f1dab56527d7b112e75c6
+    • bun-webkit-linux-arm64: 0.0.1-8259132d1e63749ef9942bd5beb7a2fd02dad82e ➔ 0.0.1-fc705595a2e10361a64f1dab56527d7b112e75c6
+    • bun-webkit-macos-amd64: 0.0.1-8259132d1e63749ef9942bd5beb7a2fd02dad82e ➔ 0.0.1-fc705595a2e10361a64f1dab56527d7b112e75c6
+    • bun-webkit-macos-arm64: 0.0.1-8259132d1e63749ef9942bd5beb7a2fd02dad82e ➔ 0.0.1-fc705595a2e10361a64f1dab56527d7b112e75c6
+--------------------------------------------------------------------------------
+commit 3de9ce5f30ad3a2a5615acb62a25cecdd2ddef33
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-21T02:34:33Z
+Msg:    Implement `--inspect-brk` (#4222)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-fc705595a2e10361a64f1dab56527d7b112e75c6 ➔ 0.0.1-fd79ce3120a692f4aed314c3da3dd452b4aa865f
+    • bun-webkit-linux-amd64: 0.0.1-fc705595a2e10361a64f1dab56527d7b112e75c6 ➔ 0.0.1-fd79ce3120a692f4aed314c3da3dd452b4aa865f
+    • bun-webkit-linux-arm64: 0.0.1-fc705595a2e10361a64f1dab56527d7b112e75c6 ➔ 0.0.1-fd79ce3120a692f4aed314c3da3dd452b4aa865f
+    • bun-webkit-macos-amd64: 0.0.1-fc705595a2e10361a64f1dab56527d7b112e75c6 ➔ 0.0.1-fd79ce3120a692f4aed314c3da3dd452b4aa865f
+    • bun-webkit-macos-arm64: 0.0.1-fc705595a2e10361a64f1dab56527d7b112e75c6 ➔ 0.0.1-fd79ce3120a692f4aed314c3da3dd452b4aa865f
+--------------------------------------------------------------------------------
+commit c60385716b7a7ac9f788cdf7dfe37250321e0670
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-08-23T21:05:05Z
+Msg:    Bunch of streams fixes (#4251)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-fd79ce3120a692f4aed314c3da3dd452b4aa865f ➔ 0.0.1-48c1316e907ca597e27e5a7624160dc18a4df8ec
+    • bun-webkit-linux-amd64: 0.0.1-fd79ce3120a692f4aed314c3da3dd452b4aa865f ➔ 0.0.1-48c1316e907ca597e27e5a7624160dc18a4df8ec
+    • bun-webkit-linux-arm64: 0.0.1-fd79ce3120a692f4aed314c3da3dd452b4aa865f ➔ 0.0.1-48c1316e907ca597e27e5a7624160dc18a4df8ec
+    • bun-webkit-macos-amd64: 0.0.1-fd79ce3120a692f4aed314c3da3dd452b4aa865f ➔ 0.0.1-48c1316e907ca597e27e5a7624160dc18a4df8ec
+    • bun-webkit-macos-arm64: 0.0.1-fd79ce3120a692f4aed314c3da3dd452b4aa865f ➔ 0.0.1-48c1316e907ca597e27e5a7624160dc18a4df8ec
+--------------------------------------------------------------------------------
+commit 1480889205d49cf7221a36608a8896b452967cea
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2023-08-25T05:53:34Z
+Msg:    Improved support for `debug-adapter-protocol` (#4186)
+  + Added (1):
+    • source-map-js@1.0.2
+  Δ Changed (13):
+    • @eslint-community/regexpp: 4.6.0 ➔ 4.7.0
+    • @eslint/eslintrc: 2.1.0 ➔ 2.1.2
+    • @eslint/js: 8.44.0 ➔ 8.47.0
+    • @types/react: 18.2.15 ➔ 18.2.21
+    • eslint: 8.45.0 ➔ 8.47.0
+    • eslint-config-prettier: 8.8.0 ➔ 8.10.0
+    • eslint-scope: 7.2.1 ➔ 7.2.2
+    • eslint-visitor-keys: 3.4.1 ➔ 3.4.3
+    • globals: 13.20.0 ➔ 13.21.0
+    • react: 18.3.0-canary-587ae49d7-20230720 ➔ 18.3.0-canary-b4cdd3e89-20230823
+    • react-dom: 18.3.0-canary-587ae49d7-20230720 ➔ 18.3.0-canary-b4cdd3e89-20230823
+    • scheduler: 0.24.0-canary-587ae49d7-20230720 ➔ 0.24.0-canary-b4cdd3e89-20230823
+    • tslib: 2.6.0 ➔ 2.6.2
+--------------------------------------------------------------------------------
+commit 9aabe4eea1a9dc4f05ff96c370b877f942741820
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-08-25T08:43:25Z
+Msg:    Upgrade peechy
+  Δ Changed (1):
+    • peechy: 0.4.33 ➔ 0.4.34
+--------------------------------------------------------------------------------
+commit e923e2327077060e09e8ff0a9f21bb91047632e2
+Author: Dylan Conway <dylan.conway567@gmail.com>
+Date:   2023-09-14T21:38:46Z
+Msg:    oops
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-48c1316e907ca597e27e5a7624160dc18a4df8ec ➔ 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c
+    • bun-webkit-linux-amd64: 0.0.1-48c1316e907ca597e27e5a7624160dc18a4df8ec ➔ 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c
+    • bun-webkit-linux-arm64: 0.0.1-48c1316e907ca597e27e5a7624160dc18a4df8ec ➔ 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c
+    • bun-webkit-macos-amd64: 0.0.1-48c1316e907ca597e27e5a7624160dc18a4df8ec ➔ 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c
+    • bun-webkit-macos-arm64: 0.0.1-48c1316e907ca597e27e5a7624160dc18a4df8ec ➔ 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c
+--------------------------------------------------------------------------------
+commit 29a6ece6c688150ae51865f38ab616ab4b3a90e2
+Author: Dylan Conway <dylan.conway567@gmail.com>
+Date:   2023-09-15T07:03:21Z
+Msg:    next bun.lock
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c ➔ 0.0.1-5e9d12e70aee4f25e23a8658503bd6059589d4f3
+    • bun-webkit-linux-amd64: 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c ➔ 0.0.1-5e9d12e70aee4f25e23a8658503bd6059589d4f3
+    • bun-webkit-linux-arm64: 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c ➔ 0.0.1-5e9d12e70aee4f25e23a8658503bd6059589d4f3
+    • bun-webkit-macos-amd64: 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c ➔ 0.0.1-5e9d12e70aee4f25e23a8658503bd6059589d4f3
+    • bun-webkit-macos-arm64: 0.0.1-b2f1006a06f81bc860c89dd4c7cec3e7117c4c4c ➔ 0.0.1-5e9d12e70aee4f25e23a8658503bd6059589d4f3
+--------------------------------------------------------------------------------
+commit b651b16fdd959b349c09ec5d5056229dcd12c86b
+Author: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
+Date:   2023-09-16T07:44:07Z
+Msg:    webkit upgrade (#5535)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-5e9d12e70aee4f25e23a8658503bd6059589d4f3 ➔ 0.0.1-b4cf172ad2b038b8c4aa672c32d970d52e939c11
+    • bun-webkit-linux-amd64: 0.0.1-5e9d12e70aee4f25e23a8658503bd6059589d4f3 ➔ 0.0.1-b4cf172ad2b038b8c4aa672c32d970d52e939c11
+    • bun-webkit-linux-arm64: 0.0.1-5e9d12e70aee4f25e23a8658503bd6059589d4f3 ➔ 0.0.1-b4cf172ad2b038b8c4aa672c32d970d52e939c11
+    • bun-webkit-macos-amd64: 0.0.1-5e9d12e70aee4f25e23a8658503bd6059589d4f3 ➔ 0.0.1-b4cf172ad2b038b8c4aa672c32d970d52e939c11
+    • bun-webkit-macos-arm64: 0.0.1-5e9d12e70aee4f25e23a8658503bd6059589d4f3 ➔ 0.0.1-b4cf172ad2b038b8c4aa672c32d970d52e939c11
+--------------------------------------------------------------------------------
+commit eb1dc7eede31b12726ae320263850fefaaf490f3
+Author: dave caruso <me@paperdave.net>
+Date:   2023-09-19T00:33:58Z
+Msg:    fix(runtime/node): Allow `new Buffer.alloc()` + Upgrade WebKit (#5699)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-b4cf172ad2b038b8c4aa672c32d970d52e939c11 ➔ 0.0.1-4d995edbc44062b251be638818edcd88d7d14dd7
+    • bun-webkit-linux-amd64: 0.0.1-b4cf172ad2b038b8c4aa672c32d970d52e939c11 ➔ 0.0.1-4d995edbc44062b251be638818edcd88d7d14dd7
+    • bun-webkit-linux-arm64: 0.0.1-b4cf172ad2b038b8c4aa672c32d970d52e939c11 ➔ 0.0.1-4d995edbc44062b251be638818edcd88d7d14dd7
+    • bun-webkit-macos-amd64: 0.0.1-b4cf172ad2b038b8c4aa672c32d970d52e939c11 ➔ 0.0.1-4d995edbc44062b251be638818edcd88d7d14dd7
+    • bun-webkit-macos-arm64: 0.0.1-b4cf172ad2b038b8c4aa672c32d970d52e939c11 ➔ 0.0.1-4d995edbc44062b251be638818edcd88d7d14dd7
+--------------------------------------------------------------------------------
+commit 5defdf3e28249b34772864a50273a390d345b2df
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-09-20T01:16:51Z
+Msg:    Fixes #5769 (#5775)
+  + Added (2):
+    • json-buffer@3.0.1
+    • keyv@4.5.3
+  Δ Changed (16):
+    • @eslint-community/regexpp: 4.7.0 ➔ 4.8.1
+    • @eslint/js: 8.47.0 ➔ 8.49.0
+    • @humanwhocodes/config-array: 0.11.10 ➔ 0.11.11
+    • @types/json-schema: 7.0.12 ➔ 7.0.13
+    • @types/prop-types: 15.7.5 ➔ 15.7.6
+    • @types/react: 18.2.21 ➔ 18.2.22
+    • @types/semver: 7.5.0 ➔ 7.5.2
+    • @vscode/debugadapter: 1.61.0 ➔ 1.63.0
+    • @vscode/debugprotocol: 1.61.0 ➔ 1.63.0
+    • eslint: 8.47.0 ➔ 8.49.0
+    • flat-cache: 3.0.4 ➔ 3.1.0
+    • flatted: 3.2.7 ➔ 3.2.9
+    • react: 18.3.0-canary-b4cdd3e89-20230823 ➔ 18.3.0-canary-2807d781a-20230918
+    • react-dom: 18.3.0-canary-b4cdd3e89-20230823 ➔ 18.3.0-canary-2807d781a-20230918
+    • scheduler: 0.24.0-canary-b4cdd3e89-20230823 ➔ 0.24.0-canary-2807d781a-20230918
+    • typescript: 5.1.6 ➔ 5.2.2
+--------------------------------------------------------------------------------
+commit d1e9b33cac65794632921045e7a851c58ef1863d
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-09-21T14:25:18Z
+Msg:    On Linux, respect memory limit from cgroups (#5849)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-4d995edbc44062b251be638818edcd88d7d14dd7 ➔ 0.0.1-f8aa36d4737faee92bd2d1e337a2fd01a5437c61
+    • bun-webkit-linux-amd64: 0.0.1-4d995edbc44062b251be638818edcd88d7d14dd7 ➔ 0.0.1-f8aa36d4737faee92bd2d1e337a2fd01a5437c61
+    • bun-webkit-linux-arm64: 0.0.1-4d995edbc44062b251be638818edcd88d7d14dd7 ➔ 0.0.1-f8aa36d4737faee92bd2d1e337a2fd01a5437c61
+    • bun-webkit-macos-amd64: 0.0.1-4d995edbc44062b251be638818edcd88d7d14dd7 ➔ 0.0.1-f8aa36d4737faee92bd2d1e337a2fd01a5437c61
+    • bun-webkit-macos-arm64: 0.0.1-4d995edbc44062b251be638818edcd88d7d14dd7 ➔ 0.0.1-f8aa36d4737faee92bd2d1e337a2fd01a5437c61
+--------------------------------------------------------------------------------
+commit 3f463786a5f03817949581aa3904d673a3cd087e
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-09-25T00:43:59Z
+Msg:    Correctly fix #5888 (#6000)
+  Δ Changed (7):
+    • @eslint/js: 8.49.0 ➔ 8.50.0
+    • @types/prop-types: 15.7.6 ➔ 15.7.7
+    • eslint: 8.49.0 ➔ 8.50.0
+    • globals: 13.21.0 ➔ 13.22.0
+    • react: 18.3.0-canary-2807d781a-20230918 ➔ 18.3.0-canary-9ba1bbd65-20230922
+    • react-dom: 18.3.0-canary-2807d781a-20230918 ➔ 18.3.0-canary-9ba1bbd65-20230922
+    • scheduler: 0.24.0-canary-2807d781a-20230918 ➔ 0.24.0-canary-9ba1bbd65-20230922
+--------------------------------------------------------------------------------
+commit 98e9e9b11289f766e45dc0eadcaf4b21115ff190
+Author: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
+Date:   2023-10-04T02:56:33Z
+Msg:    Upgrade webkit (#6277)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-f8aa36d4737faee92bd2d1e337a2fd01a5437c61 ➔ 0.0.1-2c4d07c9499a65f36f554dc4cd4e9e0640632b8c
+    • bun-webkit-linux-amd64: 0.0.1-f8aa36d4737faee92bd2d1e337a2fd01a5437c61 ➔ 0.0.1-2c4d07c9499a65f36f554dc4cd4e9e0640632b8c
+    • bun-webkit-linux-arm64: 0.0.1-f8aa36d4737faee92bd2d1e337a2fd01a5437c61 ➔ 0.0.1-2c4d07c9499a65f36f554dc4cd4e9e0640632b8c
+    • bun-webkit-macos-amd64: 0.0.1-f8aa36d4737faee92bd2d1e337a2fd01a5437c61 ➔ 0.0.1-2c4d07c9499a65f36f554dc4cd4e9e0640632b8c
+    • bun-webkit-macos-arm64: 0.0.1-f8aa36d4737faee92bd2d1e337a2fd01a5437c61 ➔ 0.0.1-2c4d07c9499a65f36f554dc4cd4e9e0640632b8c
+--------------------------------------------------------------------------------
+commit 1bf28e0d77a8b2261befbdb708cefd03e0126960
+Author: dave caruso <me@paperdave.net>
+Date:   2023-10-11T09:27:07Z
+Msg:    feat(install): automatically migrate package-lock.json to bun.lock (#6352)
+  Δ Changed (13):
+    • @eslint-community/regexpp: 4.8.1 ➔ 4.9.1
+    • @eslint/js: 8.50.0 ➔ 8.51.0
+    • @types/prop-types: 15.7.7 ➔ 15.7.8
+    • @types/react: 18.2.22 ➔ 18.2.28
+    • @types/scheduler: 0.16.3 ➔ 0.16.4
+    • @types/semver: 7.5.2 ➔ 7.5.3
+    • eslint: 8.50.0 ➔ 8.51.0
+    • flat-cache: 3.1.0 ➔ 3.1.1
+    • globals: 13.22.0 ➔ 13.23.0
+    • keyv: 4.5.3 ➔ 4.5.4
+    • react: 18.3.0-canary-9ba1bbd65-20230922 ➔ 18.3.0-canary-be67db46b-20231010
+    • react-dom: 18.3.0-canary-9ba1bbd65-20230922 ➔ 18.3.0-canary-be67db46b-20231010
+    • scheduler: 0.24.0-canary-9ba1bbd65-20230922 ➔ 0.24.0-canary-be67db46b-20231010
+--------------------------------------------------------------------------------
+commit b1063edf3e76a2ef68d2ba3eff686932f742c77c
+Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
+Date:   2023-10-12T03:04:15Z
+Msg:    Bump WebKit
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-2c4d07c9499a65f36f554dc4cd4e9e0640632b8c ➔ 0.0.1-acc1e092b4758a712998d462ee54c52e75e71780
+    • bun-webkit-linux-amd64: 0.0.1-2c4d07c9499a65f36f554dc4cd4e9e0640632b8c ➔ 0.0.1-acc1e092b4758a712998d462ee54c52e75e71780
+    • bun-webkit-linux-arm64: 0.0.1-2c4d07c9499a65f36f554dc4cd4e9e0640632b8c ➔ 0.0.1-acc1e092b4758a712998d462ee54c52e75e71780
+    • bun-webkit-macos-amd64: 0.0.1-2c4d07c9499a65f36f554dc4cd4e9e0640632b8c ➔ 0.0.1-acc1e092b4758a712998d462ee54c52e75e71780
+    • bun-webkit-macos-arm64: 0.0.1-2c4d07c9499a65f36f554dc4cd4e9e0640632b8c ➔ 0.0.1-acc1e092b4758a712998d462ee54c52e75e71780
+--------------------------------------------------------------------------------
+commit 98d19fa6244384f7e17998b5420d724481ed3835
+Author: dave caruso <me@paperdave.net>
+Date:   2023-10-17T04:22:43Z
+Msg:    fix(runtime): make some things more stable (partial jsc debug build) (#5881)
+  Δ Changed (8):
+    • bun-webkit: 0.0.1-acc1e092b4758a712998d462ee54c52e75e71780 ➔ 0.0.1-1a49a1f94bf42ab4f8c6b11d7bbbb21e491d2d62
+    • bun-webkit-linux-amd64: 0.0.1-acc1e092b4758a712998d462ee54c52e75e71780 ➔ 0.0.1-1a49a1f94bf42ab4f8c6b11d7bbbb21e491d2d62
+    • bun-webkit-linux-arm64: 0.0.1-acc1e092b4758a712998d462ee54c52e75e71780 ➔ 0.0.1-1a49a1f94bf42ab4f8c6b11d7bbbb21e491d2d62
+    • bun-webkit-macos-amd64: 0.0.1-acc1e092b4758a712998d462ee54c52e75e71780 ➔ 0.0.1-1a49a1f94bf42ab4f8c6b11d7bbbb21e491d2d62
+    • bun-webkit-macos-arm64: 0.0.1-acc1e092b4758a712998d462ee54c52e75e71780 ➔ 0.0.1-1a49a1f94bf42ab4f8c6b11d7bbbb21e491d2d62
+    • react: 18.3.0-canary-be67db46b-20231010 ➔ 18.3.0-canary-09fbee89d-20231013
+    • react-dom: 18.3.0-canary-be67db46b-20231010 ➔ 18.3.0-canary-09fbee89d-20231013
+    • scheduler: 0.24.0-canary-be67db46b-20231010 ➔ 0.24.0-canary-09fbee89d-20231013
+--------------------------------------------------------------------------------
+commit 6a2768f2474a7f1c32bf47b8c44cb33f4409b11a
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-10-25T09:59:47Z
+Msg:    Implement `mock.module` in bun:test (#6685)
+  Δ Changed (15):
+    • @humanwhocodes/config-array: 0.11.11 ➔ 0.11.12
+    • @humanwhocodes/object-schema: 1.2.1 ➔ 2.0.0
+    • @types/json-schema: 7.0.13 ➔ 7.0.14
+    • @types/prop-types: 15.7.8 ➔ 15.7.9
+    • @types/react: 18.2.28 ➔ 18.2.30
+    • @types/scheduler: 0.16.4 ➔ 0.16.5
+    • @types/semver: 7.5.3 ➔ 7.5.4
+    • bun-webkit: 0.0.1-1a49a1f94bf42ab4f8c6b11d7bbbb21e491d2d62 ➔ 0.0.1-b3eb3541118a997adc959e138155f5f4736892da
+    • bun-webkit-linux-amd64: 0.0.1-1a49a1f94bf42ab4f8c6b11d7bbbb21e491d2d62 ➔ 0.0.1-b3eb3541118a997adc959e138155f5f4736892da
+    • bun-webkit-linux-arm64: 0.0.1-1a49a1f94bf42ab4f8c6b11d7bbbb21e491d2d62 ➔ 0.0.1-b3eb3541118a997adc959e138155f5f4736892da
+    • bun-webkit-macos-amd64: 0.0.1-1a49a1f94bf42ab4f8c6b11d7bbbb21e491d2d62 ➔ 0.0.1-b3eb3541118a997adc959e138155f5f4736892da
+    • bun-webkit-macos-arm64: 0.0.1-1a49a1f94bf42ab4f8c6b11d7bbbb21e491d2d62 ➔ 0.0.1-b3eb3541118a997adc959e138155f5f4736892da
+    • react: 18.3.0-canary-09fbee89d-20231013 ➔ 18.3.0-canary-9617d39ec-20231018
+    • react-dom: 18.3.0-canary-09fbee89d-20231013 ➔ 18.3.0-canary-9617d39ec-20231018
+    • scheduler: 0.24.0-canary-09fbee89d-20231013 ➔ 0.24.0-canary-9617d39ec-20231018
+--------------------------------------------------------------------------------
+commit 2b8aae05d1e95b85c7869f15567a29162106110c
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-10-26T05:35:14Z
+Msg:    Add test for custom thenables in AsyncLocalStorage and fix flaky test and make expect(fn).toThrow drain unhandled promise rejections (#6701)
+  Δ Changed (5):
+    • bun-webkit: 0.0.1-b3eb3541118a997adc959e138155f5f4736892da ➔ 0.0.1-67c9ba93323b4a5a95bc4d1efe61166dc6e3e691
+    • bun-webkit-linux-amd64: 0.0.1-b3eb3541118a997adc959e138155f5f4736892da ➔ 0.0.1-67c9ba93323b4a5a95bc4d1efe61166dc6e3e691
+    • bun-webkit-linux-arm64: 0.0.1-b3eb3541118a997adc959e138155f5f4736892da ➔ 0.0.1-67c9ba93323b4a5a95bc4d1efe61166dc6e3e691
+    • bun-webkit-macos-amd64: 0.0.1-b3eb3541118a997adc959e138155f5f4736892da ➔ 0.0.1-67c9ba93323b4a5a95bc4d1efe61166dc6e3e691
+    • bun-webkit-macos-arm64: 0.0.1-b3eb3541118a997adc959e138155f5f4736892da ➔ 0.0.1-67c9ba93323b4a5a95bc4d1efe61166dc6e3e691
+--------------------------------------------------------------------------------
+commit 7485c7c7cbbb47251f81cbcbcfb24431ad6075b1
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-10-27T08:51:56Z
+Msg:    feat: Windows + CMake Build System (#4410)
+  - Removed (5):
+    • bun-webkit@0.0.1-67c9ba93323b4a5a95bc4d1efe61166dc6e3e691
+    • bun-webkit-linux-amd64@0.0.1-67c9ba93323b4a5a95bc4d1efe61166dc6e3e691
+    • bun-webkit-linux-arm64@0.0.1-67c9ba93323b4a5a95bc4d1efe61166dc6e3e691
+    • bun-webkit-macos-amd64@0.0.1-67c9ba93323b4a5a95bc4d1efe61166dc6e3e691
+    • bun-webkit-macos-arm64@0.0.1-67c9ba93323b4a5a95bc4d1efe61166dc6e3e691
+--------------------------------------------------------------------------------
+commit 4403c40755808cea508d92985d54b9ccf64dc086
+Author: dave caruso <me@paperdave.net>
+Date:   2023-11-03T05:40:00Z
+Msg:    chore: build and publish canary windows builds (#6834)
+  + Added (1):
+    • @ungap/structured-clone@1.2.0
+  Δ Changed (13):
+    • @eslint-community/regexpp: 4.9.1 ➔ 4.10.0
+    • @eslint/js: 8.51.0 ➔ 8.52.0
+    • @humanwhocodes/config-array: 0.11.12 ➔ 0.11.13
+    • @humanwhocodes/object-schema: 2.0.0 ➔ 2.0.1
+    • @types/react: 18.2.30 ➔ 18.2.33
+    • @vscode/debugadapter: 1.63.0 ➔ 1.64.0
+    • @vscode/debugprotocol: 1.63.0 ➔ 1.64.0
+    • acorn: 8.10.0 ➔ 8.11.2
+    • eslint: 8.51.0 ➔ 8.52.0
+    • punycode: 2.3.0 ➔ 2.3.1
+    • react: 18.3.0-canary-9617d39ec-20231018 ➔ 18.3.0-canary-08a39539f-20231031
+    • react-dom: 18.3.0-canary-9617d39ec-20231018 ➔ 18.3.0-canary-08a39539f-20231031
+    • scheduler: 0.24.0-canary-9617d39ec-20231018 ➔ 0.24.0-canary-08a39539f-20231031
+--------------------------------------------------------------------------------
+commit 7a4e0158d62564edebafd5c8b0b51ca07b54fe4c
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2023-11-14T06:10:09Z
+Msg:    Lots of stuff (#7027)
+  Δ Changed (13):
+    • @eslint/eslintrc: 2.1.2 ➔ 2.1.3
+    • @eslint/js: 8.52.0 ➔ 8.53.0
+    • @types/json-schema: 7.0.14 ➔ 7.0.15
+    • @types/prop-types: 15.7.9 ➔ 15.7.10
+    • @types/react: 18.2.33 ➔ 18.2.37
+    • @types/scheduler: 0.16.5 ➔ 0.16.6
+    • @types/semver: 7.5.4 ➔ 7.5.5
+    • eslint: 8.52.0 ➔ 8.53.0
+    • fast-glob: 3.3.1 ➔ 3.3.2
+    • flat-cache: 3.1.1 ➔ 3.2.0
+    • react: 18.3.0-canary-08a39539f-20231031 ➔ 18.3.0-canary-432b9f1d9-20231110
+    • react-dom: 18.3.0-canary-08a39539f-20231031 ➔ 18.3.0-canary-432b9f1d9-20231110
+    • scheduler: 0.24.0-canary-08a39539f-20231031 ➔ 0.24.0-canary-432b9f1d9-20231110
+--------------------------------------------------------------------------------
+commit 31814934f309308b5d29c25c062b0a632beba233
+Author: Colin McDonnell <colinmcd94@gmail.com>
+Date:   2023-11-16T02:15:10Z
+Msg:    CLI flags (#6395)
+  - Removed (1):
+    • @ungap/structured-clone@1.2.0
+  Δ Changed (20):
+    • @eslint-community/regexpp: 4.10.0 ➔ 4.9.1
+    • @eslint/eslintrc: 2.1.3 ➔ 2.1.2
+    • @eslint/js: 8.53.0 ➔ 8.51.0
+    • @humanwhocodes/config-array: 0.11.13 ➔ 0.11.11
+    • @humanwhocodes/object-schema: 2.0.1 ➔ 1.2.1
+    • @types/json-schema: 7.0.15 ➔ 7.0.13
+    • @types/prop-types: 15.7.10 ➔ 15.7.8
+    • @types/react: 18.2.37 ➔ 18.2.28
+    • @types/scheduler: 0.16.6 ➔ 0.16.4
+    • @types/semver: 7.5.5 ➔ 7.5.3
+    • @vscode/debugadapter: 1.64.0 ➔ 1.63.0
+    • @vscode/debugprotocol: 1.64.0 ➔ 1.63.0
+    • acorn: 8.11.2 ➔ 8.10.0
+    • eslint: 8.53.0 ➔ 8.51.0
+    • fast-glob: 3.3.2 ➔ 3.3.1
+    • flat-cache: 3.2.0 ➔ 3.1.1
+    • punycode: 2.3.1 ➔ 2.3.0
+    • react: 18.3.0-canary-432b9f1d9-20231110 ➔ 18.3.0-canary-09fbee89d-20231013
+    • react-dom: 18.3.0-canary-432b9f1d9-20231110 ➔ 18.3.0-canary-09fbee89d-20231013
+    • scheduler: 0.24.0-canary-432b9f1d9-20231110 ➔ 0.24.0-canary-09fbee89d-20231013
+--------------------------------------------------------------------------------
+commit 83f2432da6224d0e96f31dc770c67665427c28fa
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-01-16T07:47:13Z
+Msg:    Update prettier (#8198)
+  Δ Changed (1):
+    • prettier: 2.8.8 ➔ 3.2.2
+--------------------------------------------------------------------------------
+commit e3188c918a5f6e7a9052af0cd6aedf34f85201ec
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-01-26T03:15:26Z
+Msg:    use Biome to format Bun's codebase instead of Prettier (#8494)
+  + Added (9):
+    • @biomejs/biome@1.5.3
+    • @biomejs/cli-darwin-arm64@1.5.3
+    • @biomejs/cli-darwin-x64@1.5.3
+    • @biomejs/cli-linux-arm64@1.5.3
+    • @biomejs/cli-linux-arm64-musl@1.5.3
+    • @biomejs/cli-linux-x64@1.5.3
+    • @biomejs/cli-linux-x64-musl@1.5.3
+    • @biomejs/cli-win32-arm64@1.5.3
+    • @biomejs/cli-win32-x64@1.5.3
+--------------------------------------------------------------------------------
+commit 23b292ac21cb9f07bdeb79eb86ebe3b0b2ce365b
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2024-02-05T19:25:52Z
+Msg:    T
+  + Added (219):
+    • @envelop/core@3.0.3
+    • @envelop/parser-cache@5.0.3
+    • @envelop/types@3.0.0
+    • @envelop/validation-cache@5.0.3
+    • @esbuild/aix-ppc64@0.20.0
+    • @fastify/busboy@2.1.0
+    • @graphql-tools/executor@0.0.8
+    • @graphql-tools/merge@8.4.2
+    • @graphql-tools/schema@9.0.19
+    • @graphql-tools/utils@9.2.1
+    • @graphql-typed-document-node/core@3.1.1
+    • @graphql-yoga/subscription@3.1.0
+    • @graphql-yoga/typed-event-target@1.0.0
+    • @peculiar/asn1-schema@2.3.8
+    • @peculiar/json-schema@1.1.12
+    • @peculiar/webcrypto@1.4.5
+    • @repeaterjs/repeater@3.0.4
+    • @types/node@18.19.14
+    • @ungap/structured-clone@1.2.0
+    • @whatwg-node/events@0.0.2
+    • @whatwg-node/fetch@0.5.3
+    • @whatwg-node/server@0.4.16
+    • abort-controller@3.0.0
+    • accepts@1.3.8
+    • agent-base@7.1.0
+    • ansi@0.3.1
+    • are-we-there-yet@1.0.6
+    • array-flatten@1.1.1
+    • art-template@4.13.2
+    • asn1js@3.0.5
+    • asynckit@0.4.0
+    • axios@0.21.4
+    • big-integer@1.6.52
+    • binary@0.3.0
+    • bindings@1.5.0
+    • bluebird@3.7.2
+    • body-parser@1.20.1
+    • buffer-indexof-polyfill@1.0.2
+    • buffer-shims@1.0.0
+    • buffers@0.1.1
+    • busboy@1.6.0
+    • bytes@3.1.2
+    • call-bind@1.0.5
+    • camelcase@2.1.1
+    • chainsaw@0.1.0
+    • chownr@1.1.4
+    • clean-css@4.2.4
+    • cliui@3.2.0
+    • cmake-js@6.3.2
+    • code-point-at@1.1.0
+    • combined-stream@1.0.8
+    • commander@2.19.0
+    • content-disposition@0.5.4
+    • content-type@1.0.5
+    • cookie@0.5.0
+    • cookie-signature@1.0.6
+    • core-js@3.23.3
+    • core-util-is@1.0.3
+    • cssstyle@4.0.1
+    • data-urls@5.0.0
+    • decamelize@1.2.0
+    • decimal.js@10.4.3
+    • deep-extend@0.6.0
+    • define-data-property@1.1.1
+    • delayed-stream@1.0.0
+    • delegates@1.0.0
+    • depd@2.0.0
+    • destroy@1.2.0
+    • dset@3.1.3
+    • duplexer2@0.1.4
+    • edgedb@1.4.1
+    • ee-first@1.1.1
+    • encodeurl@1.0.2
+    • entities@4.5.0
+    • es-errors@1.3.0
+    • escape-html@1.0.3
+    • escodegen@1.14.3
+    • esprima@4.0.1
+    • etag@1.8.1
+    • event-target-shim@5.0.1
+    • express@4.18.2
+    • file-uri-to-path@1.0.0
+    • finalhandler@1.2.0
+    • follow-redirects@1.15.5
+    • form-data@4.0.0
+    • form-data-encoder@1.9.0
+    • formdata-node@4.4.1
+    • forwarded@0.2.0
+    • fresh@0.5.2
+    • fs-extra@5.0.0
+    • fs-minipass@1.2.7
+    • fstream@1.0.12
+    • function-bind@1.1.2
+    • gauge@1.2.7
+    • get-intrinsic@1.2.3
+    • gopd@1.0.1
+    • graceful-fs@4.2.11
+    • graphql@16.8.1
+    • graphql-yoga@3.0.0-next.12
+    • has-property-descriptors@1.0.1
+    • has-proto@1.0.1
+    • has-symbols@1.0.3
+    • has-unicode@2.0.1
+    • hasown@2.0.0
+    • he@1.2.0
+    • html-encoding-sniffer@4.0.0
+    • html-minifier@3.5.21
+    • htmlparser@1.7.7
+    • http-errors@2.0.0
+    • http-proxy-agent@7.0.0
+    • https-proxy-agent@7.0.2
+    • iconv-lite@0.6.3
+    • ini@1.3.8
+    • invert-kv@1.0.0
+    • ipaddr.js@1.9.1
+    • is-fullwidth-code-point@1.0.0
+    • is-iojs@1.1.0
+    • is-keyword-js@1.0.3
+    • is-potential-custom-element-name@1.0.1
+    • isarray@1.0.0
+    • jsdom@24.0.0
+    • jsonfile@4.0.0
+    • lcid@1.0.0
+    • listenercount@1.0.1
+    • llvm-bindings@0.4.2
+    • lodash@4.17.21
+    • lodash.pad@4.5.1
+    • lodash.padend@4.6.1
+    • lodash.padstart@4.6.1
+    • media-typer@0.3.0
+    • memory-stream@0.0.3
+    • merge-descriptors@1.0.1
+    • merge-source-map@1.1.0
+    • methods@1.1.2
+    • mime@1.6.0
+    • mime-db@1.52.0
+    • mime-types@2.1.35
+    • minimist@1.2.8
+    • minipass@2.9.0
+    • minizlib@1.3.3
+    • mjsunit.runner@0.1.3
+    • mkdirp@0.5.6
+    • negotiator@0.6.3
+    • node-addon-api@5.1.0
+    • node-domexception@1.0.0
+    • node-fetch@2.7.0
+    • npmlog@1.2.1
+    • number-is-nan@1.0.1
+    • nwsapi@2.2.7
+    • object-inspect@1.13.1
+    • on-finished@2.4.1
+    • os-locale@1.4.0
+    • parse5@7.1.2
+    • parseurl@1.3.3
+    • path-to-regexp@0.1.7
+    • process-nextick-args@1.0.7
+    • proxy-addr@2.0.7
+    • psl@1.9.0
+    • pvtsutils@1.3.5
+    • pvutils@1.1.3
+    • qs@6.11.0
+    • querystringify@2.2.0
+    • range-parser@1.2.1
+    • raw-body@2.5.1
+    • rc@1.2.8
+    • readability@0.1.0
+    • readable-stream@2.1.5
+    • relateurl@0.2.7
+    • requires-port@1.0.0
+    • rrweb-cssom@0.6.0
+    • safe-buffer@5.2.1
+    • safer-buffer@2.1.2
+    • saxes@6.0.0
+    • send@0.18.0
+    • serve-static@1.15.0
+    • set-function-length@1.2.0
+    • setimmediate@1.0.5
+    • setprototypeof@1.2.0
+    • side-channel@1.0.4
+    • source-map@0.6.1
+    • splitargs@0.0.7
+    • statuses@2.0.1
+    • streamsearch@1.1.0
+    • string-width@1.0.2
+    • string_decoder@0.10.31
+    • symbol-tree@3.2.4
+    • tar@4.4.19
+    • toidentifier@1.0.1
+    • tough-cookie@4.1.3
+    • tr46@5.0.0
+    • traverse@0.3.9
+    • type-is@1.6.18
+    • uglify-js@3.4.10
+    • undici@5.28.3
+    • undici-types@5.26.5
+    • universalify@0.2.0
+    • unpipe@1.0.0
+    • unzipper@0.8.14
+    • url-join@0.0.1
+    • url-parse@1.5.10
+    • util-deprecate@1.0.2
+    • utils-merge@1.0.1
+    • value-or-promise@1.0.12
+    • vary@1.1.2
+    • w3c-xmlserializer@5.0.0
+    • web-streams-polyfill@4.0.0-beta.3
+    • webcrypto-core@1.7.8
+    • webidl-conversions@7.0.0
+    • whatwg-encoding@3.1.1
+    • whatwg-mimetype@4.0.0
+    • whatwg-url@14.0.0
+    • window-size@0.1.4
+    • word-wrap@1.2.5
+    • wrap-ansi@2.1.0
+    • ws@8.16.0
+    • xml-name-validator@5.0.0
+    • xmlchars@2.2.0
+    • y18n@3.2.2
+    • yargs@3.32.0
+  Δ Changed (50):
+    • @esbuild/android-arm: 0.17.19 ➔ 0.20.0
+    • @esbuild/android-arm64: 0.17.19 ➔ 0.20.0
+    • @esbuild/android-x64: 0.17.19 ➔ 0.20.0
+    • @esbuild/darwin-arm64: 0.17.19 ➔ 0.20.0
+    • @esbuild/darwin-x64: 0.17.19 ➔ 0.20.0
+    • @esbuild/freebsd-arm64: 0.17.19 ➔ 0.20.0
+    • @esbuild/freebsd-x64: 0.17.19 ➔ 0.20.0
+    • @esbuild/linux-arm: 0.17.19 ➔ 0.20.0
+    • @esbuild/linux-arm64: 0.17.19 ➔ 0.20.0
+    • @esbuild/linux-ia32: 0.17.19 ➔ 0.20.0
+    • @esbuild/linux-loong64: 0.17.19 ➔ 0.20.0
+    • @esbuild/linux-mips64el: 0.17.19 ➔ 0.20.0
+    • @esbuild/linux-ppc64: 0.17.19 ➔ 0.20.0
+    • @esbuild/linux-riscv64: 0.17.19 ➔ 0.20.0
+    • @esbuild/linux-s390x: 0.17.19 ➔ 0.20.0
+    • @esbuild/linux-x64: 0.17.19 ➔ 0.20.0
+    • @esbuild/netbsd-x64: 0.17.19 ➔ 0.20.0
+    • @esbuild/openbsd-x64: 0.17.19 ➔ 0.20.0
+    • @esbuild/sunos-x64: 0.17.19 ➔ 0.20.0
+    • @esbuild/win32-arm64: 0.17.19 ➔ 0.20.0
+    • @esbuild/win32-ia32: 0.17.19 ➔ 0.20.0
+    • @esbuild/win32-x64: 0.17.19 ➔ 0.20.0
+    • @eslint-community/regexpp: 4.9.1 ➔ 4.10.0
+    • @eslint/eslintrc: 2.1.2 ➔ 2.1.4
+    • @eslint/js: 8.51.0 ➔ 8.56.0
+    • @humanwhocodes/config-array: 0.11.11 ➔ 0.11.14
+    • @humanwhocodes/object-schema: 1.2.1 ➔ 2.0.2
+    • @types/json-schema: 7.0.13 ➔ 7.0.15
+    • @types/prop-types: 15.7.8 ➔ 15.7.11
+    • @types/react: 18.2.28 ➔ 18.2.53
+    • @types/scheduler: 0.16.4 ➔ 0.16.8
+    • @types/semver: 7.5.3 ➔ 7.5.6
+    • @vscode/debugadapter: 1.63.0 ➔ 1.64.0
+    • @vscode/debugprotocol: 1.63.0 ➔ 1.64.0
+    • acorn: 8.10.0 ➔ 8.11.3
+    • csstype: 3.1.2 ➔ 3.1.3
+    • esbuild: 0.17.19 ➔ 0.20.0
+    • eslint: 8.51.0 ➔ 8.56.0
+    • fast-glob: 3.3.1 ➔ 3.3.2
+    • fastq: 1.15.0 ➔ 1.17.1
+    • flat-cache: 3.1.1 ➔ 3.2.0
+    • globals: 13.23.0 ➔ 13.24.0
+    • ignore: 5.2.4 ➔ 5.3.1
+    • mitata: 0.1.6 ➔ 0.1.8
+    • ms: 2.1.2 ➔ 2.1.3
+    • punycode: 2.3.0 ➔ 2.3.1
+    • react: 18.3.0-canary-09fbee89d-20231013 ➔ 18.3.0-canary-596827f6a-20240205
+    • react-dom: 18.3.0-canary-09fbee89d-20231013 ➔ 18.3.0-canary-596827f6a-20240205
+    • scheduler: 0.24.0-canary-09fbee89d-20231013 ➔ 0.24.0-canary-596827f6a-20240205
+    • typescript: 5.2.2 ➔ 5.3.3
+--------------------------------------------------------------------------------
+commit a05ef0aeb1d256fcce041cceb63209978c581e80
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2024-02-05T20:50:09Z
+Msg:    Remove unintentional commit
+  - Removed (219):
+    • @envelop/core@3.0.3
+    • @envelop/parser-cache@5.0.3
+    • @envelop/types@3.0.0
+    • @envelop/validation-cache@5.0.3
+    • @esbuild/aix-ppc64@0.20.0
+    • @fastify/busboy@2.1.0
+    • @graphql-tools/executor@0.0.8
+    • @graphql-tools/merge@8.4.2
+    • @graphql-tools/schema@9.0.19
+    • @graphql-tools/utils@9.2.1
+    • @graphql-typed-document-node/core@3.1.1
+    • @graphql-yoga/subscription@3.1.0
+    • @graphql-yoga/typed-event-target@1.0.0
+    • @peculiar/asn1-schema@2.3.8
+    • @peculiar/json-schema@1.1.12
+    • @peculiar/webcrypto@1.4.5
+    • @repeaterjs/repeater@3.0.4
+    • @types/node@18.19.14
+    • @ungap/structured-clone@1.2.0
+    • @whatwg-node/events@0.0.2
+    • @whatwg-node/fetch@0.5.3
+    • @whatwg-node/server@0.4.16
+    • abort-controller@3.0.0
+    • accepts@1.3.8
+    • agent-base@7.1.0
+    • ansi@0.3.1
+    • are-we-there-yet@1.0.6
+    • array-flatten@1.1.1
+    • art-template@4.13.2
+    • asn1js@3.0.5
+    • asynckit@0.4.0
+    • axios@0.21.4
+    • big-integer@1.6.52
+    • binary@0.3.0
+    • bindings@1.5.0
+    • bluebird@3.7.2
+    • body-parser@1.20.1
+    • buffer-indexof-polyfill@1.0.2
+    • buffer-shims@1.0.0
+    • buffers@0.1.1
+    • busboy@1.6.0
+    • bytes@3.1.2
+    • call-bind@1.0.5
+    • camelcase@2.1.1
+    • chainsaw@0.1.0
+    • chownr@1.1.4
+    • clean-css@4.2.4
+    • cliui@3.2.0
+    • cmake-js@6.3.2
+    • code-point-at@1.1.0
+    • combined-stream@1.0.8
+    • commander@2.19.0
+    • content-disposition@0.5.4
+    • content-type@1.0.5
+    • cookie@0.5.0
+    • cookie-signature@1.0.6
+    • core-js@3.23.3
+    • core-util-is@1.0.3
+    • cssstyle@4.0.1
+    • data-urls@5.0.0
+    • decamelize@1.2.0
+    • decimal.js@10.4.3
+    • deep-extend@0.6.0
+    • define-data-property@1.1.1
+    • delayed-stream@1.0.0
+    • delegates@1.0.0
+    • depd@2.0.0
+    • destroy@1.2.0
+    • dset@3.1.3
+    • duplexer2@0.1.4
+    • edgedb@1.4.1
+    • ee-first@1.1.1
+    • encodeurl@1.0.2
+    • entities@4.5.0
+    • es-errors@1.3.0
+    • escape-html@1.0.3
+    • escodegen@1.14.3
+    • esprima@4.0.1
+    • etag@1.8.1
+    • event-target-shim@5.0.1
+    • express@4.18.2
+    • file-uri-to-path@1.0.0
+    • finalhandler@1.2.0
+    • follow-redirects@1.15.5
+    • form-data@4.0.0
+    • form-data-encoder@1.9.0
+    • formdata-node@4.4.1
+    • forwarded@0.2.0
+    • fresh@0.5.2
+    • fs-extra@5.0.0
+    • fs-minipass@1.2.7
+    • fstream@1.0.12
+    • function-bind@1.1.2
+    • gauge@1.2.7
+    • get-intrinsic@1.2.3
+    • gopd@1.0.1
+    • graceful-fs@4.2.11
+    • graphql@16.8.1
+    • graphql-yoga@3.0.0-next.12
+    • has-property-descriptors@1.0.1
+    • has-proto@1.0.1
+    • has-symbols@1.0.3
+    • has-unicode@2.0.1
+    • hasown@2.0.0
+    • he@1.2.0
+    • html-encoding-sniffer@4.0.0
+    • html-minifier@3.5.21
+    • htmlparser@1.7.7
+    • http-errors@2.0.0
+    • http-proxy-agent@7.0.0
+    • https-proxy-agent@7.0.2
+    • iconv-lite@0.6.3
+    • ini@1.3.8
+    • invert-kv@1.0.0
+    • ipaddr.js@1.9.1
+    • is-fullwidth-code-point@1.0.0
+    • is-iojs@1.1.0
+    • is-keyword-js@1.0.3
+    • is-potential-custom-element-name@1.0.1
+    • isarray@1.0.0
+    • jsdom@24.0.0
+    • jsonfile@4.0.0
+    • lcid@1.0.0
+    • listenercount@1.0.1
+    • llvm-bindings@0.4.2
+    • lodash@4.17.21
+    • lodash.pad@4.5.1
+    • lodash.padend@4.6.1
+    • lodash.padstart@4.6.1
+    • media-typer@0.3.0
+    • memory-stream@0.0.3
+    • merge-descriptors@1.0.1
+    • merge-source-map@1.1.0
+    • methods@1.1.2
+    • mime@1.6.0
+    • mime-db@1.52.0
+    • mime-types@2.1.35
+    • minimist@1.2.8
+    • minipass@2.9.0
+    • minizlib@1.3.3
+    • mjsunit.runner@0.1.3
+    • mkdirp@0.5.6
+    • negotiator@0.6.3
+    • node-addon-api@5.1.0
+    • node-domexception@1.0.0
+    • node-fetch@2.7.0
+    • npmlog@1.2.1
+    • number-is-nan@1.0.1
+    • nwsapi@2.2.7
+    • object-inspect@1.13.1
+    • on-finished@2.4.1
+    • os-locale@1.4.0
+    • parse5@7.1.2
+    • parseurl@1.3.3
+    • path-to-regexp@0.1.7
+    • process-nextick-args@1.0.7
+    • proxy-addr@2.0.7
+    • psl@1.9.0
+    • pvtsutils@1.3.5
+    • pvutils@1.1.3
+    • qs@6.11.0
+    • querystringify@2.2.0
+    • range-parser@1.2.1
+    • raw-body@2.5.1
+    • rc@1.2.8
+    • readability@0.1.0
+    • readable-stream@2.1.5
+    • relateurl@0.2.7
+    • requires-port@1.0.0
+    • rrweb-cssom@0.6.0
+    • safe-buffer@5.2.1
+    • safer-buffer@2.1.2
+    • saxes@6.0.0
+    • send@0.18.0
+    • serve-static@1.15.0
+    • set-function-length@1.2.0
+    • setimmediate@1.0.5
+    • setprototypeof@1.2.0
+    • side-channel@1.0.4
+    • source-map@0.6.1
+    • splitargs@0.0.7
+    • statuses@2.0.1
+    • streamsearch@1.1.0
+    • string-width@1.0.2
+    • string_decoder@0.10.31
+    • symbol-tree@3.2.4
+    • tar@4.4.19
+    • toidentifier@1.0.1
+    • tough-cookie@4.1.3
+    • tr46@5.0.0
+    • traverse@0.3.9
+    • type-is@1.6.18
+    • uglify-js@3.4.10
+    • undici@5.28.3
+    • undici-types@5.26.5
+    • universalify@0.2.0
+    • unpipe@1.0.0
+    • unzipper@0.8.14
+    • url-join@0.0.1
+    • url-parse@1.5.10
+    • util-deprecate@1.0.2
+    • utils-merge@1.0.1
+    • value-or-promise@1.0.12
+    • vary@1.1.2
+    • w3c-xmlserializer@5.0.0
+    • web-streams-polyfill@4.0.0-beta.3
+    • webcrypto-core@1.7.8
+    • webidl-conversions@7.0.0
+    • whatwg-encoding@3.1.1
+    • whatwg-mimetype@4.0.0
+    • whatwg-url@14.0.0
+    • window-size@0.1.4
+    • word-wrap@1.2.5
+    • wrap-ansi@2.1.0
+    • ws@8.16.0
+    • xml-name-validator@5.0.0
+    • xmlchars@2.2.0
+    • y18n@3.2.2
+    • yargs@3.32.0
+  Δ Changed (50):
+    • @esbuild/android-arm: 0.20.0 ➔ 0.17.19
+    • @esbuild/android-arm64: 0.20.0 ➔ 0.17.19
+    • @esbuild/android-x64: 0.20.0 ➔ 0.17.19
+    • @esbuild/darwin-arm64: 0.20.0 ➔ 0.17.19
+    • @esbuild/darwin-x64: 0.20.0 ➔ 0.17.19
+    • @esbuild/freebsd-arm64: 0.20.0 ➔ 0.17.19
+    • @esbuild/freebsd-x64: 0.20.0 ➔ 0.17.19
+    • @esbuild/linux-arm: 0.20.0 ➔ 0.17.19
+    • @esbuild/linux-arm64: 0.20.0 ➔ 0.17.19
+    • @esbuild/linux-ia32: 0.20.0 ➔ 0.17.19
+    • @esbuild/linux-loong64: 0.20.0 ➔ 0.17.19
+    • @esbuild/linux-mips64el: 0.20.0 ➔ 0.17.19
+    • @esbuild/linux-ppc64: 0.20.0 ➔ 0.17.19
+    • @esbuild/linux-riscv64: 0.20.0 ➔ 0.17.19
+    • @esbuild/linux-s390x: 0.20.0 ➔ 0.17.19
+    • @esbuild/linux-x64: 0.20.0 ➔ 0.17.19
+    • @esbuild/netbsd-x64: 0.20.0 ➔ 0.17.19
+    • @esbuild/openbsd-x64: 0.20.0 ➔ 0.17.19
+    • @esbuild/sunos-x64: 0.20.0 ➔ 0.17.19
+    • @esbuild/win32-arm64: 0.20.0 ➔ 0.17.19
+    • @esbuild/win32-ia32: 0.20.0 ➔ 0.17.19
+    • @esbuild/win32-x64: 0.20.0 ➔ 0.17.19
+    • @eslint-community/regexpp: 4.10.0 ➔ 4.9.1
+    • @eslint/eslintrc: 2.1.4 ➔ 2.1.2
+    • @eslint/js: 8.56.0 ➔ 8.51.0
+    • @humanwhocodes/config-array: 0.11.14 ➔ 0.11.11
+    • @humanwhocodes/object-schema: 2.0.2 ➔ 1.2.1
+    • @types/json-schema: 7.0.15 ➔ 7.0.13
+    • @types/prop-types: 15.7.11 ➔ 15.7.8
+    • @types/react: 18.2.53 ➔ 18.2.28
+    • @types/scheduler: 0.16.8 ➔ 0.16.4
+    • @types/semver: 7.5.6 ➔ 7.5.3
+    • @vscode/debugadapter: 1.64.0 ➔ 1.63.0
+    • @vscode/debugprotocol: 1.64.0 ➔ 1.63.0
+    • acorn: 8.11.3 ➔ 8.10.0
+    • csstype: 3.1.3 ➔ 3.1.2
+    • esbuild: 0.20.0 ➔ 0.17.19
+    • eslint: 8.56.0 ➔ 8.51.0
+    • fast-glob: 3.3.2 ➔ 3.3.1
+    • fastq: 1.17.1 ➔ 1.15.0
+    • flat-cache: 3.2.0 ➔ 3.1.1
+    • globals: 13.24.0 ➔ 13.23.0
+    • ignore: 5.3.1 ➔ 5.2.4
+    • mitata: 0.1.8 ➔ 0.1.6
+    • ms: 2.1.3 ➔ 2.1.2
+    • punycode: 2.3.1 ➔ 2.3.0
+    • react: 18.3.0-canary-596827f6a-20240205 ➔ 18.3.0-canary-09fbee89d-20231013
+    • react-dom: 18.3.0-canary-596827f6a-20240205 ➔ 18.3.0-canary-09fbee89d-20231013
+    • scheduler: 0.24.0-canary-596827f6a-20240205 ➔ 0.24.0-canary-09fbee89d-20231013
+    • typescript: 5.3.3 ➔ 5.2.2
+--------------------------------------------------------------------------------
+commit 57eb04f6f4e6958644220364c6da9ae2c4d1a1fd
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-02-26T19:13:02Z
+Msg:    [internal] Switch back to prettier (#9109)
+  - Removed (9):
+    • @biomejs/biome@1.5.3
+    • @biomejs/cli-darwin-arm64@1.5.3
+    • @biomejs/cli-darwin-x64@1.5.3
+    • @biomejs/cli-linux-arm64@1.5.3
+    • @biomejs/cli-linux-arm64-musl@1.5.3
+    • @biomejs/cli-linux-x64@1.5.3
+    • @biomejs/cli-linux-x64-musl@1.5.3
+    • @biomejs/cli-win32-arm64@1.5.3
+    • @biomejs/cli-win32-x64@1.5.3
+  Δ Changed (1):
+    • prettier: 3.2.2 ➔ 3.2.5
+--------------------------------------------------------------------------------
+commit f58249e3619c05f1f5edbbeac01e035e248e90bb
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-05-16T07:46:28Z
+Msg:    Fix loading bun-types in development (#11110)
+  + Added (225):
+    • @biomejs/biome@1.7.3
+    • @biomejs/cli-darwin-arm64@1.7.3
+    • @biomejs/cli-darwin-x64@1.7.3
+    • @biomejs/cli-linux-arm64@1.7.3
+    • @biomejs/cli-linux-arm64-musl@1.7.3
+    • @biomejs/cli-linux-x64@1.7.3
+    • @biomejs/cli-linux-x64-musl@1.7.3
+    • @biomejs/cli-win32-arm64@1.7.3
+    • @biomejs/cli-win32-x64@1.7.3
+    • @definitelytyped/dts-critic@0.0.191
+    • @definitelytyped/dtslint@0.0.199
+    • @definitelytyped/eslint-plugin@0.0.197
+    • @definitelytyped/header-parser@0.0.190
+    • @definitelytyped/typescript-versions@0.0.182
+    • @definitelytyped/utils@0.0.188
+    • @es-joy/jsdoccomment@0.39.4
+    • @qiwi/npm-registry-client@8.9.1
+    • @types/bun@1.1.2
+    • @types/json5@0.0.29
+    • @types/node@20.12.12
+    • @types/ws@8.5.10
+    • @ungap/structured-clone@1.2.0
+    • aproba@1.2.0
+    • are-docs-informative@0.0.2
+    • are-we-there-yet@1.1.7
+    • array-buffer-byte-length@1.0.1
+    • array-includes@3.1.8
+    • array.prototype.findlastindex@1.2.5
+    • array.prototype.flat@1.3.2
+    • array.prototype.flatmap@1.3.2
+    • arraybuffer.prototype.slice@1.0.3
+    • asn1@0.2.6
+    • assert-plus@1.0.0
+    • asynckit@0.4.0
+    • available-typed-arrays@1.0.7
+    • aws-sign2@0.7.0
+    • aws4@1.12.0
+    • b4a@1.6.6
+    • babel-code-frame@6.26.0
+    • bare-events@2.2.2
+    • bcrypt-pbkdf@1.0.2
+    • buffer-from@1.1.2
+    • builtin-modules@1.1.1
+    • builtins@1.0.3
+    • bun-types@workspace:packages/bun-types
+    • call-bind@1.0.7
+    • caseless@0.12.0
+    • charm@1.0.2
+    • chownr@2.0.0
+    • cliui@8.0.1
+    • code-point-at@1.1.0
+    • combined-stream@1.0.8
+    • command-exists@1.2.9
+    • commander@2.20.3
+    • comment-parser@1.3.1
+    • concat-stream@2.0.0
+    • console-control-strings@1.1.0
+    • core-util-is@1.0.3
+    • dashdash@1.14.1
+    • data-view-buffer@1.0.1
+    • data-view-byte-length@1.0.1
+    • data-view-byte-offset@1.0.0
+    • define-data-property@1.1.4
+    • define-properties@1.2.1
+    • delayed-stream@1.0.0
+    • delegates@1.0.0
+    • diff@3.5.0
+    • ecc-jsbn@0.1.2
+    • emoji-regex@8.0.0
+    • es-abstract@1.23.3
+    • es-define-property@1.0.0
+    • es-errors@1.3.0
+    • es-object-atoms@1.0.0
+    • es-set-tostringtag@2.0.3
+    • es-shim-unscopables@1.0.2
+    • es-to-primitive@1.2.1
+    • escalade@3.1.2
+    • eslint-import-resolver-node@0.3.9
+    • eslint-module-utils@2.8.1
+    • eslint-plugin-import@2.29.1
+    • eslint-plugin-jsdoc@44.2.7
+    • esprima@4.0.1
+    • extend@3.0.2
+    • extsprintf@1.3.0
+    • fast-fifo@1.3.2
+    • for-each@0.3.3
+    • forever-agent@0.6.1
+    • form-data@2.3.3
+    • fs-minipass@2.1.0
+    • function-bind@1.1.2
+    • function.prototype.name@1.1.6
+    • functions-have-names@1.2.3
+    • gauge@2.7.4
+    • get-caller-file@2.0.5
+    • get-intrinsic@1.2.4
+    • get-symbol-description@1.0.2
+    • getpass@0.1.7
+    • globalthis@1.0.4
+    • gopd@1.0.1
+    • graceful-fs@4.2.11
+    • har-schema@2.0.0
+    • har-validator@5.1.5
+    • has-ansi@2.0.0
+    • has-bigints@1.0.2
+    • has-property-descriptors@1.0.2
+    • has-proto@1.0.3
+    • has-symbols@1.0.3
+    • has-tostringtag@1.0.2
+    • has-unicode@2.0.1
+    • hasown@2.0.2
+    • hosted-git-info@4.1.0
+    • http-signature@1.2.0
+    • internal-slot@1.0.7
+    • is-array-buffer@3.0.4
+    • is-bigint@1.0.4
+    • is-boolean-object@1.1.2
+    • is-callable@1.2.7
+    • is-core-module@2.13.1
+    • is-data-view@1.0.1
+    • is-date-object@1.0.5
+    • is-fullwidth-code-point@3.0.0
+    • is-negative-zero@2.0.3
+    • is-number-object@1.0.7
+    • is-regex@1.1.4
+    • is-shared-array-buffer@1.0.3
+    • is-string@1.0.7
+    • is-symbol@1.0.4
+    • is-typed-array@1.1.13
+    • is-typedarray@1.0.0
+    • is-weakref@1.0.2
+    • isarray@2.0.5
+    • isstream@0.1.2
+    • jsbn@0.1.1
+    • jsdoc-type-pratt-parser@4.0.0
+    • json-schema@0.4.0
+    • json-stable-stringify@1.1.1
+    • json-stringify-safe@5.0.1
+    • json5@1.0.2
+    • jsonify@0.0.1
+    • jsprim@1.4.2
+    • mime-db@1.52.0
+    • mime-types@2.1.35
+    • minimist@1.2.8
+    • minipass@5.0.0
+    • minizlib@2.1.2
+    • mkdirp@1.0.4
+    • normalize-package-data@3.0.3
+    • npm-package-arg@8.1.5
+    • npmlog@4.1.2
+    • number-is-nan@1.0.1
+    • oauth-sign@0.9.0
+    • object-assign@4.1.1
+    • object-inspect@1.13.1
+    • object-keys@1.1.1
+    • object.assign@4.1.5
+    • object.fromentries@2.0.8
+    • object.groupby@1.0.3
+    • object.values@1.2.0
+    • path-parse@1.0.7
+    • performance-now@2.1.0
+    • possible-typed-array-names@1.0.0
+    • process-nextick-args@2.0.1
+    • psl@1.9.0
+    • qs@6.5.3
+    • queue-tick@1.0.1
+    • readable-stream@3.6.2
+    • regexp.prototype.flags@1.5.2
+    • request@2.88.2
+    • require-directory@2.1.1
+    • resolve@1.22.8
+    • retry@0.12.0
+    • safe-array-concat@1.1.2
+    • safe-buffer@5.2.1
+    • safe-regex-test@1.0.3
+    • safer-buffer@2.1.2
+    • set-blocking@2.0.0
+    • set-function-length@1.2.2
+    • set-function-name@2.0.2
+    • side-channel@1.0.6
+    • signal-exit@3.0.7
+    • slide@1.1.6
+    • spdx-correct@3.2.0
+    • spdx-exceptions@2.5.0
+    • spdx-expression-parse@3.0.1
+    • spdx-license-ids@3.0.17
+    • sprintf-js@1.0.3
+    • sshpk@1.18.0
+    • ssri@8.0.1
+    • streamx@2.16.1
+    • string-width@4.2.3
+    • string.prototype.trim@1.2.9
+    • string.prototype.trimend@1.0.8
+    • string.prototype.trimstart@1.0.8
+    • string_decoder@1.3.0
+    • strip-bom@3.0.0
+    • supports-preserve-symlinks-flag@1.0.0
+    • tar@6.2.1
+    • tar-stream@3.1.7
+    • tmp@0.2.3
+    • tough-cookie@2.5.0
+    • ts-api-utils@1.3.0
+    • tsconfig-paths@3.15.0
+    • tslint@5.14.0
+    • tunnel-agent@0.6.0
+    • tweetnacl@0.14.5
+    • typed-array-buffer@1.0.2
+    • typed-array-byte-length@1.0.1
+    • typed-array-byte-offset@1.0.2
+    • typed-array-length@1.0.6
+    • typedarray@0.0.6
+    • unbox-primitive@1.0.2
+    • undici-types@5.26.5
+    • util-deprecate@1.0.2
+    • uuid@3.4.0
+    • validate-npm-package-license@3.0.4
+    • validate-npm-package-name@3.0.0
+    • verror@1.10.0
+    • which-boxed-primitive@1.0.2
+    • which-typed-array@1.1.15
+    • wide-align@1.1.5
+    • word-wrap@1.2.5
+    • wrap-ansi@7.0.0
+    • y18n@5.0.8
+    • yargs@17.7.2
+    • yargs-parser@21.1.1
+  - Removed (3):
+    • @aashutoshrathi/word-wrap@1.2.6
+    • @types/scheduler@0.16.4
+    • loose-envify@1.4.0
+  Δ Changed (42):
+    • @eslint-community/regexpp: 4.9.1 ➔ 4.10.0
+    • @eslint/eslintrc: 2.1.2 ➔ 2.1.4
+    • @eslint/js: 8.51.0 ➔ 8.57.0
+    • @humanwhocodes/config-array: 0.11.11 ➔ 0.11.14
+    • @humanwhocodes/object-schema: 1.2.1 ➔ 2.0.3
+    • @types/json-schema: 7.0.13 ➔ 7.0.15
+    • @types/prop-types: 15.7.8 ➔ 15.7.12
+    • @types/react: 18.2.28 ➔ 18.3.2
+    • @types/semver: 7.5.3 ➔ 7.5.8
+    • @typescript-eslint/eslint-plugin: 5.62.0 ➔ 6.21.0
+    • @typescript-eslint/parser: 5.62.0 ➔ 6.21.0
+    • @typescript-eslint/scope-manager: 5.62.0 ➔ 6.21.0
+    • @typescript-eslint/type-utils: 5.62.0 ➔ 6.21.0
+    • @typescript-eslint/types: 5.62.0 ➔ 6.21.0
+    • @typescript-eslint/typescript-estree: 5.62.0 ➔ 6.21.0
+    • @typescript-eslint/utils: 5.62.0 ➔ 6.21.0
+    • @typescript-eslint/visitor-keys: 5.62.0 ➔ 6.21.0
+    • @vscode/debugadapter: 1.63.0 ➔ 1.65.0
+    • @vscode/debugprotocol: 1.63.0 ➔ 1.65.0
+    • acorn: 8.10.0 ➔ 8.11.3
+    • brace-expansion: 1.1.11 ➔ 2.0.1
+    • csstype: 3.1.2 ➔ 3.1.3
+    • eslint: 8.51.0 ➔ 8.57.0
+    • fast-glob: 3.3.1 ➔ 3.3.2
+    • fastq: 1.15.0 ➔ 1.17.1
+    • flat-cache: 3.1.1 ➔ 3.2.0
+    • flatted: 3.2.9 ➔ 3.3.1
+    • globals: 13.23.0 ➔ 13.24.0
+    • ignore: 5.2.4 ➔ 5.3.1
+    • isexe: 2.0.0 ➔ 3.1.1
+    • js-tokens: 4.0.0 ➔ 3.0.2
+    • minimatch: 3.1.2 ➔ 9.0.3
+    • mitata: 0.1.6 ➔ 0.1.11
+    • optionator: 0.9.3 ➔ 0.9.4
+    • punycode: 2.3.0 ➔ 2.3.1
+    • react: 18.3.0-canary-09fbee89d-20231013 ➔ 19.0.0-rc-915b914b3a-20240515
+    • react-dom: 18.3.0-canary-09fbee89d-20231013 ➔ 19.0.0-rc-915b914b3a-20240515
+    • scheduler: 0.24.0-canary-09fbee89d-20231013 ➔ 0.25.0-rc-915b914b3a-20240515
+    • semver: 7.5.4 ➔ 7.6.2
+    • source-map-js: 1.0.2 ➔ 1.2.0
+    • typescript: 5.2.2 ➔ 5.4.5
+    • which: 2.0.2 ➔ 4.0.0
+--------------------------------------------------------------------------------
+commit 93abd9920283011edd5fc51b14440e369c9c634d
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-05-16T22:53:13Z
+Msg:    Downgrade to React 18
+  + Added (1):
+    • loose-envify@1.4.0
+  Δ Changed (3):
+    • react: 19.0.0-rc-915b914b3a-20240515 ➔ 18.3.1
+    • react-dom: 19.0.0-rc-915b914b3a-20240515 ➔ 18.3.1
+    • scheduler: 0.25.0-rc-915b914b3a-20240515 ➔ 0.23.2
+--------------------------------------------------------------------------------
+commit d105b048b1bcaeb19ce6b644276a343259420470
+Author: Ashcon Partovi <ashcon@partovi.net>
+Date:   2024-06-27T21:56:07Z
+Msg:    Use Buildkite for CI (#11477)
+  + Added (4):
+    • @esbuild/aix-ppc64@0.21.4
+    • @eslint/config-array@0.15.1
+    • @eslint/object-schema@2.1.3
+    • @humanwhocodes/retry@0.3.0
+  - Removed (1):
+    • natural-compare-lite@1.4.0
+  Δ Changed (45):
+    • @esbuild/android-arm: 0.17.19 ➔ 0.21.4
+    • @esbuild/android-arm64: 0.17.19 ➔ 0.21.4
+    • @esbuild/android-x64: 0.17.19 ➔ 0.21.4
+    • @esbuild/darwin-arm64: 0.17.19 ➔ 0.21.4
+    • @esbuild/darwin-x64: 0.17.19 ➔ 0.21.4
+    • @esbuild/freebsd-arm64: 0.17.19 ➔ 0.21.4
+    • @esbuild/freebsd-x64: 0.17.19 ➔ 0.21.4
+    • @esbuild/linux-arm: 0.17.19 ➔ 0.21.4
+    • @esbuild/linux-arm64: 0.17.19 ➔ 0.21.4
+    • @esbuild/linux-ia32: 0.17.19 ➔ 0.21.4
+    • @esbuild/linux-loong64: 0.17.19 ➔ 0.21.4
+    • @esbuild/linux-mips64el: 0.17.19 ➔ 0.21.4
+    • @esbuild/linux-ppc64: 0.17.19 ➔ 0.21.4
+    • @esbuild/linux-riscv64: 0.17.19 ➔ 0.21.4
+    • @esbuild/linux-s390x: 0.17.19 ➔ 0.21.4
+    • @esbuild/linux-x64: 0.17.19 ➔ 0.21.4
+    • @esbuild/netbsd-x64: 0.17.19 ➔ 0.21.4
+    • @esbuild/openbsd-x64: 0.17.19 ➔ 0.21.4
+    • @esbuild/sunos-x64: 0.17.19 ➔ 0.21.4
+    • @esbuild/win32-arm64: 0.17.19 ➔ 0.21.4
+    • @esbuild/win32-ia32: 0.17.19 ➔ 0.21.4
+    • @esbuild/win32-x64: 0.17.19 ➔ 0.21.4
+    • @eslint/eslintrc: 2.1.4 ➔ 3.1.0
+    • @eslint/js: 8.57.0 ➔ 9.4.0
+    • @types/bun: 1.1.2 ➔ 1.1.3
+    • @types/react: 18.3.2 ➔ 18.3.3
+    • @typescript-eslint/eslint-plugin: 6.21.0 ➔ 7.11.0
+    • @typescript-eslint/parser: 6.21.0 ➔ 7.11.0
+    • @typescript-eslint/scope-manager: 6.21.0 ➔ 7.11.0
+    • @typescript-eslint/type-utils: 6.21.0 ➔ 7.11.0
+    • @typescript-eslint/types: 6.21.0 ➔ 7.11.0
+    • @typescript-eslint/typescript-estree: 6.21.0 ➔ 7.11.0
+    • @typescript-eslint/utils: 6.21.0 ➔ 7.11.0
+    • @typescript-eslint/visitor-keys: 6.21.0 ➔ 7.11.0
+    • esbuild: 0.17.19 ➔ 0.21.4
+    • eslint: 8.57.0 ➔ 9.4.0
+    • eslint-config-prettier: 8.10.0 ➔ 9.1.0
+    • eslint-scope: 7.2.2 ➔ 8.0.1
+    • eslint-visitor-keys: 3.4.3 ➔ 4.0.0
+    • espree: 9.6.1 ➔ 10.0.1
+    • file-entry-cache: 6.0.1 ➔ 8.0.0
+    • flat-cache: 3.2.0 ➔ 4.0.1
+    • globals: 13.24.0 ➔ 14.0.0
+    • minimatch: 9.0.3 ➔ 9.0.4
+    • tsutils: 3.21.0 ➔ 2.29.0
+--------------------------------------------------------------------------------
+commit 6b50deb7b74d07850b2f892fe60a38f89e27b1bb
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-07-18T08:13:36Z
+Msg:    Move dev dependencies to `"devDependencies"`
+  + Added (1):
+    • text-decoder@1.1.1
+  Δ Changed (71):
+    • @biomejs/biome: 1.7.3 ➔ 1.8.3
+    • @biomejs/cli-darwin-arm64: 1.7.3 ➔ 1.8.3
+    • @biomejs/cli-darwin-x64: 1.7.3 ➔ 1.8.3
+    • @biomejs/cli-linux-arm64: 1.7.3 ➔ 1.8.3
+    • @biomejs/cli-linux-arm64-musl: 1.7.3 ➔ 1.8.3
+    • @biomejs/cli-linux-x64: 1.7.3 ➔ 1.8.3
+    • @biomejs/cli-linux-x64-musl: 1.7.3 ➔ 1.8.3
+    • @biomejs/cli-win32-arm64: 1.7.3 ➔ 1.8.3
+    • @biomejs/cli-win32-x64: 1.7.3 ➔ 1.8.3
+    • @esbuild/aix-ppc64: 0.21.4 ➔ 0.21.5
+    • @esbuild/android-arm: 0.21.4 ➔ 0.21.5
+    • @esbuild/android-arm64: 0.21.4 ➔ 0.21.5
+    • @esbuild/android-x64: 0.21.4 ➔ 0.21.5
+    • @esbuild/darwin-arm64: 0.21.4 ➔ 0.21.5
+    • @esbuild/darwin-x64: 0.21.4 ➔ 0.21.5
+    • @esbuild/freebsd-arm64: 0.21.4 ➔ 0.21.5
+    • @esbuild/freebsd-x64: 0.21.4 ➔ 0.21.5
+    • @esbuild/linux-arm: 0.21.4 ➔ 0.21.5
+    • @esbuild/linux-arm64: 0.21.4 ➔ 0.21.5
+    • @esbuild/linux-ia32: 0.21.4 ➔ 0.21.5
+    • @esbuild/linux-loong64: 0.21.4 ➔ 0.21.5
+    • @esbuild/linux-mips64el: 0.21.4 ➔ 0.21.5
+    • @esbuild/linux-ppc64: 0.21.4 ➔ 0.21.5
+    • @esbuild/linux-riscv64: 0.21.4 ➔ 0.21.5
+    • @esbuild/linux-s390x: 0.21.4 ➔ 0.21.5
+    • @esbuild/linux-x64: 0.21.4 ➔ 0.21.5
+    • @esbuild/netbsd-x64: 0.21.4 ➔ 0.21.5
+    • @esbuild/openbsd-x64: 0.21.4 ➔ 0.21.5
+    • @esbuild/sunos-x64: 0.21.4 ➔ 0.21.5
+    • @esbuild/win32-arm64: 0.21.4 ➔ 0.21.5
+    • @esbuild/win32-ia32: 0.21.4 ➔ 0.21.5
+    • @esbuild/win32-x64: 0.21.4 ➔ 0.21.5
+    • @eslint-community/regexpp: 4.10.0 ➔ 4.11.0
+    • @eslint/config-array: 0.15.1 ➔ 0.17.0
+    • @eslint/js: 9.4.0 ➔ 9.7.0
+    • @eslint/object-schema: 2.1.3 ➔ 2.1.4
+    • @types/bun: 1.1.3 ➔ 1.1.6
+    • @types/node: 20.12.12 ➔ 20.12.14
+    • @types/ws: 8.5.10 ➔ 8.5.11
+    • @typescript-eslint/eslint-plugin: 7.11.0 ➔ 7.16.1
+    • @typescript-eslint/parser: 7.11.0 ➔ 7.16.1
+    • @typescript-eslint/scope-manager: 7.11.0 ➔ 7.16.1
+    • @typescript-eslint/type-utils: 7.11.0 ➔ 7.16.1
+    • @typescript-eslint/types: 7.11.0 ➔ 7.16.1
+    • @typescript-eslint/typescript-estree: 7.11.0 ➔ 7.16.1
+    • @typescript-eslint/utils: 7.11.0 ➔ 7.16.1
+    • @typescript-eslint/visitor-keys: 7.11.0 ➔ 7.16.1
+    • @vscode/debugadapter: 1.65.0 ➔ 1.66.0
+    • @vscode/debugprotocol: 1.65.0 ➔ 1.66.0
+    • acorn: 8.11.3 ➔ 8.12.1
+    • aws4: 1.12.0 ➔ 1.13.0
+    • bare-events: 2.2.2 ➔ 2.4.2
+    • braces: 3.0.2 ➔ 3.0.3
+    • debug: 4.3.4 ➔ 4.3.5
+    • esbuild: 0.21.4 ➔ 0.21.5
+    • eslint: 9.4.0 ➔ 9.7.0
+    • eslint-scope: 8.0.1 ➔ 8.0.2
+    • espree: 10.0.1 ➔ 10.1.0
+    • esquery: 1.5.0 ➔ 1.6.0
+    • fill-range: 7.0.1 ➔ 7.1.1
+    • is-core-module: 2.13.1 ➔ 2.15.0
+    • js-tokens: 3.0.2 ➔ 4.0.0
+    • micromatch: 4.0.5 ➔ 4.0.7
+    • minimatch: 9.0.4 ➔ 9.0.5
+    • object-inspect: 1.13.1 ➔ 1.13.2
+    • prettier: 3.2.5 ➔ 3.3.3
+    • semver: 7.6.2 ➔ 7.6.3
+    • spdx-license-ids: 3.0.17 ➔ 3.0.18
+    • streamx: 2.16.1 ➔ 2.18.0
+    • tslib: 2.6.2 ➔ 2.6.3
+    • typescript: 5.4.5 ➔ 5.5.3
+--------------------------------------------------------------------------------
+commit cd6785771ea03f606d5e3875d469adf22d0a65d1
+Author: Jarred Sumner <jarred@jarredsumner.com>
+Date:   2024-09-04T04:32:52Z
+Msg:    run prettier and add back format action (#13722)
+  + Added (1):
+    • prettier-plugin-organize-imports@4.0.0
+--------------------------------------------------------------------------------
+commit 274e5a202223ae8b809b556565fae2979d59fcd5
+Author: Zack Radisic <56137411+zackradisic@users.noreply.github.com>
+Date:   2024-09-26T20:39:26Z
+Msg:    CSS Parser (#14122)
+  + Added (13):
+    • @mdn/browser-compat-data@5.5.49
+    • autoprefixer@10.4.20
+    • browserslist@4.23.3
+    • caniuse-lite@1.0.30001653
+    • electron-to-chromium@1.5.13
+    • fraction.js@4.3.7
+    • nanoid@3.3.7
+    • node-releases@2.0.18
+    • normalize-range@0.1.2
+    • picocolors@1.0.1
+    • postcss@8.4.41
+    • postcss-value-parser@4.2.0
+    • update-browserslist-db@1.1.0
+  Δ Changed (1):
+    • prettier-plugin-organize-imports: 4.0.0 ➔ 4.1.0
+--------------------------------------------------------------------------------
+commit b39632c92129ed0161d57da951445828ebcd9108
+Author: dave caruso <me@paperdave.net>
+Date:   2024-12-10T20:43:17Z
+Msg:    feat: new binding generator (#15638)
+  Δ Changed (1):
+    • typescript: 5.5.3 ➔ 5.7.2
+--------------------------------------------------------------------------------
