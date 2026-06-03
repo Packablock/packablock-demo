@@ -9,6 +9,7 @@ import {
 	rolloverChain,
 	GENESIS_PREV_HASH,
 } from "../../packablock-client/src/chain.ts";
+import { getPackageDiff } from "../../packablock-client/src/diff.ts";
 
 const colors = {
 	reset: "\x1b[0m",
@@ -19,6 +20,19 @@ const colors = {
 	cyan: "\x1b[36m",
 	gray: "\x1b[90m",
 };
+
+function getMockLocations(packages: Record<string, string>): Record<string, { line: number; column: number }> {
+	const locations: Record<string, { line: number; column: number }> = {};
+	const keys = Object.keys(packages);
+	for (let idx = 0; idx < keys.length; idx++) {
+		const name = keys[idx];
+		locations[name] = {
+			line: (idx + 1) * 3 + 1,
+			column: 10,
+		};
+	}
+	return locations;
+}
 
 async function run() {
 	const chainPath = path.resolve(__dirname, "packablock.yaml");
@@ -43,26 +57,31 @@ async function run() {
 
 	console.log(`🎬 1. Replaying ${preRolloverFeed.length} ancient (pre-rollover) commits...`);
 
+	let currentPackages: Record<string, string> = {};
+
 	for (let i = 0; i < preRolloverFeed.length; i++) {
 		const commit = preRolloverFeed[i];
-		// Sort packages alphabetically
-		const sortedPackages: Record<string, string> = {};
-		for (const key of Object.keys(commit.packages).sort()) {
-			sortedPackages[key] = commit.packages[key];
-		}
+		const rawPackages = commit.packages;
+		const mockLocations = getMockLocations(rawPackages);
 
-		const payloadObj = {
-			commit: commit.sha,
-			author: commit.author,
-			date: commit.date,
-			message: commit.message,
-			packages: sortedPackages,
-		};
-		const blockData = YAML.stringify(payloadObj);
+		let blockData = "";
+		if (i === 0) {
+			blockData = YAML.stringify({
+				"bun.lock": {
+					packages: Object.entries(rawPackages).map(([name, ver]) => ({ [name]: ver })),
+				},
+			});
+		} else {
+			const diff = getPackageDiff(currentPackages, rawPackages, mockLocations);
+			blockData = YAML.stringify({
+				"bun.lock": {
+					packages: diff,
+				},
+			});
+		}
 
 		const customMeta = {
 			timestamp: commit.date,
-			git_commit: commit.sha,
 		};
 
 		if (i === 0) {
@@ -70,6 +89,8 @@ async function run() {
 		} else {
 			await appendBlock(chainPath, blockData, customMeta);
 		}
+
+		currentPackages = rawPackages;
 	}
 
 	// 3. Verify pre-rollover chain
@@ -111,27 +132,22 @@ async function run() {
 
 	for (let i = 0; i < postRolloverFeed.length; i++) {
 		const commit = postRolloverFeed[i];
-		// Sort packages alphabetically
-		const sortedPackages: Record<string, string> = {};
-		for (const key of Object.keys(commit.packages).sort()) {
-			sortedPackages[key] = commit.packages[key];
-		}
+		const rawPackages = commit.packages;
+		const mockLocations = getMockLocations(rawPackages);
 
-		const payloadObj = {
-			commit: commit.sha,
-			author: commit.author,
-			date: commit.date,
-			message: commit.message,
-			packages: sortedPackages,
-		};
-		const blockData = YAML.stringify(payloadObj);
+		const diff = getPackageDiff(currentPackages, rawPackages, mockLocations);
+		const blockData = YAML.stringify({
+			"bun.lock": {
+				packages: diff,
+			},
+		});
 
 		const customMeta = {
 			timestamp: commit.date,
-			git_commit: commit.sha,
 		};
 
 		await appendBlock(chainPath, blockData, customMeta);
+		currentPackages = rawPackages;
 	}
 
 	// 6. Verify final modern chain and backup chain
