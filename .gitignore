@@ -1,0 +1,8 @@
+# Ignore generated YAML chains
+packablock.yaml
+packablock.yaml.bak
+pack.tar.gz
+temp-verify-dir/
+extract-test/
+node_modules/
+.DS_Store
