@@ -1,0 +1,156 @@
+[
+  {
+    "sha": "70bb8bda2352a646e76f48df33cc493bc8d30c3d",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2022-04-04T00:24:26Z",
+    "message": "Fix the types",
+    "constraints": {}
+  },
+  {
+    "sha": "044f23739c6999e4087227e35f50a01cde0a90a2",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2022-04-04T13:38:12Z",
+    "message": "Update tsconfig.json",
+    "constraints": {}
+  },
+  {
+    "sha": "ac76e3b004c86255daf79410827fad69c5b60a96",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2022-04-10T11:30:09Z",
+    "message": "Move some types around",
+    "constraints": {}
+  },
+  {
+    "sha": "1bc8c92e2fc2fe80162b70cb5db0f72c716a8941",
+    "author": "Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "date": "2022-08-05T05:15:46Z",
+    "message": "[misc] Add `bun-types` to repo",
+    "constraints": {}
+  },
+  {
+    "sha": "f7f1b604443c030afe29d1059b90f72c69afe081",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2022-11-09T23:40:40Z",
+    "message": "Add bun-types, add typechecking, add `child_process` types (#1475)\n\n* Add bun-types to packages\r\n\r\n* Improve typing\r\n\r\n* Fix types in tests\r\n\r\n* Fix dts tests\r\n\r\n* Run formatter\r\n\r\n* Fix all type errors\r\n\r\n* Add strict mode, fix type errors\r\n\r\n* Add ffi changes\r\n\r\n* Move workflows to root\r\n\r\n* Add workflows\r\n\r\n* Remove labeler\r\n\r\n* Add child_process types\r\n\r\n* Fix synthetic defaults issue\r\n\r\n* Remove docs\r\n\r\n* Move scripts\r\n\r\n* Run prettier\r\n\r\n* Include examples in typechecking\r\n\r\n* captureStackTrace types\r\n\r\n* moved captureStackTrace types to globals\r\n\r\n* Address reviews\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>\r\nCo-authored-by: Dylan Conway <dylan.conway567@gmail.com>",
+    "constraints": {}
+  },
+  {
+    "sha": "5ea8fe8c90eca02cce24eb5385e195e85ddee9cb",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2022-12-07T02:48:02Z",
+    "message": "Update types (#1581)\n\n* Fix TS types, improve child_process types\r\n\r\n* Add prettier\r\n\r\n* Add ArrayBuffer types\r\n\r\n* Add namespace Bun, improve types for SharedArrayBuffer, add toStrictEqual\r\n\r\n* Improve types, add test files for types\r\n\r\n* Update type tests\r\n\r\n* Fix typo\r\n\r\n* Add stdio\r\n\r\n* Stdio types\r\n\r\n* Use latest setup-bun\r\n\r\n* Update action\r\n\r\n* Update action\r\n\r\n* Update action\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>\r\nCo-authored-by: Ashcon Partovi <ashcon@partovi.net>",
+    "constraints": {}
+  },
+  {
+    "sha": "d16951422bc5c371965874ad656a85d1e2442e85",
+    "author": "华晨 <hclj37@gmail.com>",
+    "date": "2023-01-18T05:01:55Z",
+    "message": "remove redundant allowSyntheticDefaultImports (#1802)",
+    "constraints": {}
+  },
+  {
+    "sha": "e7f9ce47f47bee562165bbf8a31c75d00306b0ad",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2023-02-06T20:57:19Z",
+    "message": "Add types for node:console and node:perf_hooks (#1982)\n\n* Add types for node:console and node:perf_hooks\r\n\r\n* Add types for util/types\r\n\r\n---------\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>",
+    "constraints": {}
+  },
+  {
+    "sha": "931f23d360f86ace209391db3278e4e636f2c83c",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2023-03-01T03:46:18Z",
+    "message": "Fix typecheck",
+    "constraints": {}
+  },
+  {
+    "sha": "f7e4eb83694aa007a492ef66c28ffbe6a2dae791",
+    "author": "Ashcon Partovi <ashcon@partovi.net>",
+    "date": "2023-03-07T20:22:34Z",
+    "message": "Reorganize tests (#2332)",
+    "constraints": {}
+  },
+  {
+    "sha": "2503b3409eb4725e791819dd509473bcf759fc86",
+    "author": "John Reilly <johnny_reilly@hotmail.com>",
+    "date": "2023-03-21T02:51:24Z",
+    "message": "docs: update moduleResolution to bundler (#2429)\n\n* docs: update moduleResolution to bundler\r\n\r\n* docs: bundler as well\r\n\r\n* Updates\r\n\r\n---------\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd94@gmail.com>",
+    "constraints": {}
+  },
+  {
+    "sha": "a5f92224b586289fc72f0abdb68b08eef9f017db",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2023-03-22T22:01:01Z",
+    "message": "Fix types (#2453)\n\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* Improve typechecking in type files\r\n\r\n* Fix typechecking\r\n\r\n* Update\r\n\r\n* Update submodule\r\n\r\n* CI for typechecking\r\n\r\n* Add ci\r\n\r\n* Update commands\r\n\r\n* Format after build\r\n\r\n* Dont use bunx\r\n\r\n* Rename job\r\n\r\n* Use nodemodules prettier\r\n\r\n* Update workflow\r\n\r\n* Use symlink\r\n\r\n* Debug\r\n\r\n* Debug\r\n\r\n* Clean up and rename jobs",
+    "constraints": {}
+  },
+  {
+    "sha": "4df1d37ddc54242c339765f22fb90ba2e9e3a99a",
+    "author": "dave caruso <me@paperdave.net>",
+    "date": "2023-06-02T01:16:47Z",
+    "message": "Bundle and minify `.exports.js` files. (#3036)\n\n* move all exports.js into src/js\r\n\r\n* finalize the sort of this\r\n\r\n* and it works\r\n\r\n* add test.ts to gitignore\r\n\r\n* okay\r\n\r\n* convert some to ts just to show\r\n\r\n* finish up\r\n\r\n* fixup makefile\r\n\r\n* minify syntax in dev\r\n\r\n* finish rebase\r\n\r\n* dont minify all modules\r\n\r\n* merge\r\n\r\n* finish rebase merge\r\n\r\n* flaky test that hangs",
+    "constraints": {}
+  },
+  {
+    "sha": "affd06d05cc756df33854bc1d56e2284ff22b22d",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2023-07-07T22:10:33Z",
+    "message": "Update types, partially fix `typecheck` (#3551)\n\n* Update types\r\n\r\n* Remove caret",
+    "constraints": {}
+  },
+  {
+    "sha": "c2a77cf7ec9de9eadf938046bdf78e58561c8a6d",
+    "author": "dave caruso <me@paperdave.net>",
+    "date": "2023-08-02T23:27:36Z",
+    "message": "Rewrite built-in modules to use CommonJS over ESM (#3814)\n\n* stfdsafsd\r\n\r\nsadffdsa\r\n\r\nstuff\r\n\r\nfinish commonjs stuff\r\n\r\nasdf\r\n\r\nnot done but work\r\n\r\nnot done but work\r\n\r\nnot done yet but this is how far i am\r\n\r\nremove files\r\n\r\nlol\r\n\r\nupdate built files\r\n\r\nuncomment everything in events lol\r\n\r\nexport default\r\n\r\nstuff\r\n\r\n* afdsafsd\r\n\r\n* its not perfect but almost done\r\n\r\n* okay\r\n\r\n* cool\r\n\r\n* remove temp file\r\n\r\n* finish rebase\r\n\r\n* revert settings.json\r\n\r\n* a\r\n\r\n* ch-ch-ch-ch-changes\r\n\r\n* okay\r\n\r\n* remove this check in release for now\r\n\r\n* sxdcfghnjm,\r\n\r\n* lkjhgf\r\n\r\n* fmt\r\n\r\n* filename can be null\r\n\r\n* Update NodeModuleModule.h\r\n\r\n* weee\r\n\r\n* fmt\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "constraints": {}
+  },
+  {
+    "sha": "f269432d90826ad3e5b66c7685a6e826e0fb05e2",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2023-08-25T05:49:58Z",
+    "message": "Listen on a unix domain socket with Bun.serve() (#4311)\n\n* Update response.zig\r\n\r\n* Comment this out for now\r\n\r\n* Support unix domain socket in Bun.serve()\r\n\r\n* Add test\r\n\r\n* add types\r\n\r\n* Update JSFetchHeaders.cpp\r\n\r\n* comment this test out\r\n\r\n* tls unix web socket serve options\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\nCo-authored-by: dave caruso <me@paperdave.net>",
+    "constraints": {}
+  },
+  {
+    "sha": "689b28455c943897a3d286271e6f182afb17848f",
+    "author": "Dylan Conway <35280289+dylan-conway@users.noreply.github.com>",
+    "date": "2023-09-20T15:10:03Z",
+    "message": "add `emitDecoratorMetadata` (#5777)\n\n* some progess\r\n\r\n* needs more tests\r\n\r\n* make tests easier to debug\r\n\r\n* get metadata for constructor arg decorators\r\n\r\n* fix some things\r\n\r\n* merge `emitDecoratorMetadata` option\r\n\r\n* remove `^`\r\n\r\n* bundler tests and get option from tsconfig earlier\r\n\r\n* remove spaces\r\n\r\n* fix tests",
+    "constraints": {}
+  },
+  {
+    "sha": "31c17a1bb39a6f862b2a21134a5cdae8de96c66e",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2023-12-18T21:27:48Z",
+    "message": "Better types (#7670)\n\n* Rewrite bun-types to include @types/node\r\n\r\n* Incorporate new commits\r\n\r\n* Update bun.lockb\r\n\r\n* [autofix.ci] apply automated fixes\r\n\r\n* Update readme, add back webkit\r\n\r\n* Updates\r\n\r\n* BunJS -> Bun\r\n\r\n* Switch init to @types/bun\r\n\r\n* [autofix.ci] apply automated fixes\r\n\r\n* Tweaks\r\n\r\n* Revert docs changes\r\n\r\n* Fix bugs\r\n\r\n---------\r\n\r\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>",
+    "constraints": {}
+  },
+  {
+    "sha": "f5b7a6708dc4f978e61ce224e450f920137aa6e7",
+    "author": "Ashcon Partovi <ashcon@partovi.net>",
+    "date": "2024-09-12T00:46:03Z",
+    "message": "Move dependencies from `src/deps/` to `vendor/` (#13901)",
+    "constraints": {}
+  },
+  {
+    "sha": "d15eadaa2c54e28589e3c41d40359dc15ecace4f",
+    "author": "Meghan Denny <meghan@bun.sh>",
+    "date": "2024-10-15T22:39:09Z",
+    "message": "tsconfig.json: update excludes (#14578)",
+    "constraints": {}
+  },
+  {
+    "sha": "b39632c92129ed0161d57da951445828ebcd9108",
+    "author": "dave caruso <me@paperdave.net>",
+    "date": "2024-12-10T20:43:17Z",
+    "message": "feat: new binding generator (#15638)",
+    "constraints": {}
+  },
+  {
+    "sha": "57381d43ed3150df8df87d250c2d5127af021b6a",
+    "author": "Alistair Smith <hi@alistair.sh>",
+    "date": "2025-03-25T21:33:30Z",
+    "message": "types: Rewrite to avoid conflicts and allow for doc generation (#18024)\n\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>",
+    "constraints": {}
+  }
+]

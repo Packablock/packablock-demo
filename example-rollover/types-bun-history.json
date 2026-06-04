@@ -1,0 +1,20 @@
+[
+  {
+    "sha": "11ed29068f25f63217c218f8385e23986a0e2676",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2025-05-17T12:21:28Z",
+    "message": "Simplify the root package.json (#19718)",
+    "constraints": {
+      "bun-types": "workspace:"
+    }
+  },
+  {
+    "sha": "b96cc3fa1ac90d7da99b2e2f3064b70f5d2f6089",
+    "author": "clover caruso <git@paperclover.net>",
+    "date": "2026-05-19T22:17:45Z",
+    "message": "chore: remove my stale TODO assignments (#30685)\n\n> tldr; changes `// TODO(@paperclover):` --> `// TODO:`, plus some\nextras\n\ncongrats on the rust port! i haven't really been contributing to the\nproject since i left the company (and, unfortunately, most open source).\nlooking over most of these TODOs, the issues still seem valid. the best\ncourse of action is to anonymize them so a future agent can tackle them\none day.\n\nwith the couple of comments that point to me for feedback, i've decided\nto just resolve those. the crazy builtins bundler system got a little\nbit of documentation, which is documented as well as i can recall it.\n\ni remember almost all of my theory from the Dev Server, which was a\nproject slowly brewing in my head since way before i ever joined the\noriginal company. it's such a beautiful architecture. i'll always be\ndown to explaining it to anyone who wishes to learn, so that comment now\npoints to a scoped email address.\n\nthe old zig code is left untouched -- don't want to merge conflict lol.\n\ni want to thank all of the people i've worked with in the past, and\nspecifically shout-out dylan, zack, meg, and of course jarred. truly\nincredible work experience. but these days i spend most of my free time\nliving in an isolated universe, mostly working on art and music. at\nwork, i work on a user-facing application with bun; it's simple yet\nfulfilling to me.\n\nclover caruso🩵",
+    "constraints": {
+      "bun-types": "workspace:"
+    }
+  }
+]

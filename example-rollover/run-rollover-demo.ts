@@ -69,6 +69,21 @@ async function run() {
 	const packageJsonHistory = JSON.parse(
 		readFileSync(path.resolve(__dirname, "package-json-history.json"), "utf8")
 	);
+	const cargoHistory = JSON.parse(
+		readFileSync(path.resolve(__dirname, "cargo-toml-history.json"), "utf8")
+	);
+	const bunfigHistory = JSON.parse(
+		readFileSync(path.resolve(__dirname, "bunfig-toml-history.json"), "utf8")
+	);
+	const tsconfigHistory = JSON.parse(
+		readFileSync(path.resolve(__dirname, "tsconfig-json-history.json"), "utf8")
+	);
+	const bunTypesHistory = JSON.parse(
+		readFileSync(path.resolve(__dirname, "bun-types-history.json"), "utf8")
+	);
+	const typesBunHistory = JSON.parse(
+		readFileSync(path.resolve(__dirname, "types-bun-history.json"), "utf8")
+	);
 
 	const preRolloverFeed = JSON.parse(
 		readFileSync(path.resolve(__dirname, "bun-pre-rollover-packages.json"), "utf8"),
@@ -78,19 +93,49 @@ async function run() {
 
 	let currentPackages: Record<string, string> = {};
 	let currentConstraints: Record<string, string> = {};
+	let currentCargo: Record<string, string> = {};
+	let currentBunfig: Record<string, string> = {};
+	let currentTsconfig: Record<string, string> = {};
+	let currentBunTypes: Record<string, string> = {};
+	let currentTypesBun: Record<string, string> = {};
 
 	for (let i = 0; i < preRolloverFeed.length; i++) {
 		const commit = preRolloverFeed[i];
 		const rawPackages = commit.packages;
 		const mockLocations = getMockLocations(rawPackages);
 		const blockConstraints = getConstraintsAtDate(commit.date, packageJsonHistory);
+		const blockCargo = getConstraintsAtDate(commit.date, cargoHistory);
+		const blockBunfig = getConstraintsAtDate(commit.date, bunfigHistory);
+		const blockTsconfig = getConstraintsAtDate(commit.date, tsconfigHistory);
+		const blockBunTypes = getConstraintsAtDate(commit.date, bunTypesHistory);
+		const blockTypesBun = getConstraintsAtDate(commit.date, typesBunHistory);
 
 		let blockData = "";
 		if (i === 0) {
-			blockData = YAML.stringify({
+			const payload: any = {
 				"package.json": {
 					chain_event: "init",
 					constraints: Object.entries(blockConstraints).map(([name, val]) => ({ [name]: val })),
+				},
+				"Cargo.toml": {
+					chain_event: "init",
+					constraints: Object.entries(blockCargo).map(([name, val]) => ({ [name]: val })),
+				},
+				"bunfig.toml": {
+					chain_event: "init",
+					constraints: Object.entries(blockBunfig).map(([name, val]) => ({ [name]: val })),
+				},
+				"tsconfig.json": {
+					chain_event: "init",
+					constraints: Object.entries(blockTsconfig).map(([name, val]) => ({ [name]: val })),
+				},
+				"packages/bun-types/package.json": {
+					chain_event: "init",
+					constraints: Object.entries(blockBunTypes).map(([name, val]) => ({ [name]: val })),
+				},
+				"packages/@types/bun/package.json": {
+					chain_event: "init",
+					constraints: Object.entries(blockTypesBun).map(([name, val]) => ({ [name]: val })),
 				},
 				lockfiles: {
 					"bun.lock": {
@@ -98,10 +143,17 @@ async function run() {
 						packages: Object.entries(rawPackages).map(([name, ver]) => ({ [name]: ver })),
 					}
 				}
-			});
+			};
+			blockData = YAML.stringify(payload);
 		} else {
 			const lockfileDiff = getPackageDiff(currentPackages, rawPackages, mockLocations);
 			const constraintsDiff = getPackageDiff(currentConstraints, blockConstraints);
+			const cargoDiff = getPackageDiff(currentCargo, blockCargo);
+			const bunfigDiff = getPackageDiff(currentBunfig, blockBunfig);
+			const tsconfigDiff = getPackageDiff(currentTsconfig, blockTsconfig);
+			const bunTypesDiff = getPackageDiff(currentBunTypes, blockBunTypes);
+			const typesBunDiff = getPackageDiff(currentTypesBun, blockTypesBun);
+
 			const payload: any = {
 				lockfiles: {
 					"bun.lock": {
@@ -110,9 +162,22 @@ async function run() {
 				}
 			};
 			if (constraintsDiff.length > 0) {
-				payload["package.json"] = {
-					constraints: constraintsDiff,
-				};
+				payload["package.json"] = { constraints: constraintsDiff };
+			}
+			if (cargoDiff.length > 0) {
+				payload["Cargo.toml"] = { constraints: cargoDiff };
+			}
+			if (bunfigDiff.length > 0) {
+				payload["bunfig.toml"] = { constraints: bunfigDiff };
+			}
+			if (tsconfigDiff.length > 0) {
+				payload["tsconfig.json"] = { constraints: tsconfigDiff };
+			}
+			if (bunTypesDiff.length > 0) {
+				payload["packages/bun-types/package.json"] = { constraints: bunTypesDiff };
+			}
+			if (typesBunDiff.length > 0) {
+				payload["packages/@types/bun/package.json"] = { constraints: typesBunDiff };
 			}
 			blockData = YAML.stringify(payload);
 		}
@@ -129,6 +194,11 @@ async function run() {
 
 		currentPackages = rawPackages;
 		currentConstraints = blockConstraints;
+		currentCargo = blockCargo;
+		currentBunfig = blockBunfig;
+		currentTsconfig = blockTsconfig;
+		currentBunTypes = blockBunTypes;
+		currentTypesBun = blockTypesBun;
 	}
 
 	// 3. Verify pre-rollover chain
@@ -173,9 +243,19 @@ async function run() {
 		const rawPackages = commit.packages;
 		const mockLocations = getMockLocations(rawPackages);
 		const blockConstraints = getConstraintsAtDate(commit.date, packageJsonHistory);
+		const blockCargo = getConstraintsAtDate(commit.date, cargoHistory);
+		const blockBunfig = getConstraintsAtDate(commit.date, bunfigHistory);
+		const blockTsconfig = getConstraintsAtDate(commit.date, tsconfigHistory);
+		const blockBunTypes = getConstraintsAtDate(commit.date, bunTypesHistory);
+		const blockTypesBun = getConstraintsAtDate(commit.date, typesBunHistory);
 
 		const lockfileDiff = getPackageDiff(currentPackages, rawPackages, mockLocations);
 		const constraintsDiff = getPackageDiff(currentConstraints, blockConstraints);
+		const cargoDiff = getPackageDiff(currentCargo, blockCargo);
+		const bunfigDiff = getPackageDiff(currentBunfig, blockBunfig);
+		const tsconfigDiff = getPackageDiff(currentTsconfig, blockTsconfig);
+		const bunTypesDiff = getPackageDiff(currentBunTypes, blockBunTypes);
+		const typesBunDiff = getPackageDiff(currentTypesBun, blockTypesBun);
 		
 		const payload: any = {
 			lockfiles: {
@@ -185,9 +265,22 @@ async function run() {
 			}
 		};
 		if (constraintsDiff.length > 0) {
-			payload["package.json"] = {
-				constraints: constraintsDiff,
-			};
+			payload["package.json"] = { constraints: constraintsDiff };
+		}
+		if (cargoDiff.length > 0) {
+			payload["Cargo.toml"] = { constraints: cargoDiff };
+		}
+		if (bunfigDiff.length > 0) {
+			payload["bunfig.toml"] = { constraints: bunfigDiff };
+		}
+		if (tsconfigDiff.length > 0) {
+			payload["tsconfig.json"] = { constraints: tsconfigDiff };
+		}
+		if (bunTypesDiff.length > 0) {
+			payload["packages/bun-types/package.json"] = { constraints: bunTypesDiff };
+		}
+		if (typesBunDiff.length > 0) {
+			payload["packages/@types/bun/package.json"] = { constraints: typesBunDiff };
 		}
 		const blockData = YAML.stringify(payload);
 
@@ -198,7 +291,42 @@ async function run() {
 		await appendBlock(chainPath, blockData, customMeta);
 		currentPackages = rawPackages;
 		currentConstraints = blockConstraints;
+		currentCargo = blockCargo;
+		currentBunfig = blockBunfig;
+		currentTsconfig = blockTsconfig;
+		currentBunTypes = blockBunTypes;
+		currentTypesBun = blockTypesBun;
 	}
+
+	// 5.5. Append a final block representing the latest state to capture Cargo and other manifests constraints
+	console.log(`📝 4. Appending final workspace block to anchor all latest manifest constraints...`);
+	const latestCargo = cargoHistory[cargoHistory.length - 1]?.constraints || {};
+	const latestBunfig = bunfigHistory[bunfigHistory.length - 1]?.constraints || {};
+	const latestTsconfig = tsconfigHistory[tsconfigHistory.length - 1]?.constraints || {};
+	const latestBunTypes = bunTypesHistory[bunTypesHistory.length - 1]?.constraints || {};
+	const latestTypesBun = typesBunHistory[typesBunHistory.length - 1]?.constraints || {};
+
+	const cargoDiff = getPackageDiff(currentCargo, latestCargo);
+	const bunfigDiff = getPackageDiff(currentBunfig, latestBunfig);
+	const tsconfigDiff = getPackageDiff(currentTsconfig, latestTsconfig);
+	const bunTypesDiff = getPackageDiff(currentBunTypes, latestBunTypes);
+	const typesBunDiff = getPackageDiff(currentTypesBun, latestTypesBun);
+
+	const finalPayload: any = {
+		lockfiles: {
+			"bun.lock": {
+				packages: [],
+			}
+		}
+	};
+	if (cargoDiff.length > 0) finalPayload["Cargo.toml"] = { constraints: cargoDiff };
+	if (bunfigDiff.length > 0) finalPayload["bunfig.toml"] = { constraints: bunfigDiff };
+	if (tsconfigDiff.length > 0) finalPayload["tsconfig.json"] = { constraints: tsconfigDiff };
+	if (bunTypesDiff.length > 0) finalPayload["packages/bun-types/package.json"] = { constraints: bunTypesDiff };
+	if (typesBunDiff.length > 0) finalPayload["packages/@types/bun/package.json"] = { constraints: typesBunDiff };
+
+	const finalBlockData = YAML.stringify(finalPayload);
+	await appendBlock(chainPath, finalBlockData, { timestamp: "2026-06-04T07:00:00Z" });
 
 	// 6. Verify final modern chain and backup chain
 	let postStatus = await getChainStatus(chainPath);
@@ -209,8 +337,8 @@ async function run() {
 		throw new Error("❌ Final chain verification failed.");
 	}
 
-	// Modern chain should have: 1 genesis rollover block + 17 commits = 18 blocks
-	const expectedBlocksCount = postRolloverFeed.length + 1;
+	// Modern chain should have: 1 genesis rollover block + 17 commits + 1 final block = 19 blocks
+	const expectedBlocksCount = postRolloverFeed.length + 2;
 	if (postStatus.blockCount !== expectedBlocksCount) {
 		throw new Error(
 			`❌ Expected modern chain to have ${expectedBlocksCount} blocks, got ${postStatus.blockCount}`,

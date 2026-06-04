@@ -1,0 +1,50 @@
+[
+  {
+    "sha": "23427dbc12fdcff30c23a96a3d6a66d62fdc091d",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2026-05-14T08:09:34Z",
+    "message": "Rewrite Bun in Rust (#30412)\n\nBlog post with details coming soon. Still some optimization work to do\nbefore this lands in non-canary version.\n\n---------\n\nCo-authored-by: Dylan Conway <dylan.conway567@gmail.com>\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>\nCo-authored-by: robobun <117481402+robobun@users.noreply.github.com>",
+    "constraints": {
+      "rust-argon2": "3.0",
+      "bcrypt": "0.19",
+      "getrandom": "0.4",
+      "strum": "{ version = \"0.26\", features ="
+    }
+  },
+  {
+    "sha": "11a2e2c20b6746689298a1da76cec35b13d3405e",
+    "author": "Boshen <boshenc@gmail.com>",
+    "date": "2026-05-14T16:11:14Z",
+    "message": "chore: inherit workspace lints in all member crates (#30707)\n\n## Summary\n\n- Adds `[lints]` with `workspace = true` to every workspace member crate\nso per-crate manifests opt into the shared `[workspace.lints]` policy.\n- Lifts the `unexpected_cfgs` registration for `cfg(bun_asan)` from\n`bun_core` and `bun_alloc` into `[workspace.lints.rust]`. Side effect:\n`bun_safety` (which uses `cfg(bun_asan)` without registering it locally)\nis now covered too.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\n---\n\nNote: This allows for adding more workspace level lints in the near\nfuture.\n\nCo-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>",
+    "constraints": {
+      "rust-argon2": "3.0",
+      "bcrypt": "0.19",
+      "getrandom": "0.4",
+      "strum": "{ version = \"0.26\", features ="
+    }
+  },
+  {
+    "sha": "21db6826949dcbff5176a4f397c12a5d065fbda4",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2026-05-20T23:51:42Z",
+    "message": "clippy: 45 deny lints + fix 2735 violations across workspace (#31116)\n\nAdds 45 deny-level clippy lints + `dead_code`/`unused_*`/`unreachable_*`\nto `[workspace.lints]`, a `clippy.toml` routing\n`std::{fs,sync,collections,process,env}` and `println!`/`eprintln!`\nthrough `bun_*` wrappers, and fixes the resulting violations across the\nworkspace. Net **−6.2K LOC** of dead code.\n\n## Lint set\n\n**Soundness / leak prevention** — `undocumented_unsafe_blocks`,\n`not_unsafe_ptr_arg_deref`, `mem_forget`, `cast_ptr_alignment`,\n`transmute_ptr_to_ptr`, `as_ptr_cast_mut`, `drop_non_drop`, `uninit_vec`\n\n**Performance** — `redundant_clone`, `unnecessary_to_owned`,\n`needless_collect`, `or_fun_call`, `assigning_clones`, `implicit_clone`,\n`iter_overeager_cloned`, `map_clone`, `trivially_copy_pass_by_ref`,\n`large_types_passed_by_value`, `large_enum_variant`,\n`large_stack_frames`, `vec_init_then_push`, `format_collect`,\n`manual_memcpy`, `needless_pass_by_value`\n\n**Clarity** — `unnecessary_unwrap`, `derive_partial_eq_without_eq`,\n`derivable_impls`, `clone_on_ref_ptr`, `if_same_then_else`, `todo`,\n`unimplemented`, `dbg_macro`, `clone_on_copy`, `useless_conversion`,\n`manual_swap`, `mem_replace_option_with_none`, `redundant_locals`,\n`manual_c_str_literals`, `precedence`, `implicit_saturating_sub`,\n`ptr_eq`\n\n**Disallowed** — `disallowed_{methods,types,macros}` configured in\n`clippy.toml`: `std::sync::{Mutex,RwLock}` + `parking_lot::*` →\n`bun_threading`; `std::fs::*` → `bun_sys`;\n`std::collections::Hash{Map,Set}` → `bun_collections` (wyhash);\n`std::process::Command` → `bun_sys::process`; `println!`/`eprintln!` →\n`bun_core::output`; `std::env::var` → `bun_core::env`;\n`std::thread::spawn` → `bun_threading`; `std::mem::zeroed` banned.\n\n**rustc** — `dead_code`, `unused_imports`, `unused_variables`,\n`unused_mut`, `unused_assignments`, `unused_macros`, `unreachable_code`,\n`unreachable_patterns` denied workspace-wide. ~505 inline\n`#[allow(unused/dead_code/unreachable_*)]` attrs and ~90 crate-level\n`#![allow(unused, ...)]` words removed; the items they were hiding\ndeleted or `#[cfg]`'d to the platform/profile they're live on.\n\n31 default-warn lints explicitly `allow`'d (Zig-port style).\n\n## Notable fixes\n\n- **1,341 `// SAFETY:` comments** added immediately above `unsafe {`\nblocks, each stating the actual invariant.\n- **156 `not_unsafe_ptr_arg_deref`**: safe `fn(p: *mut T)` that deref\n`p` → `unsafe fn` with `# Safety` doc, or param changed to\n`NonNull<T>`/`&T`. `generate-host-exports.ts` already detected `pub\nunsafe fn` and wraps the thunk body — regenerated.\n- **47 `mem_forget`** → `ManuallyDrop` / `Box::into_raw` /\n`Arc::into_raw` / `Box::leak`. `enum_map!` (8 sites) replaced with\n`EnumMap::from_fn`.\n- **840 signature changes** (`trivially_copy_pass_by_ref` +\n`needless_pass_by_value` + `large_types_passed_by_value`): `&Copy` →\n`Copy`, owned-but-only-read → `&T`. All callers updated.\n- **`protocol::IsCompatible` + `calc_protocol_forwarders!`**: `Browsers`\n→ `&Browsers`.\n- **`SinkHandler`/`JsSinkType`/`impl_sink_handler!`/`VTable`**: `data:\nStreamResult` → `&StreamResult`.\n- **`ParserLike::log(&self) -> &mut Log`** (`mut_from_ref`): replaced\ntrait method with `log_ptr(&self) -> NonNull<Log>`.\n- **`tick_while_paused`**: `&mut bool` → `*const bool` +\n`read_volatile()` — C++ writes through an aliased pointer during\n`tick()`, so `&mut` was an aliasing violation, not just a lint.\n- **`flush_category!`** (css border): 152KB stack frame →\n`#[inline(never)]` helpers.\n- **`cppbind.ts`**: `&x as *const T` → `core::ptr::from_ref`; `//\nSAFETY:` above generated `unsafe { raw::… }` calls.\n- **Dead-code deletions**: ~650 lines of duplicate draft `unicode.rs`\nimpls; ~500 lines of unused `resolver/fs.rs` types; ~250 lines\n`shell_parser`; ~180 lines `package_json` reverse-resolution; 256-line\ndead `name_static`; dead FFI extern decls (Rust→C++ imports nothing\ncalls).\n- **Platform/profile cfg-gating**: ~60 files where an item is live only\non one target/profile (`#[cfg(target_os = ...)]` /\n`#[cfg(debug_assertions)]`).\n\n## CI\n\n- `.github/workflows/clippy.yml` — `bun run rust:clippy` with inline PR\nannotations via `.github/rust-matcher.json`.\n- `.github/workflows/miri.yml` — `bun run rust:miri` (Tree Borrows) on\nthe FFI-free crate set.\n\n## Exceptions (the only `#![allow]`s added)\n\n- 4× `build.rs`: `disallowed_{methods,types,macros}` — build scripts run\non the host before `bun_*` crates exist.\n- `bun_alloc/lib.rs`: `disallowed_types` — T0 foundation crate;\n`bun_threading`/`bun_collections` depend on it.\n- `#[allow]` inside `macro_rules!`/`quote!{}` bodies are preserved —\nthey suppress lints in *emitted* code that varies per call site.\n\n---\n\n`cargo clippy --workspace --no-deps`: 0 errors. `bun run\nrust:check-all`: 10/10. `bun bd`: builds.\n\n---------\n\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>",
+    "constraints": {
+      "rust-argon2": "3.0",
+      "bcrypt": "0.19",
+      "getrandom": "0.4",
+      "strum": "{ version = \"0.26\", features ="
+    }
+  },
+  {
+    "sha": "49c97de6b38192db015d26619e5acd26332c80b6",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2026-05-24T05:53:14Z",
+    "message": "Restrict crate-internal items to pub(crate) and remove dead code it exposes (#31254)\n\n## What\n\nThree commits, one sweep:\n\n1. **`pub` → `pub(crate)` for 1,298 items across 105 files.** Applied\nmechanically via `cargo fix` driven by the `unreachable_pub` lint, which\nonly fires on items that are provably unreachable from outside their\ndefining crate — so the demotion cannot change what compiles. Two items\n(`addrinfo`/`freeaddrinfo` re-exports in `bun_dns`) were reverted by\nhand because a chained `pub use` re-exports them.\n\n2. **Remove the dead AST JSON-serialization facility.** The `js_ast`\n`jsonStringify` port — `JsonWriter`/`BindingJsonWriter` traits,\n`Serializable` carrier structs, 26 `json_stringify` methods,\n`Ast::to_json` — has zero trait implementors and zero callers. The only\n`.json_stringify()` call sites in the tree are `JSValue`'s native\n`JSON.stringify`, which is unrelated.\n\n3. **Remove six crates nothing depends on**, plus the data files\nvendored under them:\n- `bun_unicode` — empty `lib.rs`, no consumers, but carried the entire\nvendored Unicode Character Database (~70k lines of `.txt`)\n- `bun_libarchive_sys` / `bun_picohttp_sys` — superseded duplicates;\n`bun_libarchive` / `bun_picohttp` carry their own bindings and are what\neverything actually uses\n   - `bun_meta`, `bun_url_jsc` — zero callers\n- the `bun_node-fallbacks` crate wrapper (the `.js` fallback modules\nstay; codegen bundles those directly)\n   - `crossbeam` from `[workspace.dependencies]` (no member declares it)\n\nAfter this, every workspace crate except the two standalone build roots\n(`bun_codegen`, `bun_shim_impl`) has at least one in-workspace\ndependent.\n\n## Why\n\n`dead_code = \"deny\"` is already enforced workspace-wide, but it treats\nevery `pub` item as an external API root and never analyzes it. In a\nworkspace where every crate is an internal implementation detail of one\nbinary, that exemption swallows real dead code. Demoting crate-internal\nitems to `pub(crate)` puts them back under the lint — that is what\nsurfaced the dead serialization facility.\n\n## Verification\n\n- `cargo check --workspace --lib --bins` clean under the workspace's\nnormal lint set\n- Full debug build links and runs\n- `bundler_edgecase` 103 pass / 0 fail, `bundler_browser` 12 pass / 0\nfail (node-fallbacks path), `bun-add` failures are pre-existing on main\n(registry config leak in the test environment, identical signature with\nan unmodified build)\n\n```\n179 files changed, 1,522 insertions(+), 84,970 deletions(-)\n```",
+    "constraints": {
+      "rust-argon2": "3.0",
+      "bcrypt": "0.19",
+      "getrandom": "0.4",
+      "strum": "{ version = \"0.26\", features ="
+    }
+  }
+]

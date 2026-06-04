@@ -1,0 +1,72 @@
+[
+  {
+    "sha": "30b10d5fb1aeb94c7c19bb8d8d732f61202609cd",
+    "author": "Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "date": "2023-01-09T16:28:37Z",
+    "message": "[bun:test] Implement `test.root` configuration option",
+    "constraints": {}
+  },
+  {
+    "sha": "b931c19ba3793b1d62fffff735b1d29e62d4c89c",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2023-01-18T00:49:18Z",
+    "message": "Add types for `readline`, `tls`, `net` (#1817)\n\n* Add readline, tls, net types\r\n\r\n* Remove unimplemented methods\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>",
+    "constraints": {}
+  },
+  {
+    "sha": "f7e4eb83694aa007a492ef66c28ffbe6a2dae791",
+    "author": "Ashcon Partovi <ashcon@partovi.net>",
+    "date": "2023-03-07T20:22:34Z",
+    "message": "Reorganize tests (#2332)",
+    "constraints": {}
+  },
+  {
+    "sha": "c55574b4d3679257b3abd0137a06026bbf99ff80",
+    "author": "xnacly <47723417+xNaCly@users.noreply.github.com>",
+    "date": "2023-09-13T01:53:23Z",
+    "message": "fix typo and grammar errors (#5046)",
+    "constraints": {}
+  },
+  {
+    "sha": "61845426829ccbea072a417df45dd8b3d5d822d3",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2024-02-21T22:13:43Z",
+    "message": "Add `BUN_DEBUG` flag to control where debug logs go (#9019)\n\n* Add `BUN_DEBUG` flag to control where debug logs go\r\n\r\n* Update all the actions\r\n\r\n* Configure temp\r\n\r\n* use spawn instead of rm\r\n\r\n* Use CLOSE_RANGE_CLOEXEC\r\n\r\n* Make some tests more reproducible\r\n\r\n* Update hot.test.ts\r\n\r\n* Detect file descriptor leaks and wait for stdout\r\n\r\n* Update runner.node.mjs\r\n\r\n* Update preload.ts\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "constraints": {}
+  },
+  {
+    "sha": "1a9bc5da0936ecb31770a987e71029195f0755e8",
+    "author": "Dylan Conway <dylan.conway567@gmail.com>",
+    "date": "2025-07-19T08:59:52Z",
+    "message": "fix(install): isolated install aliased dependency name fix (#21138)\n\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>\nCo-authored-by: Ciro Spaciari <ciro.spaciari@gmail.com>\nCo-authored-by: Meghan Denny <meghan@bun.sh>",
+    "constraints": {}
+  },
+  {
+    "sha": "f7da0ac6fd24886d029dd6a9890ab119f2c5b946",
+    "author": "Michael H <git@riskymh.dev>",
+    "date": "2025-10-06T09:58:04Z",
+    "message": "bun install: support for `minimumReleaseAge` (#22801)\n\n### What does this PR do?\n\nfixes #22679\n\n* includes a better error if a package cant be met because of the age\n(but would normally)\n* logs the resolved one in --verbose (which can be helpful in debugging\nto show it does know latest but couldn't use)\n* makes bun outdated show in the table when the package isn't true\nlatest\n* includes a rudimentary \"stability\" check if a later version is in\nblacked out time (but only up to 7 days as it goes back to latest with\nmin age)\n\n\nFor extended security we could also Last-Modified header of the tgz\ndownload and then abort if too new (just like the hash)\n\n\n| install error with no recent version | bun outdated respecting the\nrule |\n| --- | --- |\n<img width=\"838\" height=\"119\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/b60916a8-27f6-4405-bfb6-57f9fa8bb0d6\"\n/> | <img width=\"609\" height=\"314\" alt=\"image\"\nsrc=\"https://github.com/user-attachments/assets/d8869ff4-8e16-492c-8e4c-9ac1dfa302ba\"\n/> |\n\nFor stable release we will make it use `3d` type syntax instead of magic\nsecond numbers.\n\n\n### How did you verify your code works?\n\ntests & manual\n\n---------\n\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>\nCo-authored-by: Dylan Conway <dylan.conway567@gmail.com>",
+    "constraints": {}
+  },
+  {
+    "sha": "2fb3aa8991a4e487962e3268b854cf6ae183027e",
+    "author": "Dylan Conway <dylan.conway567@gmail.com>",
+    "date": "2025-11-25T19:06:24Z",
+    "message": "update `minimumReleaseAge` (#25057)\n\n### What does this PR do?\n\n### How did you verify your code works?",
+    "constraints": {}
+  },
+  {
+    "sha": "3eba9cb62fb236dca9969b58d772b02ac1c1a668",
+    "author": "Alistair Smith <hi@alistair.sh>",
+    "date": "2026-03-25T16:39:54Z",
+    "message": "Support TypeScript 6",
+    "constraints": {}
+  },
+  {
+    "sha": "7c73f0556c36b5efd99a9e3005224e97a8792a95",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2026-04-21T09:51:15Z",
+    "message": "install: global virtual store for isolated linker (7x faster warm installs) (#29489)",
+    "constraints": {}
+  }
+]

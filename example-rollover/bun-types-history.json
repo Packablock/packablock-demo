@@ -1,0 +1,443 @@
+[
+  {
+    "sha": "41a97c5bf9f8806f5df65526e704ff9c38c40842",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2022-04-04T14:39:39Z",
+    "message": "fixup",
+    "constraints": {}
+  },
+  {
+    "sha": "7d25dae75ef460bf1f478ffb2d8e7c169a5b9a4c",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2022-04-08T03:24:05Z",
+    "message": "Update package.json",
+    "constraints": {}
+  },
+  {
+    "sha": "45e1fc946d55948f882592b7a6b45641552793b0",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2022-04-10T11:24:24Z",
+    "message": "[bun-types] Make it bundle the types",
+    "constraints": {}
+  },
+  {
+    "sha": "516b54578dec5506fed1d88fb6b9e2d8dc89d2ea",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2022-04-30T06:21:14Z",
+    "message": "[bun:ffi] it works",
+    "constraints": {}
+  },
+  {
+    "sha": "bd1e64b9b1c5bbbd14893eca2e2508fc8deefd22",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2022-05-17T01:58:11Z",
+    "message": "Fix type errors",
+    "constraints": {}
+  },
+  {
+    "sha": "57d9c500a8977a786e8973fd7cede9411e3b830f",
+    "author": "Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "date": "2022-07-08T03:22:51Z",
+    "message": "Update `bun-types`",
+    "constraints": {}
+  },
+  {
+    "sha": "418972b42360e6c48f104aff1deaa75b54d7de39",
+    "author": "Aurora Luna Takemi <98479040+auroraisluna@users.noreply.github.com>",
+    "date": "2022-07-11T02:37:30Z",
+    "message": "Update GitHub URL to match new repo URL  (#547)\n\n* Update repo URLs\r\n\r\n* GitHub URL update\r\n\r\n* Revert accidental URL changes",
+    "constraints": {}
+  },
+  {
+    "sha": "64c93a0569e8b6b74b3271b6cc10ac38c0831204",
+    "author": "Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "date": "2022-07-13T08:32:03Z",
+    "message": "Types",
+    "constraints": {}
+  },
+  {
+    "sha": "f7f1b604443c030afe29d1059b90f72c69afe081",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2022-11-09T23:40:40Z",
+    "message": "Add bun-types, add typechecking, add `child_process` types (#1475)\n\n* Add bun-types to packages\r\n\r\n* Improve typing\r\n\r\n* Fix types in tests\r\n\r\n* Fix dts tests\r\n\r\n* Run formatter\r\n\r\n* Fix all type errors\r\n\r\n* Add strict mode, fix type errors\r\n\r\n* Add ffi changes\r\n\r\n* Move workflows to root\r\n\r\n* Add workflows\r\n\r\n* Remove labeler\r\n\r\n* Add child_process types\r\n\r\n* Fix synthetic defaults issue\r\n\r\n* Remove docs\r\n\r\n* Move scripts\r\n\r\n* Run prettier\r\n\r\n* Include examples in typechecking\r\n\r\n* captureStackTrace types\r\n\r\n* moved captureStackTrace types to globals\r\n\r\n* Address reviews\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>\r\nCo-authored-by: Dylan Conway <dylan.conway567@gmail.com>",
+    "constraints": {
+      "tsd": "^0.22.0",
+      "typedoc": "^0.23.9"
+    }
+  },
+  {
+    "sha": "5ea8fe8c90eca02cce24eb5385e195e85ddee9cb",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2022-12-07T02:48:02Z",
+    "message": "Update types (#1581)\n\n* Fix TS types, improve child_process types\r\n\r\n* Add prettier\r\n\r\n* Add ArrayBuffer types\r\n\r\n* Add namespace Bun, improve types for SharedArrayBuffer, add toStrictEqual\r\n\r\n* Improve types, add test files for types\r\n\r\n* Update type tests\r\n\r\n* Fix typo\r\n\r\n* Add stdio\r\n\r\n* Stdio types\r\n\r\n* Use latest setup-bun\r\n\r\n* Update action\r\n\r\n* Update action\r\n\r\n* Update action\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>\r\nCo-authored-by: Ashcon Partovi <ashcon@partovi.net>",
+    "constraints": {
+      "tsd": "^0.22.0",
+      "typedoc": "^0.23.9",
+      "prettier": "^2.4.1"
+    }
+  },
+  {
+    "sha": "4969f068f63e68a19aacc67cc094421fa7297c07",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2023-01-11T22:56:41Z",
+    "message": "Types update (#1761)\n\n* Fix type tests\r\n\r\n* Add dns types\r\n\r\n* Add node:net types\r\n\r\n* Make process.exit return never\r\n\r\n* Make ArrayBufferView tighter\r\n\r\n* Add types for node:dns\r\n\r\n* Remove docs\r\n\r\n* Use latest\r\n\r\n* Fix CI\r\n\r\n* Fix CI\r\n\r\n* Stop double trigger\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>",
+    "constraints": {
+      "tsd": "^0.22.0",
+      "prettier": "^2.4.1"
+    }
+  },
+  {
+    "sha": "b0702ce7b156f9dbeb3f4f65fe94b12044e28334",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2023-01-16T19:58:57Z",
+    "message": "Publish bun-types@canary (#1767)\n\n* Publish bun-types@canary\r\n\r\n* Get version from bun cli\r\n\r\n* Get version from bun cli\r\n\r\n* Fixes\r\n\r\n* Fixes\r\n\r\n* Fixes\r\n\r\n* Finalize\r\n\r\n* Update names\r\n\r\n* Add token\r\n\r\n* Remove dryrun\r\n\r\n* Switch setup-bun\r\n\r\n* Test noncanary publish\r\n\r\n* Fix path for GPR\r\n\r\n* Use latest\r\n\r\n* Remove testing code\r\n\r\n* Remove dry run\r\n\r\n* Fix paths\r\n\r\n* Update bun-types links\r\n\r\n* Verbose logging\r\n\r\n* Ignore lockfile\r\n\r\n* Run install in root\r\n\r\n* Remove debug code\r\n\r\n* Remove debug code\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>",
+    "constraints": {
+      "tsd": "^0.22.0",
+      "prettier": "^2.4.1"
+    }
+  },
+  {
+    "sha": "57fcf8f9bacce688bed4cfe5c38bc5dff5e71ae0",
+    "author": "u9g <git@u9g.dev>",
+    "date": "2023-03-02T20:24:43Z",
+    "message": "Remake typings for FFI dlopen/linkSymbols + introduce Pointer type (#2227)\n\n* Give dlopen & linkSymbols typings for exported functions\r\n\r\n* Fix lookup table\r\n\r\n* Fully change over to Pointer + fix examples\r\n\r\n* add back header for typings\r\n\r\n* Fix tsc errors\r\n\r\n* Run formatter on ffi.d.ts\r\n\r\n* Revert args/return type change\r\n\r\n* Add type tests for ffi\r\n\r\n---------\r\n\r\nCo-authored-by: Colin McDonnell <colinmcd94@gmail.com>",
+    "constraints": {
+      "conditional-type-checks": "^1.0.6",
+      "prettier": "^2.4.1",
+      "tsd": "^0.22.0"
+    }
+  },
+  {
+    "sha": "a5f92224b586289fc72f0abdb68b08eef9f017db",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2023-03-22T22:01:01Z",
+    "message": "Fix types (#2453)\n\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* Improve typechecking in type files\r\n\r\n* Fix typechecking\r\n\r\n* Update\r\n\r\n* Update submodule\r\n\r\n* CI for typechecking\r\n\r\n* Add ci\r\n\r\n* Update commands\r\n\r\n* Format after build\r\n\r\n* Dont use bunx\r\n\r\n* Rename job\r\n\r\n* Use nodemodules prettier\r\n\r\n* Update workflow\r\n\r\n* Use symlink\r\n\r\n* Debug\r\n\r\n* Debug\r\n\r\n* Clean up and rename jobs",
+    "constraints": {
+      "conditional-type-checks": "^1.0.6",
+      "prettier": "^2.4.1",
+      "tsd": "^0.22.0",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "b011f94250030858c28cc4338f18b46d3ae26dc9",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2023-09-21T19:55:27Z",
+    "message": "Update test script",
+    "constraints": {
+      "conditional-type-checks": "^1.0.6",
+      "prettier": "^2.4.1",
+      "tsd": "^0.22.0",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "0ee04261b92a5c366f5fb80cbdac3382d14db944",
+    "author": "Mathias Wulff <m@rawu.dk>",
+    "date": "2023-10-03T16:11:02Z",
+    "message": "Add license information to package.json (#6255)",
+    "constraints": {
+      "conditional-type-checks": "^1.0.6",
+      "prettier": "^2.4.1",
+      "tsd": "^0.22.0",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "31c17a1bb39a6f862b2a21134a5cdae8de96c66e",
+    "author": "Colin McDonnell <colinmcd94@gmail.com>",
+    "date": "2023-12-18T21:27:48Z",
+    "message": "Better types (#7670)\n\n* Rewrite bun-types to include @types/node\r\n\r\n* Incorporate new commits\r\n\r\n* Update bun.lockb\r\n\r\n* [autofix.ci] apply automated fixes\r\n\r\n* Update readme, add back webkit\r\n\r\n* Updates\r\n\r\n* BunJS -> Bun\r\n\r\n* Switch init to @types/bun\r\n\r\n* [autofix.ci] apply automated fixes\r\n\r\n* Tweaks\r\n\r\n* Revert docs changes\r\n\r\n* Fix bugs\r\n\r\n---------\r\n\r\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>",
+    "constraints": {
+      "@types/node": "*",
+      "@types/ws": "*",
+      "undici-types": "~5.26.4",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "prettier": "^2.4.1",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "864a726249115d5d146a54af85d29dc04f093d48",
+    "author": "DidaS <didasoficial@gmail.com>",
+    "date": "2024-01-23T20:51:45Z",
+    "message": "Improve `bun-types` (#8195)",
+    "constraints": {
+      "@types/node": "~20.11.3",
+      "@types/ws": "~8.5.10",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "prettier": "^2.4.1",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "e3188c918a5f6e7a9052af0cd6aedf34f85201ec",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2024-01-26T03:15:26Z",
+    "message": "use Biome to format Bun's codebase instead of Prettier (#8494)\n\n* Ignore\r\n\r\n* Create biome.json\r\n\r\n* Ignore\r\n\r\n* biome\r\n\r\n* [autofix.ci] apply automated fixes\r\n\r\n---------\r\n\r\nCo-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>\r\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>",
+    "constraints": {
+      "@types/node": "~20.11.3",
+      "@types/ws": "~8.5.10",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "prettier": "^2.4.1",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "51def5f5d657b00eed2e09b27646a27b50060ced",
+    "author": "Ashcon Partovi <ashcon@partovi.net>",
+    "date": "2024-02-05T20:22:26Z",
+    "message": "Use biome in bun-types",
+    "constraints": {
+      "@types/node": "~20.11.3",
+      "@types/ws": "~8.5.10",
+      "@biomejs/biome": "^1.5.3",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "2a401486d9fc38b3795571f6a69b3e17afba91a9",
+    "author": "Eric L. Goldstein <3359116+mangs@users.noreply.github.com>",
+    "date": "2024-05-01T19:53:08Z",
+    "message": "Remove `util.styleText` type overrides because `@types/node` has them now (#10746)",
+    "constraints": {
+      "@types/node": "~20.12.8",
+      "@types/ws": "~8.5.10",
+      "@biomejs/biome": "^1.5.3",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "9cbe1ec3002aaa10be68963ccf70b4552592c592",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2024-11-25T08:12:28Z",
+    "message": "Include `docs/` folder in bun-types (#15398)",
+    "constraints": {
+      "@types/node": "~20.12.8",
+      "@types/ws": "~8.5.10",
+      "@biomejs/biome": "^1.5.3",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "6473d83d3e47338d7932b3d437c224888afe45c2",
+    "author": "Michael H <git@riskymh.dev>",
+    "date": "2025-01-13T04:05:21Z",
+    "message": "docs: use tag `$BUN_LATEST_VERSION` for version instead of manual (#16348)",
+    "constraints": {
+      "@types/node": "~20.12.8",
+      "@types/ws": "~8.5.10",
+      "@biomejs/biome": "^1.5.3",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "27d9cfaf797f9b19fd608420a369957745c95908",
+    "author": "Meghan Denny <meghan@bun.sh>",
+    "date": "2025-01-21T07:12:54Z",
+    "message": "bun-types: depend on @types/node@* (#16556)",
+    "constraints": {
+      "@types/node": "*",
+      "@types/ws": "~8.5.10",
+      "@biomejs/biome": "^1.5.3",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "5366c9db33c0a4ae69f713d293312940314dace4",
+    "author": "Michael H <git@riskymh.dev>",
+    "date": "2025-02-02T06:55:19Z",
+    "message": "hopefully auto pr to DT (#16956)",
+    "constraints": {
+      "@types/node": "*",
+      "@types/ws": "~8.5.10",
+      "@biomejs/biome": "^1.5.3",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "9141337c7d917bdbb173887f6fef0dc3c834ede3",
+    "author": "Alistair Smith <hi@alistair.sh>",
+    "date": "2025-03-04T00:04:12Z",
+    "message": "Fix some issues in Bun types (#17424)\n\nCo-authored-by: Michael H <git@riskymh.dev>",
+    "constraints": {
+      "@types/node": "*",
+      "@types/ws": "~8.5.10",
+      "@biomejs/biome": "^1.5.3",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "57381d43ed3150df8df87d250c2d5127af021b6a",
+    "author": "Alistair Smith <hi@alistair.sh>",
+    "date": "2025-03-25T21:33:30Z",
+    "message": "types: Rewrite to avoid conflicts and allow for doc generation (#18024)\n\nCo-authored-by: Jarred Sumner <jarred@jarredsumner.com>",
+    "constraints": {
+      "@types/node": "*",
+      "@types/ws": "*",
+      "@biomejs/biome": "^1.5.3",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "31060a5e2a4570ada2ea3ee916df1e5accb9be9a",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2025-03-27T10:48:38Z",
+    "message": "Update package.json",
+    "constraints": {
+      "@types/node": "*",
+      "@types/ws": "*",
+      "@biomejs/biome": "^1.5.3",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "2a9569cec4b3b379654eb48d364243eadb14b085",
+    "author": "Alistair Smith <hi@alistair.sh>",
+    "date": "2025-03-27T13:32:23Z",
+    "message": "@types/bun: Some small fixes for the test and Bun.env (#18528)",
+    "constraints": {
+      "@types/node": "*",
+      "@types/ws": "*",
+      "@biomejs/biome": "^1.5.3",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "6b53301375df3ad32f6e0c67b8f3e4e235a3484c",
+    "author": "Alistair Smith <hi@alistair.sh>",
+    "date": "2025-04-15T02:10:52Z",
+    "message": "@types/bun: Reimplement `WebSocket` type in default environment (#19017)",
+    "constraints": {
+      "@types/node": "*",
+      "@biomejs/biome": "^1.5.3",
+      "@definitelytyped/dtslint": "^0.0.199",
+      "@definitelytyped/eslint-plugin": "^0.0.197",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "11ed29068f25f63217c218f8385e23986a0e2676",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2025-05-17T12:21:28Z",
+    "message": "Simplify the root package.json (#19718)",
+    "constraints": {
+      "@types/node": "*",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "601b8e3aaa828d3c6e45482cb99f9d01f4df50fc",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2025-06-09T22:06:26Z",
+    "message": "Add CLAUDE.md to bun-types",
+    "constraints": {
+      "@types/node": "*",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "f46df399eba27cdf07cb5f4b7982fc34156585d5",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2025-06-16T02:30:11Z",
+    "message": "Update package.json",
+    "constraints": {
+      "@types/node": "*",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "0b9bab34d89cb746b376e0286b528b0f8d831d75",
+    "author": "Zack Radisic <56137411+zackradisic@users.noreply.github.com>",
+    "date": "2025-07-03T03:06:43Z",
+    "message": "SSG (#20745)\n\nCo-authored-by: Alistair Smith <hi@alistair.sh>",
+    "constraints": {
+      "@types/node": "*",
+      "@types/react": "^19",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "55a9cccac06403fe1486168378246b34a957f0a1",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2025-07-10T07:10:43Z",
+    "message": "bun.sh -> bun.com (#20909)",
+    "constraints": {
+      "@types/node": "*",
+      "@types/react": "^19",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "7a31108019d2b8549bb17eacc0c9ad3b92e49284",
+    "author": "pfg <pfg@pfg.pw>",
+    "date": "2025-08-01T19:11:03Z",
+    "message": "Implement expectTypeOf (#21513)\n\nFixes #7569 \n\nThis adds expectTypeOf, but not the experimental `--typecheck` flag from\nvitest. To use it, you need to typecheck manually with `bunx tsc\n--noEmit` in addition to `bun test`\n\n---------\n\nCo-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>",
+    "constraints": {
+      "@types/node": "*",
+      "@types/react": "^19",
+      "typescript": "^5.0.2"
+    }
+  },
+  {
+    "sha": "d0edcc69aeb82adfd97a6aeed087a9a98d7bad06",
+    "author": "Alistair Smith <hi@alistair.sh>",
+    "date": "2025-08-01T23:09:44Z",
+    "message": "Support TypeScript 5.9 (#21539)\n\n### What does this PR do?\n\nFixes #21535\n\n### How did you verify your code works?",
+    "constraints": {
+      "@types/node": "*",
+      "@types/react": "^19"
+    }
+  },
+  {
+    "sha": "b9b07172aa1e19fa76dc8ac141c181614771b3ec",
+    "author": "Jarred Sumner <jarred@jarredsumner.com>",
+    "date": "2025-11-08T05:22:53Z",
+    "message": "Update package.json",
+    "constraints": {
+      "@types/node": "*",
+      "@types/react": "^19"
+    }
+  },
+  {
+    "sha": "d87a928b94eb274a60d5e90122e6a69b17bc3bfa",
+    "author": "Alistair Smith <hi@alistair.sh>",
+    "date": "2025-11-10T23:50:45Z",
+    "message": "Remove dependency on React's types in @types/bun",
+    "constraints": {
+      "@types/node": "*"
+    }
+  },
+  {
+    "sha": "4450d738fa76b1cccdf02b4376270e5da7027aee",
+    "author": "Michael H <git@riskymh.dev>",
+    "date": "2025-11-21T22:06:19Z",
+    "message": "docs: more consistency + minor updates (#24764)\n\nCo-authored-by: RiskyMH <git@riskymh.dev>",
+    "constraints": {
+      "@types/node": "*"
+    }
+  }
+]
