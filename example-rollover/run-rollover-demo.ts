@@ -34,6 +34,21 @@ function getMockLocations(packages: Record<string, string>): Record<string, { li
 	return locations;
 }
 
+function getConstraintsAtDate(dateStr: string, history: any[]): Record<string, string> {
+	let activeConstraints: Record<string, string> = {};
+	const targetTime = new Date(dateStr).getTime();
+	
+	for (const entry of history) {
+		const entryTime = new Date(entry.date).getTime();
+		if (entryTime <= targetTime) {
+			activeConstraints = entry.constraints;
+		} else {
+			break;
+		}
+	}
+	return activeConstraints;
+}
+
 async function run() {
 	const chainPath = path.resolve(__dirname, "packablock.yaml");
 
@@ -50,21 +65,10 @@ async function run() {
 		}
 	}
 
-	// 2. Load package.json constraints and pre-rollover package history feed
-	const packageJson = JSON.parse(
-		readFileSync(path.resolve(__dirname, "package.json"), "utf8")
+	// 2. Load chronological package.json constraints history and pre-rollover package history feed
+	const packageJsonHistory = JSON.parse(
+		readFileSync(path.resolve(__dirname, "package-json-history.json"), "utf8")
 	);
-	const constraints: any[] = [];
-	const depKeys = ["dependencies", "devDependencies", "peerDependencies"];
-	for (const key of depKeys) {
-		if (packageJson[key] && typeof packageJson[key] === "object") {
-			for (const [name, constraint] of Object.entries(packageJson[key])) {
-				if (typeof constraint === "string" && !constraints.some((c) => name in c)) {
-					constraints.push({ [name]: constraint });
-				}
-			}
-		}
-	}
 
 	const preRolloverFeed = JSON.parse(
 		readFileSync(path.resolve(__dirname, "bun-pre-rollover-packages.json"), "utf8"),
@@ -73,18 +77,20 @@ async function run() {
 	console.log(`🎬 1. Replaying ${preRolloverFeed.length} ancient (pre-rollover) commits...`);
 
 	let currentPackages: Record<string, string> = {};
+	let currentConstraints: Record<string, string> = {};
 
 	for (let i = 0; i < preRolloverFeed.length; i++) {
 		const commit = preRolloverFeed[i];
 		const rawPackages = commit.packages;
 		const mockLocations = getMockLocations(rawPackages);
+		const blockConstraints = getConstraintsAtDate(commit.date, packageJsonHistory);
 
 		let blockData = "";
 		if (i === 0) {
 			blockData = YAML.stringify({
 				"package.json": {
 					chain_event: "init",
-					constraints: constraints,
+					constraints: Object.entries(blockConstraints).map(([name, val]) => ({ [name]: val })),
 				},
 				lockfiles: {
 					"bun.lock": {
@@ -94,14 +100,21 @@ async function run() {
 				}
 			});
 		} else {
-			const diff = getPackageDiff(currentPackages, rawPackages, mockLocations);
-			blockData = YAML.stringify({
+			const lockfileDiff = getPackageDiff(currentPackages, rawPackages, mockLocations);
+			const constraintsDiff = getPackageDiff(currentConstraints, blockConstraints);
+			const payload: any = {
 				lockfiles: {
 					"bun.lock": {
-						packages: diff,
+						packages: lockfileDiff,
 					}
 				}
-			});
+			};
+			if (constraintsDiff.length > 0) {
+				payload["package.json"] = {
+					constraints: constraintsDiff,
+				};
+			}
+			blockData = YAML.stringify(payload);
 		}
 
 		const customMeta = {
@@ -115,6 +128,7 @@ async function run() {
 		}
 
 		currentPackages = rawPackages;
+		currentConstraints = blockConstraints;
 	}
 
 	// 3. Verify pre-rollover chain
@@ -158,15 +172,24 @@ async function run() {
 		const commit = postRolloverFeed[i];
 		const rawPackages = commit.packages;
 		const mockLocations = getMockLocations(rawPackages);
+		const blockConstraints = getConstraintsAtDate(commit.date, packageJsonHistory);
 
-		const diff = getPackageDiff(currentPackages, rawPackages, mockLocations);
-		const blockData = YAML.stringify({
+		const lockfileDiff = getPackageDiff(currentPackages, rawPackages, mockLocations);
+		const constraintsDiff = getPackageDiff(currentConstraints, blockConstraints);
+		
+		const payload: any = {
 			lockfiles: {
 				"bun.lock": {
-					packages: diff,
+					packages: lockfileDiff,
 				}
 			}
-		});
+		};
+		if (constraintsDiff.length > 0) {
+			payload["package.json"] = {
+				constraints: constraintsDiff,
+			};
+		}
+		const blockData = YAML.stringify(payload);
 
 		const customMeta = {
 			timestamp: commit.date,
@@ -174,6 +197,7 @@ async function run() {
 
 		await appendBlock(chainPath, blockData, customMeta);
 		currentPackages = rawPackages;
+		currentConstraints = blockConstraints;
 	}
 
 	// 6. Verify final modern chain and backup chain
