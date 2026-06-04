@@ -5,7 +5,6 @@ Date:   2026-03-25T16:39:54Z
     Support TypeScript 6
 
 --------------------------------------------------------------------------------
-
 commit 1d50af7fe86065fbdd72667fed7b80b070ba24bb
 Author: Alistair Smith <hi@alistair.sh>
 Date:   2025-12-11T02:15:55Z
@@ -27,7 +26,6 @@ Date:   2025-12-11T02:15:55Z
     bun types integration test
 
 --------------------------------------------------------------------------------
-
 commit 48617563b5d2dd0a0d8c9e283d1b5c46dee5f401
 Author: Marko Vejnovic <marko@bun.com>
 Date:   2025-11-25T04:16:03Z
@@ -48,7 +46,6 @@ Date:   2025-11-25T04:16:03Z
     Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit d7bf4fb443b657d07efe54ad8c3e20e5b2875770
 Author: Meghan Denny <meghan@bun.com>
 Date:   2025-11-13T23:00:40Z
@@ -56,7 +53,6 @@ Date:   2025-11-13T23:00:40Z
     ci/format: update bun version (#24693)
 
 --------------------------------------------------------------------------------
-
 commit d87a928b94eb274a60d5e90122e6a69b17bc3bfa
 Author: Alistair Smith <hi@alistair.sh>
 Date:   2025-11-10T23:50:45Z
@@ -64,7 +60,6 @@ Date:   2025-11-10T23:50:45Z
     Remove dependency on React's types in @types/bun
 
 --------------------------------------------------------------------------------
-
 commit f14f3b03bb97703d2c81e0a377fe84d990aaf14e
 Author: taylor.fish <contact@taylor.fish>
 Date:   2025-10-04T00:10:28Z
@@ -118,7 +113,6 @@ Date:   2025-10-04T00:10:28Z
     Co-authored-by: Alistair Smith <hi@alistair.sh>
 
 --------------------------------------------------------------------------------
-
 commit d0b5f9b587a15c7b4293f506db12065ca0076cd7
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2025-08-31T20:51:39Z
@@ -139,7 +133,6 @@ Date:   2025-08-31T20:51:39Z
     Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 784271f85e016688707812b86b6f2977c36f779d
 Author: Alistair Smith <hi@alistair.sh>
 Date:   2025-08-20T06:15:53Z
@@ -163,7 +156,6 @@ Date:   2025-08-20T06:15:53Z
     Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
 
 --------------------------------------------------------------------------------
-
 commit 4fa69773a313af96d18553e9e940d1f39e4dd64a
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2025-08-15T05:42:05Z
@@ -194,7 +186,6 @@ Date:   2025-08-15T05:42:05Z
     Co-authored-by: taylor.fish <contact@taylor.fish>
 
 --------------------------------------------------------------------------------
-
 commit d0edcc69aeb82adfd97a6aeed087a9a98d7bad06
 Author: Alistair Smith <hi@alistair.sh>
 Date:   2025-08-01T23:09:44Z
@@ -208,7 +199,6 @@ Date:   2025-08-01T23:09:44Z
     ### How did you verify your code works?
 
 --------------------------------------------------------------------------------
-
 commit 97a530d83218ff3ba11b48137adbf6f415e77cc5
 Author: 190n <ben@bun.sh>
 Date:   2025-07-25T06:32:54Z
@@ -293,7 +283,6 @@ Date:   2025-07-25T06:32:54Z
     Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 60faa8696fda76336c1f9792ddfdf0d242ecdc38
 Author: pfg <pfg@pfg.pw>
 Date:   2025-07-21T23:26:07Z
@@ -305,7 +294,6 @@ Date:   2025-07-21T23:26:07Z
     Co-authored-by: Claude <noreply@anthropic.com>
 
 --------------------------------------------------------------------------------
-
 commit 0b9bab34d89cb746b376e0286b528b0f8d831d75
 Author: Zack Radisic <56137411+zackradisic@users.noreply.github.com>
 Date:   2025-07-03T03:06:43Z
@@ -315,7 +303,6 @@ Date:   2025-07-03T03:06:43Z
     Co-authored-by: Alistair Smith <hi@alistair.sh>
 
 --------------------------------------------------------------------------------
-
 commit 11ed29068f25f63217c218f8385e23986a0e2676
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2025-05-17T12:21:28Z
@@ -323,7 +310,6 @@ Date:   2025-05-17T12:21:28Z
     Simplify the root package.json (#19718)
 
 --------------------------------------------------------------------------------
-
 commit 14b439a1155d00012a5e991fc9ba134651b34bd6
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2025-05-09T06:22:16Z
@@ -331,7 +317,6 @@ Date:   2025-05-09T06:22:16Z
     Fix formatters not running in CI + delete unnecessary files (#19433)
 
 --------------------------------------------------------------------------------
-
 commit 6b53301375df3ad32f6e0c67b8f3e4e235a3484c
 Author: Alistair Smith <hi@alistair.sh>
 Date:   2025-04-15T02:10:52Z
@@ -339,7 +324,6 @@ Date:   2025-04-15T02:10:52Z
     @types/bun: Reimplement `WebSocket` type in default environment (#19017)
 
 --------------------------------------------------------------------------------
-
 commit 57381d43ed3150df8df87d250c2d5127af021b6a
 Author: Alistair Smith <hi@alistair.sh>
 Date:   2025-03-25T21:33:30Z
@@ -349,7 +333,6 @@ Date:   2025-03-25T21:33:30Z
     Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
 
 --------------------------------------------------------------------------------
-
 commit 9141337c7d917bdbb173887f6fef0dc3c834ede3
 Author: Alistair Smith <hi@alistair.sh>
 Date:   2025-03-04T00:04:12Z
@@ -359,7 +342,6 @@ Date:   2025-03-04T00:04:12Z
     Co-authored-by: Michael H <git@riskymh.dev>
 
 --------------------------------------------------------------------------------
-
 commit 04973a1520e653362c5e3bfa45420e62362b748a
 Author: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
 Date:   2025-02-25T10:33:47Z
@@ -367,7 +349,6 @@ Date:   2025-02-25T10:33:47Z
     fix: `bun.lock` with `bundledDependencies` regression (#17665)
 
 --------------------------------------------------------------------------------
-
 commit f912e0abc402391703f45afffb3f770ca74dc165
 Author: chloe caruso <git@paperclover.net>
 Date:   2025-02-08T08:31:30Z
@@ -375,7 +356,6 @@ Date:   2025-02-08T08:31:30Z
     hot module reloading for HTML import development mode (#16955)
 
 --------------------------------------------------------------------------------
-
 commit f6ec0da125bae0fe217851cc1a25ba0cd71680ad
 Author: Zack Radisic <56137411+zackradisic@users.noreply.github.com>
 Date:   2025-01-31T11:47:49Z
@@ -383,7 +363,6 @@ Date:   2025-01-31T11:47:49Z
     Various CSS fixing and stability stuff (#16889)
 
 --------------------------------------------------------------------------------
-
 commit 93a89e5866fa85fea4026b084ec3b6efd1b6bdc0
 Author: Meghan Denny <meghan@bun.sh>
 Date:   2025-01-29T09:47:43Z
@@ -393,7 +372,6 @@ Date:   2025-01-29T09:47:43Z
     Co-authored-by: nektro <5464072+nektro@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 27d9cfaf797f9b19fd608420a369957745c95908
 Author: Meghan Denny <meghan@bun.sh>
 Date:   2025-01-21T07:12:54Z
@@ -401,7 +379,6 @@ Date:   2025-01-21T07:12:54Z
     bun-types: depend on @types/node@* (#16556)
 
 --------------------------------------------------------------------------------
-
 commit 5971406183315e93564ae6b95419d3f66bbeb6a1
 Author: Meghan Denny <meghan@bun.sh>
 Date:   2025-01-17T22:37:26Z

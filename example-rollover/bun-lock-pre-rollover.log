@@ -1,3 +1,12 @@
+commit 5971406183315e93564ae6b95419d3f66bbeb6a1
+Author: Meghan Denny <meghan@bun.sh>
+Date:   2025-01-17T22:37:26Z
+
+    meta: migrate bun to the text lockfile (#16462)
+    
+    Co-authored-by: nektro <5464072+nektro@users.noreply.github.com>
+
+--------------------------------------------------------------------------------
 commit b39632c92129ed0161d57da951445828ebcd9108
 Author: dave caruso <me@paperdave.net>
 Date:   2024-12-10T20:43:17Z
@@ -5,7 +14,6 @@ Date:   2024-12-10T20:43:17Z
     feat: new binding generator (#15638)
 
 --------------------------------------------------------------------------------
-
 commit 274e5a202223ae8b809b556565fae2979d59fcd5
 Author: Zack Radisic <56137411+zackradisic@users.noreply.github.com>
 Date:   2024-09-26T20:39:26Z
@@ -15,7 +23,6 @@ Date:   2024-09-26T20:39:26Z
     Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
 
 --------------------------------------------------------------------------------
-
 commit cd6785771ea03f606d5e3875d469adf22d0a65d1
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2024-09-04T04:32:52Z
@@ -23,7 +30,6 @@ Date:   2024-09-04T04:32:52Z
     run prettier and add back format action (#13722)
 
 --------------------------------------------------------------------------------
-
 commit 6b50deb7b74d07850b2f892fe60a38f89e27b1bb
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2024-07-18T08:13:36Z
@@ -33,7 +39,6 @@ Date:   2024-07-18T08:13:36Z
     Spammy vulnerability scanning software can't tell we aren't using these in the "bun" npm package.
 
 --------------------------------------------------------------------------------
-
 commit d105b048b1bcaeb19ce6b644276a343259420470
 Author: Ashcon Partovi <ashcon@partovi.net>
 Date:   2024-06-27T21:56:07Z
@@ -41,7 +46,6 @@ Date:   2024-06-27T21:56:07Z
     Use Buildkite for CI (#11477)
 
 --------------------------------------------------------------------------------
-
 commit 93abd9920283011edd5fc51b14440e369c9c634d
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2024-05-16T22:53:13Z
@@ -49,7 +53,6 @@ Date:   2024-05-16T22:53:13Z
     Downgrade to React 18
 
 --------------------------------------------------------------------------------
-
 commit f58249e3619c05f1f5edbbeac01e035e248e90bb
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2024-05-16T07:46:28Z
@@ -59,7 +62,6 @@ Date:   2024-05-16T07:46:28Z
     Co-authored-by: Jarred-Sumner <Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 9e8bdaba93be49a5eddcde08524a2d710e1cf88a
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2024-03-17T10:42:10Z
@@ -70,14 +72,13 @@ Date:   2024-03-17T10:42:10Z
     
     * Fixes #9433
     
-    * Update bun.lock
+    * Update bun.lockb
     
     ---------
     
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 57eb04f6f4e6958644220364c6da9ae2c4d1a1fd
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2024-02-26T19:13:02Z
@@ -106,7 +107,6 @@ Date:   2024-02-26T19:13:02Z
     Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit a05ef0aeb1d256fcce041cceb63209978c581e80
 Author: Ashcon Partovi <ashcon@partovi.net>
 Date:   2024-02-05T20:50:09Z
@@ -116,7 +116,6 @@ Date:   2024-02-05T20:50:09Z
     This reverts commit 23b292ac21cb9f07bdeb79eb86ebe3b0b2ce365b.
 
 --------------------------------------------------------------------------------
-
 commit 23b292ac21cb9f07bdeb79eb86ebe3b0b2ce365b
 Author: Ashcon Partovi <ashcon@partovi.net>
 Date:   2024-02-05T19:25:52Z
@@ -124,7 +123,6 @@ Date:   2024-02-05T19:25:52Z
     T
 
 --------------------------------------------------------------------------------
-
 commit 63a9a8b01599b738978b04489cbd4fb7b64293aa
 Author: Ashcon Partovi <ashcon@partovi.net>
 Date:   2024-02-01T22:55:35Z
@@ -132,7 +130,6 @@ Date:   2024-02-01T22:55:35Z
     Improve `.vscode` extensions, tasks, and configuration (#8511)
 
 --------------------------------------------------------------------------------
-
 commit e3188c918a5f6e7a9052af0cd6aedf34f85201ec
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2024-01-26T03:15:26Z
@@ -155,7 +152,6 @@ Date:   2024-01-26T03:15:26Z
     Co-authored-by: autofix-ci[bot] <114827586+autofix-ci[bot]@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 83f2432da6224d0e96f31dc770c67665427c28fa
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2024-01-16T07:47:13Z
@@ -165,7 +161,6 @@ Date:   2024-01-16T07:47:13Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 31814934f309308b5d29c25c062b0a632beba233
 Author: Colin McDonnell <colinmcd94@gmail.com>
 Date:   2023-11-16T02:15:10Z
@@ -250,7 +245,6 @@ Date:   2023-11-16T02:15:10Z
     Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
 
 --------------------------------------------------------------------------------
-
 commit 7a4e0158d62564edebafd5c8b0b51ca07b54fe4c
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-11-14T06:10:09Z
@@ -426,7 +420,6 @@ Date:   2023-11-14T06:10:09Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 4403c40755808cea508d92985d54b9ccf64dc086
 Author: dave caruso <me@paperdave.net>
 Date:   2023-11-03T05:40:00Z
@@ -436,7 +429,6 @@ Date:   2023-11-03T05:40:00Z
     Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
 
 --------------------------------------------------------------------------------
-
 commit 7485c7c7cbbb47251f81cbcbcfb24431ad6075b1
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-10-27T08:51:56Z
@@ -895,7 +887,6 @@ Date:   2023-10-27T08:51:56Z
     Co-authored-by: dave caruso <me@paperdave.net>
 
 --------------------------------------------------------------------------------
-
 commit 2b8aae05d1e95b85c7869f15567a29162106110c
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-10-26T05:35:14Z
@@ -925,7 +916,6 @@ Date:   2023-10-26T05:35:14Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 6a2768f2474a7f1c32bf47b8c44cb33f4409b11a
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-10-25T09:59:47Z
@@ -949,7 +939,6 @@ Date:   2023-10-25T09:59:47Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 98d19fa6244384f7e17998b5420d724481ed3835
 Author: dave caruso <me@paperdave.net>
 Date:   2023-10-17T04:22:43Z
@@ -1001,7 +990,6 @@ Date:   2023-10-17T04:22:43Z
     Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
 
 --------------------------------------------------------------------------------
-
 commit b1063edf3e76a2ef68d2ba3eff686932f742c77c
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2023-10-12T03:04:15Z
@@ -1009,12 +997,11 @@ Date:   2023-10-12T03:04:15Z
     Bump WebKit
 
 --------------------------------------------------------------------------------
-
 commit 1bf28e0d77a8b2261befbdb708cefd03e0126960
 Author: dave caruso <me@paperdave.net>
 Date:   2023-10-11T09:27:07Z
 
-    feat(install): automatically migrate package-lock.json to bun.lock (#6352)
+    feat(install): automatically migrate package-lock.json to bun.lockb (#6352)
     
     * work so far
     
@@ -1091,7 +1078,6 @@ Date:   2023-10-11T09:27:07Z
     Co-authored-by: Jarred SUmner <jarred@jarredsumner.com>
 
 --------------------------------------------------------------------------------
-
 commit 98e9e9b11289f766e45dc0eadcaf4b21115ff190
 Author: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
 Date:   2023-10-04T02:56:33Z
@@ -1107,7 +1093,6 @@ Date:   2023-10-04T02:56:33Z
     * format
 
 --------------------------------------------------------------------------------
-
 commit 3f463786a5f03817949581aa3904d673a3cd087e
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-09-25T00:43:59Z
@@ -1120,9 +1105,9 @@ Date:   2023-09-25T00:43:59Z
     
     * Fix serialization issue
     
-    * Update bun.lock
+    * Update bun.lockb
     
-    * Update bun.lock
+    * Update bun.lockb
     
     * fixup
     
@@ -1139,7 +1124,6 @@ Date:   2023-09-25T00:43:59Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit d1e9b33cac65794632921045e7a851c58ef1863d
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-09-21T14:25:18Z
@@ -1169,7 +1153,6 @@ Date:   2023-09-21T14:25:18Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 5defdf3e28249b34772864a50273a390d345b2df
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-09-20T01:16:51Z
@@ -1179,7 +1162,6 @@ Date:   2023-09-20T01:16:51Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit eb1dc7eede31b12726ae320263850fefaaf490f3
 Author: dave caruso <me@paperdave.net>
 Date:   2023-09-19T00:33:58Z
@@ -1199,7 +1181,6 @@ Date:   2023-09-19T00:33:58Z
     * update CI workflows
 
 --------------------------------------------------------------------------------
-
 commit b651b16fdd959b349c09ec5d5056229dcd12c86b
 Author: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
 Date:   2023-09-16T07:44:07Z
@@ -1213,15 +1194,13 @@ Date:   2023-09-16T07:44:07Z
     * bump webkit
 
 --------------------------------------------------------------------------------
-
 commit 29a6ece6c688150ae51865f38ab616ab4b3a90e2
 Author: Dylan Conway <dylan.conway567@gmail.com>
 Date:   2023-09-15T07:03:21Z
 
-    next bun.lock
+    next bun.lockb
 
 --------------------------------------------------------------------------------
-
 commit e923e2327077060e09e8ff0a9f21bb91047632e2
 Author: Dylan Conway <dylan.conway567@gmail.com>
 Date:   2023-09-14T21:38:46Z
@@ -1229,7 +1208,6 @@ Date:   2023-09-14T21:38:46Z
     oops
 
 --------------------------------------------------------------------------------
-
 commit 9aabe4eea1a9dc4f05ff96c370b877f942741820
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2023-08-25T08:43:25Z
@@ -1237,7 +1215,6 @@ Date:   2023-08-25T08:43:25Z
     Upgrade peechy
 
 --------------------------------------------------------------------------------
-
 commit 1480889205d49cf7221a36608a8896b452967cea
 Author: Ashcon Partovi <ashcon@partovi.net>
 Date:   2023-08-25T05:53:34Z
@@ -1287,7 +1264,6 @@ Date:   2023-08-25T05:53:34Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit c60385716b7a7ac9f788cdf7dfe37250321e0670
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-08-23T21:05:05Z
@@ -1372,7 +1348,6 @@ Date:   2023-08-23T21:05:05Z
     Co-authored-by: cirospaciari <ciro.spaciari@gmail.com>
 
 --------------------------------------------------------------------------------
-
 commit 3de9ce5f30ad3a2a5615acb62a25cecdd2ddef33
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-08-21T02:34:33Z
@@ -1388,7 +1363,6 @@ Date:   2023-08-21T02:34:33Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 943a6642243cbc8a180ab7108279dd7110ab1eaf
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-08-19T02:58:03Z
@@ -1476,7 +1450,6 @@ Date:   2023-08-19T02:58:03Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 0486cea35a80be97ba43f41a29ce55f0d3a8eb01
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-08-17T02:40:20Z
@@ -1849,7 +1822,6 @@ Date:   2023-08-17T02:40:20Z
     Co-authored-by: Dylan Conway <35280289+dylan-conway@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit e25833d00946fdd400abd3c25e8aa1c3e3d2e355
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-08-10T20:32:04Z
@@ -1873,7 +1845,6 @@ Date:   2023-08-10T20:32:04Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 40befd8770e90ef2cb74d65bb1e2ff9911e2a2f7
 Author: jhmaster <32803471+jhmaster2000@users.noreply.github.com>
 Date:   2023-08-10T19:17:39Z
@@ -1984,7 +1955,6 @@ Date:   2023-08-10T19:17:39Z
     Co-authored-by: Jarred Sumner <jarred@jarredsumner.com>
 
 --------------------------------------------------------------------------------
-
 commit 14624454196370e08309d4f0b0463b494e4df9ca
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-08-06T13:30:23Z
@@ -2022,7 +1992,6 @@ Date:   2023-08-06T13:30:23Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 63d265780f122f8390a71b3a15cea4c71b540b8f
 Author: Colin McDonnell <colinmcd94@gmail.com>
 Date:   2023-08-04T19:56:34Z
@@ -2038,7 +2007,6 @@ Date:   2023-08-04T19:56:34Z
     * Clean up
 
 --------------------------------------------------------------------------------
-
 commit 08cf0d562ae81b4fb30aa5e599ca76056582ac5f
 Author: Ashcon Partovi <ashcon@partovi.net>
 Date:   2023-08-03T22:31:55Z
@@ -2095,7 +2063,6 @@ Date:   2023-08-03T22:31:55Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 90991da908b0725802db63d9fd8d5b4de1eb21a5
 Author: Colin McDonnell <colinmcd94@gmail.com>
 Date:   2023-07-31T20:57:17Z
@@ -2103,7 +2070,6 @@ Date:   2023-07-31T20:57:17Z
     Update titles, add Workspaces guide
 
 --------------------------------------------------------------------------------
-
 commit 967ccb5d50b3ce163bb98fd125c56b039743de90
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-07-24T05:37:48Z
@@ -2125,7 +2091,6 @@ Date:   2023-07-24T05:37:48Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit c6a3467625fede0fe9901ab53b0aabd651866b64
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-07-22T11:31:58Z
@@ -2149,7 +2114,6 @@ Date:   2023-07-22T11:31:58Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 9b6dc49575df5fb953918c284505f24741138130
 Author: dave caruso <me@paperdave.net>
 Date:   2023-07-20T00:20:00Z
@@ -2195,7 +2159,6 @@ Date:   2023-07-20T00:20:00Z
     * fix runInAsyncScope
 
 --------------------------------------------------------------------------------
-
 commit 9eb8eea2a81be6a20abb62544dc54a35ff4173a5
 Author: Ashcon Partovi <ashcon@partovi.net>
 Date:   2023-07-13T16:39:43Z
@@ -2203,7 +2166,6 @@ Date:   2023-07-13T16:39:43Z
     Implement `ping()`, `pong()`, `terminate()` for WebSocket client and server (#3257)
 
 --------------------------------------------------------------------------------
-
 commit a02a79e26c49358e8bde3988709f8b79464711aa
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2023-07-13T03:48:52Z
@@ -2211,7 +2173,6 @@ Date:   2023-07-13T03:48:52Z
     Bump WebKit
 
 --------------------------------------------------------------------------------
-
 commit aa38e51afb73dab3071addc07f82fd96153ff450
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-07-03T05:09:50Z
@@ -2222,14 +2183,13 @@ Date:   2023-07-03T05:09:50Z
     
     * Bump WebKit
     
-    * Update bun.lock
+    * Update bun.lockb
     
     ---------
     
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 3d5573921e732c4a63794e5d25f5953d0a40ff0e
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-06-28T20:53:09Z
@@ -2261,7 +2221,6 @@ Date:   2023-06-28T20:53:09Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit ff635551436123022ba3980b39580d53973c80a2
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-06-24T13:02:16Z
@@ -2465,7 +2424,6 @@ Date:   2023-06-24T13:02:16Z
     Co-authored-by: Ciro Spaciari <ciro.spaciari@gmail.com>
 
 --------------------------------------------------------------------------------
-
 commit 43865a3e29db8ebd7c753bc692f6f8ce83620d74
 Author: dave caruso <me@paperdave.net>
 Date:   2023-06-21T19:59:56Z
@@ -2501,7 +2459,6 @@ Date:   2023-06-21T19:59:56Z
     * fix compile error
 
 --------------------------------------------------------------------------------
-
 commit def8824bc283ecea4932fb173ba4cd8f191345bc
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-05-21T07:20:04Z
@@ -2521,7 +2478,6 @@ Date:   2023-05-21T07:20:04Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit bff465a2a2d10e30c695398884514abed3532bc8
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2023-05-17T18:34:37Z
@@ -2529,7 +2485,6 @@ Date:   2023-05-17T18:34:37Z
     Finish bumping
 
 --------------------------------------------------------------------------------
-
 commit aeb3bb949b0052d0573bef507f1b66bbcf4f3dc0
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2023-04-13T11:11:12Z
@@ -2561,7 +2516,6 @@ Date:   2023-04-13T11:11:12Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 461ae27d314561038a41982c77cb804ef7faffd7
 Author: dave caruso <me@paperdave.net>
 Date:   2023-04-08T09:23:11Z
@@ -2583,7 +2537,6 @@ Date:   2023-04-08T09:23:11Z
     * changes requested
 
 --------------------------------------------------------------------------------
-
 commit a5f92224b586289fc72f0abdb68b08eef9f017db
 Author: Colin McDonnell <colinmcd94@gmail.com>
 Date:   2023-03-22T22:01:01Z
@@ -2631,7 +2584,6 @@ Date:   2023-03-22T22:01:01Z
     * Clean up and rename jobs
 
 --------------------------------------------------------------------------------
-
 commit 8f67cf75ee7a4c4c916e9c91c192194caeec53bd
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2023-02-25T12:28:04Z
@@ -2639,15 +2591,13 @@ Date:   2023-02-25T12:28:04Z
     Bump WebKit
 
 --------------------------------------------------------------------------------
-
 commit 7285b9cf75bc3c243db858371505ece141b6ae3d
 Author: Alex Lam S.L <alexlamsl@gmail.com>
 Date:   2023-02-18T06:07:02Z
 
-    update `bun.lock`s (#2101)
+    update `bun.lockb`s (#2101)
 
 --------------------------------------------------------------------------------
-
 commit 941c6ed8146bbcaba882918ad3265a366296dab5
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2023-02-10T05:28:50Z
@@ -2655,7 +2605,6 @@ Date:   2023-02-10T05:28:50Z
     Upgrade WebKit
 
 --------------------------------------------------------------------------------
-
 commit 348e72356b1d2116ef1527f364495a41ed571d74
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2023-01-29T09:26:16Z
@@ -2663,7 +2612,6 @@ Date:   2023-01-29T09:26:16Z
     Bump WebKit
 
 --------------------------------------------------------------------------------
-
 commit efc024cfc4e6e6216325ea796063329ea5892067
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2023-01-24T00:51:48Z
@@ -2671,7 +2619,6 @@ Date:   2023-01-24T00:51:48Z
     clean up deps
 
 --------------------------------------------------------------------------------
-
 commit b3533fb3a88b33da50e58ad9594a0559af575035
 Author: Ciro Spaciari <ciro.spaciari@gmail.com>
 Date:   2023-01-24T00:48:52Z
@@ -2703,15 +2650,13 @@ Date:   2023-01-24T00:48:52Z
     * fix utf16le, ucs2 copying in Buffer write
 
 --------------------------------------------------------------------------------
-
 commit 58cbd6b211410593a2c3e4ac98fada50789433cd
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2023-01-19T00:51:06Z
 
-    Regenerate lock
+    Regenerate lockb
 
 --------------------------------------------------------------------------------
-
 commit 9fd3b5587b9c7f045eaf8828ed5358206a1802ee
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2023-01-02T19:29:22Z
@@ -2719,7 +2664,6 @@ Date:   2023-01-02T19:29:22Z
     Auto-install and link webkit
 
 --------------------------------------------------------------------------------
-
 commit c0dd2841362b67fdb5ede262b19688004a4eb9a4
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-12-28T08:51:22Z
@@ -2868,7 +2812,6 @@ Date:   2022-12-28T08:51:22Z
     Co-authored-by: Veikka Tuominen <git@vexu.eu>
 
 --------------------------------------------------------------------------------
-
 commit f7f1b604443c030afe29d1059b90f72c69afe081
 Author: Colin McDonnell <colinmcd94@gmail.com>
 Date:   2022-11-09T23:40:40Z
@@ -2919,7 +2862,6 @@ Date:   2022-11-09T23:40:40Z
     Co-authored-by: Dylan Conway <dylan.conway567@gmail.com>
 
 --------------------------------------------------------------------------------
-
 commit 3a60764f32bf7aaf3d2ec6cb84d81e8384bd2417
 Author: Colin McDonnell <colinmcd94@gmail.com>
 Date:   2022-11-01T05:10:28Z
@@ -2933,7 +2875,6 @@ Date:   2022-11-01T05:10:28Z
     Co-authored-by: Colin McDonnell <colinmcd@alum.mit.edu>
 
 --------------------------------------------------------------------------------
-
 commit 02c920f4fd09ddc1a32cb2e92c6f391875415949
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-10-25T07:44:25Z
@@ -2961,7 +2902,6 @@ Date:   2022-10-25T07:44:25Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 0ca42e81f31d31270c44f81d88fff33361817720
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-09-03T10:57:43Z
@@ -2977,7 +2917,6 @@ Date:   2022-09-03T10:57:43Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit af5c4dedca550a856486ec8bbc9f6da76396496e
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-08-28T06:46:05Z
@@ -2993,23 +2932,20 @@ Date:   2022-08-28T06:46:05Z
     Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 
 --------------------------------------------------------------------------------
-
 commit 52865750da82eb91b71a66fa126ab55ee055f9a1
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2022-08-06T18:08:33Z
 
-    Update bun.lock
+    Update bun.lockb
 
 --------------------------------------------------------------------------------
-
 commit c94091d8b10a8fc979fbc62d06aa9526df5f7d8b
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2022-08-06T06:28:19Z
 
-    Refresh all the bun.lock
+    Refresh all the bun.lockb
 
 --------------------------------------------------------------------------------
-
 commit 7d1c9fa1a471d180c078a860c4885478f334bdf5
 Author: Alexander <alexkuz@gmail.com>
 Date:   2022-07-09T11:45:38Z
@@ -3017,7 +2953,6 @@ Date:   2022-07-09T11:45:38Z
     Migrate to Zig v0.10.0
 
 --------------------------------------------------------------------------------
-
 commit cf4c9912c3c1800efdc0427221b654de6f41265f
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2022-07-04T23:46:17Z
@@ -3025,15 +2960,13 @@ Date:   2022-07-04T23:46:17Z
     Fix npm peer dep issue
 
 --------------------------------------------------------------------------------
-
 commit 9c960fcafd52d6206c958d3e7791f72c6a059632
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2022-07-04T23:39:55Z
 
-    Update bun.lock
+    Update bun.lockb
 
 --------------------------------------------------------------------------------
-
 commit 729d445b6885f69dd2c6355f38707bd42851c791
 Author: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>
 Date:   2022-06-23T06:21:48Z
@@ -3041,7 +2974,6 @@ Date:   2022-06-23T06:21:48Z
     change the directory structure
 
 --------------------------------------------------------------------------------
-
 commit 91e96a8da8aeb28ab39ab6a2642533956f58b648
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-05-03T09:11:59Z
@@ -3049,7 +2981,6 @@ Date:   2022-05-03T09:11:59Z
     ffi overhead bench
 
 --------------------------------------------------------------------------------
-
 commit 612fad706f66d8f830ef9a6efbc33f49a1343ea5
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-04-19T03:51:10Z
@@ -3057,7 +2988,6 @@ Date:   2022-04-19T03:51:10Z
     fix wasm build take 2 (one more thing is broken)
 
 --------------------------------------------------------------------------------
-
 commit 27ad502119c15f41d3248733b9d778d5a72a55d6
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-04-03T23:35:09Z
@@ -3065,15 +2995,13 @@ Date:   2022-04-03T23:35:09Z
     cleanup a few things
 
 --------------------------------------------------------------------------------
-
 commit 1a7b546055e820b787a16801c2f379f350caff6e
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-03-16T12:06:42Z
 
-    bun.lock
+    bun.lockb
 
 --------------------------------------------------------------------------------
-
 commit fe5ef864f1de46e77772fb05a9980d7b6d8db3a6
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-02-25T08:54:59Z
@@ -3081,7 +3009,6 @@ Date:   2022-02-25T08:54:59Z
     hopefully no more unnecessary git status
 
 --------------------------------------------------------------------------------
-
 commit 3881b7a69c6c700cea11d28484039d53cc59506e
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-02-12T11:26:40Z
@@ -3089,7 +3016,6 @@ Date:   2022-02-12T11:26:40Z
     hm
 
 --------------------------------------------------------------------------------
-
 commit 90c573cd42be1abab86db5820d1f6d1666eade8e
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-02-12T05:15:20Z
@@ -3097,7 +3023,6 @@ Date:   2022-02-12T05:15:20Z
     [bun install] Implement global installs
 
 --------------------------------------------------------------------------------
-
 commit d67c95d8ebb366d14976ce74e9448a23c3d6886a
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-02-12T03:01:00Z
@@ -3105,7 +3030,6 @@ Date:   2022-02-12T03:01:00Z
     [bun install] Implement bunfig.toml config
 
 --------------------------------------------------------------------------------
-
 commit a09b99565138bb4bc73a5328397428fb5025817b
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-01-20T07:07:03Z
@@ -3113,7 +3037,6 @@ Date:   2022-01-20T07:07:03Z
     Bun.Transpiler – API for scanning imports/exports of JSX/TSX/TS/JS files
 
 --------------------------------------------------------------------------------
-
 commit 6480193c65644efc943b0c8790da15b6b59b147c
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-01-04T06:39:08Z
@@ -3121,7 +3044,6 @@ Date:   2022-01-04T06:39:08Z
     :confused:
 
 --------------------------------------------------------------------------------
-
 commit 6966d94d906ba6e482717aa2b02f8d9f2d0cf6ce
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2022-01-04T06:26:37Z
@@ -3129,7 +3051,6 @@ Date:   2022-01-04T06:26:37Z
     :lock:
 
 --------------------------------------------------------------------------------
-
 commit 3083bbadc1437d947824c56ca9c0e03bace73480
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2021-12-31T08:01:17Z
@@ -3137,15 +3058,13 @@ Date:   2021-12-31T08:01:17Z
     Bump peechy again
 
 --------------------------------------------------------------------------------
-
 commit 31cd05191dc32069e5ced56091ed26773a8ae770
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2021-12-31T06:04:41Z
 
-    Update bun.lock
+    Update bun.lockb
 
 --------------------------------------------------------------------------------
-
 commit e75c711c68896f5952793601f156c921c814caab
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2021-12-31T05:12:32Z
@@ -3178,7 +3097,7 @@ Date:   2021-12-31T05:12:32Z
     
     * :camera:
     
-    * Update bun.lock
+    * Update bun.lockb
     
     * Less branching
     
@@ -3203,7 +3122,6 @@ Date:   2021-12-31T05:12:32Z
     * Update README.md
 
 --------------------------------------------------------------------------------
-
 commit 536d6ab302d537af2627f4837ec9ad0b5337dbf2
 Author: Jarred Sumner <jarred@jarredsumner.com>
 Date:   2021-12-26T09:40:37Z

@@ -3,7 +3,7 @@
     "sha": "52865750da82eb91b71a66fa126ab55ee055f9a1",
     "author": "Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
     "date": "2022-08-06T18:08:33Z",
-    "message": "Update bun.lock",
+    "message": "Update bun.lockb",
     "packages": {
       "bun-types": "0.1.5",
       "camel-case": "4.1.2",
@@ -763,7 +763,7 @@
     "sha": "7285b9cf75bc3c243db858371505ece141b6ae3d",
     "author": "Alex Lam S.L <alexlamsl@gmail.com>",
     "date": "2023-02-18T06:07:02Z",
-    "message": "update `bun.lock`s (#2101)",
+    "message": "update `bun.lockb`s (#2101)",
     "packages": {
       "@eslint/eslintrc": "1.4.1",
       "@humanwhocodes/config-array": "0.11.8",
@@ -2597,7 +2597,7 @@
     "sha": "aa38e51afb73dab3071addc07f82fd96153ff450",
     "author": "Jarred Sumner <jarred@jarredsumner.com>",
     "date": "2023-07-03T05:09:50Z",
-    "message": "Support mocking `new Date()` & `Date.now()` in bun:test (#3501)\n    \n    * Support changing the time\r\n    \r\n    * Bump WebKit\r\n    \r\n    * Update bun.lock\r\n    \r\n    ---------\r\n    \r\n    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "message": "Support mocking `new Date()` & `Date.now()` in bun:test (#3501)\n    \n    * Support changing the time\r\n    \r\n    * Bump WebKit\r\n    \r\n    * Update bun.lockb\r\n    \r\n    ---------\r\n    \r\n    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
     "packages": {
       "@esbuild/android-arm": "0.17.19",
       "@esbuild/android-arm64": "0.17.19",
@@ -6049,7 +6049,7 @@
     "sha": "29a6ece6c688150ae51865f38ab616ab4b3a90e2",
     "author": "Dylan Conway <dylan.conway567@gmail.com>",
     "date": "2023-09-15T07:03:21Z",
-    "message": "next bun.lock",
+    "message": "next bun.lockb",
     "packages": {
       "@aashutoshrathi/word-wrap": "1.2.6",
       "@esbuild/android-arm": "0.17.19",
@@ -7018,7 +7018,7 @@
     "sha": "3f463786a5f03817949581aa3904d673a3cd087e",
     "author": "Jarred Sumner <jarred@jarredsumner.com>",
     "date": "2023-09-25T00:43:59Z",
-    "message": "Correctly fix #5888 (#6000)\n    \n    * Update our MultiArrayList\r\n    \r\n    * More consistent CI\r\n    \r\n    * Fix serialization issue\r\n    \r\n    * Update bun.lock\r\n    \r\n    * Update bun.lock\r\n    \r\n    * fixup\r\n    \r\n    * Fix `Bin{}`\r\n    \r\n    * `bun update` should not cache the manifest\r\n    \r\n    * Make bun install tests more consistent\r\n    \r\n    * This differs by platform evidently\r\n    \r\n    ---------\r\n    \r\n    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
+    "message": "Correctly fix #5888 (#6000)\n    \n    * Update our MultiArrayList\r\n    \r\n    * More consistent CI\r\n    \r\n    * Fix serialization issue\r\n    \r\n    * Update bun.lockb\r\n    \r\n    * Update bun.lockb\r\n    \r\n    * fixup\r\n    \r\n    * Fix `Bin{}`\r\n    \r\n    * `bun update` should not cache the manifest\r\n    \r\n    * Make bun install tests more consistent\r\n    \r\n    * This differs by platform evidently\r\n    \r\n    ---------\r\n    \r\n    Co-authored-by: Jarred Sumner <709451+Jarred-Sumner@users.noreply.github.com>",
     "packages": {
       "@aashutoshrathi/word-wrap": "1.2.6",
       "@esbuild/android-arm": "0.17.19",
@@ -7408,7 +7408,7 @@
     "sha": "1bf28e0d77a8b2261befbdb708cefd03e0126960",
     "author": "dave caruso <me@paperdave.net>",
     "date": "2023-10-11T09:27:07Z",
-    "message": "feat(install): automatically migrate package-lock.json to bun.lock (#6352)\n    \n    * work so far\r\n    \r\n    * stuff\r\n    \r\n    * a\r\n    \r\n    * basics work\r\n    \r\n    * stuff\r\n    \r\n    * yoo\r\n    \r\n    * build lockfile\r\n    \r\n    * correct\r\n    \r\n    * f\r\n    \r\n    * a\r\n    \r\n    * install fixture havent tested\r\n    \r\n    * i made it worse\r\n    \r\n    * lol\r\n    \r\n    * be more reasonable\r\n    \r\n    * make the test easier to pass because bun install doesn't handle obscure lockfile edge cases :/\r\n    \r\n    * a\r\n    \r\n    * works now\r\n    \r\n    * ok\r\n    \r\n    * a\r\n    \r\n    * a\r\n    \r\n    * cool\r\n    \r\n    * nah\r\n    \r\n    * fix stuff\r\n    \r\n    * l\r\n    \r\n    * a\r\n    \r\n    * idfk\r\n    \r\n    * LAME\r\n    \r\n    * prettier errors\r\n    \r\n    * does this fix tests?\r\n    \r\n    * Add more safety checks to Integrity\r\n    \r\n    * Add another check\r\n    \r\n    * More careful lifetime handling\r\n    \r\n    * Fix linux debugger issue\r\n    \r\n    * a\r\n    \r\n    * tmp dir and snapshot test\r\n    \r\n    ---------\r\n    \r\n    Co-authored-by: Jarred SUmner <jarred@jarredsumner.com>",
+    "message": "feat(install): automatically migrate package-lock.json to bun.lockb (#6352)\n    \n    * work so far\r\n    \r\n    * stuff\r\n    \r\n    * a\r\n    \r\n    * basics work\r\n    \r\n    * stuff\r\n    \r\n    * yoo\r\n    \r\n    * build lockfile\r\n    \r\n    * correct\r\n    \r\n    * f\r\n    \r\n    * a\r\n    \r\n    * install fixture havent tested\r\n    \r\n    * i made it worse\r\n    \r\n    * lol\r\n    \r\n    * be more reasonable\r\n    \r\n    * make the test easier to pass because bun install doesn't handle obscure lockfile edge cases :/\r\n    \r\n    * a\r\n    \r\n    * works now\r\n    \r\n    * ok\r\n    \r\n    * a\r\n    \r\n    * a\r\n    \r\n    * cool\r\n    \r\n    * nah\r\n    \r\n    * fix stuff\r\n    \r\n    * l\r\n    \r\n    * a\r\n    \r\n    * idfk\r\n    \r\n    * LAME\r\n    \r\n    * prettier errors\r\n    \r\n    * does this fix tests?\r\n    \r\n    * Add more safety checks to Integrity\r\n    \r\n    * Add another check\r\n    \r\n    * More careful lifetime handling\r\n    \r\n    * Fix linux debugger issue\r\n    \r\n    * a\r\n    \r\n    * tmp dir and snapshot test\r\n    \r\n    ---------\r\n    \r\n    Co-authored-by: Jarred SUmner <jarred@jarredsumner.com>",
     "packages": {
       "@aashutoshrathi/word-wrap": "1.2.6",
       "@esbuild/android-arm": "0.17.19",

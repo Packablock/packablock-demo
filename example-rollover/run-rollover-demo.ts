@@ -50,7 +50,22 @@ async function run() {
 		}
 	}
 
-	// 2. Load pre-rollover package history feed
+	// 2. Load package.json constraints and pre-rollover package history feed
+	const packageJson = JSON.parse(
+		readFileSync(path.resolve(__dirname, "package.json"), "utf8")
+	);
+	const constraints: any[] = [];
+	const depKeys = ["dependencies", "devDependencies", "peerDependencies"];
+	for (const key of depKeys) {
+		if (packageJson[key] && typeof packageJson[key] === "object") {
+			for (const [name, constraint] of Object.entries(packageJson[key])) {
+				if (typeof constraint === "string" && !constraints.some((c) => name in c)) {
+					constraints.push({ [name]: constraint });
+				}
+			}
+		}
+	}
+
 	const preRolloverFeed = JSON.parse(
 		readFileSync(path.resolve(__dirname, "bun-pre-rollover-packages.json"), "utf8"),
 	);
@@ -67,16 +82,25 @@ async function run() {
 		let blockData = "";
 		if (i === 0) {
 			blockData = YAML.stringify({
-				"bun.lock": {
-					packages: Object.entries(rawPackages).map(([name, ver]) => ({ [name]: ver })),
+				"package.json": {
+					chain_event: "init",
+					constraints: constraints,
 				},
+				lockfiles: {
+					"bun.lock": {
+						chain_event: "init",
+						packages: Object.entries(rawPackages).map(([name, ver]) => ({ [name]: ver })),
+					}
+				}
 			});
 		} else {
 			const diff = getPackageDiff(currentPackages, rawPackages, mockLocations);
 			blockData = YAML.stringify({
-				"bun.lock": {
-					packages: diff,
-				},
+				lockfiles: {
+					"bun.lock": {
+						packages: diff,
+					}
+				}
 			});
 		}
 
@@ -137,9 +161,11 @@ async function run() {
 
 		const diff = getPackageDiff(currentPackages, rawPackages, mockLocations);
 		const blockData = YAML.stringify({
-			"bun.lock": {
-				packages: diff,
-			},
+			lockfiles: {
+				"bun.lock": {
+					packages: diff,
+				}
+			}
 		});
 
 		const customMeta = {
