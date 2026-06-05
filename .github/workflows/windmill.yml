@@ -22,7 +22,7 @@ jobs:
           node-version: lts/*
 
       - name: Install Windmill CLI
-        run: npm install -g @windmill-labs/windmill-cli
+        run: npm install -g windmill-cli
 
       - name: Verify Windmill Metadata & Lockfile
         working-directory: ./windmill
