@@ -27,9 +27,10 @@ jobs:
       - name: Verify Windmill Metadata & Lockfile
         working-directory: ./windmill
         run: |
-          wmill generate-metadata --yes
+          wmill generate-metadata --yes --base-url https://app.windmill.dev/ --token "${{ secrets.WMILL_TOKEN }}" --workspace bronownet
           git diff --exit-code
 
       - name: Run Windmill Lint
         working-directory: ./windmill
-        run: wmill lint
+        run: wmill lint --base-url https://app.windmill.dev/ --token "${{ secrets.WMILL_TOKEN }}" --workspace bronownet
+
