@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # packablock-demo: Fully Automated End-to-End (E2E) Cryptographic Integration Test Runner
-# Verifies the full chain lifecycle between pblk client and Fastify trust registry across both Standard and Premium tiers.
+# Verifies the full chain lifecycle between pkablk client and Fastify trust registry across both Standard and Premium tiers.
+
 
 set -eo pipefail
 
