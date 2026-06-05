@@ -1,0 +1,5 @@
+version: v2
+locks:
+  f/packablock/generate_report: 10c3ad57143bdf89cb3e27421b585f438887d9064403d2090183665349996e6d
+  f/packablock/verify_and_report.flow+__flow_hash: 44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a
+  f/packablock/verify_chain: 6a2fd4bdc15862691fc31656e2f660480cb4a79667407e881f470f95223d8092

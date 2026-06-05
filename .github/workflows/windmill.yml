@@ -1,0 +1,35 @@
+name: "Windmill: Integration Validation"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  wmill-validation:
+    name: "Windmill Lockfile & Lint Check"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install Windmill CLI
+        run: npm install -g @windmill-labs/windmill-cli
+
+      - name: Verify Windmill Metadata & Lockfile
+        working-directory: ./windmill
+        run: |
+          wmill generate-metadata --yes
+          git diff --exit-code
+
+      - name: Run Windmill Lint
+        working-directory: ./windmill
+        run: wmill lint
