@@ -1,12 +1,8 @@
 name: "Windmill: Integration Validation"
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
+
 
 jobs:
   wmill-validation:
