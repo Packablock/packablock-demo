@@ -18,7 +18,11 @@ FILES=(
 
 for file in "${FILES[@]}"; do
   echo "Generating fixtures/${file}.log..."
-  git -C bun log --reverse --patch -- "$file" > "fixtures/${file}.log"
+  if [ "$file" = "bun.lockb" ]; then
+    git -C bun log --reverse --patch --binary -- "$file" > "fixtures/${file}.log"
+  else
+    git -C bun log --reverse --patch -- "$file" > "fixtures/${file}.log"
+  fi
 done
 
 echo "Done generating fixtures!"
